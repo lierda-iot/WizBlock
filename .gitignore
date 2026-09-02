@@ -1,0 +1,50 @@
+# Build
+CODE/build/
+**/build/
+
+# ESP-IDF generated
+sdkconfig
+sdkconfig.old
+
+# Temp build mirror
+laiwfs300_build/
+
+# Temp working directories
+.codex_tmp/
+tmp_pdf_pages/
+tf_firmware_launcher_demo_build_artifacts/
+
+# Local-only demos
+/CODE/examples/camera_face_servo_expression_demo/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+
+# Compiled objects
+*.o
+*.obj
+*.elf
+*.map
+
+# Dependencies downloaded by component manager
+CODE/managed_components/
+**/managed_components/
+**/dependencies.lock
+
+# Local UART captures and vendor handoff notes may contain device identifiers or credentials
+robotlog/7.txt
+robotlog/7_4g_event_statistics.md
+robotlog/2026-08-13_18-01-30_ex024-network-manager-passive-regression-com7.txt
+.claude/session_handoff_2026-08-12.md

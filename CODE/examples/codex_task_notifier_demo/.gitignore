@@ -1,0 +1,17 @@
+# Local credentials and generated runtime files
+bridge/.env.local
+main/notifier_secrets.h
+
+# Local Bridge development state
+bridge/.venv/
+bridge/*.log
+bridge/*.pid
+bridge/*-state.json
+bridge/**/__pycache__/
+bridge/**/*.pyc
+
+# Local source font used only to regenerate the embedded subset
+fonts/.source/
+
+# Intermediate TrueType subsets are not linked into firmware
+fonts/*.ttf

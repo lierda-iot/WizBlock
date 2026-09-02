@@ -1,0 +1,37 @@
+menu "LTE Net Demo Configuration"
+
+    choice DEMO_NETWORK_MODE
+        prompt "Network mode"
+        default DEMO_NETWORK_MODE_DUAL
+        help
+            Select the network mode for this demo.
+
+        config DEMO_NETWORK_MODE_WIFI_ONLY
+            bool "WiFi only"
+            help
+                Use WiFi as the sole network interface.
+
+        config DEMO_NETWORK_MODE_4G_ONLY
+            bool "4G only"
+            help
+                Use 4G/LTE as the sole network interface.
+
+        config DEMO_NETWORK_MODE_DUAL
+            bool "Dual network (WiFi + 4G)"
+            help
+                Use both WiFi and 4G with automatic failover.
+    endchoice
+
+    config DEMO_DEFAULT_WIFI_SSID
+        string "Default WiFi SSID"
+        default "lierda-guest"
+        help
+            Default WiFi SSID used when no saved config exists.
+
+    config DEMO_DEFAULT_WIFI_PASSWORD
+        string "Default WiFi password"
+        default "lsd920249"
+        help
+            Default WiFi password used when no saved config exists.
+
+endmenu

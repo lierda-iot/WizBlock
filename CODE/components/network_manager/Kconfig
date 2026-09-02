@@ -1,0 +1,117 @@
+menu "Network Manager"
+
+config NETWORK_MANAGER_ENABLE
+    bool "Enable network manager"
+    default n
+
+choice NETWORK_MANAGER_DEFAULT_MODE
+    prompt "Default network mode"
+    depends on NETWORK_MANAGER_ENABLE
+    default NETWORK_MANAGER_DEFAULT_4G_ONLY
+
+config NETWORK_MANAGER_DEFAULT_WIFI_ONLY
+    bool "Wi-Fi only"
+
+config NETWORK_MANAGER_DEFAULT_4G_ONLY
+    bool "4G only"
+
+config NETWORK_MANAGER_DEFAULT_DUAL_AUTO
+    bool "Wi-Fi preferred / 4G fallback"
+
+endchoice
+
+config NETWORK_MANAGER_INITIAL_ATTEMPT_TIMEOUT_MS
+    int "Initial LTE manager barrier timeout (ms)"
+    depends on NETWORK_MANAGER_ENABLE
+    range 0 60000
+    default 6000
+    help
+        Maximum time network_manager_start() waits for the one-shot LTE
+        power-on and manager initialization attempt. A timeout does not stop
+        the worker; startup continues asynchronously.
+
+config NETWORK_MANAGER_WIFI_CONNECT_STABLE_MS
+    int "Wi-Fi connect stable window (ms)"
+    depends on NETWORK_MANAGER_ENABLE
+    range 1 600000
+    default 10000
+    help
+        Continuous raw link, IPv4, and internet-ready time required before
+        Wi-Fi becomes stable-ready. The same window resets its retry budget.
+
+config NETWORK_MANAGER_WIFI_DISCONNECT_STABLE_MS
+    int "Wi-Fi disconnect stable window (ms)"
+    depends on NETWORK_MANAGER_ENABLE
+    range 1 600000
+    default 3000
+    help
+        Continuous raw Wi-Fi link/IP loss required before the stable state is
+        cleared. Raw state and routing notifications remain immediate.
+
+config NETWORK_MANAGER_WIFI_RETRY_LIMIT
+    int "Wi-Fi automatic retry limit"
+    depends on NETWORK_MANAGER_ENABLE
+    range 1 255
+    default 10
+    help
+        Maximum automatic Wi-Fi reconnect attempts in one retry cycle.
+        Applying a valid configuration or requesting reconnect starts a new
+        cycle.
+
+config NETWORK_MANAGER_WIFI_RETRY_UNLIMITED
+    bool "Keep retrying Wi-Fi after the retry limit"
+    depends on NETWORK_MANAGER_ENABLE
+    default n
+    help
+        Continue automatic Wi-Fi reconnects after the configured retry limit.
+        The attempt counter saturates at 255 and the retry_exhausted state is
+        never entered. Manual offline still suppresses all automatic retries.
+
+config NETWORK_MANAGER_WIFI_RETRY_INITIAL_BACKOFF_MS
+    int "Wi-Fi retry initial backoff (ms)"
+    depends on NETWORK_MANAGER_ENABLE
+    range 1 600000
+    default 1000
+    help
+        Delay before the first automatic Wi-Fi retry. Later delays double
+        until the configured maximum is reached.
+
+config NETWORK_MANAGER_WIFI_RETRY_MAX_BACKOFF_MS
+    int "Wi-Fi retry maximum backoff (ms)"
+    depends on NETWORK_MANAGER_ENABLE
+    range 1 600000
+    default 30000
+    help
+        Upper bound for automatic Wi-Fi retry delay. If it is below the
+        initial delay, the maximum is used from the first retry.
+
+config NETWORK_MANAGER_CELLULAR_INITIAL_IPV4_WAIT_MS
+    int "Initial cellular IPv4 wait (ms)"
+    depends on NETWORK_MANAGER_ENABLE
+    range 1 600000
+    default 20000
+    help
+        IPv4 observation window after the one-shot LTE manager initialization.
+        Expiry reports a fault but does not start an LTE power cycle.
+
+config NETWORK_MANAGER_CELLULAR_POWER_OFF_HOLD_MS
+    int "Cellular power-off hold (ms)"
+    depends on NETWORK_MANAGER_ENABLE
+    range 1 600000
+    default 1000
+    help
+        LTE power-off hold used only by the explicit reconnect operation before
+        LTE is powered on again. Cellular state observation never uses it.
+
+config NETWORK_MANAGER_TASK_STACK_IN_PSRAM
+    bool "Allocate network manager task stacks in PSRAM"
+    depends on NETWORK_MANAGER_ENABLE && FREERTOS_TASK_CREATE_ALLOW_EXT_MEM
+    default n
+    help
+        When enabled, worker and dispatcher task stacks (~10KB total) are
+        allocated from external PSRAM instead of internal DRAM. Reduces
+        internal memory pressure but requires CONFIG_FREERTOS_TASK_CREATE_ALLOW_EXT_MEM.
+        Leave disabled if PSRAM stack support is not available or if internal
+        RAM allocation is preferred for performance reasons.
+
+endmenu

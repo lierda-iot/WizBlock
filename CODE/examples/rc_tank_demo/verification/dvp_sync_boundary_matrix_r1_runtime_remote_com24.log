@@ -1,0 +1,950 @@
+
+[HOST-DVP-MATRIX 12:20:31] SYNC-R1 capture begin
+W (6179401) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6184501) rc_net: Scanning for RC_TANK_* APs...
+W (6187003) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6192103) rc_net: Scanning for RC_TANK_* APs...
+W (6194605) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6199705) rc_net: Scanning for RC_TANK_* APs...
+
+[HOST-DVP-MATRIX 12:20:57] SYNC-R1 stage=0 visible window begin
+I (6202207) rc_net: Found tank AP: RC_TANK_F3AE79, RSSI: -28
+I (6202208) rc_net: Connecting to tank AP, attempt 1/3
+I (6202220) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (6202221) wifi:state: init -> auth (0xb0)
+I (6202224) wifi:state: auth -> assoc (0x0)
+I (6202237) wifi:state: assoc -> run (0x10)
+I (6202253) wifi:connected with RC_TANK_F3AE79, aid = 1, channel 1, 40U, bssid = 44:1b:f6:f3:ae:79
+I (6202253) wifi:security: WPA2-PSK, phy: bgn, rssi: -28, cipher(pairwise:0x3, group:0x3), pmf:1
+I (6202259) wifi:pm start, type: 1
+
+I (6202263) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (6202271) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (6203300) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1
+I (6203300) rc_net: Got IP: 192.168.4.2
+I (6203301) rc_net: Connected to tank AP; waiting for disconnect
+I (6203301) rc_control: Network connected: waiting for joystick release before motion
+I (6203309) rc_control: Joystick released: motion control re-armed
+I (6203314) rc_tank: Network connected, peer: 192.168.4.1
+W (6203325) rc_tank: Channels already started, skip re-init
+I (6203317) rc_video: Remote WiFi icon updated: connected=1 epoch=51
+I (6203348) wifi:<ba-add>idx:0 (ifx:0, 44:1b:f6:f3:ae:79), tid:0, ssn:0, winSize:64
+I (6205100) rc_net: Video RX complete=35460 missing=34 last_seq=22
+I (6205290) rc_video: Displayed 34440 frames (320x240 video at 240x180,80,0) | fps=0.49 theory_max=32.55 | Avg(ms): recv=9.3 decode=15.5 color=0.0 place=10.3 copy=6.6 overlay=11.3 dma=33.5 display=51.5 total=86.6 | JPEG=9312B
+I (6205300) rc_video: Video queue: ready=35462 queue_drop=0 stale_drop=1021
+I (6206032) rc_net: [CAM-PROBE] Video RX seq=30 jpeg_len=9093 crc32=0x5313164a chunks=8
+I (6208536) rc_net: Video RX complete=35490 missing=34 last_seq=52
+I (6208815) rc_video: Displayed 34470 frames (320x240 video at 240x180,80,0) | fps=8.55 theory_max=32.55 | Avg(ms): recv=7.6 decode=15.6 color=0.0 place=10.4 copy=6.8 overlay=11.0 dma=33.4 display=51.2 total=84.9 | JPEG=9262B
+I (6208824) rc_video: Video queue: ready=35492 queue_drop=0 stale_drop=1022
+I (6209503) rc_net: [CAM-PROBE] Video RX seq=60 jpeg_len=9921 crc32=0x843890f5 chunks=9
+I (6211801) rc_net: Video RX complete=35520 missing=34 last_seq=82
+I (6212323) rc_video: Displayed 34500 frames (320x240 video at 240x180,80,0) | fps=8.59 theory_max=32.55 | Avg(ms): recv=6.3 decode=15.5 color=0.0 place=10.3 copy=6.7 overlay=11.3 dma=33.4 display=51.5 total=83.7 | JPEG=9083B
+I (6212332) rc_video: Video queue: ready=35524 queue_drop=0 stale_drop=1023
+I (6212772) rc_net: [CAM-PROBE] Video RX seq=90 jpeg_len=9140 crc32=0x41f4d7a4 chunks=8
+I (6215259) rc_net: Video RX complete=35550 missing=34 last_seq=112
+I (6215638) rc_video: Displayed 34530 frames (320x240 video at 240x180,80,0) | fps=9.09 theory_max=32.55 | Avg(ms): recv=4.2 decode=15.4 color=0.0 place=10.3 copy=6.8 overlay=11.3 dma=33.7 display=52.0 total=81.9 | JPEG=9095B
+I (6215647) rc_video: Video queue: ready=35554 queue_drop=0 stale_drop=1023
+I (6216091) rc_net: [CAM-PROBE] Video RX seq=120 jpeg_len=9266 crc32=0xe323cf6b chunks=8
+I (6218585) rc_net: Video RX complete=35580 missing=34 last_seq=142
+I (6219027) rc_video: Displayed 34560 frames (320x240 video at 240x180,80,0) | fps=8.89 theory_max=32.55 | Avg(ms): recv=6.7 decode=15.4 color=0.0 place=10.3 copy=6.6 overlay=11.1 dma=33.6 display=51.3 total=83.8 | JPEG=9595B
+I (6219036) rc_video: Video queue: ready=35583 queue_drop=0 stale_drop=1023
+I (6219573) rc_net: [CAM-PROBE] Video RX seq=150 jpeg_len=9121 crc32=0x7b6c1e31 chunks=8
+I (6222104) rc_net: Video RX complete=35610 missing=34 last_seq=172
+I (6222630) rc_video: Displayed 34590 frames (320x240 video at 240x180,80,0) | fps=8.36 theory_max=32.55 | Avg(ms): recv=6.7 decode=15.4 color=0.0 place=10.3 copy=6.7 overlay=11.4 dma=33.6 display=51.8 total=84.2 | JPEG=9073B
+I (6222639) rc_video: Video queue: ready=35614 queue_drop=0 stale_drop=1023
+I (6223082) rc_net: [CAM-PROBE] Video RX seq=180 jpeg_len=8620 crc32=0xec0cfd22 chunks=8
+I (6225686) rc_net: Video RX complete=35640 missing=34 last_seq=202
+I (6226070) rc_video: Displayed 34620 frames (320x240 video at 240x180,80,0) | fps=8.76 theory_max=32.55 | Avg(ms): recv=5.0 decode=15.3 color=0.0 place=10.3 copy=6.7 overlay=11.2 dma=33.5 display=51.5 total=82.1 | JPEG=9127B
+I (6226079) rc_video: Video queue: ready=35643 queue_drop=0 stale_drop=1023
+I (6226592) rc_net: [CAM-PROBE] Video RX seq=210 jpeg_len=9091 crc32=0xd24fa62e chunks=8
+I (6229020) rc_net: Video RX complete=35670 missing=34 last_seq=232
+I (6229629) rc_video: Displayed 34650 frames (320x240 video at 240x180,80,0) | fps=8.47 theory_max=32.55 | Avg(ms): recv=6.7 decode=15.6 color=0.0 place=10.7 copy=6.7 overlay=10.9 dma=33.4 display=51.0 total=84.1 | JPEG=9472B
+I (6229638) rc_video: Video queue: ready=35674 queue_drop=0 stale_drop=1024
+I (6230022) rc_net: [CAM-PROBE] Video RX seq=240 jpeg_len=9559 crc32=0x73d18ba2 chunks=8
+I (6232448) rc_net: Video RX complete=35700 missing=34 last_seq=262
+I (6232967) rc_video: Displayed 34680 frames (320x240 video at 240x180,80,0) | fps=9.03 theory_max=32.55 | Avg(ms): recv=6.1 decode=15.3 color=0.0 place=10.2 copy=6.8 overlay=11.2 dma=33.7 display=51.8 total=83.4 | JPEG=9083B
+I (6232976) rc_video: Video queue: ready=35704 queue_drop=0 stale_drop=1024
+I (6233360) rc_net: [CAM-PROBE] Video RX seq=270 jpeg_len=9077 crc32=0x3cda7e69 chunks=8
+I (6235966) rc_net: Video RX complete=35730 missing=34 last_seq=292
+I (6236594) rc_video: Displayed 34710 frames (320x240 video at 240x180,80,0) | fps=8.31 theory_max=32.55 | Avg(ms): recv=6.6 decode=15.6 color=0.0 place=10.3 copy=6.7 overlay=11.1 dma=33.4 display=51.2 total=83.7 | JPEG=9402B
+I (6236603) rc_video: Video queue: ready=35735 queue_drop=0 stale_drop=1025
+I (6236885) rc_net: [CAM-PROBE] Video RX seq=300 jpeg_len=9109 crc32=0x5293805f chunks=8
+I (6239302) rc_net: Video RX complete=35760 missing=34 last_seq=322
+I (6239938) rc_video: Displayed 34740 frames (320x240 video at 240x180,80,0) | fps=9.01 theory_max=32.55 | Avg(ms): recv=6.1 decode=15.2 color=0.0 place=10.3 copy=6.9 overlay=11.3 dma=33.7 display=51.9 total=83.6 | JPEG=9842B
+I (6239947) rc_video: Video queue: ready=35765 queue_drop=0 stale_drop=1025
+I (6240215) rc_net: [CAM-PROBE] Video RX seq=330 jpeg_len=9067 crc32=0x45b4a954 chunks=8
+I (6242770) rc_net: Video RX complete=35790 missing=34 last_seq=352
+I (6243456) rc_video: Displayed 34770 frames (320x240 video at 240x180,80,0) | fps=8.57 theory_max=32.55 | Avg(ms): recv=7.3 decode=15.5 color=0.0 place=10.3 copy=6.6 overlay=11.2 dma=33.6 display=51.5 total=84.7 | JPEG=9719B
+I (6243465) rc_video: Video queue: ready=35795 queue_drop=0 stale_drop=1025
+I (6243778) rc_net: [CAM-PROBE] Video RX seq=360 jpeg_len=9065 crc32=0x7349104b chunks=8
+I (6246381) rc_net: Video RX complete=35820 missing=34 last_seq=382
+I (6246987) rc_video: Displayed 34800 frames (320x240 video at 240x180,80,0) | fps=8.53 theory_max=32.55 | Avg(ms): recv=8.2 decode=15.3 color=0.0 place=10.3 copy=6.7 overlay=11.1 dma=33.5 display=51.4 total=85.2 | JPEG=9480B
+I (6246996) rc_video: Video queue: ready=35825 queue_drop=0 stale_drop=1025
+I (6247310) rc_net: [CAM-PROBE] Video RX seq=390 jpeg_len=9106 crc32=0x822a023c chunks=8
+
+[HOST-DVP-MATRIX 12:21:46] SYNC-R1 Tank restart recovery=2
+I (6254361) wifi:bcn_timeout,ap_probe_send_start
+I (6256864) wifi:ap_probe_send over, reset wifi status to disassoc
+I (6256864) wifi:state: run -> init (0xc800)
+I (6256865) wifi:pm stop, total sleep time: 6748564 us / 54602438 us
+
+I (6256869) wifi:<ba-del>idx:0, tid:0
+I (6256873) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+W (6256883) rc_control: Network disconnected: control TX paused
+W (6256883) rc_net: Tank AP disconnected; retry saved AP first
+W (6256886) rc_tank: Network disconnected
+I (6256892) rc_net: Connecting to tank AP, attempt 1/3
+I (6256903) rc_video: Remote WiFi icon updated: connected=0 epoch=52
+I (6264312) rc_net: Connecting to tank AP, attempt 2/3
+I (6271724) rc_net: Connecting to tank AP, attempt 3/3
+I (6271735) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (6271736) wifi:state: init -> auth (0xb0)
+I (6271748) wifi:state: auth -> assoc (0x0)
+I (6271761) wifi:state: assoc -> run (0x10)
+I (6271771) wifi:state: run -> init (0x3c0)
+I (6271772) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+W (6271774) rc_net: Direct reconnect attempts exhausted; return to AP scan
+I (6276879) rc_net: Scanning for RC_TANK_* APs...
+
+[HOST-DVP-MATRIX 12:22:14] SYNC-R1 stage=1 visible window begin
+I (6279381) rc_net: Found tank AP: RC_TANK_F3AE79, RSSI: -28
+I (6279382) rc_net: Connecting to tank AP, attempt 1/3
+I (6279389) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (6279390) wifi:state: init -> auth (0xb0)
+I (6279398) wifi:state: auth -> assoc (0x0)
+I (6279409) wifi:state: assoc -> run (0x10)
+I (6279440) wifi:connected with RC_TANK_F3AE79, aid = 1, channel 1, 40U, bssid = 44:1b:f6:f3:ae:79
+I (6279440) wifi:security: WPA2-PSK, phy: bgn, rssi: -28, cipher(pairwise:0x3, group:0x3), pmf:1
+I (6279446) wifi:pm start, type: 1
+
+I (6279450) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (6279489) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (6280491) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1
+I (6280491) rc_net: Got IP: 192.168.4.2
+I (6280492) rc_net: Connected to tank AP; waiting for disconnect
+I (6280492) rc_control: Network connected: waiting for joystick release before motion
+I (6280499) rc_control: Joystick released: motion control re-armed
+I (6280505) rc_tank: Network connected, peer: 192.168.4.1
+W (6280516) rc_tank: Channels already started, skip re-init
+I (6280498) rc_video: Remote WiFi icon updated: connected=1 epoch=53
+I (6280524) wifi:<ba-add>idx:0 (ifx:0, 44:1b:f6:f3:ae:79), tid:0, ssn:0, winSize:64
+I (6281674) rc_net: Video RX complete=35850 missing=34 last_seq=22
+I (6282361) rc_net: [CAM-PROBE] Video RX seq=30 jpeg_len=8657 crc32=0x161523f1 chunks=8
+I (6282400) rc_video: Displayed 34830 frames (320x240 video at 240x180,80,0) | fps=0.85 theory_max=32.55 | Avg(ms): recv=6.7 decode=15.4 color=0.0 place=10.2 copy=6.7 overlay=11.3 dma=33.3 display=51.4 total=83.7 | JPEG=8385B
+I (6282409) rc_video: Video queue: ready=35858 queue_drop=0 stale_drop=1027
+I (6284428) rc_net: Video RX complete=35880 missing=34 last_seq=52
+I (6285179) rc_net: [CAM-PROBE] Video RX seq=60 jpeg_len=8640 crc32=0x83252206 chunks=8
+I (6285261) rc_video: Displayed 34860 frames (320x240 video at 240x180,80,0) | fps=10.54 theory_max=32.55 | Avg(ms): recv=6.6 decode=15.3 color=0.0 place=10.3 copy=6.8 overlay=11.0 dma=33.5 display=51.4 total=83.5 | JPEG=8640B
+I (6285270) rc_video: Video queue: ready=35888 queue_drop=0 stale_drop=1028
+I (6287175) rc_net: Video RX complete=35910 missing=34 last_seq=82
+I (6287929) rc_net: [CAM-PROBE] Video RX seq=90 jpeg_len=9121 crc32=0x355585dd chunks=8
+I (6288508) rc_video: Displayed 34890 frames (320x240 video at 240x180,80,0) | fps=9.29 theory_max=32.55 | Avg(ms): recv=5.2 decode=15.4 color=0.0 place=10.1 copy=6.7 overlay=11.3 dma=33.6 display=51.6 total=82.4 | JPEG=8635B
+I (6288517) rc_video: Video queue: ready=35923 queue_drop=0 stale_drop=1033
+I (6289985) rc_net: Video RX complete=35940 missing=34 last_seq=112
+I (6290735) rc_net: [CAM-PROBE] Video RX seq=120 jpeg_len=8666 crc32=0xdd4b0bd5 chunks=8
+I (6291713) rc_video: Displayed 34920 frames (320x240 video at 240x180,80,0) | fps=9.41 theory_max=32.55 | Avg(ms): recv=6.5 decode=15.5 color=0.0 place=10.3 copy=6.6 overlay=11.2 dma=33.5 display=51.4 total=83.7 | JPEG=8649B
+I (6291722) rc_video: Video queue: ready=35958 queue_drop=0 stale_drop=1038
+I (6292722) rc_net: Video RX complete=35970 missing=34 last_seq=142
+I (6293423) rc_net: [CAM-PROBE] Video RX seq=150 jpeg_len=8603 crc32=0xee39696b chunks=8
+I (6294806) rc_video: Displayed 34950 frames (320x240 video at 240x180,80,0) | fps=9.75 theory_max=32.55 | Avg(ms): recv=4.6 decode=15.5 color=0.0 place=10.3 copy=6.8 overlay=11.1 dma=33.4 display=51.4 total=81.9 | JPEG=9107B
+I (6294815) rc_video: Video queue: ready=35992 queue_drop=0 stale_drop=1042
+I (6295448) rc_net: Video RX complete=36000 missing=34 last_seq=172
+I (6296203) rc_net: [CAM-PROBE] Video RX seq=180 jpeg_len=8783 crc32=0x3a375dc9 chunks=8
+I (6297634) rc_video: Displayed 34980 frames (320x240 video at 240x180,80,0) | fps=10.67 theory_max=32.55 | Avg(ms): recv=4.3 decode=15.3 color=0.0 place=10.3 copy=6.9 overlay=11.3 dma=33.5 display=51.8 total=81.7 | JPEG=8631B
+I (6297643) rc_video: Video queue: ready=36024 queue_drop=0 stale_drop=1043
+I (6298210) rc_net: Video RX complete=36030 missing=34 last_seq=202
+I (6298929) rc_net: [CAM-PROBE] Video RX seq=210 jpeg_len=8637 crc32=0x424a7e80 chunks=8
+I (6300683) rc_video: Displayed 35010 frames (320x240 video at 240x180,80,0) | fps=9.89 theory_max=32.55 | Avg(ms): recv=6.1 decode=15.3 color=0.0 place=10.3 copy=6.6 overlay=11.1 dma=33.6 display=51.3 total=83.1 | JPEG=8519B
+I (6300692) rc_video: Video queue: ready=36056 queue_drop=0 stale_drop=1046
+I (6300981) rc_net: Video RX complete=36060 missing=34 last_seq=232
+I (6301690) rc_net: [CAM-PROBE] Video RX seq=240 jpeg_len=8568 crc32=0x24959044 chunks=8
+I (6303766) rc_net: Video RX complete=36090 missing=34 last_seq=262
+I (6304043) rc_video: Displayed 35040 frames (320x240 video at 240x180,80,0) | fps=8.97 theory_max=32.55 | Avg(ms): recv=6.6 decode=15.2 color=0.0 place=10.5 copy=6.7 overlay=11.2 dma=33.7 display=51.7 total=84.1 | JPEG=9097B
+I (6304052) rc_video: Video queue: ready=36093 queue_drop=0 stale_drop=1052
+I (6304549) rc_net: [CAM-PROBE] Video RX seq=270 jpeg_len=8641 crc32=0x642471bd chunks=8
+I (6306509) rc_net: Video RX complete=36120 missing=34 last_seq=292
+I (6306886) rc_video: Displayed 35070 frames (320x240 video at 240x180,80,0) | fps=10.61 theory_max=32.55 | Avg(ms): recv=4.4 decode=15.4 color=0.0 place=10.3 copy=6.6 overlay=11.2 dma=33.6 display=51.5 total=81.6 | JPEG=8640B
+I (6306895) rc_video: Video queue: ready=36123 queue_drop=0 stale_drop=1053
+I (6307279) rc_net: [CAM-PROBE] Video RX seq=300 jpeg_len=9102 crc32=0x230d2fb9 chunks=8
+I (6309441) rc_net: Video RX complete=36150 missing=34 last_seq=322
+I (6309989) rc_net: [CAM-PROBE] Video RX seq=330 jpeg_len=8652 crc32=0x47b10785 chunks=8
+I (6310024) rc_video: Displayed 35100 frames (320x240 video at 240x180,80,0) | fps=9.61 theory_max=32.55 | Avg(ms): recv=5.6 decode=15.5 color=0.0 place=10.2 copy=6.7 overlay=11.2 dma=33.4 display=51.3 total=82.8 | JPEG=8603B
+I (6310033) rc_video: Video queue: ready=36158 queue_drop=0 stale_drop=1057
+I (6312054) rc_net: Video RX complete=36180 missing=34 last_seq=352
+I (6312746) rc_net: [CAM-PROBE] Video RX seq=360 jpeg_len=8619 crc32=0x81240053 chunks=8
+I (6312905) rc_video: Displayed 35130 frames (320x240 video at 240x180,80,0) | fps=10.47 theory_max=32.55 | Avg(ms): recv=4.9 decode=15.3 color=0.0 place=10.4 copy=6.8 overlay=11.1 dma=33.5 display=51.5 total=82.2 | JPEG=8649B
+I (6312914) rc_video: Video queue: ready=36189 queue_drop=0 stale_drop=1059
+I (6314699) rc_net: Video RX complete=36210 missing=34 last_seq=382
+I (6315417) rc_net: [CAM-PROBE] Video RX seq=390 jpeg_len=8638 crc32=0xb0d6db20 chunks=8
+I (6315663) rc_video: Displayed 35160 frames (320x240 video at 240x180,80,0) | fps=10.94 theory_max=32.55 | Avg(ms): recv=4.1 decode=15.3 color=0.0 place=10.4 copy=6.7 overlay=11.2 dma=33.6 display=51.5 total=81.4 | JPEG=9120B
+I (6315672) rc_video: Video queue: ready=36219 queue_drop=0 stale_drop=1059
+I (6317500) rc_net: Video RX complete=36240 missing=34 last_seq=412
+I (6318205) rc_net: [CAM-PROBE] Video RX seq=420 jpeg_len=8689 crc32=0x55a2dc21 chunks=8
+I (6318383) rc_video: Displayed 35190 frames (320x240 video at 240x180,80,0) | fps=11.10 theory_max=32.55 | Avg(ms): recv=1.7 decode=15.3 color=0.0 place=10.3 copy=6.6 overlay=11.2 dma=33.5 display=51.4 total=78.8 | JPEG=8652B
+I (6318392) rc_video: Video queue: ready=36249 queue_drop=0 stale_drop=1059
+I (6320235) rc_net: Video RX complete=36270 missing=34 last_seq=442
+I (6320970) rc_net: [CAM-PROBE] Video RX seq=450 jpeg_len=9062 crc32=0xd79b63a6 chunks=8
+I (6321347) rc_video: Displayed 35220 frames (320x240 video at 240x180,80,0) | fps=10.18 theory_max=32.55 | Avg(ms): recv=5.0 decode=15.5 color=0.0 place=10.4 copy=6.6 overlay=11.2 dma=33.5 display=51.3 total=82.2 | JPEG=8579B
+I (6321356) rc_video: Video queue: ready=36282 queue_drop=0 stale_drop=1061
+I (6322989) rc_net: Video RX complete=36300 missing=34 last_seq=472
+I (6323755) rc_net: [CAM-PROBE] Video RX seq=480 jpeg_len=9151 crc32=0xd23dc3b5 chunks=8
+I (6324270) rc_video: Displayed 35250 frames (320x240 video at 240x180,80,0) | fps=10.32 theory_max=32.55 | Avg(ms): recv=4.9 decode=15.5 color=0.0 place=10.2 copy=6.7 overlay=11.2 dma=33.7 display=51.7 total=82.2 | JPEG=8613B
+I (6324279) rc_video: Video queue: ready=36313 queue_drop=0 stale_drop=1063
+
+[HOST-DVP-MATRIX 12:23:00] SYNC-R1 Tank restart recovery=3
+I (6331564) wifi:bcn_timeout,ap_probe_send_start
+I (6334067) wifi:ap_probe_send over, reset wifi status to disassoc
+I (6334067) wifi:state: run -> init (0xc800)
+I (6334068) wifi:pm stop, total sleep time: 6215201 us / 54618377 us
+
+I (6334072) wifi:<ba-del>idx:0, tid:0
+I (6334076) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+W (6334085) rc_net: Tank AP disconnected; retry saved AP first
+W (6334085) rc_control: Network disconnected: control TX paused
+I (6334089) rc_net: Connecting to tank AP, attempt 1/3
+W (6334095) rc_tank: Network disconnected
+I (6334104) rc_video: Remote WiFi icon updated: connected=0 epoch=54
+I (6341512) rc_net: Connecting to tank AP, attempt 2/3
+I (6348925) rc_net: Connecting to tank AP, attempt 3/3
+I (6348945) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (6348946) wifi:state: init -> auth (0xb0)
+I (6348957) wifi:state: auth -> assoc (0x0)
+I (6348974) wifi:state: assoc -> init (0x3c0)
+I (6348975) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+W (6348977) rc_net: Direct reconnect attempts exhausted; return to AP scan
+I (6354083) rc_net: Scanning for RC_TANK_* APs...
+I (6356585) rc_net: Found tank AP: RC_TANK_F3AE79, RSSI: -28
+I (6356586) rc_net: Connecting to tank AP, attempt 1/3
+I (6356596) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (6356597) wifi:state: init -> auth (0xb0)
+I (6356605) wifi:state: auth -> assoc (0x0)
+I (6356617) wifi:state: assoc -> run (0x10)
+I (6356644) wifi:connected with RC_TANK_F3AE79, aid = 1, channel 1, 40U, bssid = 44:1b:f6:f3:ae:79
+I (6356645) wifi:security: WPA2-PSK, phy: bgn, rssi: -28, cipher(pairwise:0x3, group:0x3), pmf:1
+I (6356651) wifi:pm start, type: 1
+
+I (6356654) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+
+[HOST-DVP-MATRIX 12:23:31] SYNC-R1 stage=2 visible window begin
+I (6356777) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (6357690) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1
+I (6357690) rc_net: Got IP: 192.168.4.2
+I (6357691) rc_net: Connected to tank AP; waiting for disconnect
+I (6357691) rc_control: Network connected: waiting for joystick release before motion
+I (6357701) rc_control: Joystick released: motion control re-armed
+I (6357704) rc_tank: Network connected, peer: 192.168.4.1
+W (6357715) rc_tank: Channels already started, skip re-init
+I (6357719) wifi:<ba-add>idx:0 (ifx:0, 44:1b:f6:f3:ae:79), tid:0, ssn:0, winSize:64
+I (6357704) rc_video: Remote WiFi icon updated: connected=1 epoch=55
+I (6357833) rc_net: Video RX complete=36330 missing=34 last_seq=9
+I (6359515) rc_video: Displayed 35280 frames (320x240 video at 240x180,80,0) | fps=0.85 theory_max=32.55 | Avg(ms): recv=6.4 decode=15.3 color=0.0 place=10.3 copy=6.6 overlay=11.3 dma=33.5 display=51.4 total=83.4 | JPEG=9204B
+I (6359524) rc_video: Video queue: ready=36344 queue_drop=0 stale_drop=1064
+I (6360252) rc_net: [CAM-PROBE] Video RX seq=30 jpeg_len=9643 crc32=0x170e7f04 chunks=9
+I (6361334) rc_net: Video RX complete=36360 missing=34 last_seq=39
+I (6363033) rc_video: Displayed 35310 frames (320x240 video at 240x180,80,0) | fps=8.57 theory_max=32.55 | Avg(ms): recv=6.8 decode=15.5 color=0.0 place=10.2 copy=6.6 overlay=11.3 dma=33.5 display=51.5 total=84.1 | JPEG=9043B
+I (6363042) rc_video: Video queue: ready=36375 queue_drop=0 stale_drop=1064
+I (6363863) rc_net: [CAM-PROBE] Video RX seq=60 jpeg_len=9386 crc32=0xe65fce5c chunks=8
+I (6364664) rc_net: Video RX complete=36390 missing=34 last_seq=69
+I (6366830) rc_video: Displayed 35340 frames (320x240 video at 240x180,80,0) | fps=7.94 theory_max=32.55 | Avg(ms): recv=6.0 decode=15.5 color=0.0 place=10.4 copy=6.8 overlay=11.1 dma=33.5 display=51.5 total=83.3 | JPEG=9024B
+I (6366839) rc_video: Video queue: ready=36408 queue_drop=0 stale_drop=1068
+I (6367204) rc_net: [CAM-PROBE] Video RX seq=90 jpeg_len=9895 crc32=0xa8a0c2fe chunks=9
+I (6368110) rc_net: Video RX complete=36420 missing=34 last_seq=99
+I (6370467) rc_net: [CAM-PROBE] Video RX seq=120 jpeg_len=9671 crc32=0x0a458c98 chunks=9
+I (6370499) rc_video: Displayed 35370 frames (320x240 video at 240x180,80,0) | fps=8.21 theory_max=32.55 | Avg(ms): recv=6.9 decode=15.6 color=0.0 place=10.3 copy=6.9 overlay=11.2 dma=33.4 display=51.6 total=84.4 | JPEG=9033B
+I (6370508) rc_video: Video queue: ready=36441 queue_drop=0 stale_drop=1070
+I (6371569) rc_net: Video RX complete=36450 missing=34 last_seq=129
+I (6373903) rc_net: [CAM-PROBE] Video RX seq=150 jpeg_len=9663 crc32=0x6152469e chunks=9
+I (6373932) rc_video: Displayed 35400 frames (320x240 video at 240x180,80,0) | fps=8.78 theory_max=32.55 | Avg(ms): recv=6.6 decode=15.5 color=0.0 place=10.2 copy=6.8 overlay=11.5 dma=33.4 display=51.7 total=84.0 | JPEG=9054B
+I (6373941) rc_video: Video queue: ready=36471 queue_drop=0 stale_drop=1070
+I (6374952) rc_net: Video RX complete=36480 missing=34 last_seq=159
+I (6377413) rc_video: Displayed 35430 frames (320x240 video at 240x180,80,0) | fps=8.66 theory_max=32.55 | Avg(ms): recv=7.3 decode=15.3 color=0.0 place=10.2 copy=6.6 overlay=11.3 dma=33.5 display=51.4 total=84.2 | JPEG=9048B
+I (6377422) rc_video: Video queue: ready=36500 queue_drop=0 stale_drop=1070
+I (6377479) rc_net: [CAM-PROBE] Video RX seq=180 jpeg_len=8550 crc32=0x5510f8cc chunks=8
+I (6378590) rc_net: Video RX complete=36510 missing=34 last_seq=189
+I (6380965) rc_net: [CAM-PROBE] Video RX seq=210 jpeg_len=9069 crc32=0xa5c6dccf chunks=8
+I (6381047) rc_video: Displayed 35460 frames (320x240 video at 240x180,80,0) | fps=8.29 theory_max=32.55 | Avg(ms): recv=7.3 decode=15.5 color=0.0 place=10.3 copy=6.8 overlay=11.1 dma=33.6 display=51.5 total=84.6 | JPEG=9069B
+I (6381056) rc_video: Video queue: ready=36532 queue_drop=0 stale_drop=1071
+I (6381980) rc_net: Video RX complete=36540 missing=34 last_seq=219
+I (6384367) rc_net: [CAM-PROBE] Video RX seq=240 jpeg_len=9353 crc32=0xbb0957c6 chunks=8
+I (6384451) rc_video: Displayed 35490 frames (320x240 video at 240x180,80,0) | fps=8.85 theory_max=32.55 | Avg(ms): recv=6.5 decode=15.4 color=0.0 place=10.4 copy=6.6 overlay=11.2 dma=33.4 display=51.3 total=83.6 | JPEG=9353B
+I (6384460) rc_video: Video queue: ready=36561 queue_drop=0 stale_drop=1071
+I (6385240) rc_net: Video RX complete=36570 missing=34 last_seq=249
+I (6387537) rc_net: [CAM-PROBE] Video RX seq=270 jpeg_len=9681 crc32=0xe1d9e502 chunks=9
+I (6387808) rc_video: Displayed 35520 frames (320x240 video at 240x180,80,0) | fps=8.98 theory_max=32.55 | Avg(ms): recv=5.5 decode=15.6 color=0.0 place=10.3 copy=6.6 overlay=11.2 dma=33.4 display=51.3 total=82.7 | JPEG=9110B
+I (6387817) rc_video: Video queue: ready=36594 queue_drop=0 stale_drop=1072
+I (6388482) rc_net: Video RX complete=36600 missing=34 last_seq=279
+I (6390772) rc_net: [CAM-PROBE] Video RX seq=300 jpeg_len=9303 crc32=0x7a423e2d chunks=8
+I (6391033) rc_video: Displayed 35550 frames (320x240 video at 240x180,80,0) | fps=9.35 theory_max=32.55 | Avg(ms): recv=6.9 decode=15.4 color=0.0 place=10.3 copy=6.8 overlay=11.3 dma=33.6 display=51.7 total=84.3 | JPEG=9453B
+I (6391043) rc_video: Video queue: ready=36623 queue_drop=0 stale_drop=1073
+I (6391766) rc_net: Video RX complete=36630 missing=34 last_seq=309
+I (6394178) rc_net: [CAM-PROBE] Video RX seq=330 jpeg_len=9686 crc32=0x34708e38 chunks=9
+I (6394738) rc_video: Displayed 35580 frames (320x240 video at 240x180,80,0) | fps=8.13 theory_max=32.55 | Avg(ms): recv=6.7 decode=15.6 color=0.0 place=10.3 copy=6.8 overlay=11.2 dma=33.5 display=51.6 total=84.3 | JPEG=9334B
+I (6394747) rc_video: Video queue: ready=36655 queue_drop=0 stale_drop=1075
+I (6395285) rc_net: Video RX complete=36660 missing=34 last_seq=339
+I (6397666) rc_net: [CAM-PROBE] Video RX seq=360 jpeg_len=9223 crc32=0x4c2c5df1 chunks=8
+I (6398250) rc_video: Displayed 35610 frames (320x240 video at 240x180,80,0) | fps=8.58 theory_max=32.55 | Avg(ms): recv=6.0 decode=15.6 color=0.0 place=10.3 copy=6.6 overlay=11.3 dma=33.5 display=51.4 total=83.2 | JPEG=9371B
+I (6398259) rc_video: Video queue: ready=36686 queue_drop=0 stale_drop=1076
+I (6398692) rc_net: Video RX complete=36690 missing=34 last_seq=369
+I (6400952) rc_net: [CAM-PROBE] Video RX seq=390 jpeg_len=9055 crc32=0x8c88feea chunks=8
+I (6401539) rc_video: Displayed 35640 frames (320x240 video at 240x180,80,0) | fps=9.17 theory_max=32.55 | Avg(ms): recv=6.6 decode=15.4 color=0.0 place=10.2 copy=6.7 overlay=11.3 dma=33.5 display=51.6 total=83.8 | JPEG=9128B
+I (6401548) rc_video: Video queue: ready=36716 queue_drop=0 stale_drop=1076
+I (6401983) rc_net: Video RX complete=36720 missing=34 last_seq=399
+I (6408840) wifi:bcn_timeout,ap_probe_send_start
+I (6411342) wifi:ap_probe_send over, reset wifi status to disassoc
+I (6411343) wifi:state: run -> init (0xc800)
+I (6411343) wifi:pm stop, total sleep time: 6275180 us / 54689281 us
+
+I (6411348) wifi:<ba-del>idx:0, tid:0
+I (6411351) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+W (6411361) rc_control: Network disconnected: control TX paused
+W (6411364) rc_tank: Network disconnected
+I (6411362) rc_video: Remote WiFi icon updated: connected=0 epoch=56
+W (6411361) rc_net: Tank AP disconnected; retry saved AP first
+I (6411380) rc_net: Connecting to tank AP, attempt 1/3
+I (6418797) rc_net: Connecting to tank AP, attempt 2/3
+I (6426210) rc_net: Connecting to tank AP, attempt 3/3
+W (6428623) rc_net: Direct reconnect attempts exhausted; return to AP scan
+I (6433724) rc_net: Scanning for RC_TANK_* APs...
+W (6436226) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6441326) rc_net: Scanning for RC_TANK_* APs...
+W (6443828) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6448928) rc_net: Scanning for RC_TANK_* APs...
+W (6451430) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6456530) rc_net: Scanning for RC_TANK_* APs...
+W (6459032) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6464132) rc_net: Scanning for RC_TANK_* APs...
+W (6466634) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6471734) rc_net: Scanning for RC_TANK_* APs...
+W (6474236) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6479336) rc_net: Scanning for RC_TANK_* APs...
+W (6481838) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6486938) rc_net: Scanning for RC_TANK_* APs...
+W (6489440) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6494540) rc_net: Scanning for RC_TANK_* APs...
+W (6497042) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6502142) rc_net: Scanning for RC_TANK_* APs...
+W (6504644) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6509744) rc_net: Scanning for RC_TANK_* APs...
+W (6512246) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6517346) rc_net: Scanning for RC_TANK_* APs...
+W (6519848) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6524948) rc_net: Scanning for RC_TANK_* APs...
+W (6527450) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6532550) rc_net: Scanning for RC_TANK_* APs...
+W (6535052) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6540152) rc_net: Scanning for RC_TANK_* APs...
+W (6542654) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6547754) rc_net: Scanning for RC_TANK_* APs...
+W (6550256) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6555356) rc_net: Scanning for RC_TANK_* APs...
+W (6557858) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6562958) rc_net: Scanning for RC_TANK_* APs...
+W (6565460) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6570560) rc_net: Scanning for RC_TANK_* APs...
+W (6573062) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6578162) rc_net: Scanning for RC_TANK_* APs...
+W (6580664) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6585764) rc_net: Scanning for RC_TANK_* APs...
+W (6588266) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6593366) rc_net: Scanning for RC_TANK_* APs...
+
+[HOST-DVP-MATRIX 12:28:02] SYNC-R1-RESUME capture begin
+I (6631376) rc_net: Scanning for RC_TANK_* APs...
+W (6633878) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6638978) rc_net: Scanning for RC_TANK_* APs...
+W (6641480) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6646580) rc_net: Scanning for RC_TANK_* APs...
+I (6649082) rc_net: Found tank AP: RC_TANK_F3AE79, RSSI: -27
+I (6649083) rc_net: Connecting to tank AP, attempt 1/3
+I (6649099) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (6649100) wifi:state: init -> auth (0xb0)
+I (6649104) wifi:state: auth -> assoc (0x0)
+I (6649118) wifi:state: assoc -> run (0x10)
+I (6649145) wifi:connected with RC_TANK_F3AE79, aid = 1, channel 1, 40U, bssid = 44:1b:f6:f3:ae:79
+I (6649146) wifi:security: WPA2-PSK, phy: bgn, rssi: -27, cipher(pairwise:0x3, group:0x3), pmf:1
+I (6649152) wifi:pm start, type: 1
+
+I (6649155) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (6649229) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+
+[HOST-DVP-MATRIX 12:28:23] SYNC-R1-RESUME stage=3 visible window begin
+I (6650201) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1
+I (6650201) rc_net: Got IP: 192.168.4.2
+I (6650202) rc_net: Connected to tank AP; waiting for disconnect
+I (6650204) rc_video: Remote WiFi icon updated: connected=1 epoch=57
+I (6650202) rc_control: Network connected: waiting for joystick release before motion
+I (6650220) rc_control: Joystick released: motion control re-armed
+I (6650221) rc_tank: Network connected, peer: 192.168.4.1
+W (6650232) rc_tank: Channels already started, skip re-init
+I (6650251) wifi:<ba-add>idx:0 (ifx:0, 44:1b:f6:f3:ae:79), tid:0, ssn:0, winSize:64
+I (6652108) rc_video: Displayed 35670 frames (320x240 video at 240x180,80,0) | fps=0.12 theory_max=32.55 | Avg(ms): recv=5.2 decode=15.3 color=0.0 place=10.3 copy=6.8 overlay=11.1 dma=33.7 display=51.7 total=82.6 | JPEG=8517B
+I (6652117) rc_video: Video queue: ready=36748 queue_drop=0 stale_drop=1077
+I (6652159) rc_net: [CAM-PROBE] Video RX seq=30 jpeg_len=8531 crc32=0xf8393e10 chunks=8
+I (6652268) rc_net: Video RX complete=36750 missing=34 last_seq=31
+I (6654854) rc_video: Displayed 35700 frames (320x240 video at 240x180,80,0) | fps=10.99 theory_max=32.55 | Avg(ms): recv=3.7 decode=15.3 color=0.0 place=10.3 copy=6.7 overlay=11.1 dma=33.7 display=51.5 total=81.0 | JPEG=9237B
+I (6654863) rc_video: Video queue: ready=36777 queue_drop=0 stale_drop=1077
+I (6654921) rc_net: [CAM-PROBE] Video RX seq=60 jpeg_len=8698 crc32=0xcda3dcfe chunks=8
+I (6655064) rc_net: Video RX complete=36780 missing=34 last_seq=61
+I (6657595) rc_video: Displayed 35730 frames (320x240 video at 240x180,80,0) | fps=11.01 theory_max=32.55 | Avg(ms): recv=5.8 decode=15.2 color=0.0 place=10.3 copy=6.7 overlay=11.3 dma=33.4 display=51.5 total=82.8 | JPEG=8633B
+I (6657604) rc_video: Video queue: ready=36808 queue_drop=0 stale_drop=1077
+I (6657640) rc_net: [CAM-PROBE] Video RX seq=90 jpeg_len=8667 crc32=0xdb3f8411 chunks=8
+I (6657776) rc_net: Video RX complete=36810 missing=34 last_seq=91
+I (6660458) rc_net: [CAM-PROBE] Video RX seq=120 jpeg_len=9170 crc32=0xd1904243 chunks=8
+I (6660503) rc_net: Video RX complete=36840 missing=34 last_seq=121
+I (6660542) rc_video: Displayed 35760 frames (320x240 video at 240x180,80,0) | fps=10.24 theory_max=32.55 | Avg(ms): recv=5.7 decode=15.3 color=0.0 place=10.4 copy=6.8 overlay=11.1 dma=33.6 display=51.5 total=83.0 | JPEG=9170B
+I (6660551) rc_video: Video queue: ready=36840 queue_drop=0 stale_drop=1079
+I (6663160) rc_net: [CAM-PROBE] Video RX seq=150 jpeg_len=8611 crc32=0xf63bc820 chunks=8
+I (6663275) rc_net: Video RX complete=36870 missing=34 last_seq=151
+I (6663602) rc_video: Displayed 35790 frames (320x240 video at 240x180,80,0) | fps=9.86 theory_max=32.55 | Avg(ms): recv=3.5 decode=15.7 color=0.0 place=10.4 copy=6.7 overlay=11.1 dma=34.0 display=51.8 total=81.4 | JPEG=8455B
+I (6663611) rc_video: Video queue: ready=36873 queue_drop=0 stale_drop=1083
+I (6665884) rc_net: [CAM-PROBE] Video RX seq=180 jpeg_len=8552 crc32=0x4d41f3c6 chunks=8
+I (6665970) rc_net: Video RX complete=36900 missing=34 last_seq=181
+I (6666429) rc_video: Displayed 35820 frames (320x240 video at 240x180,80,0) | fps=10.67 theory_max=32.55 | Avg(ms): recv=4.5 decode=15.2 color=0.0 place=10.3 copy=6.7 overlay=11.2 dma=33.6 display=51.6 total=81.7 | JPEG=8643B
+I (6666438) rc_video: Video queue: ready=36904 queue_drop=0 stale_drop=1084
+I (6668612) rc_net: [CAM-PROBE] Video RX seq=210 jpeg_len=9033 crc32=0xfde95236 chunks=8
+I (6668647) rc_net: Video RX complete=36930 missing=34 last_seq=211
+I (6669615) rc_video: Displayed 35850 frames (320x240 video at 240x180,80,0) | fps=9.46 theory_max=32.55 | Avg(ms): recv=4.9 decode=15.2 color=0.0 place=10.4 copy=6.8 overlay=11.2 dma=33.7 display=51.7 total=82.3 | JPEG=9084B
+I (6669624) rc_video: Video queue: ready=36939 queue_drop=0 stale_drop=1088
+I (6671353) rc_net: [CAM-PROBE] Video RX seq=240 jpeg_len=8598 crc32=0x7db9badf chunks=8
+I (6671393) rc_net: Video RX complete=36960 missing=34 last_seq=241
+I (6672580) rc_video: Displayed 35880 frames (320x240 video at 240x180,80,0) | fps=10.17 theory_max=32.55 | Avg(ms): recv=3.6 decode=15.6 color=0.0 place=10.3 copy=6.6 overlay=11.1 dma=33.6 display=51.4 total=81.0 | JPEG=9160B
+I (6672589) rc_video: Video queue: ready=36972 queue_drop=0 stale_drop=1092
+I (6674014) rc_net: [CAM-PROBE] Video RX seq=270 jpeg_len=8687 crc32=0xc6d78b7e chunks=8
+I (6674069) rc_net: Video RX complete=36990 missing=34 last_seq=271
+I (6675443) rc_video: Displayed 35910 frames (320x240 video at 240x180,80,0) | fps=10.54 theory_max=32.55 | Avg(ms): recv=6.6 decode=15.2 color=0.0 place=10.2 copy=6.7 overlay=11.3 dma=33.6 display=51.6 total=83.6 | JPEG=9186B
+I (6675452) rc_video: Video queue: ready=37003 queue_drop=0 stale_drop=1093
+I (6676864) rc_net: [CAM-PROBE] Video RX seq=300 jpeg_len=8657 crc32=0x8d7e374f chunks=8
+I (6676940) rc_net: Video RX complete=37020 missing=34 last_seq=301
+I (6678529) rc_video: Displayed 35940 frames (320x240 video at 240x180,80,0) | fps=9.77 theory_max=32.55 | Avg(ms): recv=5.8 decode=15.3 color=0.0 place=10.4 copy=6.6 overlay=11.2 dma=33.5 display=51.3 total=83.0 | JPEG=8558B
+I (6678538) rc_video: Video queue: ready=37037 queue_drop=0 stale_drop=1097
+I (6679556) rc_net: [CAM-PROBE] Video RX seq=330 jpeg_len=9056 crc32=0x353c0c9e chunks=8
+I (6679612) rc_net: Video RX complete=37050 missing=34 last_seq=331
+I (6681598) rc_video: Displayed 35970 frames (320x240 video at 240x180,80,0) | fps=9.83 theory_max=32.55 | Avg(ms): recv=6.1 decode=15.2 color=0.0 place=10.5 copy=6.7 overlay=11.2 dma=33.3 display=51.3 total=83.1 | JPEG=9235B
+I (6681607) rc_video: Video queue: ready=37070 queue_drop=0 stale_drop=1099
+I (6682325) rc_net: [CAM-PROBE] Video RX seq=360 jpeg_len=8624 crc32=0xec452506 chunks=8
+I (6682395) rc_net: Video RX complete=37080 missing=34 last_seq=361
+I (6684612) rc_video: Displayed 36000 frames (320x240 video at 240x180,80,0) | fps=10.01 theory_max=32.55 | Avg(ms): recv=3.3 decode=15.5 color=0.0 place=10.3 copy=6.8 overlay=11.1 dma=33.6 display=51.5 total=80.6 | JPEG=9122B
+I (6684621) rc_video: Video queue: ready=37104 queue_drop=0 stale_drop=1102
+I (6685096) rc_net: [CAM-PROBE] Video RX seq=390 jpeg_len=8631 crc32=0xe07d61ab chunks=8
+I (6685148) rc_net: Video RX complete=37110 missing=34 last_seq=391
+I (6687526) rc_video: Displayed 36030 frames (320x240 video at 240x180,80,0) | fps=10.35 theory_max=32.55 | Avg(ms): recv=6.6 decode=15.4 color=0.0 place=10.3 copy=6.9 overlay=11.2 dma=33.4 display=51.5 total=83.9 | JPEG=8716B
+I (6687535) rc_video: Video queue: ready=37135 queue_drop=0 stale_drop=1104
+I (6687909) rc_net: [CAM-PROBE] Video RX seq=420 jpeg_len=9193 crc32=0xc933671d chunks=8
+I (6687978) rc_net: Video RX complete=37140 missing=34 last_seq=421
+I (6690304) rc_video: Displayed 36060 frames (320x240 video at 240x180,80,0) | fps=10.86 theory_max=32.55 | Avg(ms): recv=4.6 decode=15.3 color=0.0 place=10.4 copy=6.9 overlay=11.1 dma=33.5 display=51.6 total=82.0 | JPEG=8652B
+I (6690313) rc_video: Video queue: ready=37164 queue_drop=0 stale_drop=1104
+I (6690669) rc_net: [CAM-PROBE] Video RX seq=450 jpeg_len=8615 crc32=0xbf425a2c chunks=8
+I (6690802) rc_net: Video RX complete=37170 missing=34 last_seq=451
+I (6693129) rc_video: Displayed 36090 frames (320x240 video at 240x180,80,0) | fps=10.68 theory_max=32.55 | Avg(ms): recv=5.1 decode=15.3 color=0.0 place=10.3 copy=6.8 overlay=11.1 dma=33.5 display=51.5 total=82.3 | JPEG=8972B
+I (6693138) rc_video: Video queue: ready=37195 queue_drop=0 stale_drop=1105
+I (6693472) rc_net: [CAM-PROBE] Video RX seq=480 jpeg_len=8696 crc32=0x45a4b93b chunks=8
+I (6693496) rc_net: Video RX complete=37200 missing=34 last_seq=481
+
+[HOST-DVP-MATRIX 12:29:10] SYNC-R1-RESUME Tank restart recovery=2
+I (6701371) wifi:bcn_timeout,ap_probe_send_start
+I (6703873) wifi:ap_probe_send over, reset wifi status to disassoc
+I (6703873) wifi:state: run -> init (0xc800)
+I (6703874) wifi:pm stop, total sleep time: 5943997 us / 54718996 us
+
+I (6703879) wifi:<ba-del>idx:0, tid:0
+I (6703882) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+W (6703892) rc_net: Tank AP disconnected; retry saved AP first
+W (6703892) rc_control: Network disconnected: control TX paused
+I (6703895) rc_net: Connecting to tank AP, attempt 1/3
+W (6703901) rc_tank: Network disconnected
+I (6703911) rc_video: Remote WiFi icon updated: connected=0 epoch=58
+I (6711318) rc_net: Connecting to tank AP, attempt 2/3
+I (6718731) rc_net: Connecting to tank AP, attempt 3/3
+I (6718755) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (6718756) wifi:state: init -> auth (0xb0)
+I (6718757) wifi:state: auth -> init (0x3c0)
+I (6718760) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+W (6718769) rc_net: Direct reconnect attempts exhausted; return to AP scan
+I (6723874) rc_net: Scanning for RC_TANK_* APs...
+I (6726376) rc_net: Found tank AP: RC_TANK_F3AE79, RSSI: -27
+I (6726377) rc_net: Connecting to tank AP, attempt 1/3
+I (6726393) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (6726394) wifi:state: init -> auth (0xb0)
+I (6726399) wifi:state: auth -> assoc (0x0)
+I (6726415) wifi:state: assoc -> run (0x10)
+I (6726437) wifi:connected with RC_TANK_F3AE79, aid = 1, channel 1, 40U, bssid = 44:1b:f6:f3:ae:79
+I (6726438) wifi:security: WPA2-PSK, phy: bgn, rssi: -28, cipher(pairwise:0x3, group:0x3), pmf:1
+I (6726444) wifi:pm start, type: 1
+
+I (6726447) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (6726484) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+
+[HOST-DVP-MATRIX 12:29:41] SYNC-R1-RESUME stage=4 visible window begin
+I (6727487) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1
+I (6727487) rc_net: Got IP: 192.168.4.2
+I (6727488) rc_net: Connected to tank AP; waiting for disconnect
+I (6727490) rc_control: Joystick released: motion control re-armed
+I (6727496) rc_video: Remote WiFi icon updated: connected=1 epoch=59
+I (6727488) rc_control: Network connected: waiting for joystick release before motion
+I (6727513) rc_tank: Network connected, peer: 192.168.4.1
+W (6727518) rc_tank: Channels already started, skip re-init
+I (6727515) wifi:<ba-add>idx:0 (ifx:0, 44:1b:f6:f3:ae:79), tid:0, ssn:0, winSize:64
+I (6728260) rc_video: Displayed 36120 frames (320x240 video at 240x180,80,0) | fps=0.85 theory_max=32.55 | Avg(ms): recv=6.1 decode=15.3 color=0.0 place=10.5 copy=6.6 overlay=11.0 dma=33.5 display=51.2 total=83.1 | JPEG=9149B
+I (6728269) rc_video: Video queue: ready=37226 queue_drop=0 stale_drop=1106
+I (6728707) rc_net: Video RX complete=37230 missing=34 last_seq=18
+I (6730110) rc_net: [CAM-PROBE] Video RX seq=30 jpeg_len=9130 crc32=0x8de29b5f chunks=8
+I (6731789) rc_video: Displayed 36150 frames (320x240 video at 240x180,80,0) | fps=8.54 theory_max=32.55 | Avg(ms): recv=5.0 decode=15.5 color=0.0 place=10.3 copy=6.7 overlay=11.2 dma=33.6 display=51.6 total=82.5 | JPEG=9885B
+I (6731798) rc_video: Video queue: ready=37257 queue_drop=0 stale_drop=1107
+I (6732064) rc_net: Video RX complete=37260 missing=34 last_seq=48
+I (6733448) rc_net: [CAM-PROBE] Video RX seq=60 jpeg_len=9459 crc32=0xb351503a chunks=8
+I (6735460) rc_net: Video RX complete=37290 missing=34 last_seq=78
+I (6735463) rc_video: Displayed 36180 frames (320x240 video at 240x180,80,0) | fps=8.20 theory_max=32.55 | Avg(ms): recv=6.0 decode=15.5 color=0.0 place=10.2 copy=6.7 overlay=11.2 dma=33.5 display=51.4 total=83.3 | JPEG=9468B
+I (6735474) rc_video: Video queue: ready=37290 queue_drop=0 stale_drop=1109
+I (6736945) rc_net: [CAM-PROBE] Video RX seq=90 jpeg_len=9144 crc32=0xf588222d chunks=8
+I (6738867) rc_net: Video RX complete=37320 missing=34 last_seq=108
+I (6739233) rc_video: Displayed 36210 frames (320x240 video at 240x180,80,0) | fps=8.00 theory_max=32.55 | Avg(ms): recv=7.5 decode=15.5 color=0.0 place=10.3 copy=6.8 overlay=11.3 dma=33.5 display=51.8 total=85.0 | JPEG=9155B
+I (6739242) rc_video: Video queue: ready=37323 queue_drop=0 stale_drop=1112
+I (6740259) rc_net: [CAM-PROBE] Video RX seq=120 jpeg_len=9513 crc32=0xadde50ec chunks=8
+I (6742212) rc_net: Video RX complete=37350 missing=34 last_seq=138
+I (6742593) rc_video: Displayed 36240 frames (320x240 video at 240x180,80,0) | fps=8.97 theory_max=32.55 | Avg(ms): recv=5.4 decode=15.5 color=0.0 place=10.2 copy=6.8 overlay=11.2 dma=33.6 display=51.6 total=82.8 | JPEG=9654B
+I (6742602) rc_video: Video queue: ready=37353 queue_drop=0 stale_drop=1113
+I (6743660) rc_net: [CAM-PROBE] Video RX seq=150 jpeg_len=9139 crc32=0x5be21834 chunks=8
+I (6745496) rc_net: Video RX complete=37380 missing=34 last_seq=168
+I (6746318) rc_video: Displayed 36270 frames (320x240 video at 240x180,80,0) | fps=8.09 theory_max=32.55 | Avg(ms): recv=7.5 decode=15.5 color=0.0 place=10.3 copy=6.6 overlay=11.3 dma=33.6 display=51.6 total=85.0 | JPEG=9392B
+I (6746327) rc_video: Video queue: ready=37387 queue_drop=0 stale_drop=1116
+I (6746830) rc_net: [CAM-PROBE] Video RX seq=180 jpeg_len=9189 crc32=0x5518482c chunks=8
+I (6748822) rc_net: Video RX complete=37410 missing=34 last_seq=198
+I (6749611) rc_video: Displayed 36300 frames (320x240 video at 240x180,80,0) | fps=9.15 theory_max=32.55 | Avg(ms): recv=6.9 decode=15.4 color=0.0 place=10.2 copy=6.7 overlay=11.1 dma=33.4 display=51.3 total=83.9 | JPEG=9434B
+I (6749620) rc_video: Video queue: ready=37416 queue_drop=0 stale_drop=1116
+I (6750262) rc_net: [CAM-PROBE] Video RX seq=210 jpeg_len=9406 crc32=0x57254b94 chunks=8
+I (6752324) rc_net: Video RX complete=37440 missing=34 last_seq=228
+I (6753040) rc_video: Displayed 36330 frames (320x240 video at 240x180,80,0) | fps=8.79 theory_max=32.55 | Avg(ms): recv=7.3 decode=15.4 color=0.0 place=10.2 copy=6.8 overlay=11.1 dma=33.5 display=51.5 total=84.4 | JPEG=9165B
+I (6753049) rc_video: Video queue: ready=37446 queue_drop=0 stale_drop=1116
+I (6753824) rc_net: [CAM-PROBE] Video RX seq=240 jpeg_len=9174 crc32=0x83fba2ec chunks=8
+I (6755594) rc_net: Video RX complete=37470 missing=34 last_seq=258
+I (6756627) rc_video: Displayed 36360 frames (320x240 video at 240x180,80,0) | fps=8.40 theory_max=32.55 | Avg(ms): recv=4.0 decode=15.5 color=0.0 place=10.4 copy=6.6 overlay=11.4 dma=33.6 display=51.7 total=81.7 | JPEG=9406B
+I (6756636) rc_video: Video queue: ready=37478 queue_drop=0 stale_drop=1118
+I (6757020) rc_net: [CAM-PROBE] Video RX seq=270 jpeg_len=9632 crc32=0x80d03761 chunks=9
+I (6759126) rc_net: Video RX complete=37500 missing=34 last_seq=288
+I (6760235) rc_video: Displayed 36390 frames (320x240 video at 240x180,80,0) | fps=8.35 theory_max=32.55 | Avg(ms): recv=7.2 decode=15.4 color=0.0 place=10.1 copy=6.8 overlay=11.3 dma=33.5 display=51.6 total=84.4 | JPEG=9163B
+I (6760244) rc_video: Video queue: ready=37509 queue_drop=0 stale_drop=1119
+I (6760504) rc_net: [CAM-PROBE] Video RX seq=300 jpeg_len=9230 crc32=0x893571cf chunks=8
+I (6762542) rc_net: Video RX complete=37530 missing=34 last_seq=318
+I (6763922) rc_video: Displayed 36420 frames (320x240 video at 240x180,80,0) | fps=8.17 theory_max=32.55 | Avg(ms): recv=6.8 decode=15.6 color=0.0 place=10.2 copy=6.7 overlay=11.3 dma=33.7 display=51.8 total=84.4 | JPEG=9153B
+I (6763931) rc_video: Video queue: ready=37540 queue_drop=0 stale_drop=1120
+I (6764028) rc_net: [CAM-PROBE] Video RX seq=330 jpeg_len=9155 crc32=0xf6a27725 chunks=8
+I (6766262) rc_net: Video RX complete=37560 missing=34 last_seq=348
+I (6767441) rc_video: Displayed 36450 frames (320x240 video at 240x180,80,0) | fps=8.56 theory_max=32.55 | Avg(ms): recv=5.2 decode=15.6 color=0.0 place=10.3 copy=6.7 overlay=11.4 dma=33.5 display=51.7 total=82.8 | JPEG=9626B
+I (6767450) rc_video: Video queue: ready=37571 queue_drop=0 stale_drop=1121
+I (6767572) rc_net: [CAM-PROBE] Video RX seq=360 jpeg_len=9152 crc32=0x351e43c5 chunks=8
+I (6769374) rc_net: Video RX complete=37590 missing=34 last_seq=378
+I (6770799) rc_net: [CAM-PROBE] Video RX seq=390 jpeg_len=9360 crc32=0xa403056d chunks=8
+I (6770910) rc_video: Displayed 36480 frames (320x240 video at 240x180,80,0) | fps=8.69 theory_max=32.55 | Avg(ms): recv=7.9 decode=15.6 color=0.0 place=10.3 copy=6.7 overlay=11.2 dma=33.3 display=51.3 total=85.1 | JPEG=9360B
+I (6770919) rc_video: Video queue: ready=37602 queue_drop=0 stale_drop=1122
+
+[HOST-DVP-MATRIX 12:30:28] SYNC-R1-RESUME Tank restart recovery=3
+I (6778731) wifi:bcn_timeout,ap_probe_send_start
+I (6781233) wifi:ap_probe_send over, reset wifi status to disassoc
+I (6781234) wifi:state: run -> init (0xc800)
+I (6781234) wifi:pm stop, total sleep time: 5979949 us / 54787078 us
+
+I (6781239) wifi:<ba-del>idx:0, tid:0
+I (6781242) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+W (6781252) rc_net: Tank AP disconnected; retry saved AP first
+W (6781252) rc_control: Network disconnected: control TX paused
+I (6781255) rc_net: Connecting to tank AP, attempt 1/3
+W (6781261) rc_tank: Network disconnected
+I (6781271) rc_video: Remote WiFi icon updated: connected=0 epoch=60
+I (6788678) rc_net: Connecting to tank AP, attempt 2/3
+I (6796091) rc_net: Connecting to tank AP, attempt 3/3
+I (6796101) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (6796102) wifi:state: init -> auth (0xb0)
+I (6796109) wifi:state: auth -> assoc (0x0)
+I (6796126) wifi:state: assoc -> run (0x10)
+I (6796155) wifi:connected with RC_TANK_F3AE79, aid = 1, channel 1, 40U, bssid = 44:1b:f6:f3:ae:79
+I (6796156) wifi:security: WPA2-PSK, phy: bgn, rssi: -27, cipher(pairwise:0x3, group:0x3), pmf:1
+I (6796162) wifi:pm start, type: 1
+
+I (6796165) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (6796234) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+
+[HOST-DVP-MATRIX 12:30:50] SYNC-R1-RESUME stage=5 visible window begin
+I (6797230) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1
+I (6797231) rc_net: Got IP: 192.168.4.2
+I (6797231) rc_net: Connected to tank AP; waiting for disconnect
+I (6797234) rc_video: Remote WiFi icon updated: connected=1 epoch=61
+I (6797231) rc_control: Network connected: waiting for joystick release before motion
+I (6797249) rc_control: Joystick released: motion control re-armed
+I (6797250) rc_tank: Network connected, peer: 192.168.4.1
+W (6797261) rc_tank: Channels already started, skip re-init
+I (6797275) wifi:<ba-add>idx:0 (ifx:0, 44:1b:f6:f3:ae:79), tid:0, ssn:0, winSize:64
+I (6797411) rc_net: Video RX complete=37620 missing=34 last_seq=11
+I (6798827) rc_video: Displayed 36510 frames (320x240 video at 240x180,80,0) | fps=1.08 theory_max=32.55 | Avg(ms): recv=4.7 decode=15.6 color=0.0 place=10.3 copy=6.7 overlay=11.3 dma=33.5 display=51.5 total=82.1 | JPEG=8744B
+I (6798836) rc_video: Video queue: ready=37634 queue_drop=0 stale_drop=1124
+I (6799218) rc_net: [CAM-PROBE] Video RX seq=30 jpeg_len=9222 crc32=0x1a26acc6 chunks=8
+I (6800313) rc_net: Video RX complete=37650 missing=34 last_seq=41
+I (6801653) rc_video: Displayed 36540 frames (320x240 video at 240x180,80,0) | fps=10.68 theory_max=32.55 | Avg(ms): recv=4.3 decode=15.3 color=0.0 place=10.4 copy=6.7 overlay=11.3 dma=33.5 display=51.6 total=81.6 | JPEG=9297B
+I (6801662) rc_video: Video queue: ready=37665 queue_drop=0 stale_drop=1125
+I (6801979) rc_net: [CAM-PROBE] Video RX seq=60 jpeg_len=8740 crc32=0xd80ac45a chunks=8
+I (6802960) rc_net: Video RX complete=37680 missing=34 last_seq=71
+I (6804584) rc_video: Displayed 36570 frames (320x240 video at 240x180,80,0) | fps=10.29 theory_max=32.55 | Avg(ms): recv=4.6 decode=15.5 color=0.0 place=10.4 copy=6.8 overlay=11.2 dma=33.3 display=51.3 total=81.8 | JPEG=9190B
+I (6804593) rc_video: Video queue: ready=37698 queue_drop=0 stale_drop=1126
+I (6804702) rc_net: [CAM-PROBE] Video RX seq=90 jpeg_len=9203 crc32=0xb8f40b08 chunks=8
+I (6805707) rc_net: Video RX complete=37710 missing=34 last_seq=101
+I (6807538) rc_net: [CAM-PROBE] Video RX seq=120 jpeg_len=9229 crc32=0x3d860679 chunks=8
+I (6807622) rc_video: Displayed 36600 frames (320x240 video at 240x180,80,0) | fps=9.93 theory_max=32.55 | Avg(ms): recv=3.3 decode=15.4 color=0.0 place=10.4 copy=6.6 overlay=11.3 dma=33.6 display=51.5 total=80.7 | JPEG=9229B
+I (6807631) rc_video: Video queue: ready=37730 queue_drop=0 stale_drop=1129
+I (6808632) rc_net: Video RX complete=37740 missing=34 last_seq=131
+I (6810283) rc_net: [CAM-PROBE] Video RX seq=150 jpeg_len=8714 crc32=0x606bf516 chunks=8
+I (6810698) rc_video: Displayed 36630 frames (320x240 video at 240x180,80,0) | fps=9.80 theory_max=32.55 | Avg(ms): recv=4.6 decode=15.4 color=0.0 place=10.3 copy=6.6 overlay=11.1 dma=33.7 display=51.5 total=82.0 | JPEG=8729B
+I (6810707) rc_video: Video queue: ready=37764 queue_drop=0 stale_drop=1133
+I (6811274) rc_net: Video RX complete=37770 missing=34 last_seq=161
+I (6813006) rc_net: [CAM-PROBE] Video RX seq=180 jpeg_len=8629 crc32=0x49c5583e chunks=8
+I (6813631) rc_video: Displayed 36660 frames (320x240 video at 240x180,80,0) | fps=10.28 theory_max=32.55 | Avg(ms): recv=5.9 decode=15.3 color=0.0 place=10.3 copy=6.6 overlay=11.2 dma=33.6 display=51.5 total=83.2 | JPEG=8634B
+I (6813640) rc_video: Video queue: ready=37795 queue_drop=0 stale_drop=1135
+I (6814015) rc_net: Video RX complete=37800 missing=34 last_seq=191
+I (6815724) rc_net: [CAM-PROBE] Video RX seq=210 jpeg_len=9200 crc32=0x1b6f26c5 chunks=8
+I (6816553) rc_video: Displayed 36690 frames (320x240 video at 240x180,80,0) | fps=10.32 theory_max=32.55 | Avg(ms): recv=3.5 decode=15.4 color=0.0 place=10.4 copy=6.8 overlay=11.1 dma=33.6 display=51.5 total=80.9 | JPEG=9299B
+I (6816562) rc_video: Video queue: ready=37827 queue_drop=0 stale_drop=1137
+I (6816768) rc_net: Video RX complete=37830 missing=34 last_seq=221
+I (6818511) rc_net: [CAM-PROBE] Video RX seq=240 jpeg_len=8644 crc32=0xf2dd2c13 chunks=8
+I (6819519) rc_net: Video RX complete=37860 missing=34 last_seq=251
+I (6819598) rc_video: Displayed 36720 frames (320x240 video at 240x180,80,0) | fps=9.90 theory_max=32.55 | Avg(ms): recv=5.2 decode=15.1 color=0.0 place=10.3 copy=6.9 overlay=11.3 dma=33.4 display=51.7 total=82.3 | JPEG=9155B
+I (6819607) rc_video: Video queue: ready=37861 queue_drop=0 stale_drop=1140
+I (6821255) rc_net: [CAM-PROBE] Video RX seq=270 jpeg_len=8563 crc32=0xb2285dc1 chunks=8
+I (6822287) rc_net: Video RX complete=37890 missing=34 last_seq=281
+I (6822464) rc_video: Displayed 36750 frames (320x240 video at 240x180,80,0) | fps=10.53 theory_max=32.55 | Avg(ms): recv=4.3 decode=15.5 color=0.0 place=10.4 copy=6.7 overlay=11.2 dma=33.6 display=51.5 total=81.7 | JPEG=8552B
+I (6822473) rc_video: Video queue: ready=37891 queue_drop=0 stale_drop=1141
+I (6824041) rc_net: [CAM-PROBE] Video RX seq=300 jpeg_len=8605 crc32=0x3442ac08 chunks=8
+I (6825174) rc_net: Video RX complete=37920 missing=34 last_seq=311
+I (6825637) rc_video: Displayed 36780 frames (320x240 video at 240x180,80,0) | fps=9.50 theory_max=32.55 | Avg(ms): recv=3.8 decode=15.5 color=0.0 place=10.5 copy=6.9 overlay=11.0 dma=33.4 display=51.4 total=81.2 | JPEG=8460B
+I (6825646) rc_video: Video queue: ready=37926 queue_drop=0 stale_drop=1145
+I (6826696) rc_net: [CAM-PROBE] Video RX seq=330 jpeg_len=8238 crc32=0x554cc999 chunks=7
+I (6827736) rc_net: Video RX complete=37950 missing=34 last_seq=341
+I (6828485) rc_video: Displayed 36810 frames (320x240 video at 240x180,80,0) | fps=10.59 theory_max=32.55 | Avg(ms): recv=5.3 decode=15.2 color=0.0 place=10.2 copy=6.8 overlay=11.1 dma=33.6 display=51.6 total=82.4 | JPEG=8286B
+I (6828494) rc_video: Video queue: ready=37958 queue_drop=0 stale_drop=1148
+I (6829444) rc_net: [CAM-PROBE] Video RX seq=360 jpeg_len=8217 crc32=0x796bd731 chunks=7
+I (6830510) rc_net: Video RX complete=37980 missing=34 last_seq=371
+I (6831297) rc_video: Displayed 36840 frames (320x240 video at 240x180,80,0) | fps=10.73 theory_max=32.55 | Avg(ms): recv=4.1 decode=15.0 color=0.0 place=10.4 copy=6.7 overlay=11.2 dma=33.6 display=51.6 total=81.2 | JPEG=8332B
+I (6831306) rc_video: Video queue: ready=37989 queue_drop=0 stale_drop=1148
+I (6832134) rc_net: [CAM-PROBE] Video RX seq=390 jpeg_len=8312 crc32=0x71e54ea9 chunks=7
+I (6833161) rc_net: Video RX complete=38010 missing=34 last_seq=401
+I (6834074) rc_video: Displayed 36870 frames (320x240 video at 240x180,80,0) | fps=10.87 theory_max=32.55 | Avg(ms): recv=4.4 decode=15.0 color=0.0 place=10.5 copy=6.7 overlay=11.2 dma=33.5 display=51.4 total=81.3 | JPEG=8288B
+I (6834083) rc_video: Video queue: ready=38020 queue_drop=0 stale_drop=1149
+I (6834815) rc_net: [CAM-PROBE] Video RX seq=420 jpeg_len=8291 crc32=0xb60ee8ac chunks=7
+I (6835949) rc_net: Video RX complete=38040 missing=34 last_seq=431
+I (6836882) rc_video: Displayed 36900 frames (320x240 video at 240x180,80,0) | fps=10.75 theory_max=32.55 | Avg(ms): recv=5.3 decode=15.1 color=0.0 place=10.4 copy=6.7 overlay=11.2 dma=33.5 display=51.6 total=82.4 | JPEG=8999B
+I (6836891) rc_video: Video queue: ready=38050 queue_drop=0 stale_drop=1150
+I (6837699) rc_net: [CAM-PROBE] Video RX seq=450 jpeg_len=8584 crc32=0xf0a0c3b5 chunks=8
+I (6838639) rc_net: Video RX complete=38070 missing=34 last_seq=461
+I (6839982) rc_video: Displayed 36930 frames (320x240 video at 240x180,80,0) | fps=9.73 theory_max=32.55 | Avg(ms): recv=6.5 decode=15.3 color=0.0 place=10.3 copy=6.7 overlay=11.1 dma=33.4 display=51.3 total=83.4 | JPEG=8980B
+I (6839991) rc_video: Video queue: ready=38084 queue_drop=0 stale_drop=1154
+I (6840330) rc_net: [CAM-PROBE] Video RX seq=480 jpeg_len=8487 crc32=0x99ae3551 chunks=8
+I (6841358) rc_net: Video RX complete=38100 missing=34 last_seq=491
+
+[HOST-DVP-MATRIX 12:31:37] SYNC-R1-RESUME Tank restart recovery=4
+I (6848350) wifi:bcn_timeout,ap_probe_send_start
+I (6850853) wifi:ap_probe_send over, reset wifi status to disassoc
+I (6850853) wifi:state: run -> init (0xc800)
+I (6850853) wifi:pm stop, total sleep time: 7041376 us / 54688596 us
+
+I (6850858) wifi:<ba-del>idx:0, tid:0
+I (6850861) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+W (6850871) rc_net: Tank AP disconnected; retry saved AP first
+W (6850871) rc_control: Network disconnected: control TX paused
+I (6850875) rc_net: Connecting to tank AP, attempt 1/3
+W (6850880) rc_tank: Network disconnected
+I (6850891) rc_video: Remote WiFi icon updated: connected=0 epoch=62
+I (6858298) rc_net: Connecting to tank AP, attempt 2/3
+I (6865710) rc_net: Connecting to tank AP, attempt 3/3
+W (6868123) rc_net: Direct reconnect attempts exhausted; return to AP scan
+I (6873224) rc_net: Scanning for RC_TANK_* APs...
+W (6875726) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (6880826) rc_net: Scanning for RC_TANK_* APs...
+I (6883328) rc_net: Found tank AP: RC_TANK_F3AE79, RSSI: -27
+I (6883329) rc_net: Connecting to tank AP, attempt 1/3
+I (6883335) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (6883336) wifi:state: init -> auth (0xb0)
+I (6883341) wifi:state: auth -> assoc (0x0)
+I (6883390) wifi:state: assoc -> run (0x10)
+I (6883407) wifi:connected with RC_TANK_F3AE79, aid = 1, channel 1, 40U, bssid = 44:1b:f6:f3:ae:79
+I (6883407) wifi:security: WPA2-PSK, phy: bgn, rssi: -27, cipher(pairwise:0x3, group:0x3), pmf:1
+I (6883413) wifi:pm start, type: 1
+
+I (6883417) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (6883435) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+
+[HOST-DVP-MATRIX 12:32:18] SYNC-R1-RESUME stage=6 visible window begin
+I (6884446) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1
+I (6884446) rc_net: Got IP: 192.168.4.2
+I (6884447) rc_net: Connected to tank AP; waiting for disconnect
+I (6884447) rc_control: Network connected: waiting for joystick release before motion
+I (6884453) rc_control: Joystick released: motion control re-armed
+I (6884460) rc_tank: Network connected, peer: 192.168.4.1
+W (6884471) rc_tank: Channels already started, skip re-init
+I (6884466) rc_video: Remote WiFi icon updated: connected=1 epoch=63
+I (6884489) wifi:<ba-add>idx:0 (ifx:0, 44:1b:f6:f3:ae:79), tid:0, ssn:0, winSize:64
+I (6885098) rc_video: Displayed 36960 frames (320x240 video at 240x180,80,0) | fps=0.67 theory_max=32.55 | Avg(ms): recv=4.1 decode=15.3 color=0.0 place=10.3 copy=6.7 overlay=11.1 dma=33.6 display=51.5 total=81.2 | JPEG=9086B
+I (6885107) rc_video: Video queue: ready=38118 queue_drop=0 stale_drop=1156
+I (6886194) rc_net: Video RX complete=38130 missing=34 last_seq=27
+I (6886532) rc_net: [CAM-PROBE] Video RX seq=30 jpeg_len=9060 crc32=0x67750b49 chunks=8
+I (6887981) rc_video: Displayed 36990 frames (320x240 video at 240x180,80,0) | fps=10.46 theory_max=32.55 | Avg(ms): recv=4.1 decode=15.6 color=0.0 place=10.3 copy=6.8 overlay=11.2 dma=33.4 display=51.5 total=81.6 | JPEG=9130B
+I (6887992) rc_video: Video queue: ready=38149 queue_drop=0 stale_drop=1158
+I (6889102) rc_net: Video RX complete=38160 missing=34 last_seq=57
+I (6889306) rc_net: [CAM-PROBE] Video RX seq=60 jpeg_len=9647 crc32=0xcfd8243b chunks=9
+I (6890976) rc_video: Displayed 37020 frames (320x240 video at 240x180,80,0) | fps=10.08 theory_max=32.55 | Avg(ms): recv=4.6 decode=15.6 color=0.0 place=10.2 copy=6.7 overlay=11.2 dma=33.5 display=51.4 total=81.9 | JPEG=9068B
+I (6890985) rc_video: Video queue: ready=38181 queue_drop=0 stale_drop=1160
+I (6891795) rc_net: Video RX complete=38190 missing=34 last_seq=87
+I (6892115) rc_net: [CAM-PROBE] Video RX seq=90 jpeg_len=9120 crc32=0x9c0ae2b7 chunks=8
+I (6893994) rc_video: Displayed 37050 frames (320x240 video at 240x180,80,0) | fps=9.99 theory_max=32.55 | Avg(ms): recv=5.7 decode=15.6 color=0.0 place=10.3 copy=6.7 overlay=11.4 dma=33.7 display=51.8 total=83.4 | JPEG=9095B
+I (6894003) rc_video: Video queue: ready=38214 queue_drop=0 stale_drop=1163
+I (6894630) rc_net: Video RX complete=38220 missing=34 last_seq=117
+I (6894793) rc_net: [CAM-PROBE] Video RX seq=120 jpeg_len=9092 crc32=0xff5e1841 chunks=8
+I (6897041) rc_video: Displayed 37080 frames (320x240 video at 240x180,80,0) | fps=9.90 theory_max=32.55 | Avg(ms): recv=4.7 decode=15.9 color=0.0 place=10.4 copy=6.8 overlay=11.0 dma=33.5 display=51.4 total=82.4 | JPEG=9685B
+I (6897050) rc_video: Video queue: ready=38246 queue_drop=0 stale_drop=1166
+I (6897292) rc_net: Video RX complete=38250 missing=34 last_seq=147
+I (6897591) rc_net: [CAM-PROBE] Video RX seq=150 jpeg_len=9037 crc32=0x527c43ab chunks=8
+I (6900101) rc_net: Video RX complete=38280 missing=34 last_seq=177
+I (6900110) rc_video: Displayed 37110 frames (320x240 video at 240x180,80,0) | fps=9.83 theory_max=32.55 | Avg(ms): recv=4.1 decode=15.8 color=0.0 place=10.4 copy=6.7 overlay=11.1 dma=33.5 display=51.4 total=81.8 | JPEG=9123B
+I (6900119) rc_video: Video queue: ready=38280 queue_drop=0 stale_drop=1169
+I (6900373) rc_net: [CAM-PROBE] Video RX seq=180 jpeg_len=9637 crc32=0xdc2bbc43 chunks=9
+I (6902841) rc_net: Video RX complete=38310 missing=34 last_seq=207
+I (6903130) rc_net: [CAM-PROBE] Video RX seq=210 jpeg_len=9670 crc32=0xd6d6e352 chunks=9
+I (6903214) rc_video: Displayed 37140 frames (320x240 video at 240x180,80,0) | fps=9.71 theory_max=32.55 | Avg(ms): recv=5.2 decode=15.5 color=0.0 place=10.5 copy=6.9 overlay=11.1 dma=33.5 display=51.6 total=82.9 | JPEG=9670B
+I (6903223) rc_video: Video queue: ready=38314 queue_drop=0 stale_drop=1173
+I (6905609) rc_net: Video RX complete=38340 missing=34 last_seq=237
+I (6905884) rc_net: [CAM-PROBE] Video RX seq=240 jpeg_len=8981 crc32=0xbdaf865b chunks=8
+I (6906330) rc_video: Displayed 37170 frames (320x240 video at 240x180,80,0) | fps=9.68 theory_max=32.55 | Avg(ms): recv=4.0 decode=15.7 color=0.0 place=10.3 copy=7.1 overlay=11.1 dma=33.6 display=51.9 total=82.0 | JPEG=9220B
+I (6906339) rc_video: Video queue: ready=38347 queue_drop=0 stale_drop=1177
+I (6908412) rc_net: Video RX complete=38370 missing=34 last_seq=267
+I (6908647) rc_net: [CAM-PROBE] Video RX seq=270 jpeg_len=9242 crc32=0xeb5ce549 chunks=8
+I (6909208) rc_video: Displayed 37200 frames (320x240 video at 240x180,80,0) | fps=10.48 theory_max=32.55 | Avg(ms): recv=6.4 decode=15.6 color=0.0 place=10.3 copy=6.7 overlay=11.2 dma=33.7 display=51.7 total=84.0 | JPEG=9794B
+I (6909217) rc_video: Video queue: ready=38379 queue_drop=0 stale_drop=1178
+I (6911192) rc_net: Video RX complete=38400 missing=34 last_seq=297
+I (6911398) rc_net: [CAM-PROBE] Video RX seq=300 jpeg_len=9213 crc32=0x5b2a860f chunks=8
+I (6912169) rc_video: Displayed 37230 frames (320x240 video at 240x180,80,0) | fps=10.19 theory_max=32.55 | Avg(ms): recv=4.8 decode=15.5 color=0.0 place=10.2 copy=6.8 overlay=11.2 dma=33.6 display=51.5 total=82.1 | JPEG=9692B
+I (6912178) rc_video: Video queue: ready=38410 queue_drop=0 stale_drop=1180
+I (6913906) rc_net: Video RX complete=38430 missing=34 last_seq=327
+I (6914193) rc_net: [CAM-PROBE] Video RX seq=330 jpeg_len=9743 crc32=0x5189f0f1 chunks=9
+I (6915164) rc_video: Displayed 37260 frames (320x240 video at 240x180,80,0) | fps=10.07 theory_max=32.55 | Avg(ms): recv=5.2 decode=15.5 color=0.0 place=10.4 copy=6.8 overlay=11.1 dma=33.5 display=51.5 total=82.6 | JPEG=9703B
+I (6915173) rc_video: Video queue: ready=38442 queue_drop=0 stale_drop=1181
+I (6916726) rc_net: Video RX complete=38460 missing=34 last_seq=357
+I (6917004) rc_net: [CAM-PROBE] Video RX seq=360 jpeg_len=9707 crc32=0x60e65bca chunks=9
+I (6918016) rc_video: Displayed 37290 frames (320x240 video at 240x180,80,0) | fps=10.58 theory_max=32.55 | Avg(ms): recv=4.4 decode=15.8 color=0.0 place=10.2 copy=6.8 overlay=11.0 dma=33.5 display=51.3 total=81.8 | JPEG=9166B
+I (6918025) rc_video: Video queue: ready=38474 queue_drop=0 stale_drop=1183
+I (6919496) rc_net: Video RX complete=38490 missing=34 last_seq=387
+I (6919792) rc_net: [CAM-PROBE] Video RX seq=390 jpeg_len=9166 crc32=0xb7364327 chunks=8
+I (6921001) rc_video: Displayed 37320 frames (320x240 video at 240x180,80,0) | fps=10.10 theory_max=32.55 | Avg(ms): recv=6.0 decode=15.8 color=0.0 place=10.2 copy=6.7 overlay=11.2 dma=33.6 display=51.6 total=83.6 | JPEG=9853B
+I (6921010) rc_video: Video queue: ready=38506 queue_drop=0 stale_drop=1185
+I (6922208) rc_net: Video RX complete=38520 missing=34 last_seq=417
+I (6922536) rc_net: [CAM-PROBE] Video RX seq=420 jpeg_len=9205 crc32=0xdce941fe chunks=8
+I (6923769) rc_video: Displayed 37350 frames (320x240 video at 240x180,80,0) | fps=10.90 theory_max=32.55 | Avg(ms): recv=4.6 decode=15.6 color=0.0 place=10.5 copy=6.8 overlay=11.1 dma=33.6 display=51.6 total=82.4 | JPEG=9211B
+I (6923778) rc_video: Video queue: ready=38536 queue_drop=0 stale_drop=1186
+I (6924993) rc_net: Video RX complete=38550 missing=34 last_seq=447
+I (6925304) rc_net: [CAM-PROBE] Video RX seq=450 jpeg_len=8978 crc32=0x203a512c chunks=8
+I (6926972) rc_video: Displayed 37380 frames (320x240 video at 240x180,80,0) | fps=9.41 theory_max=32.55 | Avg(ms): recv=2.6 decode=15.8 color=0.0 place=10.2 copy=6.7 overlay=11.1 dma=33.6 display=51.4 total=80.2 | JPEG=9067B
+I (6926981) rc_video: Video queue: ready=38569 queue_drop=0 stale_drop=1189
+I (6927861) rc_net: Video RX complete=38580 missing=35 last_seq=478
+I (6928100) rc_net: [CAM-PROBE] Video RX seq=480 jpeg_len=9076 crc32=0x82c179dd chunks=8
+
+[HOST-DVP-MATRIX 12:33:07] SYNC-R1-RESUME Tank restart recovery=5
+I (6935659) wifi:bcn_timeout,ap_probe_send_start
+I (6938161) wifi:ap_probe_send over, reset wifi status to disassoc
+I (6938162) wifi:state: run -> init (0xc800)
+I (6938162) wifi:pm stop, total sleep time: 6325031 us / 54745777 us
+
+I (6938167) wifi:<ba-del>idx:0, tid:0
+I (6938170) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+W (6938180) rc_control: Network disconnected: control TX paused
+W (6938180) rc_net: Tank AP disconnected; retry saved AP first
+W (6938183) rc_tank: Network disconnected
+I (6938189) rc_net: Connecting to tank AP, attempt 1/3
+I (6938199) rc_video: Remote WiFi icon updated: connected=0 epoch=64
+I (6945609) rc_net: Connecting to tank AP, attempt 2/3
+I (6953022) rc_net: Connecting to tank AP, attempt 3/3
+I (6953052) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (6953053) wifi:state: init -> auth (0xb0)
+I (6953057) wifi:state: auth -> assoc (0x0)
+I (6953074) wifi:state: assoc -> run (0x10)
+I (6953096) wifi:connected with RC_TANK_F3AE79, aid = 1, channel 1, 40U, bssid = 44:1b:f6:f3:ae:79
+I (6953096) wifi:security: WPA2-PSK, phy: bgn, rssi: -28, cipher(pairwise:0x3, group:0x3), pmf:1
+I (6953103) wifi:pm start, type: 1
+
+I (6953106) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (6953178) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+
+[HOST-DVP-MATRIX 12:33:27] SYNC-R1-RESUME stage=7 visible window begin
+I (6954145) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1
+I (6954145) rc_net: Got IP: 192.168.4.2
+I (6954146) rc_net: Connected to tank AP; waiting for disconnect
+I (6954146) rc_control: Network connected: waiting for joystick release before motion
+I (6954155) rc_control: Joystick released: motion control re-armed
+I (6954159) rc_tank: Network connected, peer: 192.168.4.1
+W (6954170) rc_tank: Channels already started, skip re-init
+I (6954159) rc_video: Remote WiFi icon updated: connected=1 epoch=65
+I (6954208) wifi:<ba-add>idx:0 (ifx:0, 44:1b:f6:f3:ae:79), tid:0, ssn:0, winSize:64
+I (6954713) rc_video: Displayed 37410 frames (320x240 video at 240x180,80,0) | fps=1.08 theory_max=32.55 | Avg(ms): recv=5.5 decode=15.7 color=0.0 place=10.3 copy=6.8 overlay=11.1 dma=33.5 display=51.5 total=83.2 | JPEG=9661B
+I (6954722) rc_video: Video queue: ready=38604 queue_drop=0 stale_drop=1193
+I (6955283) rc_net: Video RX complete=38610 missing=35 last_seq=21
+I (6956096) rc_net: [CAM-PROBE] Video RX seq=30 jpeg_len=9149 crc32=0xfd6a29c8 chunks=8
+I (6957648) rc_video: Displayed 37440 frames (320x240 video at 240x180,80,0) | fps=10.28 theory_max=32.55 | Avg(ms): recv=5.8 decode=15.5 color=0.0 place=10.2 copy=6.7 overlay=11.2 dma=33.8 display=51.8 total=83.3 | JPEG=9182B
+I (6957657) rc_video: Video queue: ready=38635 queue_drop=0 stale_drop=1195
+I (6958116) rc_net: Video RX complete=38640 missing=35 last_seq=51
+I (6958874) rc_net: [CAM-PROBE] Video RX seq=60 jpeg_len=8940 crc32=0xc5d0472a chunks=8
+I (6960685) rc_video: Displayed 37470 frames (320x240 video at 240x180,80,0) | fps=9.93 theory_max=32.55 | Avg(ms): recv=6.0 decode=15.6 color=0.0 place=10.2 copy=6.6 overlay=11.3 dma=33.4 display=51.4 total=83.3 | JPEG=9058B
+I (6960694) rc_video: Video queue: ready=38668 queue_drop=0 stale_drop=1197
+I (6960755) rc_net: Video RX complete=38670 missing=35 last_seq=81
+I (6961690) rc_net: [CAM-PROBE] Video RX seq=90 jpeg_len=9067 crc32=0xe792d1ac chunks=8
+I (6963621) rc_video: Displayed 37500 frames (320x240 video at 240x180,80,0) | fps=10.27 theory_max=32.55 | Avg(ms): recv=5.0 decode=15.6 color=0.0 place=10.3 copy=6.8 overlay=11.2 dma=33.7 display=51.8 total=82.7 | JPEG=8963B
+I (6963624) rc_net: Video RX complete=38700 missing=35 last_seq=111
+I (6963636) rc_video: Video queue: ready=38700 queue_drop=0 stale_drop=1198
+I (6964449) rc_net: [CAM-PROBE] Video RX seq=120 jpeg_len=9127 crc32=0x0a756eb8 chunks=8
+I (6966374) rc_video: Displayed 37530 frames (320x240 video at 240x180,80,0) | fps=10.99 theory_max=32.55 | Avg(ms): recv=3.9 decode=15.5 color=0.0 place=10.5 copy=6.8 overlay=11.2 dma=33.8 display=51.8 total=81.7 | JPEG=9144B
+I (6966384) rc_video: Video queue: ready=38729 queue_drop=0 stale_drop=1199
+I (6966387) rc_net: Video RX complete=38730 missing=35 last_seq=141
+I (6967194) rc_net: [CAM-PROBE] Video RX seq=150 jpeg_len=8911 crc32=0x91411220 chunks=8
+I (6969129) rc_net: Video RX complete=38760 missing=35 last_seq=171
+I (6969476) rc_video: Displayed 37560 frames (320x240 video at 240x180,80,0) | fps=9.74 theory_max=32.55 | Avg(ms): recv=4.8 decode=15.7 color=0.0 place=10.2 copy=6.8 overlay=11.3 dma=33.7 display=51.8 total=82.6 | JPEG=9675B
+I (6969486) rc_video: Video queue: ready=38764 queue_drop=0 stale_drop=1203
+I (6969936) rc_net: [CAM-PROBE] Video RX seq=180 jpeg_len=9087 crc32=0x5c3f6ab0 chunks=8
+I (6971874) rc_net: Video RX complete=38790 missing=35 last_seq=201
+I (6972463) rc_video: Displayed 37590 frames (320x240 video at 240x180,80,0) | fps=10.10 theory_max=32.55 | Avg(ms): recv=2.5 decode=15.6 color=0.0 place=10.2 copy=6.8 overlay=11.3 dma=33.8 display=51.9 total=80.3 | JPEG=9654B
+I (6972472) rc_video: Video queue: ready=38795 queue_drop=0 stale_drop=1205
+I (6972847) rc_net: [CAM-PROBE] Video RX seq=210 jpeg_len=9660 crc32=0x026706e3 chunks=9
+I (6974717) rc_net: Video RX complete=38820 missing=35 last_seq=231
+I (6975466) rc_video: Displayed 37620 frames (320x240 video at 240x180,80,0) | fps=10.05 theory_max=32.55 | Avg(ms): recv=4.3 decode=15.6 color=0.0 place=10.4 copy=6.7 overlay=11.0 dma=33.5 display=51.2 total=81.6 | JPEG=8989B
+I (6975475) rc_video: Video queue: ready=38828 queue_drop=0 stale_drop=1208
+I (6975495) rc_net: [CAM-PROBE] Video RX seq=240 jpeg_len=9679 crc32=0xcee1e000 chunks=9
+I (6977444) rc_net: Video RX complete=38850 missing=35 last_seq=261
+I (6978351) rc_net: [CAM-PROBE] Video RX seq=270 jpeg_len=9676 crc32=0x410fcd59 chunks=9
+I (6978705) rc_video: Displayed 37650 frames (320x240 video at 240x180,80,0) | fps=9.31 theory_max=32.55 | Avg(ms): recv=7.1 decode=15.8 color=0.0 place=10.3 copy=6.7 overlay=11.1 dma=33.6 display=51.5 total=84.7 | JPEG=9670B
+I (6978714) rc_video: Video queue: ready=38863 queue_drop=0 stale_drop=1213
+I (6980140) rc_net: Video RX complete=38880 missing=35 last_seq=291
+I (6980993) rc_net: [CAM-PROBE] Video RX seq=300 jpeg_len=9017 crc32=0x116b0da1 chunks=8
+I (6981745) rc_video: Displayed 37680 frames (320x240 video at 240x180,80,0) | fps=9.92 theory_max=32.55 | Avg(ms): recv=3.3 decode=15.5 color=0.0 place=10.5 copy=6.9 overlay=11.2 dma=33.2 display=51.4 total=80.8 | JPEG=9683B
+I (6981754) rc_video: Video queue: ready=38897 queue_drop=0 stale_drop=1216
+I (6982904) rc_net: Video RX complete=38910 missing=35 last_seq=321
+I (6983722) rc_net: [CAM-PROBE] Video RX seq=330 jpeg_len=9683 crc32=0x7f48d587 chunks=9
+I (6984812) rc_video: Displayed 37710 frames (320x240 video at 240x180,80,0) | fps=9.83 theory_max=32.55 | Avg(ms): recv=3.6 decode=15.8 color=0.0 place=10.5 copy=6.6 overlay=11.0 dma=33.3 display=51.0 total=81.0 | JPEG=9049B
+I (6984821) rc_video: Video queue: ready=38929 queue_drop=0 stale_drop=1219
+I (6985742) rc_net: Video RX complete=38940 missing=35 last_seq=351
+I (6986496) rc_net: [CAM-PROBE] Video RX seq=360 jpeg_len=9625 crc32=0x545c7c3d chunks=9
+I (6987687) rc_video: Displayed 37740 frames (320x240 video at 240x180,80,0) | fps=10.49 theory_max=32.55 | Avg(ms): recv=5.8 decode=15.7 color=0.0 place=10.2 copy=6.6 overlay=11.2 dma=33.6 display=51.5 total=83.3 | JPEG=8954B
+I (6987696) rc_video: Video queue: ready=38962 queue_drop=0 stale_drop=1221
+I (6988439) rc_net: Video RX complete=38970 missing=35 last_seq=381
+I (6989262) rc_net: [CAM-PROBE] Video RX seq=390 jpeg_len=8875 crc32=0x5c133cb0 chunks=8
+I (6990693) rc_video: Displayed 37770 frames (320x240 video at 240x180,80,0) | fps=10.03 theory_max=32.55 | Avg(ms): recv=4.3 decode=15.4 color=0.0 place=10.3 copy=6.8 overlay=11.2 dma=33.6 display=51.6 total=81.6 | JPEG=9093B
+I (6990703) rc_video: Video queue: ready=38994 queue_drop=0 stale_drop=1223
+I (6991274) rc_net: Video RX complete=39000 missing=35 last_seq=411
+I (6992118) rc_net: [CAM-PROBE] Video RX seq=420 jpeg_len=9103 crc32=0x5c25a274 chunks=8
+I (6993701) rc_video: Displayed 37800 frames (320x240 video at 240x180,80,0) | fps=10.03 theory_max=32.55 | Avg(ms): recv=5.0 decode=15.7 color=0.0 place=10.2 copy=6.8 overlay=11.2 dma=33.4 display=51.4 total=82.4 | JPEG=9139B
+I (6993710) rc_video: Video queue: ready=39026 queue_drop=0 stale_drop=1225
+I (6994028) rc_net: Video RX complete=39030 missing=35 last_seq=441
+I (6994922) rc_net: [CAM-PROBE] Video RX seq=450 jpeg_len=9660 crc32=0x410d1c04 chunks=9
+I (6996923) rc_net: Video RX complete=39060 missing=36 last_seq=472
+I (6997188) rc_video: Displayed 37830 frames (320x240 video at 240x180,80,0) | fps=8.64 theory_max=32.55 | Avg(ms): recv=5.6 decode=15.6 color=0.0 place=10.4 copy=6.7 overlay=11.1 dma=33.4 display=51.4 total=83.0 | JPEG=9643B
+I (6997197) rc_video: Video queue: ready=39063 queue_drop=0 stale_drop=1231
+I (6997662) rc_net: [CAM-PROBE] Video RX seq=480 jpeg_len=8909 crc32=0x0ba50985 chunks=8
+I (6999708) rc_net: Video RX complete=39090 missing=36 last_seq=502
+I (7000303) rc_video: Displayed 37860 frames (320x240 video at 240x180,80,0) | fps=9.68 theory_max=32.55 | Avg(ms): recv=5.2 decode=15.6 color=0.0 place=10.3 copy=6.8 overlay=11.1 dma=33.5 display=51.4 total=82.6 | JPEG=8949B
+I (7000312) rc_video: Video queue: ready=39096 queue_drop=0 stale_drop=1236
+I (7000427) rc_net: [CAM-PROBE] Video RX seq=510 jpeg_len=9086 crc32=0xab4471c1 chunks=8
+I (7002515) rc_net: Video RX complete=39120 missing=36 last_seq=532
+I (7003204) rc_net: [CAM-PROBE] Video RX seq=540 jpeg_len=9035 crc32=0xc97bd203 chunks=8
+I (7003282) rc_video: Displayed 37890 frames (320x240 video at 240x180,80,0) | fps=10.13 theory_max=32.55 | Avg(ms): recv=5.3 decode=15.5 color=0.0 place=10.3 copy=6.8 overlay=11.3 dma=33.5 display=51.7 total=82.8 | JPEG=9638B
+I (7003291) rc_video: Video queue: ready=39129 queue_drop=0 stale_drop=1237
+I (7005295) rc_net: Video RX complete=39150 missing=36 last_seq=562
+I (7006051) rc_net: [CAM-PROBE] Video RX seq=570 jpeg_len=9652 crc32=0xdf839bd3 chunks=9
+I (7006135) rc_video: Displayed 37920 frames (320x240 video at 240x180,80,0) | fps=10.57 theory_max=32.55 | Avg(ms): recv=5.5 decode=15.5 color=0.0 place=10.5 copy=6.9 overlay=11.1 dma=33.7 display=51.7 total=83.2 | JPEG=9652B
+I (7006144) rc_video: Video queue: ready=39159 queue_drop=0 stale_drop=1238
+I (7008109) rc_net: Video RX complete=39180 missing=36 last_seq=592
+I (7008851) rc_net: [CAM-PROBE] Video RX seq=600 jpeg_len=9081 crc32=0xa82a1c9a chunks=8
+I (7009085) rc_video: Displayed 37950 frames (320x240 video at 240x180,80,0) | fps=10.23 theory_max=32.55 | Avg(ms): recv=4.8 decode=15.6 color=0.0 place=10.3 copy=6.8 overlay=11.2 dma=33.7 display=51.7 total=82.5 | JPEG=9759B
+I (7009094) rc_video: Video queue: ready=39190 queue_drop=0 stale_drop=1239
+I (7010869) rc_net: Video RX complete=39210 missing=36 last_seq=622
+I (7011645) rc_net: [CAM-PROBE] Video RX seq=630 jpeg_len=9633 crc32=0x51274f13 chunks=9
+I (7011805) rc_video: Displayed 37980 frames (320x240 video at 240x180,80,0) | fps=11.09 theory_max=32.55 | Avg(ms): recv=4.7 decode=15.5 color=0.0 place=10.3 copy=6.8 overlay=11.2 dma=33.4 display=51.5 total=82.1 | JPEG=8870B
+I (7011816) rc_video: Video queue: ready=39219 queue_drop=0 stale_drop=1239
+I (7013782) rc_net: Video RX complete=39240 missing=36 last_seq=652
+I (7014415) rc_net: [CAM-PROBE] Video RX seq=660 jpeg_len=9641 crc32=0xb4501f4c chunks=9
+I (7015040) rc_video: Displayed 38010 frames (320x240 video at 240x180,80,0) | fps=9.32 theory_max=32.55 | Avg(ms): recv=5.6 decode=15.7 color=0.0 place=10.4 copy=6.7 overlay=11.2 dma=33.6 display=51.5 total=83.2 | JPEG=9639B
+I (7015049) rc_video: Video queue: ready=39254 queue_drop=0 stale_drop=1244
+I (7016455) rc_net: Video RX complete=39270 missing=36 last_seq=682
+I (7017149) rc_net: [CAM-PROBE] Video RX seq=690 jpeg_len=9033 crc32=0xbe1be699 chunks=8
+I (7017990) rc_video: Displayed 38040 frames (320x240 video at 240x180,80,0) | fps=10.22 theory_max=32.55 | Avg(ms): recv=3.2 decode=15.6 color=0.0 place=10.3 copy=6.7 overlay=11.1 dma=33.4 display=51.3 total=80.4 | JPEG=9090B
+I (7017999) rc_video: Video queue: ready=39286 queue_drop=0 stale_drop=1246
+I (7019163) rc_net: Video RX complete=39300 missing=36 last_seq=712
+I (7019932) rc_net: [CAM-PROBE] Video RX seq=720 jpeg_len=9091 crc32=0x5ae77f84 chunks=8
+I (7021249) rc_video: Displayed 38070 frames (320x240 video at 240x180,80,0) | fps=9.25 theory_max=32.55 | Avg(ms): recv=7.9 decode=15.7 color=0.0 place=10.4 copy=6.7 overlay=11.2 dma=33.5 display=51.4 total=85.4 | JPEG=9746B
+I (7021259) rc_video: Video queue: ready=39322 queue_drop=0 stale_drop=1249
+I (7021962) rc_net: Video RX complete=39330 missing=36 last_seq=742
+I (7022718) rc_net: [CAM-PROBE] Video RX seq=750 jpeg_len=8889 crc32=0x7e39c929 chunks=8
+I (7024106) rc_video: Displayed 38100 frames (320x240 video at 240x180,80,0) | fps=10.56 theory_max=32.55 | Avg(ms): recv=5.5 decode=15.4 color=0.0 place=10.3 copy=6.7 overlay=11.2 dma=33.5 display=51.4 total=82.7 | JPEG=9636B
+I (7024115) rc_video: Video queue: ready=39352 queue_drop=0 stale_drop=1252
+I (7024713) rc_net: Video RX complete=39360 missing=36 last_seq=772
+I (7025905) rc_net: [CAM-PROBE] Video RX seq=780 jpeg_len=9817 crc32=0x551af429 chunks=9
+I (7027624) rc_video: Displayed 38130 frames (320x240 video at 240x180,80,0) | fps=8.57 theory_max=32.55 | Avg(ms): recv=4.3 decode=15.4 color=0.0 place=10.5 copy=6.7 overlay=11.1 dma=33.6 display=51.5 total=82.1 | JPEG=9677B
+I (7027633) rc_video: Video queue: ready=39387 queue_drop=0 stale_drop=1256
+I (7028035) rc_net: Video RX complete=39390 missing=40 last_seq=806
+I (7028272) rc_net: [CAM-PROBE] Video RX seq=810 jpeg_len=9133 crc32=0x14383c89 chunks=8
+I (7030654) rc_net: Video RX complete=39420 missing=40 last_seq=836
+I (7030791) rc_video: Displayed 38160 frames (320x240 video at 240x180,80,0) | fps=9.52 theory_max=32.55 | Avg(ms): recv=5.2 decode=15.9 color=0.0 place=10.6 copy=6.6 overlay=11.1 dma=33.6 display=51.3 total=83.0 | JPEG=8996B
+I (7030800) rc_video: Video queue: ready=39421 queue_drop=0 stale_drop=1260
+I (7031173) rc_net: [CAM-PROBE] Video RX seq=840 jpeg_len=9129 crc32=0x77f9969f chunks=8
+I (7033415) rc_net: Video RX complete=39450 missing=40 last_seq=866
+I (7033830) rc_net: [CAM-PROBE] Video RX seq=870 jpeg_len=9613 crc32=0x9bf841d1 chunks=9
+I (7034024) rc_video: Displayed 38190 frames (320x240 video at 240x180,80,0) | fps=9.33 theory_max=32.55 | Avg(ms): recv=6.2 decode=15.6 color=0.0 place=10.4 copy=7.0 overlay=11.2 dma=33.4 display=51.7 total=83.9 | JPEG=9049B
+I (7034033) rc_video: Video queue: ready=39455 queue_drop=0 stale_drop=1265
+I (7036259) rc_net: Video RX complete=39480 missing=40 last_seq=896
+I (7036637) rc_net: [CAM-PROBE] Video RX seq=900 jpeg_len=8970 crc32=0x36883d3f chunks=8
+I (7036996) rc_video: Displayed 38220 frames (320x240 video at 240x180,80,0) | fps=10.15 theory_max=32.55 | Avg(ms): recv=5.9 decode=15.6 color=0.0 place=10.3 copy=6.6 overlay=11.3 dma=33.4 display=51.4 total=83.2 | JPEG=9660B
+I (7037005) rc_video: Video queue: ready=39487 queue_drop=0 stale_drop=1267
+I (7038978) rc_net: Video RX complete=39510 missing=40 last_seq=926
+I (7039366) rc_net: [CAM-PROBE] Video RX seq=930 jpeg_len=9069 crc32=0x02fc6d8e chunks=8
+I (7039910) rc_video: Displayed 38250 frames (320x240 video at 240x180,80,0) | fps=10.35 theory_max=32.55 | Avg(ms): recv=5.6 decode=15.4 color=0.0 place=10.3 copy=6.7 overlay=11.2 dma=33.3 display=51.3 total=82.6 | JPEG=9046B
+I (7039919) rc_video: Video queue: ready=39520 queue_drop=0 stale_drop=1269
+I (7041748) rc_net: Video RX complete=39540 missing=40 last_seq=956
+I (7042103) rc_net: [CAM-PROBE] Video RX seq=960 jpeg_len=9004 crc32=0x1909319c chunks=8
+I (7042830) rc_video: Displayed 38280 frames (320x240 video at 240x180,80,0) | fps=10.33 theory_max=32.55 | Avg(ms): recv=4.0 decode=15.5 color=0.0 place=10.4 copy=6.8 overlay=11.3 dma=33.4 display=51.5 total=81.5 | JPEG=8969B
+I (7042839) rc_video: Video queue: ready=39552 queue_drop=0 stale_drop=1271
+
+[HOST-DVP-MATRIX 12:34:57] SYNC-R1-RESUME confirmation complete; hold 30s
+I (7044533) rc_net: Video RX complete=39570 missing=40 last_seq=986
+I (7044877) rc_net: [CAM-PROBE] Video RX seq=990 jpeg_len=9048 crc32=0x61f2b28f chunks=8
+I (7045795) rc_video: Displayed 38310 frames (320x240 video at 240x180,80,0) | fps=10.17 theory_max=32.55 | Avg(ms): recv=4.8 decode=15.6 color=0.0 place=10.2 copy=6.9 overlay=11.1 dma=33.5 display=51.6 total=82.3 | JPEG=8975B
+I (7045804) rc_video: Video queue: ready=39583 queue_drop=0 stale_drop=1273
+I (7047292) rc_net: Video RX complete=39600 missing=40 last_seq=1016
+I (7047682) rc_net: [CAM-PROBE] Video RX seq=1020 jpeg_len=8960 crc32=0x55328bfc chunks=8
+I (7048711) rc_video: Displayed 38340 frames (320x240 video at 240x180,80,0) | fps=10.35 theory_max=32.55 | Avg(ms): recv=5.7 decode=15.6 color=0.0 place=10.3 copy=6.7 overlay=11.3 dma=33.6 display=51.6 total=83.3 | JPEG=9031B
+I (7048720) rc_video: Video queue: ready=39615 queue_drop=0 stale_drop=1275
+I (7050091) rc_net: Video RX complete=39630 missing=40 last_seq=1046
+I (7050478) rc_net: [CAM-PROBE] Video RX seq=1050 jpeg_len=9517 crc32=0x02e88fbe chunks=8
+I (7051524) rc_video: Displayed 38370 frames (320x240 video at 240x180,80,0) | fps=10.73 theory_max=32.55 | Avg(ms): recv=4.9 decode=15.3 color=0.0 place=10.2 copy=6.7 overlay=11.2 dma=33.6 display=51.5 total=81.9 | JPEG=8977B
+I (7051533) rc_video: Video queue: ready=39645 queue_drop=0 stale_drop=1275
+I (7052840) rc_net: Video RX complete=39660 missing=40 last_seq=1076
+I (7053243) rc_net: [CAM-PROBE] Video RX seq=1080 jpeg_len=9585 crc32=0x36a647a6 chunks=8
+I (7054614) rc_video: Displayed 38400 frames (320x240 video at 240x180,80,0) | fps=9.76 theory_max=32.55 | Avg(ms): recv=7.1 decode=15.6 color=0.0 place=10.1 copy=6.7 overlay=11.2 dma=33.6 display=51.5 total=84.4 | JPEG=9732B
+I (7054623) rc_video: Video queue: ready=39679 queue_drop=0 stale_drop=1278
+I (7055575) rc_net: Video RX complete=39690 missing=40 last_seq=1106
+I (7055940) rc_net: [CAM-PROBE] Video RX seq=1110 jpeg_len=9049 crc32=0x416885be chunks=8
+I (7057663) rc_video: Displayed 38430 frames (320x240 video at 240x180,80,0) | fps=9.89 theory_max=32.55 | Avg(ms): recv=4.9 decode=15.7 color=0.0 place=10.2 copy=6.7 overlay=11.1 dma=33.6 display=51.6 total=82.4 | JPEG=9578B
+I (7057672) rc_video: Video queue: ready=39712 queue_drop=0 stale_drop=1281
+I (7058437) rc_net: Video RX complete=39720 missing=40 last_seq=1136
+I (7058712) rc_net: [CAM-PROBE] Video RX seq=1140 jpeg_len=9065 crc32=0x7580ca00 chunks=8
+I (7060744) rc_video: Displayed 38460 frames (320x240 video at 240x180,80,0) | fps=9.79 theory_max=32.55 | Avg(ms): recv=6.2 decode=15.6 color=0.0 place=10.4 copy=6.8 overlay=11.1 dma=33.9 display=52.0 total=84.2 | JPEG=9020B
+I (7060753) rc_video: Video queue: ready=39745 queue_drop=0 stale_drop=1285
+I (7061117) rc_net: Video RX complete=39750 missing=40 last_seq=1166
+I (7061570) rc_net: [CAM-PROBE] Video RX seq=1170 jpeg_len=9747 crc32=0x373fd64d chunks=9
+I (7063830) rc_video: Displayed 38490 frames (320x240 video at 240x180,80,0) | fps=9.77 theory_max=32.55 | Avg(ms): recv=4.5 decode=15.5 color=0.0 place=10.2 copy=6.9 overlay=11.1 dma=33.3 display=51.4 total=81.7 | JPEG=8890B
+I (7063839) rc_video: Video queue: ready=39778 queue_drop=0 stale_drop=1288
+I (7063958) rc_net: Video RX complete=39780 missing=40 last_seq=1196
+I (7064314) rc_net: [CAM-PROBE] Video RX seq=1200 jpeg_len=8854 crc32=0x23de8fac chunks=8
+I (7066708) rc_video: Displayed 38520 frames (320x240 video at 240x180,80,0) | fps=10.48 theory_max=32.55 | Avg(ms): recv=4.6 decode=15.6 color=0.0 place=10.4 copy=6.7 overlay=11.2 dma=33.5 display=51.5 total=82.1 | JPEG=8920B
+I (7066716) rc_net: Video RX complete=39810 missing=40 last_seq=1226
+I (7066723) rc_video: Video queue: ready=39810 queue_drop=0 stale_drop=1289
+I (7067030) rc_net: [CAM-PROBE] Video RX seq=1230 jpeg_len=9048 crc32=0xd20e49b6 chunks=8
+I (7069496) rc_net: Video RX complete=39840 missing=40 last_seq=1256
+I (7069577) rc_video: Displayed 38550 frames (320x240 video at 240x180,80,0) | fps=10.54 theory_max=32.55 | Avg(ms): recv=3.8 decode=15.3 color=0.0 place=10.3 copy=6.6 overlay=11.1 dma=33.6 display=51.4 total=80.9 | JPEG=9585B
+I (7069586) rc_video: Video queue: ready=39841 queue_drop=0 stale_drop=1290
+I (7069849) rc_net: [CAM-PROBE] Video RX seq=1260 jpeg_len=8805 crc32=0x9bdc490f chunks=8
+I (7072274) rc_net: Video RX complete=39870 missing=40 last_seq=1286
+I (7072350) rc_video: Displayed 38580 frames (320x240 video at 240x180,80,0) | fps=10.88 theory_max=32.55 | Avg(ms): recv=4.8 decode=15.4 color=0.0 place=10.3 copy=6.7 overlay=11.2 dma=33.4 display=51.3 total=81.9 | JPEG=9587B
+I (7072360) rc_video: Video queue: ready=39871 queue_drop=0 stale_drop=1290
+I (7072618) rc_net: [CAM-PROBE] Video RX seq=1290 jpeg_len=8999 crc32=0x22c060ee chunks=8
+
+[HOST-DVP-MATRIX 12:35:27] SYNC-R1-RESUME capture end stages=[3, 4, 5, 6, 7] recoveries=5 complete=True

@@ -1,0 +1,291 @@
+I (62430) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+W (62431) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration
+I (62466) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)
+I (62476) wifi:mode : softAP (44:1b:f6:f3:ae:79)
+I (62481) wifi:Total power save buffer number: 32
+I (62482) wifi:Init max length of beacon: 752/752
+I (62482) wifi:Init max length of beacon: 752/752
+I (62485) rc_net: SoftAP started, SSID: RC_TANK_F3AE79, Password: 12345678
+I (62486) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (62498) rc_tank: [STEP] Network init OK
+I (62502) rc_tank: Tank SoftAP ready, waiting for remote...
+W (62507) rc_video: [CAM-DIAG-C16G] PROFILE window=4 sensor=pattern display=camera idle=0ms full_probe=0 capture=250
+W (62516) rc_video: [CAM-DIAG-C16G] LIGHT stage=complete window=3 sensor=pattern display=camera idle=0ms full_probe=0 frames=125 changes=2 unique=2 overflow=0 last=e09659ae avg_probe=0.503ms max_probe=0.787ms
+W (62517) rc_tank: [CAM-DIAG-C16G] WINDOW_04 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=off
+W (66854) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=4 sensor=pattern display=camera idle=0ms full_probe=0 frames=30 changes=16 unique=8 overflow=3 last=e09659ae avg_probe=0.512ms max_probe=0.538ms
+I (66861) rc_video: [CAM-DIAG-C16G] HEALTH window=4 display_frame=280 guard_errors=0 quiesce=280 resume_before=279 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (71208) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=4 sensor=pattern display=camera idle=0ms full_probe=0 frames=60 changes=38 unique=8 overflow=17 last=bc86a699 avg_probe=0.512ms max_probe=0.538ms
+I (71216) rc_video: [CAM-DIAG-C16G] HEALTH window=4 display_frame=310 guard_errors=0 quiesce=310 resume_before=309 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (75680) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=4 sensor=pattern display=camera idle=0ms full_probe=0 frames=90 changes=56 unique=8 overflow=27 last=1e37e0dd avg_probe=0.512ms max_probe=0.538ms
+I (75688) rc_video: [CAM-DIAG-C16G] HEALTH window=4 display_frame=340 guard_errors=0 quiesce=340 resume_before=339 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (77546) rc_video: [CAM-DIAG-C16G] PROFILE window=5 sensor=pattern display=camera idle=0ms full_probe=1 capture=353
+W (77546) rc_tank: [CAM-DIAG-C16G] WINDOW_05 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=on
+W (77621) rc_video: [CAM-DIAG-C16G] LIGHT stage=complete window=4 sensor=pattern display=camera idle=0ms full_probe=0 frames=103 changes=69 unique=8 overflow=34 last=17b8b542 avg_probe=0.513ms max_probe=0.538ms
+W (79282) rc_video: [DEBUG-C151] display frame=360 consumer=0 active=1/0x3c177000->-2/0x0 select=720->720 became_active=0 overlap=0 overlap_count=0 finish=360 last_finished=0/0x3c0e0ec0 finish_active=1 finish_collision=0 guard=1 guard_errors=0 quiesce=360 resume_before=359 resume_pending=1 lifecycle_errors=0
+I (79299) rc_video: [CAM-DIAG-C16G] frame=360 window=5 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=360->360 crc_first=37e6c512/37e6c512 crc_mid=52b8a38d/52b8a38d crc_tail=aed88090/aed88090 stable=1 raw_full=08827275 raw_q=a0d47519/615fdf49/fc4794e7/24d7e962 raw_edge=01f43aa2 raw_probe=594.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=e12ae597/8f809abc/4bf3c90b submit=3 complete=3 seq=1080/1080 stale=0 prepare=42.4ms draw=35.6ms
+W (82646) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=5 sensor=pattern display=camera idle=0ms full_probe=1 frames=30 changes=20 unique=8 overflow=3 last=22678b0d avg_probe=0.519ms max_probe=0.701ms
+I (82653) rc_video: [CAM-DIAG-C16G] HEALTH window=5 display_frame=383 guard_errors=0 quiesce=383 resume_before=382 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (84270) rc_video: [DEBUG-C151] display frame=390 consumer=0 active=1/0x3c177000->-2/0x0 select=780->780 became_active=0 overlap=0 overlap_count=0 finish=390 last_finished=0/0x3c0e0ec0 finish_active=1 finish_collision=0 guard=1 guard_errors=0 quiesce=390 resume_before=389 resume_pending=1 lifecycle_errors=0
+I (84287) rc_video: [CAM-DIAG-C16G] frame=390 window=5 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=390->390 crc_first=37e6c512/37e6c512 crc_mid=52b8a38d/52b8a38d crc_tail=aed88090/aed88090 stable=1 raw_full=ab73638c raw_q=a0d47519/615fdf49/fc4794e7/8726f89b raw_edge=35d58231 raw_probe=594.4ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=e12ae597/8f809abc/664eb94b submit=3 complete=3 seq=1170/1170 stale=0 prepare=42.3ms draw=36.4ms
+W (87712) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=5 sensor=pattern display=camera idle=0ms full_probe=1 frames=60 changes=34 unique=8 overflow=10 last=e09659ae avg_probe=0.522ms max_probe=0.906ms
+I (87719) rc_video: [CAM-DIAG-C16G] HEALTH window=5 display_frame=413 guard_errors=0 quiesce=413 resume_before=412 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (89336) rc_video: [DEBUG-C151] display frame=420 consumer=0 active=1/0x3c177000->-2/0x0 select=840->840 became_active=0 overlap=0 overlap_count=0 finish=420 last_finished=0/0x3c0e0ec0 finish_active=1 finish_collision=0 guard=1 guard_errors=0 quiesce=420 resume_before=419 resume_pending=1 lifecycle_errors=0
+I (89353) rc_video: [CAM-DIAG-C16G] frame=420 window=5 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=420->420 crc_first=37e6c512/37e6c512 crc_mid=52b8a38d/52b8a38d crc_tail=aed88090/aed88090 stable=1 raw_full=a97f5d65 raw_q=a0d47519/64e769fb/9efb8149/3a608318 raw_edge=7e445b01 raw_probe=593.9ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=23251ca7/3ee5c693/61ccb54e submit=3 complete=3 seq=1260/1260 stale=0 prepare=42.1ms draw=36.3ms
+W (92555) rc_video: [CAM-DIAG-C16G] PROFILE window=6 sensor=pattern display=hold idle=0ms full_probe=0 capture=441
+W (92555) rc_tank: [CAM-DIAG-C16G] WINDOW_06 start: wifi=on sensor=pattern display=hold idle=0ms full_probe=off
+W (92620) rc_video: [CAM-DIAG-C16G] LIGHT stage=complete window=5 sensor=pattern display=camera idle=0ms full_probe=1 frames=88 changes=55 unique=8 overflow=20 last=e09659ae avg_probe=0.521ms max_probe=0.906ms
+W (94995) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=6 sensor=pattern display=hold idle=0ms full_probe=0 frames=30 changes=20 unique=8 overflow=7 last=e09659ae avg_probe=0.503ms max_probe=0.531ms
+I (95002) rc_video: [CAM-DIAG-C16G] HEALTH window=6 display_frame=471 guard_errors=0 quiesce=471 resume_before=470 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (97370) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=6 sensor=pattern display=hold idle=0ms full_probe=0 frames=60 changes=39 unique=8 overflow=19 last=36643474 avg_probe=0.504ms max_probe=0.531ms
+I (97378) rc_video: [CAM-DIAG-C16G] HEALTH window=6 display_frame=501 guard_errors=0 quiesce=501 resume_before=500 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (99744) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=6 sensor=pattern display=hold idle=0ms full_probe=0 frames=90 changes=61 unique=8 overflow=32 last=e09659ae avg_probe=0.505ms max_probe=0.560ms
+I (99752) rc_video: [CAM-DIAG-C16G] HEALTH window=6 display_frame=531 guard_errors=0 quiesce=531 resume_before=530 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (102119) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=6 sensor=pattern display=hold idle=0ms full_probe=0 frames=120 changes=80 unique=8 overflow=43 last=e09659ae avg_probe=0.505ms max_probe=0.629ms
+I (102127) rc_video: [CAM-DIAG-C16G] HEALTH window=6 display_frame=561 guard_errors=0 quiesce=561 resume_before=560 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (104494) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=6 sensor=pattern display=hold idle=0ms full_probe=0 frames=150 changes=100 unique=8 overflow=57 last=a3737902 avg_probe=0.505ms max_probe=0.629ms
+I (104502) rc_video: [CAM-DIAG-C16G] HEALTH window=6 display_frame=591 guard_errors=0 quiesce=591 resume_before=590 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (106869) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=6 sensor=pattern display=hold idle=0ms full_probe=0 frames=180 changes=121 unique=8 overflow=72 last=e09659ae avg_probe=0.506ms max_probe=0.629ms
+I (106877) rc_video: [CAM-DIAG-C16G] HEALTH window=6 display_frame=621 guard_errors=0 quiesce=621 resume_before=620 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (107564) rc_video: [CAM-DIAG-C16G] PROFILE window=7 sensor=pattern display=fixture idle=0ms full_probe=0 capture=629
+W (107565) rc_tank: [CAM-DIAG-C16G] WINDOW_07 start: wifi=on sensor=pattern display=fixture idle=0ms full_probe=off
+W (107581) rc_video: [CAM-DIAG-C16G] LIGHT stage=complete window=6 sensor=pattern display=hold idle=0ms full_probe=0 frames=189 changes=128 unique=8 overflow=75 last=b084bb8e avg_probe=0.506ms max_probe=0.629ms
+W (111149) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=7 sensor=pattern display=fixture idle=0ms full_probe=0 frames=30 changes=18 unique=8 overflow=4 last=e09659ae avg_probe=0.521ms max_probe=0.844ms
+I (111157) rc_video: [CAM-DIAG-C16G] HEALTH window=7 display_frame=660 guard_errors=0 quiesce=660 resume_before=659 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (114712) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=7 sensor=pattern display=fixture idle=0ms full_probe=0 frames=60 changes=35 unique=8 overflow=16 last=e09659ae avg_probe=0.516ms max_probe=0.844ms
+I (114720) rc_video: [CAM-DIAG-C16G] HEALTH window=7 display_frame=690 guard_errors=0 quiesce=690 resume_before=689 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (118274) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=7 sensor=pattern display=fixture idle=0ms full_probe=0 frames=90 changes=57 unique=8 overflow=31 last=f70919cd avg_probe=0.515ms max_probe=0.844ms
+I (118283) rc_video: [CAM-DIAG-C16G] HEALTH window=7 display_frame=720 guard_errors=0 quiesce=720 resume_before=719 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (121836) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=7 sensor=pattern display=fixture idle=0ms full_probe=0 frames=120 changes=76 unique=8 overflow=43 last=30dc4e5b avg_probe=0.514ms max_probe=0.844ms
+I (121844) rc_video: [CAM-DIAG-C16G] HEALTH window=7 display_frame=750 guard_errors=0 quiesce=750 resume_before=749 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (122574) rc_video: [CAM-DIAG-C16G] PROFILE window=8 sensor=pattern display=camera idle=20ms full_probe=0 capture=756
+W (122574) rc_tank: [CAM-DIAG-C16G] WINDOW_08 start: wifi=on sensor=pattern display=camera idle=20ms full_probe=off
+W (122687) rc_video: [CAM-DIAG-C16G] LIGHT stage=complete window=7 sensor=pattern display=fixture idle=0ms full_probe=0 frames=127 changes=80 unique=8 overflow=46 last=0e859c97 avg_probe=0.514ms max_probe=0.844ms
+W (127410) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=8 sensor=pattern display=camera idle=20ms full_probe=0 frames=30 changes=21 unique=8 overflow=5 last=c25d9f2a avg_probe=0.513ms max_probe=0.531ms
+I (127418) rc_video: [CAM-DIAG-C16G] HEALTH window=8 display_frame=787 guard_errors=0 quiesce=787 resume_before=786 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (132199) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=8 sensor=pattern display=camera idle=20ms full_probe=0 frames=60 changes=48 unique=8 overflow=20 last=9f4d3191 avg_probe=0.513ms max_probe=0.566ms
+I (132207) rc_video: [CAM-DIAG-C16G] HEALTH window=8 display_frame=817 guard_errors=0 quiesce=817 resume_before=816 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (136988) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=8 sensor=pattern display=camera idle=20ms full_probe=0 frames=90 changes=70 unique=8 overflow=33 last=e09659ae avg_probe=0.513ms max_probe=0.566ms
+I (136996) rc_video: [CAM-DIAG-C16G] HEALTH window=8 display_frame=847 guard_errors=0 quiesce=847 resume_before=846 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (137584) rc_video: [CAM-DIAG-C16G] PROFILE window=9 sensor=pattern display=camera idle=50ms full_probe=0 capture=851
+W (137584) rc_tank: [CAM-DIAG-C16G] WINDOW_09 start: wifi=on sensor=pattern display=camera idle=50ms full_probe=off
+W (137714) rc_video: [CAM-DIAG-C16G] LIGHT stage=complete window=8 sensor=pattern display=camera idle=20ms full_probe=0 frames=94 changes=73 unique=8 overflow=35 last=647da843 avg_probe=0.513ms max_probe=0.566ms
+W (143598) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=9 sensor=pattern display=camera idle=50ms full_probe=0 frames=30 changes=13 unique=8 overflow=3 last=be096b7f avg_probe=0.514ms max_probe=0.531ms
+I (143606) rc_video: [CAM-DIAG-C16G] HEALTH window=9 display_frame=881 guard_errors=0 quiesce=881 resume_before=880 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (149535) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=9 sensor=pattern display=camera idle=50ms full_probe=0 frames=60 changes=31 unique=8 overflow=15 last=692782c6 avg_probe=0.517ms max_probe=0.654ms
+I (149543) rc_video: [CAM-DIAG-C16G] HEALTH window=9 display_frame=911 guard_errors=0 quiesce=911 resume_before=910 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (152594) rc_video: [CAM-DIAG-C16G] PROFILE window=10 sensor=pattern display=camera idle=100ms full_probe=0 capture=926
+W (152595) rc_tank: [CAM-DIAG-C16G] WINDOW_10 start: wifi=on sensor=pattern display=camera idle=100ms full_probe=off
+W (152802) rc_video: [CAM-DIAG-C16G] LIGHT stage=complete window=9 sensor=pattern display=camera idle=50ms full_probe=0 frames=76 changes=39 unique=8 overflow=22 last=9cac8472 avg_probe=0.517ms max_probe=0.654ms
+W (159825) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=10 sensor=pattern display=camera idle=100ms full_probe=0 frames=30 changes=23 unique=8 overflow=7 last=e09659ae avg_probe=0.522ms max_probe=0.688ms
+I (159833) rc_video: [CAM-DIAG-C16G] HEALTH window=10 display_frame=957 guard_errors=0 quiesce=957 resume_before=956 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (166989) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=10 sensor=pattern display=camera idle=100ms full_probe=0 frames=60 changes=41 unique=8 overflow=18 last=e09659ae avg_probe=0.525ms max_probe=0.706ms
+I (166997) rc_video: [CAM-DIAG-C16G] HEALTH window=10 display_frame=987 guard_errors=0 quiesce=987 resume_before=986 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (167604) rc_video: [CAM-DIAG-C16G] PROFILE window=11 sensor=pattern display=fixture idle=100ms full_probe=0 capture=989
+W (167604) rc_video: [CAM-DIAG-C16G] LIGHT stage=complete window=10 sensor=pattern display=camera idle=100ms full_probe=0 frames=62 changes=43 unique=8 overflow=19 last=e09659ae avg_probe=0.525ms max_probe=0.706ms
+W (167605) rc_tank: [CAM-DIAG-C16G] WINDOW_11 start: wifi=on sensor=pattern display=fixture idle=100ms full_probe=off
+W (167663) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (167821) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (167979) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (168138) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (168296) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (168454) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (168613) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (168771) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (168929) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (169088) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (169246) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (169404) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (169563) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (169721) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (169879) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (170037) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (170196) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (170354) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (170512) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (170671) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (170829) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (170987) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (171146) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (171304) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (171462) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (171621) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (171779) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (171937) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (172096) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (172254) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (172412) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (172571) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (172729) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (172887) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (173046) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (173204) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (173362) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (173521) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (173679) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (173837) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (173995) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (174154) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (174312) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (174470) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (174629) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (174787) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (174945) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (175104) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (175262) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (175420) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (175579) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (175737) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (175895) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (176054) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (176212) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (176370) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (176529) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (176687) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (176845) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (177003) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (177162) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (177320) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (177478) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (177637) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (177795) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (177954) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (178112) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (178270) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (178428) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (178587) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (178745) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (178903) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (179062) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (179220) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (179378) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (179537) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (179695) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (179853) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (180011) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (180170) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (180328) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (180487) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (180645) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (180803) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (180961) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (181120) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (181278) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (181436) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (181595) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (181753) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (181911) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (182070) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (182228) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (182386) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (182545) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (182635) camera_hal: [CAM-DIAG-C16G] SP0A39 test_pattern=off P1:32 before=0x80 write=0x00 read=0x15 expected_bit=0x00
+W (182703) rc_video: [CAM-DIAG-C16G] preview display failed: ESP_ERR_INVALID_ARG
+W (182737) rc_video: [CAM-DIAG-C16G] PROFILE window=12 sensor=real display=camera idle=0ms full_probe=0 capture=1085
+W (182737) rc_tank: [CAM-DIAG-C16G] WINDOW_12 start: wifi=on sensor=real display=camera idle=0ms full_probe=off
+W (182804) rc_video: [CAM-DIAG-C16G] LIGHT stage=complete window=11 sensor=pattern display=fixture idle=100ms full_probe=0 frames=0 changes=0 unique=0 overflow=0 last=00000000 avg_probe=0.000ms max_probe=0.000ms
+W (187412) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=12 sensor=real display=camera idle=0ms full_probe=0 frames=30 changes=29 unique=8 overflow=22 last=95721cf4 avg_probe=0.519ms max_probe=0.728ms
+I (187420) rc_video: [CAM-DIAG-C16G] HEALTH window=12 display_frame=1019 guard_errors=0 quiesce=1115 resume_before=1114 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (191964) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=12 sensor=real display=camera idle=0ms full_probe=0 frames=60 changes=59 unique=8 overflow=52 last=e5244ee6 avg_probe=0.516ms max_probe=0.728ms
+I (191972) rc_video: [CAM-DIAG-C16G] HEALTH window=12 display_frame=1049 guard_errors=0 quiesce=1145 resume_before=1144 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (196556) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=12 sensor=real display=camera idle=0ms full_probe=0 frames=90 changes=89 unique=8 overflow=82 last=caa05bd1 avg_probe=0.516ms max_probe=0.728ms
+I (196563) rc_video: [CAM-DIAG-C16G] HEALTH window=12 display_frame=1079 guard_errors=0 quiesce=1175 resume_before=1174 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (197746) rc_video: [CAM-DIAG-C16G] PROFILE window=13 sensor=real display=camera idle=50ms full_probe=0 capture=1183
+W (197746) rc_tank: [CAM-DIAG-C16G] WINDOW_13 start: wifi=on sensor=real display=camera idle=50ms full_probe=off
+W (197832) rc_video: [CAM-DIAG-C16G] LIGHT stage=complete window=12 sensor=real display=camera idle=0ms full_probe=0 frames=98 changes=97 unique=8 overflow=90 last=1c456d2c avg_probe=0.515ms max_probe=0.728ms
+W (203719) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=13 sensor=real display=camera idle=50ms full_probe=0 frames=30 changes=29 unique=8 overflow=22 last=05c5ef11 avg_probe=0.513ms max_probe=0.530ms
+I (203727) rc_video: [CAM-DIAG-C16G] HEALTH window=13 display_frame=1117 guard_errors=0 quiesce=1213 resume_before=1212 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (209656) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=13 sensor=real display=camera idle=50ms full_probe=0 frames=60 changes=59 unique=8 overflow=52 last=79320710 avg_probe=0.514ms max_probe=0.531ms
+I (209664) rc_video: [CAM-DIAG-C16G] HEALTH window=13 display_frame=1147 guard_errors=0 quiesce=1243 resume_before=1242 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (212755) rc_video: [CAM-DIAG-C16G] PROFILE window=14 sensor=real display=camera idle=100ms full_probe=0 capture=1259
+W (212755) rc_tank: [CAM-DIAG-C16G] WINDOW_14 start: wifi=on sensor=real display=camera idle=100ms full_probe=off
+W (212924) rc_video: [CAM-DIAG-C16G] LIGHT stage=complete window=13 sensor=real display=camera idle=50ms full_probe=0 frames=76 changes=75 unique=8 overflow=68 last=90a37f72 avg_probe=0.515ms max_probe=0.587ms
+W (219947) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=14 sensor=real display=camera idle=100ms full_probe=0 frames=30 changes=29 unique=8 overflow=22 last=f31cb90c avg_probe=0.515ms max_probe=0.530ms
+I (219955) rc_video: [CAM-DIAG-C16G] HEALTH window=14 display_frame=1193 guard_errors=0 quiesce=1289 resume_before=1288 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (227111) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=14 sensor=real display=camera idle=100ms full_probe=0 frames=60 changes=59 unique=8 overflow=52 last=d6f068d4 avg_probe=0.515ms max_probe=0.530ms
+I (227119) rc_video: [CAM-DIAG-C16G] HEALTH window=14 display_frame=1223 guard_errors=0 quiesce=1319 resume_before=1318 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+I (227767) wifi:flush txq
+I (227769) wifi:stop sw txq
+I (227769) wifi:lmac stop hw txq
+W (227773) camera_hal: [CAM-DIAG-C16G] SP0A39 test_pattern=on P1:32 before=0x00 write=0x80 read=0x80 expected_bit=0x80
+W (227876) rc_video: [CAM-DIAG-C16G] PROFILE window=15 sensor=pattern display=camera idle=0ms full_probe=0 capture=1322
+W (227876) rc_tank: [CAM-DIAG-C16G] WINDOW_15 start: wifi=off sensor=pattern display=camera idle=0ms full_probe=off
+W (227963) rc_video: [CAM-DIAG-C16G] LIGHT stage=complete window=14 sensor=real display=camera idle=100ms full_probe=0 frames=63 changes=62 unique=8 overflow=55 last=945256c7 avg_probe=0.515ms max_probe=0.531ms
+W (231543) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=15 sensor=pattern display=camera idle=0ms full_probe=0 frames=30 changes=2 unique=2 overflow=0 last=abce4c05 avg_probe=0.501ms max_probe=0.521ms
+I (231550) rc_video: [CAM-DIAG-C16G] HEALTH window=15 display_frame=1256 guard_errors=0 quiesce=1352 resume_before=1351 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (235184) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=15 sensor=pattern display=camera idle=0ms full_probe=0 frames=60 changes=4 unique=3 overflow=0 last=abce4c05 avg_probe=0.500ms max_probe=0.521ms
+I (235191) rc_video: [CAM-DIAG-C16G] HEALTH window=15 display_frame=1286 guard_errors=0 quiesce=1382 resume_before=1381 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (238786) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=15 sensor=pattern display=camera idle=0ms full_probe=0 frames=90 changes=6 unique=4 overflow=0 last=abce4c05 avg_probe=0.500ms max_probe=0.521ms
+I (238793) rc_video: [CAM-DIAG-C16G] HEALTH window=15 display_frame=1316 guard_errors=0 quiesce=1412 resume_before=1411 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (242427) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=15 sensor=pattern display=camera idle=0ms full_probe=0 frames=120 changes=10 unique=6 overflow=0 last=abce4c05 avg_probe=0.500ms max_probe=0.523ms
+I (242435) rc_video: [CAM-DIAG-C16G] HEALTH window=15 display_frame=1346 guard_errors=0 quiesce=1442 resume_before=1441 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (242888) camera_hal: [CAM-DIAG-C16G] SP0A39 test_pattern=off P1:32 before=0x80 write=0x00 read=0x00 expected_bit=0x00
+W (242989) rc_video: [CAM-DIAG-C16G] PROFILE window=16 sensor=real display=camera idle=0ms full_probe=0 capture=1447
+W (242989) rc_tank: [CAM-DIAG-C16G] WINDOW_16 start: wifi=off sensor=real display=camera idle=0ms full_probe=off
+W (242998) rc_tank: [CAM-DIAG-C16G] multi-window VYUY sequence complete; hold WINDOW_16
+I (243006) rc_tank: Tank running (video + control; audio disabled)
+I (243012) rc_tank: app_main done, idle loop
+W (243064) rc_video: [CAM-DIAG-C16G] LIGHT stage=complete window=15 sensor=pattern display=camera idle=0ms full_probe=0 frames=125 changes=11 unique=7 overflow=0 last=5ef1f51b avg_probe=0.501ms max_probe=0.523ms
+W (246702) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=30 changes=29 unique=8 overflow=22 last=1129f873 avg_probe=0.499ms max_probe=0.527ms
+I (246709) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1381 guard_errors=0 quiesce=1477 resume_before=1476 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (250343) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=60 changes=59 unique=8 overflow=52 last=aa59037f avg_probe=0.500ms max_probe=0.527ms
+I (250351) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1411 guard_errors=0 quiesce=1507 resume_before=1506 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (253984) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=90 changes=89 unique=8 overflow=82 last=e1736ef8 avg_probe=0.500ms max_probe=0.527ms
+I (253992) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1441 guard_errors=0 quiesce=1537 resume_before=1536 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (257626) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=120 changes=119 unique=8 overflow=112 last=7fa3031e avg_probe=0.500ms max_probe=0.527ms
+I (257634) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1471 guard_errors=0 quiesce=1567 resume_before=1566 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (261267) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=150 changes=149 unique=8 overflow=142 last=825733bb avg_probe=0.500ms max_probe=0.527ms
+I (261275) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1501 guard_errors=0 quiesce=1597 resume_before=1596 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (264908) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=180 changes=179 unique=8 overflow=172 last=79a900b8 avg_probe=0.500ms max_probe=0.527ms
+I (264916) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1531 guard_errors=0 quiesce=1627 resume_before=1626 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (268589) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=210 changes=209 unique=8 overflow=202 last=8ba74a39 avg_probe=0.500ms max_probe=0.527ms
+I (268597) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1561 guard_errors=0 quiesce=1657 resume_before=1656 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (272230) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=240 changes=239 unique=8 overflow=232 last=4af34e82 avg_probe=0.500ms max_probe=0.527ms
+I (272238) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1591 guard_errors=0 quiesce=1687 resume_before=1686 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (275872) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=270 changes=269 unique=8 overflow=262 last=5c065d3e avg_probe=0.500ms max_probe=0.527ms
+I (275880) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1621 guard_errors=0 quiesce=1717 resume_before=1716 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (279513) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=300 changes=299 unique=8 overflow=292 last=d2e9c39d avg_probe=0.500ms max_probe=0.527ms
+I (279521) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1651 guard_errors=0 quiesce=1747 resume_before=1746 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (283154) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=330 changes=329 unique=8 overflow=322 last=2028d5c3 avg_probe=0.500ms max_probe=0.527ms
+I (283162) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1681 guard_errors=0 quiesce=1777 resume_before=1776 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (286796) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=360 changes=359 unique=8 overflow=352 last=e68270b9 avg_probe=0.500ms max_probe=0.527ms
+I (286804) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1711 guard_errors=0 quiesce=1807 resume_before=1806 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (290437) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=390 changes=389 unique=8 overflow=382 last=485b5d4e avg_probe=0.500ms max_probe=0.527ms
+I (290445) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1741 guard_errors=0 quiesce=1837 resume_before=1836 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (294078) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=420 changes=419 unique=8 overflow=412 last=15bdf887 avg_probe=0.500ms max_probe=0.527ms
+I (294086) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1771 guard_errors=0 quiesce=1867 resume_before=1866 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (297759) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=450 changes=449 unique=8 overflow=442 last=263128ba avg_probe=0.500ms max_probe=0.527ms
+I (297767) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1801 guard_errors=0 quiesce=1897 resume_before=1896 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (301440) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=480 changes=479 unique=8 overflow=472 last=be49a7c3 avg_probe=0.500ms max_probe=0.527ms
+I (301448) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1831 guard_errors=0 quiesce=1927 resume_before=1926 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (305081) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=510 changes=509 unique=8 overflow=502 last=ee03e72c avg_probe=0.500ms max_probe=0.527ms
+I (305089) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1861 guard_errors=0 quiesce=1957 resume_before=1956 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (308723) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=540 changes=539 unique=8 overflow=532 last=629e5123 avg_probe=0.500ms max_probe=0.527ms
+I (308731) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1891 guard_errors=0 quiesce=1987 resume_before=1986 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (312364) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=570 changes=569 unique=8 overflow=562 last=ac394d77 avg_probe=0.500ms max_probe=0.527ms
+I (312372) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1921 guard_errors=0 quiesce=2017 resume_before=2016 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (316045) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=600 changes=599 unique=8 overflow=592 last=a0360e2a avg_probe=0.500ms max_probe=0.527ms
+I (316052) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1951 guard_errors=0 quiesce=2047 resume_before=2046 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (319686) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=630 changes=629 unique=8 overflow=622 last=e839ec8c avg_probe=0.500ms max_probe=0.527ms
+I (319694) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=1981 guard_errors=0 quiesce=2077 resume_before=2076 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (323288) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=660 changes=659 unique=8 overflow=652 last=b7fe6357 avg_probe=0.500ms max_probe=0.527ms
+I (323296) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=2011 guard_errors=0 quiesce=2107 resume_before=2106 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (326929) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=690 changes=689 unique=8 overflow=682 last=8c50fa7f avg_probe=0.500ms max_probe=0.527ms
+I (326937) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=2041 guard_errors=0 quiesce=2137 resume_before=2136 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (330570) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=720 changes=719 unique=8 overflow=712 last=6daa8547 avg_probe=0.500ms max_probe=0.527ms
+I (330578) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=2071 guard_errors=0 quiesce=2167 resume_before=2166 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (334212) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=750 changes=749 unique=8 overflow=742 last=4a9333d1 avg_probe=0.500ms max_probe=0.527ms
+I (334220) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=2101 guard_errors=0 quiesce=2197 resume_before=2196 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (337853) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=780 changes=779 unique=8 overflow=772 last=b3988fd2 avg_probe=0.500ms max_probe=0.527ms
+I (337861) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=2131 guard_errors=0 quiesce=2227 resume_before=2226 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (341455) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=810 changes=809 unique=8 overflow=802 last=98d8e376 avg_probe=0.500ms max_probe=0.527ms
+I (341463) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=2161 guard_errors=0 quiesce=2257 resume_before=2256 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (345096) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=840 changes=839 unique=8 overflow=832 last=1851f2a3 avg_probe=0.500ms max_probe=0.527ms
+I (345104) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=2191 guard_errors=0 quiesce=2287 resume_before=2286 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (348698) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=870 changes=869 unique=8 overflow=862 last=23de8b93 avg_probe=0.500ms max_probe=0.527ms
+I (348706) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=2221 guard_errors=0 quiesce=2317 resume_before=2316 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (352339) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=900 changes=899 unique=8 overflow=892 last=e67eaff5 avg_probe=0.500ms max_probe=0.527ms
+I (352347) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=2251 guard_errors=0 quiesce=2347 resume_before=2346 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (355980) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=930 changes=929 unique=8 overflow=922 last=f6a5d178 avg_probe=0.500ms max_probe=0.527ms
+I (355988) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=2281 guard_errors=0 quiesce=2377 resume_before=2376 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0
+W (359661) rc_video: [CAM-DIAG-C16G] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 frames=960 changes=959 unique=8 overflow=952 last=8bb25d37 avg_probe=0.500ms max_probe=0.527ms
+I (359669) rc_video: [CAM-DIAG-C16G] HEALTH window=16 display_frame=2311 guard_errors=0 quiesce=2407 resume_before=2406 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0

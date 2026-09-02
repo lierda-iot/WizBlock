@@ -1,0 +1,7 @@
+dependencies:
+  espressif/iot_usbh_ecm: "*"
+
+  espressif/usb:
+    version: "*"
+    rules:
+      - if: "idf_version >= 6.0"   

@@ -1,0 +1,30 @@
+I (36124) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (36124) wifi:station: 44:1b:f6:f3:ae:70 join, AID=1, bgn, 40U
+I (36155) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:70
+I (36199) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (36199) rc_net: STA assigned IP: 192.168.4.2
+I (36200) rc_tank: Network connected, peer: 192.168.4.2
+I (36205) rc_net: Ctrl UDP socket bound to port 8001
+I (36210) rc_net: Video TCP listening on port 8002
+I (36215) rc_net: Audio TCP listening on port 8003
+I (36218) rc_tank: Socket channels started
+I (36230) rc_video: Tank video started
+I (36231) rc_audio: Audio RX task started
+I (36237) opus_codec: Opus decoder: rate=16000 ch=1 frame=960 samples
+I (36238) rc_audio: Audio play task started
+I (36247) rc_video: Video TX task started (sensor-driven, no artificial cap, Q=60)
+I (36247) rc_video: TX theory: raw=614400 B/frame, QVGA YUV=153600 B/frame, target10fps raw=1.54 MB/s
+I (36276) rc_audio: Audio playback tasks started
+I (37230) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:70), tid:0, ssn:0, winSize:64
+I (37266) rc_net: Video client connected
+I (37283) rc_net: Audio client connected
+I (43221) rc_video: Sent 30 | cap_fps=25.3 send_fps=4.3 | Avg(ms): wait=0.0 cache=0.0 subsample=46.5 encode=65.3 send=119.4 total=231.3 | JPEG=18145B
+I (49502) rc_video: Sent 60 | cap_fps=25.2 send_fps=4.8 | Avg(ms): wait=0.0 cache=0.0 subsample=46.1 encode=65.5 send=96.4 total=208.1 | JPEG=20178B
+I (54907) rc_video: Sent 90 | cap_fps=25.3 send_fps=5.6 | Avg(ms): wait=0.0 cache=0.0 subsample=46.0 encode=67.9 send=65.2 total=179.1 | JPEG=27086B
+I (60519) rc_video: Sent 120 | cap_fps=25.3 send_fps=5.3 | Avg(ms): wait=0.0 cache=0.0 subsample=46.0 encode=69.3 send=70.7 total=186.0 | JPEG=22895B
+I (66687) rc_video: Sent 150 | cap_fps=25.1 send_fps=4.9 | Avg(ms): wait=0.0 cache=0.0 subsample=46.3 encode=67.5 send=90.6 total=204.5 | JPEG=23138B
+I (72184) rc_video: Sent 180 | cap_fps=25.3 send_fps=5.5 | Avg(ms): wait=0.0 cache=0.0 subsample=45.9 encode=69.4 send=66.7 total=182.1 | JPEG=16121B
+I (78476) rc_video: Sent 210 | cap_fps=25.3 send_fps=4.8 | Avg(ms): wait=0.0 cache=0.0 subsample=46.9 encode=65.3 send=96.3 total=208.6 | JPEG=20746B
+I (84654) rc_video: Sent 240 | cap_fps=25.3 send_fps=4.9 | Avg(ms): wait=0.0 cache=0.0 subsample=45.9 encode=68.9 send=89.9 total=204.7 | JPEG=33631B
+I (90515) rc_video: Sent 270 | cap_fps=25.4 send_fps=5.1 | Avg(ms): wait=0.0 cache=0.0 subsample=46.2 encode=68.0 send=80.0 total=194.3 | JPEG=22921B
+I (96725) rc_video: Sent 300 | cap_fps=25.1 send_fps=4.8 | Avg(ms): wait=0.0 cache=0.0 subsample=46.2 encode=67.9 send=91.7 total=205.9 | JPEG=35182B

@@ -1,0 +1,23 @@
+test_camera_hal_policy exit=0
+test_rc_tank_startup_policy exit=0
+test_rc_net_stream exit=0
+test_rc_net_send_policy exit=0
+test_rc_video_buffer_select exit=0
+test_rc_capture_pool exit=0
+test_rc_capture_pool_target exit=0
+test_rc_video_scale exit=0
+test_rc_video_yuv_scale exit=0
+test_rc_video_format exit=0
+test_rc_video_controller_policy exit=0
+test_rc_video_udp_transport exit=0
+test_rc_display_orientation exit=0
+test_rc_remote_display_policy exit=0
+test_rc_control_tx_policy exit=0
+test_rc_joystick_direction exit=0
+test_rc_video_display_plan exit=0
+test_rc_video_latest_frame exit=0
+test_rc_tank_screen_render exit=0
+test_rc_rle exit=0
+clang=C:\Users\15301\AppData\Local\LLVM-MinGW\22.1.8-ucrt\llvm-mingw-20260616-ucrt-x86_64\bin\clang.exe
+target=x86_64-w64-windows-gnu
+rc_tank_demo host tests passed

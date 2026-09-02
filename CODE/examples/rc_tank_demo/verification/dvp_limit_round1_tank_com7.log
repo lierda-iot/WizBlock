@@ -1,0 +1,101 @@
+I (16391) camera_hal: full I2C scan after camera power-up (diagnostic only)...
+I (16393) camera_hal:   post-powerup ACK at 0x15
+I (16393) camera_hal:   post-powerup ACK at 0x18
+I (16396) camera_hal:   post-powerup ACK at 0x21
+I (16400) camera_hal:   post-powerup ACK at 0x22
+I (16408) camera_hal:   post-powerup ACK at 0x40
+I (16410) camera_hal:   post-powerup ACK at 0x51
+I (16416) camera_hal:   post-powerup ACK at 0x68
+I (16419) camera_hal: DVP GPIO diagnostics (checking PCLK/VSYNC/HSYNC activity)...
+I (16485) camera_hal: DVP diagnostics: PCLK_changes=0 VSYNC_changes=0 HSYNC_changes=0
+W (16485) camera_hal: PCLK has no transitions - MCLK likely not reaching sensor or sensor not active
+I (16490) camera_hal: using sensor address 0x21
+I (16495) camera_hal: SP0A39 I2C device added at 0x21
+I (16501) camera_hal: SP0A39 chip ID: 0x0A39
+I (16623) camera_hal: SP0A39 register init done: VYUY 640x480 (359 regs)
+I (16624) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_table value=0x00 expected=0x01
+E (16627) camera_hal: camera_hal_verify_expected_output_p0_31(92): unexpected p0_31=0x00 at post_table
+W (16636) camera_hal: [CAM-PROBE] output state differs after table; continuing: ESP_ERR_INVALID_RESPONSE
+I (16665) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_delay value=0x01 expected=0x01
+I (16666) camera_hal: camera HAL initialized (sensor ready, DVP capture not yet implemented)
+I (16670) board_camera: camera ready
+I (16800) rc_video:   3 DMA-capable PSRAM framebuffers allocated (600 KB each)
+I (16802) dvp_ext: DVP Extended camera controller driver is initialized
+I (16803) dvp_ext: [STABLE-DVP] direct half-copy active dma=102400 half=51200
+I (16809) rc_video: [STABLE-CAPTURE] staged DVP controller created dma=102400 half=51200
+I (16817) rc_video: Camera initialized
+I (16824) rc_net: Initializing as SoftAP (Tank)
+I (16826) pp: pp rom version: e7ae62f
+I (16829) net80211: net80211 rom version: e7ae62f
+I (16835) wifi:wifi driver task: 3fce45c8, prio:23, stack:6656, core=0
+I (16843) wifi:wifi firmware version: 0947e8b
+I (16844) wifi:wifi certification version: v7.0
+I (16847) wifi:config NVS flash: enabled
+I (16851) wifi:config nano formatting: disabled
+I (16855) wifi:Init data frame dynamic rx buffer num: 32
+I (16860) wifi:Init static rx mgmt buffer num: 5
+I (16864) wifi:Init management short buffer num: 32
+I (16869) wifi:Init dynamic tx buffer num: 64
+I (16873) wifi:Init static tx FG buffer num: 2
+I (16877) wifi:Init static rx buffer size: 1600
+I (16882) wifi:Init static rx buffer num: 10
+I (16885) wifi:Init dynamic rx buffer num: 32
+I (16891) wifi_init: rx ba win: 6
+I (16893) wifi_init: accept mbox: 6
+I (16896) wifi_init: tcpip mbox: 16
+I (16899) wifi_init: udp mbox: 6
+I (16902) wifi_init: tcp mbox: 6
+I (16905) wifi_init: tcp tx win: 5760
+I (16908) wifi_init: tcp rx win: 5760
+I (16912) wifi_init: tcp mss: 1440
+I (16915) wifi_init: WiFi IRAM OP enabled
+I (16919) wifi_init: WiFi RX IRAM OP enabled
+I (16923) rc_net: AP set_mode/config, SSID=RC_TANK_F3AE79 ch=1
+I (17004) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+W (17005) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration
+I (17041) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)
+I (17050) wifi:mode : softAP (44:1b:f6:f3:ae:79)
+I (17055) wifi:Total power save buffer number: 32
+I (17056) wifi:Init max length of beacon: 752/752
+I (17057) wifi:Init max length of beacon: 752/752
+I (17059) rc_net: SoftAP started, SSID: RC_TANK_F3AE79
+I (17060) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (17071) rc_control: Ctrl RX task started
+I (17075) rc_control: Tank control started
+I (17078) rc_tank: Tank ready; waiting for Remote
+I (30668) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (30669) wifi:station: 44:1b:f6:f3:ae:40 join, AID=1, bgn, 40U
+I (30697) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:40
+I (30735) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (30735) rc_net: STA assigned IP: 192.168.4.2
+I (30736) rc_control: Network connected
+I (30739) rc_tank: Network connected, peer: 192.168.4.2
+I (30745) rc_net: Ctrl UDP socket bound to port 8001
+I (30749) rc_net: Video UDP socket bound to port 8002
+I (30754) rc_net: Audio TCP listening on port 8003
+I (30764) rc_video: Video TX task started (240x180 Q=60)
+I (30764) rc_video: Tank video started (camera source)
+W (30920) rc_net: Video UDP send failed: seq=0 chunk=4/7 bytes=1208 sent=-1 errno=12 attempts=4
+W (30921) rc_video: Video send failed count=1 err=ESP_FAIL
+I (31798) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:40), tid:0, ssn:0, winSize:64
+W (32115) rc_control: Control timeout: motor stop enforced
+I (38792) rc_tank: [DVP-HEALTH] retry=0 complete=72 incomplete=29 total=101 verdict=reject
+I (38793) rc_tank: [DEBUG-DVP-LIMIT] ctrl_rx=1 recv=1073 eof_match=849 eof_mismatch=224 eof_invalid=0 near_control=0_2:0,2_10:0,gt10:29
+I (38801) rc_tank: [DEBUG-DVP-LIMIT] sync_blocks 0=1 1=0 2=0 3=0 4=0 5=0 6=0 7=0 8=0 9=0 10=28 11=72 12plus=0
+I (38811) rc_tank: [DEBUG-DVP-LIMIT] eof_mismatch_block 0=0 1=0 2=0 3=0 4=26 5=43 6=35 7=33 8=29 9=15 10=43 11plus=0
+W (38824) rc_tank: [DVP-HEALTH] retry=1/5; restarting in 1s
+I (39855) wifi:station: 44:1b:f6:f3:ae:40 leave, AID = 1, reason = 2, bss_flags is 756851, bss:0x3fcf14b8
+I (39857) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (39864) wifi:<ba-del>idx:2, tid:0
+I (39866) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (39875) rc_net: STA disconnected, MAC: 44:1b:f6:f3:ae:40
+I (39879) rc_control: Network disconnected: motor stopped
+W (39883) rc_tank: Network disconnected
+I (40054) wifi:flush txq
+I (40055) wifi:stop sw txq
+I (40056) wifi:lmac stop hw txq
+~ÊESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x1 (DOWNLOAD(USB/UART0))
+Saved PC:0x40380f65
+waiting for download

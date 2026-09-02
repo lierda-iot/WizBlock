@@ -1,0 +1,148 @@
+W (322161) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (323241) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (324322) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (325404) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (326485) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (327565) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (328646) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (329727) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (330807) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (331888) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (332968) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (334049) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (335129) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (336210) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+I (336751) rc_net: STA disconnected, MAC: 44:1b:f6:f3:ae:70
+W (336752) rc_tank: Network disconnected
+I (336755) wifi:starting SA query procedure with STA(44:1b:f6:f3:ae:70)
+I (336756) wifi:Send SA Query req with transaction id 39aa
+I (336957) wifi:Send SA Query req with transaction id 39ab
+I (337157) wifi:Send SA Query req with transaction id 39ac
+W (337293) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+I (337357) wifi:Send SA Query req with transaction id 39ad
+I (337557) wifi:Send SA Query req with transaction id 39ae
+I (337757) wifi:Send SA Query req with transaction id 39af
+I (337780) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc
+I (337978) wifi:station: 44:1b:f6:f3:ae:70 leave, AID = 1, reason = 209, bss_flags is 756851, bss:0x3fcf14c0
+I (337979) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (337986) wifi:<ba-del>idx:2, tid:0
+I (337988) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (337997) rc_net: STA disconnected, MAC: 44:1b:f6:f3:ae:70
+W (338001) rc_tank: Network disconnected
+W (338374) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+I (339059) wifi:removing station <44:1b:f6:f3:ae:70> after unsuccessful auth/assoc, AID = 0
+W (339060) wifi:rm mis
+I (339061) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (339068) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (339305) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (339306) wifi:station: 44:1b:f6:f3:ae:70 join, AID=1, bgn, 40U
+I (339350) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:70
+I (339430) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (339431) rc_net: STA assigned IP: 192.168.4.2
+I (339431) rc_tank: Network connected, peer: 192.168.4.2
+W (339436) rc_tank: Channels already started, skip re-init
+W (339455) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+I (340503) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:70), tid:0, ssn:0, winSize:64
+I (340511) rc_net: Video client connected
+W (343974) rc_net: Video send failed, closing client
+W (343976) rc_video: Video send failed: ESP_FAIL
+W (345056) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (346136) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (347217) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (348298) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (349380) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (350461) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (351543) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+I (351692) wifi:station: 44:1b:f6:f3:ae:70 leave, AID = 1, reason = 8, bss_flags is 756851, bss:0x3fcf14c0
+I (351694) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (351700) wifi:<ba-del>idx:2, tid:0
+I (351703) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (351711) rc_net: STA disconnected, MAC: 44:1b:f6:f3:ae:70
+W (351715) rc_tank: Network disconnected
+W (352623) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (353704) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (354784) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (355866) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (356948) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (358030) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (359112) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (360193) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (361276) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (362355) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (363435) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (364516) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (365599) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (366681) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+I (367008) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (367010) wifi:station: 44:1b:f6:f3:ae:70 join, AID=1, bgn, 40U
+I (367340) wifi:station: 44:1b:f6:f3:ae:70 leave, AID = 1, reason = 3, bss_flags is 34311266, bss:0x3fcf14c0
+I (367342) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (367349) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+W (367762) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (368842) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+I (369460) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (369461) wifi:station: 44:1b:f6:f3:ae:70 join, AID=1, bgn, 40U
+I (369509) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:70
+I (369590) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (369591) rc_net: STA assigned IP: 192.168.4.2
+I (369591) rc_tank: Network connected, peer: 192.168.4.2
+W (369598) rc_tank: Channels already started, skip re-init
+W (369922) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (371004) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+I (371135) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:70), tid:0, ssn:0, winSize:64
+I (371183) rc_net: Video client connected
+W (372999) rc_net: Video send failed, closing client
+W (373001) rc_video: Video send failed: ESP_FAIL
+W (374081) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (375160) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (376241) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (377322) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (378404) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (379487) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (380568) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (381650) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+I (381878) wifi:station: 44:1b:f6:f3:ae:70 leave, AID = 1, reason = 8, bss_flags is 756851, bss:0x3fcf14c0
+I (381879) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (381886) wifi:<ba-del>idx:2, tid:0
+I (381888) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (381898) rc_net: STA disconnected, MAC: 44:1b:f6:f3:ae:70
+W (381901) rc_tank: Network disconnected
+W (382730) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (383811) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (384891) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (385972) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (387052) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (388133) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (389214) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (390296) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (391377) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (392457) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (393539) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (394621) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (395702) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (396782) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+I (397353) wifi:removing station <44:1b:f6:f3:ae:70> after unsuccessful auth/assoc, AID = 0
+W (397355) wifi:rm mis
+I (397355) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (397363) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+W (397863) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (398944) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+I (399534) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (399536) wifi:station: 44:1b:f6:f3:ae:70 join, AID=1, bgn, 40U
+I (399617) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:70
+I (399780) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (399781) rc_net: STA assigned IP: 192.168.4.2
+I (399782) rc_tank: Network connected, peer: 192.168.4.2
+W (399787) rc_tank: Channels already started, skip re-init
+W (400025) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+I (400833) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:70), tid:0, ssn:0, winSize:64
+I (400845) rc_net: Video client connected
+W (403011) rc_net: Video send failed, closing client
+W (403013) rc_video: Video send failed: ESP_FAIL
+W (404095) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (405176) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (406258) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (407339) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (408420) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (409502) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (410583) rc_video: Video send failed: ESP_ERR_INVALID_STATE

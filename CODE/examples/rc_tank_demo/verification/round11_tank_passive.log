@@ -1,0 +1,409 @@
+I (15489) camera_hal: RESET=LOW (assert reset)
+I (15509) camera_hal: RESET=HIGH (release reset)
+I (16509) camera_hal: full I2C scan after camera power-up (diagnostic only)...
+I (16511) camera_hal:   post-powerup ACK at 0x15
+I (16511) camera_hal:   post-powerup ACK at 0x18
+I (16514) camera_hal:   post-powerup ACK at 0x21
+I (16518) camera_hal:   post-powerup ACK at 0x22
+I (16526) camera_hal:   post-powerup ACK at 0x40
+I (16528) camera_hal:   post-powerup ACK at 0x51
+I (16534) camera_hal:   post-powerup ACK at 0x68
+I (16537) camera_hal: DVP GPIO diagnostics (checking PCLK/VSYNC/HSYNC activity)...
+I (16603) camera_hal: DVP diagnostics: PCLK_changes=0 VSYNC_changes=0 HSYNC_changes=0
+W (16603) camera_hal: PCLK has no transitions - MCLK likely not reaching sensor or sensor not active
+I (16608) camera_hal: using sensor address 0x21
+I (16613) camera_hal: SP0A39 I2C device added at 0x21
+I (16619) camera_hal: SP0A39 chip ID: 0x0A39
+I (16741) camera_hal: SP0A39 register init done (359 regs)
+I (16741) camera_hal: camera HAL initialized (sensor ready, DVP capture not yet implemented)
+I (16744) board_camera: camera ready
+I (16873) rc_video:   3 framebuffers allocated (600 KB each)
+I (16875) rc_video: Camera initialized
+I (16876) rc_tank: [STEP] Camera init OK
+I (16876) rc_tank: [STEP] Audio play init starting...
+I (16879) rc_audio: Initializing audio playback
+I (16887) board_audio: I2S0 duplex: TX=STD RX=TDM MCLK=42 BCLK=41 WS=39 DOUT=38 DIN=40 rate=16000
+I (16899) ES8311: Work in Slave mode
+I (16905) ES7210: Work in Slave mode
+I (16912) ES7210: Enable ES7210_INPUT_MIC1
+I (16915) ES7210: Enable ES7210_INPUT_MIC2
+I (16918) ES7210: Enable ES7210_INPUT_MIC3
+I (16921) ES7210: Enable ES7210_INPUT_MIC4
+I (16924) ES7210: Enable TDM mode
+I (16928) board_audio: codec devices created (ES8311 out, ES7210 in)
+I (16928) I2S_IF: Paired data: 0x3fce6078, current mode: playback, paired in_enable: 0, paired out_enable: 0
+I (16936) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+I (16944) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (16968) Adev_Codec: Open codec device OK
+I (16969) I2S_IF: Peer mode playback need extend bits 32 to 64
+I (16969) I2S_IF: TDM: RX, data_bit: 16, slot_bit: 16, ws_width: 32, total_slot: 4, slot_mask: 0xf
+I (16975) I2S_IF: TDM: RX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (16982) I2S_IF: STD: TX, data_bit: 16, slot_bit: 32, ws_width: 32, slot_mode: MONO, slot_mask: 0x1
+I (16991) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (17000) ES7210: Bits 16
+I (17007) ES7210: Enable ES7210_INPUT_MIC1
+I (17010) ES7210: Enable ES7210_INPUT_MIC2
+I (17013) ES7210: Enable ES7210_INPUT_MIC3
+I (17016) ES7210: Enable ES7210_INPUT_MIC4
+I (17019) ES7210: Enable TDM mode
+I (17025) ES7210: Unmuted
+I (17025) Adev_Codec: Open codec device OK
+I (17027) board_audio: audio initialized (esp_codec_dev)
+I (17030) rc_audio: Audio playback initialized
+I (17034) rc_tank: [STEP] Audio play init OK
+I (17038) rc_tank: [STEP] Network init starting...
+I (17044) rc_net: Initializing as SoftAP (Tank)
+I (17048) pp: pp rom version: e7ae62f
+I (17051) net80211: net80211 rom version: e7ae62f
+I (17056) wifi:wifi driver task: 3fce9130, prio:23, stack:6656, core=0
+I (17067) wifi:wifi firmware version: 0947e8b
+I (17068) wifi:wifi certification version: v7.0
+I (17069) wifi:config NVS flash: enabled
+I (17073) wifi:config nano formatting: disabled
+I (17077) wifi:Init data frame dynamic rx buffer num: 32
+I (17082) wifi:Init static rx mgmt buffer num: 5
+I (17086) wifi:Init management short buffer num: 32
+I (17091) wifi:Init dynamic tx buffer num: 32
+I (17095) wifi:Init static tx FG buffer num: 2
+I (17099) wifi:Init static rx buffer size: 1600
+I (17104) wifi:Init static rx buffer num: 10
+I (17107) wifi:Init dynamic rx buffer num: 32
+I (17113) wifi_init: rx ba win: 6
+I (17115) wifi_init: accept mbox: 6
+I (17118) wifi_init: tcpip mbox: 16
+I (17121) wifi_init: udp mbox: 6
+I (17124) wifi_init: tcp mbox: 6
+I (17127) wifi_init: tcp tx win: 5760
+I (17130) wifi_init: tcp rx win: 5760
+I (17134) wifi_init: tcp mss: 1440
+I (17137) wifi_init: WiFi IRAM OP enabled
+I (17141) wifi_init: WiFi RX IRAM OP enabled
+I (17145) rc_net: AP set_mode/config, SSID=RC_TANK_F3AE25 ch=1
+I (17155) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (17196) wifi:mode : softAP (44:1b:f6:f3:ae:25)
+I (17201) wifi:Total power save buffer number: 16
+I (17202) wifi:Init max length of beacon: 752/752
+I (17202) wifi:Init max length of beacon: 752/752
+I (17205) rc_net: SoftAP started, SSID: RC_TANK_F3AE25, Password: 12345678
+I (17206) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (17218) rc_tank: [STEP] Network init OK
+I (17222) rc_tank: Tank SoftAP ready, waiting for remote...
+I (17227) rc_control: Ctrl RX task started
+I (17231) rc_control: Tank control started
+I (17235) rc_tank: Tank running (control active)
+I (17239) rc_tank: app_main done, idle loop
+I (31225) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (31226) wifi:station: 44:1b:f6:f3:ae:28 join, AID=1, bgn, 40U
+I (31253) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:28
+I (31293) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (31294) rc_net: STA assigned IP: 192.168.4.2
+I (31294) rc_tank: Network connected, peer: 192.168.4.2
+I (31300) rc_net: Ctrl UDP socket bound to port 8001
+I (31304) rc_net: Video UDP socket bound to port 8002
+I (31310) rc_net: Audio TCP listening on port 8003
+I (31313) rc_tank: Socket channels started
+I (31327) rc_video: Video TX task started (240x180, sensor-driven, Q=60)
+I (31327) rc_video: TX theory: raw=614400 B/frame, encoded YUV=86400 B/frame, target10fps raw=0.86 MB/s
+I (31332) rc_video: Tank video started
+I (31336) rc_audio: Audio RX task started
+I (31346) opus_codec: Opus decoder: rate=16000 ch=1 frame=960 samples
+I (31349) rc_audio: Audio play task started
+I (31350) rc_audio: Audio playback tasks started
+W (31408) rc_net: Video UDP send failed: seq=0 chunk=4/9 bytes=1208 sent=-1 errno=12
+W (31409) rc_video: Video send failed: ESP_FAIL
+W (31480) rc_video: Video send failed: ESP_FAIL
+W (31549) rc_video: Video send failed: ESP_FAIL
+W (31616) rc_video: Video send failed: ESP_FAIL
+W (31683) rc_video: Video send failed: ESP_FAIL
+W (31753) rc_video: Video send failed: ESP_FAIL
+W (31822) rc_video: Video send failed: ESP_FAIL
+W (31891) rc_video: Video send failed: ESP_FAIL
+W (31960) rc_video: Video send failed: ESP_FAIL
+W (32029) rc_video: Video send failed: ESP_FAIL
+W (32100) rc_video: Video send failed: ESP_FAIL
+W (32168) rc_video: Video send failed: ESP_FAIL
+W (32236) rc_video: Video send failed: ESP_FAIL
+W (32307) rc_video: Video send failed: ESP_FAIL
+I (32327) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:28), tid:0, ssn:0, winSize:64
+I (32339) rc_net: Audio client connected
+W (32643) rc_net: Video UDP send failed: seq=17 chunk=10/14 bytes=1208 sent=-1 errno=12
+W (32644) rc_video: Video send failed: ESP_FAIL
+W (33040) rc_video: Video send failed: ESP_FAIL
+W (33284) rc_video: Video send failed: ESP_FAIL
+W (33360) rc_video: Video send failed: ESP_FAIL
+W (33437) rc_video: Video send failed: ESP_FAIL
+W (33672) rc_net: Video UDP send failed: seq=30 chunk=10/15 bytes=1208 sent=-1 errno=12
+W (33674) rc_video: Video send failed: ESP_FAIL
+W (33747) rc_video: Video send failed: ESP_FAIL
+W (33826) rc_video: Video send failed: ESP_FAIL
+W (34072) rc_video: Video send failed: ESP_FAIL
+W (34146) rc_video: Video send failed: ESP_FAIL
+W (34226) rc_video: Video send failed: ESP_FAIL
+W (34625) rc_video: Video send failed: ESP_FAIL
+W (34941) rc_net: Video UDP send failed: seq=46 chunk=10/15 bytes=1208 sent=-1 errno=12
+W (34941) rc_video: Video send failed: ESP_FAIL
+W (35100) rc_video: Video send failed: ESP_FAIL
+W (35255) rc_video: Video send failed: ESP_FAIL
+W (35332) rc_video: Video send failed: ESP_FAIL
+W (35578) rc_video: Video send failed: ESP_FAIL
+W (35652) rc_video: Video send failed: ESP_FAIL
+W (35727) rc_video: Video send failed: ESP_FAIL
+W (35892) rc_video: Video send failed: ESP_FAIL
+W (36045) rc_net: Video UDP send failed: seq=60 chunk=10/15 bytes=1208 sent=-1 errno=12
+W (36047) rc_video: Video send failed: ESP_FAIL
+W (36124) rc_video: Video send failed: ESP_FAIL
+W (36289) rc_video: Video send failed: ESP_FAIL
+W (36448) rc_video: Video send failed: ESP_FAIL
+W (36547) rc_video: Video send failed: ESP_FAIL
+W (36624) rc_video: Video send failed: ESP_FAIL
+I (36790) rc_video: Sent 30 | cap_fps=25.3 send_fps=5.5 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=32.0 encode=31.7 send=18.0 total=81.8 | JPEG=18681B
+W (36948) rc_video: Video send failed: ESP_FAIL
+W (37025) rc_video: Video send failed: ESP_FAIL
+W (37350) rc_net: Video UDP send failed: seq=76 chunk=10/16 bytes=1208 sent=-1 errno=12
+W (37351) rc_video: Video send failed: ESP_FAIL
+W (37430) rc_video: Video send failed: ESP_FAIL
+W (37512) rc_video: Video send failed: ESP_FAIL
+W (37747) rc_video: Video send failed: ESP_FAIL
+W (37828) rc_video: Video send failed: ESP_FAIL
+W (38072) rc_video: Video send failed: ESP_FAIL
+W (38146) rc_video: Video send failed: ESP_FAIL
+W (38224) rc_video: Video send failed: ESP_FAIL
+W (38306) rc_video: Video send failed: ESP_FAIL
+W (38382) rc_net: Video UDP send failed: seq=89 chunk=10/15 bytes=1208 sent=-1 errno=12
+W (38383) rc_video: Video send failed: ESP_FAIL
+W (38457) rc_video: Video send failed: ESP_FAIL
+W (38536) rc_video: Video send failed: ESP_FAIL
+W (38699) rc_video: Video send failed: ESP_FAIL
+W (38779) rc_video: Video send failed: ESP_FAIL
+W (38935) rc_video: Video send failed: ESP_FAIL
+W (39259) rc_video: Video send failed: ESP_FAIL
+W (39335) rc_video: Video send failed: ESP_FAIL
+W (39415) rc_net: Video UDP send failed: seq=102 chunk=13/16 bytes=1208 sent=-1 errno=12
+W (39416) rc_video: Video send failed: ESP_FAIL
+W (39652) rc_video: Video send failed: ESP_FAIL
+W (39728) rc_video: Video send failed: ESP_FAIL
+W (39806) rc_video: Video send failed: ESP_FAIL
+W (40048) rc_video: Video send failed: ESP_FAIL
+W (40361) rc_video: Video send failed: ESP_FAIL
+W (40436) rc_net: Video UDP send failed: seq=115 chunk=10/16 bytes=1208 sent=-1 errno=12
+W (40437) rc_video: Video send failed: ESP_FAIL
+W (40523) rc_video: Video send failed: ESP_FAIL
+W (40764) rc_video: Video send failed: ESP_FAIL
+W (40837) rc_video: Video send failed: ESP_FAIL
+W (41155) rc_video: Video send failed: ESP_FAIL
+W (41232) rc_video: Video send failed: ESP_FAIL
+W (41309) rc_video: Video send failed: ESP_FAIL
+W (41394) rc_video: Video send failed: ESP_FAIL
+W (41475) rc_net: Video UDP send failed: seq=128 chunk=11/16 bytes=1208 sent=-1 errno=12
+W (41476) rc_video: Video send failed: ESP_FAIL
+W (41548) rc_video: Video send failed: ESP_FAIL
+W (41636) rc_video: Video send failed: ESP_FAIL
+W (41729) rc_video: Video send failed: ESP_FAIL
+W (41962) rc_video: Video send failed: ESP_FAIL
+W (42038) rc_video: Video send failed: ESP_FAIL
+W (42269) rc_video: Video send failed: ESP_FAIL
+W (42342) rc_video: Video send failed: ESP_FAIL
+I (42425) rc_video: Sent 60 | cap_fps=25.4 send_fps=5.3 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=31.0 encode=31.7 send=18.2 total=81.0 | JPEG=16823B
+W (42580) rc_net: Video UDP send failed: seq=142 chunk=10/14 bytes=1208 sent=-1 errno=12
+W (42580) rc_video: Video send failed: ESP_FAIL
+W (42654) rc_video: Video send failed: ESP_FAIL
+W (42819) rc_video: Video send failed: ESP_FAIL
+W (43054) rc_video: Video send failed: ESP_FAIL
+W (43130) rc_video: Video send failed: ESP_FAIL
+W (43449) rc_video: Video send failed: ESP_FAIL
+W (43606) rc_net: Video UDP send failed: seq=155 chunk=10/15 bytes=1208 sent=-1 errno=12
+W (43607) rc_video: Video send failed: ESP_FAIL
+W (43762) rc_video: Video send failed: ESP_FAIL
+W (43842) rc_video: Video send failed: ESP_FAIL
+W (44007) rc_video: Video send failed: ESP_FAIL
+W (44164) rc_video: Video send failed: ESP_FAIL
+W (44243) rc_video: Video send failed: ESP_FAIL
+W (44320) rc_video: Video send failed: ESP_FAIL
+W (44480) rc_video: Video send failed: ESP_FAIL
+W (44555) rc_video: Video send failed: ESP_FAIL
+W (44633) rc_net: Video UDP send failed: seq=168 chunk=10/18 bytes=1208 sent=-1 errno=12
+W (44634) rc_video: Video send failed: ESP_FAIL
+W (44881) rc_video: Video send failed: ESP_FAIL
+W (44954) rc_video: Video send failed: ESP_FAIL
+W (45029) rc_video: Video send failed: ESP_FAIL
+W (45351) rc_video: Video send failed: ESP_FAIL
+W (45666) rc_net: Video UDP send failed: seq=181 chunk=10/16 bytes=1208 sent=-1 errno=12
+W (45667) rc_video: Video send failed: ESP_FAIL
+W (45743) rc_video: Video send failed: ESP_FAIL
+W (45828) rc_video: Video send failed: ESP_FAIL
+W (46062) rc_video: Video send failed: ESP_FAIL
+W (46139) rc_video: Video send failed: ESP_FAIL
+W (46385) rc_video: Video send failed: ESP_FAIL
+W (46460) rc_video: Video send failed: ESP_FAIL
+W (46541) rc_video: Video send failed: ESP_FAIL
+W (46699) rc_net: Video UDP send failed: seq=194 chunk=13/14 bytes=1208 sent=-1 errno=12
+W (46700) rc_video: Video send failed: ESP_FAIL
+W (46965) rc_video: Video send failed: ESP_FAIL
+W (47044) rc_video: Video send failed: ESP_FAIL
+W (47123) rc_video: Video send failed: ESP_FAIL
+W (47362) rc_video: Video send failed: ESP_FAIL
+W (47441) rc_video: Video send failed: ESP_FAIL
+I (47526) rc_video: Sent 90 | cap_fps=25.1 send_fps=5.9 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=32.2 encode=32.0 send=17.8 total=82.1 | JPEG=19733B
+W (47766) rc_net: Video UDP send failed: seq=207 chunk=10/16 bytes=1208 sent=-1 errno=12
+W (47767) rc_video: Video send failed: ESP_FAIL
+W (47843) rc_video: Video send failed: ESP_FAIL
+W (48000) rc_video: Video send failed: ESP_FAIL
+W (48070) rc_video: Video send failed: ESP_FAIL
+W (48149) rc_video: Video send failed: ESP_FAIL
+W (48312) rc_video: Video send failed: ESP_FAIL
+W (48392) rc_video: Video send failed: ESP_FAIL
+W (48471) rc_video: Video send failed: ESP_FAIL
+W (48554) rc_video: Video send failed: ESP_FAIL
+W (48631) rc_video: Video send failed: ESP_FAIL
+W (48713) rc_video: Video send failed: ESP_FAIL
+W (48870) rc_net: Video UDP send failed: seq=221 chunk=10/15 bytes=1208 sent=-1 errno=12
+W (48871) rc_video: Video send failed: ESP_FAIL
+W (48946) rc_video: Video send failed: ESP_FAIL
+W (49029) rc_video: Video send failed: ESP_FAIL
+W (49105) rc_video: Video send failed: ESP_FAIL
+W (49267) rc_video: Video send failed: ESP_FAIL
+W (49343) rc_video: Video send failed: ESP_FAIL
+W (49664) rc_video: Video send failed: ESP_FAIL
+W (49738) rc_video: Video send failed: ESP_FAIL
+W (50061) rc_net: Video UDP send failed: seq=236 chunk=10/15 bytes=1208 sent=-1 errno=12
+W (50062) rc_video: Video send failed: ESP_FAIL
+W (50140) rc_video: Video send failed: ESP_FAIL
+W (50295) rc_video: Video send failed: ESP_FAIL
+W (50372) rc_video: Video send failed: ESP_FAIL
+W (50450) rc_video: Video send failed: ESP_FAIL
+W (50772) rc_video: Video send failed: ESP_FAIL
+W (50847) rc_video: Video send failed: ESP_FAIL
+W (51093) rc_net: Video UDP send failed: seq=249 chunk=12/15 bytes=1208 sent=-1 errno=12
+W (51094) rc_video: Video send failed: ESP_FAIL
+W (51169) rc_video: Video send failed: ESP_FAIL
+W (51489) rc_video: Video send failed: ESP_FAIL
+W (51563) rc_video: Video send failed: ESP_FAIL
+W (51722) rc_video: Video send failed: ESP_FAIL
+W (51874) rc_video: Video send failed: ESP_FAIL
+W (51958) rc_video: Video send failed: ESP_FAIL
+W (52057) rc_video: Video send failed: ESP_FAIL
+W (52135) rc_net: Video UDP send failed: seq=262 chunk=10/16 bytes=1208 sent=-1 errno=12
+W (52136) rc_video: Video send failed: ESP_FAIL
+W (52369) rc_video: Video send failed: ESP_FAIL
+W (52445) rc_video: Video send failed: ESP_FAIL
+W (52754) rc_video: Video send failed: ESP_FAIL
+W (52915) rc_video: Video send failed: ESP_FAIL
+I (52994) rc_video: Sent 120 | cap_fps=25.4 send_fps=5.5 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=31.5 encode=31.7 send=17.7 total=81.0 | JPEG=16663B
+W (53071) rc_video: Video send failed: ESP_FAIL
+W (53146) rc_net: Video UDP send failed: seq=275 chunk=10/15 bytes=1208 sent=-1 errno=12
+W (53147) rc_video: Video send failed: ESP_FAIL
+W (53226) rc_video: Video send failed: ESP_FAIL
+W (53463) rc_video: Video send failed: ESP_FAIL
+W (53539) rc_video: Video send failed: ESP_FAIL
+W (53777) rc_video: Video send failed: ESP_FAIL
+W (53855) rc_video: Video send failed: ESP_FAIL
+W (53934) rc_video: Video send failed: ESP_FAIL
+W (54177) rc_net: Video UDP send failed: seq=288 chunk=10/15 bytes=1208 sent=-1 errno=12
+W (54178) rc_video: Video send failed: ESP_FAIL
+W (54252) rc_video: Video send failed: ESP_FAIL
+W (54420) rc_video: Video send failed: ESP_FAIL
+W (54574) rc_video: Video send failed: ESP_FAIL
+W (54650) rc_video: Video send failed: ESP_FAIL
+W (54967) rc_video: Video send failed: ESP_FAIL
+W (55049) rc_video: Video send failed: ESP_FAIL
+W (55124) rc_video: Video send failed: ESP_FAIL
+W (55278) rc_net: Video UDP send failed: seq=302 chunk=10/15 bytes=1208 sent=-1 errno=12
+W (55279) rc_video: Video send failed: ESP_FAIL
+W (55358) rc_video: Video send failed: ESP_FAIL
+W (55680) rc_video: Video send failed: ESP_FAIL
+W (55755) rc_video: Video send failed: ESP_FAIL
+W (55996) rc_video: Video send failed: ESP_FAIL
+W (56071) rc_video: Video send failed: ESP_FAIL
+W (56151) rc_video: Video send failed: ESP_FAIL
+W (56233) rc_video: Video send failed: ESP_FAIL
+W (56307) rc_net: Video UDP send failed: seq=315 chunk=10/15 bytes=1208 sent=-1 errno=12
+W (56308) rc_video: Video send failed: ESP_FAIL
+W (56470) rc_video: Video send failed: ESP_FAIL
+W (56545) rc_video: Video send failed: ESP_FAIL
+W (56712) rc_video: Video send failed: ESP_FAIL
+W (56868) rc_video: Video send failed: ESP_FAIL
+W (56946) rc_video: Video send failed: ESP_FAIL
+W (57022) rc_video: Video send failed: ESP_FAIL
+W (57217) rc_video: Video send failed: ESP_FAIL
+W (57381) rc_net: Video UDP send failed: seq=328 chunk=10/16 bytes=1208 sent=-1 errno=12
+W (57382) rc_video: Video send failed: ESP_FAIL
+W (57454) rc_video: Video send failed: ESP_FAIL
+W (57532) rc_video: Video send failed: ESP_FAIL
+W (57612) rc_video: Video send failed: ESP_FAIL
+W (57687) rc_video: Video send failed: ESP_FAIL
+W (57765) rc_video: Video send failed: ESP_FAIL
+W (57841) rc_video: Video send failed: ESP_FAIL
+W (58077) rc_video: Video send failed: ESP_FAIL
+W (58153) rc_video: Video send failed: ESP_FAIL
+W (58472) rc_net: Video UDP send failed: seq=342 chunk=10/15 bytes=1208 sent=-1 errno=12
+W (58474) rc_video: Video send failed: ESP_FAIL
+W (58549) rc_video: Video send failed: ESP_FAIL
+W (58627) rc_video: Video send failed: ESP_FAIL
+W (58785) rc_video: Video send failed: ESP_FAIL
+W (58860) rc_video: Video send failed: ESP_FAIL
+I (59022) rc_video: Sent 150 | cap_fps=25.2 send_fps=5.0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=31.1 encode=32.4 send=18.8 total=82.4 | JPEG=16976B
+W (59184) rc_video: Video send failed: ESP_FAIL
+W (59260) rc_video: Video send failed: ESP_FAIL
+W (59577) rc_net: Video UDP send failed: seq=356 chunk=10/14 bytes=1208 sent=-1 errno=12
+W (59578) rc_video: Video send failed: ESP_FAIL
+W (59654) rc_video: Video send failed: ESP_FAIL
+W (59810) rc_video: Video send failed: ESP_FAIL
+W (59882) rc_video: Video send failed: ESP_FAIL
+W (59956) rc_video: Video send failed: ESP_FAIL
+W (60272) rc_video: Video send failed: ESP_FAIL
+W (60584) rc_net: Video UDP send failed: seq=369 chunk=10/15 bytes=1208 sent=-1 errno=12
+W (60586) rc_video: Video send failed: ESP_FAIL
+W (60663) rc_video: Video send failed: ESP_FAIL
+W (60833) rc_video: Video send failed: ESP_FAIL
+W (60907) rc_video: Video send failed: ESP_FAIL
+W (60981) rc_video: Video send failed: ESP_FAIL
+W (61060) rc_video: Video send failed: ESP_FAIL
+W (61384) rc_video: Video send failed: ESP_FAIL
+W (61462) rc_video: Video send failed: ESP_FAIL
+W (61699) rc_net: Video UDP send failed: seq=383 chunk=11/15 bytes=1208 sent=-1 errno=12
+W (61701) rc_video: Video send failed: ESP_FAIL
+W (61775) rc_video: Video send failed: ESP_FAIL
+W (61851) rc_video: Video send failed: ESP_FAIL
+W (61934) rc_video: Video send failed: ESP_FAIL
+W (62171) rc_video: Video send failed: ESP_FAIL
+W (62586) rc_video: Video send failed: ESP_FAIL
+W (62661) rc_video: Video send failed: ESP_FAIL
+W (62819) rc_net: Video UDP send failed: seq=397 chunk=13/14 bytes=1208 sent=-1 errno=12
+W (62820) rc_video: Video send failed: ESP_FAIL
+W (62900) rc_video: Video send failed: ESP_FAIL
+W (62972) rc_video: Video send failed: ESP_FAIL
+W (63047) rc_video: Video send failed: ESP_FAIL
+W (63124) rc_video: Video send failed: ESP_FAIL
+W (63279) rc_video: Video send failed: ESP_FAIL
+W (63357) rc_video: Video send failed: ESP_FAIL
+W (63518) rc_video: Video send failed: ESP_FAIL
+W (63673) rc_video: Video send failed: ESP_FAIL
+W (63749) rc_video: Video send failed: ESP_FAIL
+W (63909) rc_net: Video UDP send failed: seq=411 chunk=11/15 bytes=1208 sent=-1 errno=12
+W (63911) rc_video: Video send failed: ESP_FAIL
+W (63984) rc_video: Video send failed: ESP_FAIL
+W (64063) rc_video: Video send failed: ESP_FAIL
+W (64230) rc_video: Video send failed: ESP_FAIL
+I (64313) rc_video: Sent 180 | cap_fps=25.3 send_fps=5.7 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=31.5 encode=32.1 send=18.3 total=81.9 | JPEG=17735B
+W (64391) rc_video: Video send failed: ESP_FAIL
+W (64466) rc_video: Video send failed: ESP_FAIL
+W (64544) rc_video: Video send failed: ESP_FAIL
+W (64616) rc_video: Video send failed: ESP_FAIL
+W (64688) rc_video: Video send failed: ESP_FAIL
+W (64768) rc_video: Video send failed: ESP_FAIL
+W (64933) rc_net: Video UDP send failed: seq=424 chunk=11/16 bytes=1208 sent=-1 errno=12
+W (64934) rc_video: Video send failed: ESP_FAIL
+W (65009) rc_video: Video send failed: ESP_FAIL
+W (65083) rc_video: Video send failed: ESP_FAIL
+W (65161) rc_video: Video send failed: ESP_FAIL
+W (65407) rc_video: Video send failed: ESP_FAIL
+W (65482) rc_video: Video send failed: ESP_FAIL
+W (65559) rc_video: Video send failed: ESP_FAIL
+W (65719) rc_video: Video send failed: ESP_FAIL
+W (65883) rc_video: Video send failed: ESP_FAIL
+W (65962) rc_net: Video UDP send failed: seq=437 chunk=10/18 bytes=1208 sent=-1 errno=12
+W (65963) rc_video: Video send failed: ESP_FAIL
+W (66127) rc_video: Video send failed: ESP_FAIL
+W (66284) rc_video: Video send failed: ESP_FAIL
+W (66364) rc_video: Video send failed: ESP_FAIL
+W (66442) rc_video: Video send failed: ESP_FAIL

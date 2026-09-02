@@ -1,0 +1,98 @@
+﻿I (2192) demo_ui: demo UI initialized: 320x240 landscape with touch
+I (2202) pp: pp rom version: e7ae62f
+I (2202) net80211: net80211 rom version: e7ae62f
+I (2212) wifi:wifi driver task: 3fcd0bc8, prio:23, stack:6656, core=0
+I (2222) wifi:wifi firmware version: 0947e8b
+I (2222) wifi:wifi certification version: v7.0
+I (2222) wifi:config NVS flash: enabled
+I (2222) wifi:config nano formatting: disabled
+I (2222) wifi:Init data frame dynamic rx buffer num: 32
+I (2232) wifi:Init static rx mgmt buffer num: 5
+I (2232) wifi:Init management short buffer num: 32
+I (2242) wifi:Init dynamic tx buffer num: 32
+I (2242) wifi:Init static tx FG buffer num: 2
+I (2252) wifi:Init static rx buffer size: 1600
+I (2252) wifi:Init static rx buffer num: 10
+I (2252) wifi:Init dynamic rx buffer num: 32
+I (2262) wifi_init: rx ba win: 6
+I (2262) wifi_init: accept mbox: 6
+I (2262) wifi_init: tcpip mbox: 32
+I (2272) wifi_init: udp mbox: 6
+I (2272) wifi_init: tcp mbox: 6
+I (2282) wifi_init: tcp tx win: 5760
+I (2282) wifi_init: tcp rx win: 5760
+I (2282) wifi_init: tcp mss: 1440
+I (2282) wifi_init: WiFi IRAM OP enabled
+I (2292) wifi_init: WiFi RX IRAM OP enabled
+I (2292) lte_hal: init ok, power off
+I (2302) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (2352) wifi:mode : sta (44:1b:f6:f3:ae:24)
+I (2352) wifi:enable tsf
+W (2352) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+I (2352) network_manager: [NM_DIAG] Starting LTE power-on sequence
+I (2362) lte_hal: powering on LTE module (IOEX P1_1 HIGH)
+I (2392) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+I (2392) wifi:state: init -> auth (0xb0)
+I (4322) wifi:state: auth -> assoc (0x0)
+I (5322) wifi:state: assoc -> init (0x400)
+I (5342) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+I (5362) lte_hal: LTE module powered on, ready for USB ECM enumeration
+I (5362) network_manager: [NM_DIAG] lte_hal_power_on() returned: ESP_OK (0x0)
+I (5362) network_manager: [NM_DIAG] Starting lsd_network_mgmt_init(true)
+E (5372) USBH_CDC: usbh_cdc_driver_install(390): Failed to register USB host client
+W (5372) lsd_4g: usbh_cdc already installed, continue with existing driver
+I (5382) network_manager: [NM_DIAG] lsd_network_mgmt_init(true) returned: ESP_OK (0x0)
+I (5392) lsd_net_mgmt: Processing WiFi disconnected event in lsd net mgmt
+I (5392) demo_network: demo_network initialized: mode=Dual Auto
+I (5402) lte_net_demo: Auto-starting network with default WiFi settings (skip UI)
+I (5402) lte_net_demo: WiFi confirmed: ssid=lierda-guest, starting network...
+W (5412) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+I (5422) demo_network: WiFi config applied, operation_id=1
+I (5462) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+I (5472) wifi:state: init -> auth (0xb0)
+E (6432) wifi:sta is connecting, return error
+I (6802) demo_network: net: if=NONE ready=N state=4 lc=2 wifi_ph=6 cell_ph=3 fault=44 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=0
+I (7302) wifi:state: auth -> assoc (0x0)
+I (8112) wifi:state: assoc -> run (0x10)
+I (8142) wifi:connected with lierda-guest, aid = 6, channel 11, BW20, bssid = b0:76:1b:4f:3b:f2
+I (8142) wifi:security: WPA3-SAE H2E, phy: bgn, rssi: -58, cipher(pairwise:0x3, group:0x3), pmf:1
+I (8152) wifi:pm start, type: 1
+
+I (8152) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (8162) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (8182) wifi:<ba-add>idx:0 (ifx:0, b0:76:1b:4f:3b:f2), tid:6, ssn:2, winSize:64
+I (8232) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (8232) wifi:<ba-add>idx:1 (ifx:0, b0:76:1b:4f:3b:f2), tid:0, ssn:0, winSize:64
+W (8432) wifi:sta is connected, disconnect before connecting to new ap
+I (9222) esp_netif_handlers: sta ip: 10.102.46.82, mask: 255.255.0.0, gw: 10.102.0.1
+I (11802) demo_network: net: if=NONE ready=N state=2 lc=2 wifi_ph=4 cell_ph=3 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=0 sw=1
+I (16802) demo_network: net: if=NONE ready=N state=2 lc=2 wifi_ph=4 cell_ph=3 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=0 sw=1
+I (19232) lsd_net_mgmt: Processing WiFi connected event in lsd net mgmt
+I (20272) lsd_net_mgmt: Target WiFi AVAILABLE
+I (20272) lsd_net_mgmt: Current network interface: WiFi fromNetMode: Unknown
+W (20422) wifi:[ADDBA]RX addba response, tid:0, txa_attempts:1, state wrong txa_flags:0x9
+I (21802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=0 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (26802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (28392) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi
+I (31802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (36802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (38542) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi
+I (41802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (46802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (48392) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi
+I (51802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (56802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (58402) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi
+I (61802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (66802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (68422) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi
+I (71802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (76802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (78462) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi
+I (81802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (86802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (88402) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi
+I (91802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (96802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (98472) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi
+I (101802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0

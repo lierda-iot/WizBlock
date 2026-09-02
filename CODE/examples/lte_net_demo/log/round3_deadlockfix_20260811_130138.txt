@@ -1,0 +1,176 @@
+﻿I (128) esp_image: segment 1: paddr=00049534 vaddr=3fc9f400 size=057a4h ( 22436) load
+I (133) esp_image: segment 2: paddr=0004ece0 vaddr=40374000 size=01338h (  4920) load
+I (134) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=cb6d0h (833232) map
+I (286) esp_image: segment 4: paddr=0011b6f8 vaddr=40375338 size=1a054h (106580) load
+I (309) esp_image: segment 5: paddr=00135754 vaddr=50000000 size=00020h (    32) load
+I (320) boot: Loaded app from partition at offset 0x10000
+I (320) boot: Disabling RNG early entropy source...
+I (331) esp_psram: Found 8MB PSRAM device
+I (331) esp_psram: Speed: 80MHz
+I (331) cpu_start: Multicore app
+I (1249) esp_psram: SPI SRAM memory test OK
+I (1257) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (1258) cpu_start: Pro cpu start user code
+I (1258) cpu_start: cpu freq: 160000000 Hz
+I (1260) app_init: Application information:
+I (1264) app_init: Project name:     lte_net_demo
+I (1268) app_init: App version:      1
+I (1272) app_init: Compile time:     Aug 11 2026 12:04:12
+I (1277) app_init: ELF file SHA256:  926a36103...
+I (1281) app_init: ESP-IDF:          v5.5.4
+I (1285) efuse_init: Min chip rev:     v0.0
+I (1289) efuse_init: Max chip rev:     v0.99 
+I (1293) efuse_init: Chip rev:         v0.2
+I (1297) heap_init: Initializing. RAM available for dynamic allocation:
+I (1303) heap_init: At 3FCB3670 len 000360A0 (216 KiB): RAM
+I (1309) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (1314) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (1319) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (1325) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (1332) spi_flash: detected chip: generic
+I (1335) spi_flash: flash io: dio
+I (1339) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (1344) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (1352) main_task: Started on CPU0
+I (1382) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+I (1382) main_task: Calling app_main()
+I (1382) lte_net_demo: LTE Net Demo starting (network_manager)
+I (1392) board_laiwfs300: init board support package
+I (1392) board_laiwfs300: init capability registry
+I (1402) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (1402) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (1412) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (1412) board_laiwfs300:   I2C device ACK at 0x15
+I (1422) board_laiwfs300:   I2C device ACK at 0x18
+I (1422) board_laiwfs300:   I2C device ACK at 0x22
+I (1432) board_laiwfs300:   I2C device ACK at 0x40
+I (1432) board_laiwfs300:   I2C device ACK at 0x51
+I (1442) board_laiwfs300:   I2C device ACK at 0x68
+I (1442) board_laiwfs300: --- I2C scan done: 6 device(s) found ---
+W (1452) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (1452) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (1462) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (1462) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (1472) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (1472) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+W (1482) board_laiwfs300: SP0A39 (Camera) NOT found at 0x21 (NACK)
+I (1482) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (1492) board_laiwfs300: ES7210 chip ID: 0x72
+I (1492) board_laiwfs300: AIP8563 RTC time: 23:57:36 (BCD raw)
+I (1502) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (1502) board_laiwfs300: init SPI bus manager
+I (1512) board_laiwfs300: init ADC service
+I (1512) board_adc: ADC1 oneshot initialized
+I (1512) board_laiwfs300: init board power service
+I (1522) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=4095 (~3100 mV)
+I (1532) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=1593 (~1205 mV)
+I (1532) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (1542) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (1542) io_expander: TPT29555A initialized at 0x22
+I (1552) board_laiwfs300: IO expander initialized OK
+I (1552) board_laiwfs300: init module detect
+I (1562) board_laiwfs300: register detection rules
+I (1562) board_laiwfs300: register default capabilities
+I (1572) board_laiwfs300: board init complete (ioex=OK)
+I (1592) lte_net_demo: no legacy WiFi config, using defaults
+I (1592) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+E (1732) spi: spi_bus_initialize(816): SPI bus already initialized.
+I (1852) display_hal: ST7789V3 LCD initialized
+I (1852) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=10000000
+I (2072) touch_hal: CST836U initialized at 0x15
+I (2192) demo_ui: demo UI initialized: 320x240 landscape with touch
+I (2202) pp: pp rom version: e7ae62f
+I (2202) net80211: net80211 rom version: e7ae62f
+I (2212) wifi:wifi driver task: 3fcd0bc8, prio:23, stack:6656, core=0
+I (2222) wifi:wifi firmware version: 0947e8b
+I (2222) wifi:wifi certification version: v7.0
+I (2222) wifi:config NVS flash: enabled
+I (2222) wifi:config nano formatting: disabled
+I (2222) wifi:Init data frame dynamic rx buffer num: 32
+I (2232) wifi:Init static rx mgmt buffer num: 5
+I (2232) wifi:Init management short buffer num: 32
+I (2242) wifi:Init dynamic tx buffer num: 32
+I (2242) wifi:Init static tx FG buffer num: 2
+I (2252) wifi:Init static rx buffer size: 1600
+I (2252) wifi:Init static rx buffer num: 10
+I (2252) wifi:Init dynamic rx buffer num: 32
+I (2262) wifi_init: rx ba win: 6
+I (2262) wifi_init: accept mbox: 6
+I (2262) wifi_init: tcpip mbox: 32
+I (2272) wifi_init: udp mbox: 6
+I (2272) wifi_init: tcp mbox: 6
+I (2282) wifi_init: tcp tx win: 5760
+I (2282) wifi_init: tcp rx win: 5760
+I (2282) wifi_init: tcp mss: 1440
+I (2282) wifi_init: WiFi IRAM OP enabled
+I (2292) wifi_init: WiFi RX IRAM OP enabled
+I (2292) lte_hal: init ok, power off
+I (2302) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (2352) wifi:mode : sta (44:1b:f6:f3:ae:24)
+I (2352) wifi:enable tsf
+W (2352) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+I (2352) network_manager: [NM_DIAG] Starting LTE power-on sequence
+I (2362) lte_hal: powering on LTE module (IOEX P1_1 HIGH)
+I (2372) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+I (2372) wifi:state: init -> auth (0xb0)
+I (3302) wifi:state: auth -> assoc (0x0)
+E (3432) wifi:Association refused temporarily, comeback time 201000 (TUs) too long, max allowed 5000 (TUs)
+I (3432) wifi:state: assoc -> init (0xd010)
+I (3442) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+I (5362) lte_hal: LTE module powered on, ready for USB ECM enumeration
+I (5362) network_manager: [NM_DIAG] lte_hal_power_on() returned: ESP_OK (0x0)
+I (5362) network_manager: [NM_DIAG] Starting lsd_network_mgmt_init(true)
+E (5372) USBH_CDC: usbh_cdc_driver_install(390): Failed to register USB host client
+W (5372) lsd_4g: usbh_cdc already installed, continue with existing driver
+I (5382) network_manager: [NM_DIAG] lsd_network_mgmt_init(true) returned: ESP_OK (0x0)
+I (5392) lsd_net_mgmt: Processing WiFi disconnected event in lsd net mgmt
+I (5392) demo_network: demo_network initialized: mode=Dual Auto
+I (5402) lte_net_demo: Auto-starting network with default WiFi settings (skip UI)
+I (5402) lte_net_demo: WiFi confirmed: ssid=lierda-guest, starting network...
+W (5412) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+I (5422) demo_network: WiFi config applied, operation_id=1
+I (5452) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0
+I (5452) wifi:state: init -> auth (0xb0)
+I (5802) wifi:state: auth -> assoc (0x0)
+I (6382) wifi:state: assoc -> run (0x10)
+I (6402) wifi:connected with lierda-guest, aid = 8, channel 11, BW20, bssid = b0:76:1b:4f:3b:f2
+I (6402) wifi:security: WPA3-SAE H2E, phy: bgn, rssi: -53, cipher(pairwise:0x3, group:0x3), pmf:1
+I (6412) wifi:pm start, type: 1
+
+I (6412) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (6422) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+W (6432) wifi:sta is connected, disconnect before connecting to new ap
+I (6452) wifi:<ba-add>idx:0 (ifx:0, b0:76:1b:4f:3b:f2), tid:6, ssn:2, winSize:64
+I (6472) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (6492) wifi:<ba-add>idx:1 (ifx:0, b0:76:1b:4f:3b:f2), tid:0, ssn:0, winSize:64
+I (6802) demo_network: net: if=NONE ready=N state=1 lc=2 wifi_ph=3 cell_ph=3 fault=44 wifi(en=1 link=1 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=0
+I (7502) esp_netif_handlers: sta ip: 10.102.46.82, mask: 255.255.0.0, gw: 10.102.0.1
+I (11802) demo_network: net: if=NONE ready=N state=2 lc=2 wifi_ph=4 cell_ph=3 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=0 sw=1
+I (16802) demo_network: net: if=NONE ready=N state=2 lc=2 wifi_ph=4 cell_ph=3 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=0 sw=1
+I (17542) lsd_net_mgmt: Processing WiFi connected event in lsd net mgmt
+I (18572) lsd_net_mgmt: Target WiFi AVAILABLE
+I (18572) lsd_net_mgmt: Current network interface: WiFi fromNetMode: Unknown
+I (21802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=0 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (26802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (28382) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi
+I (31802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (36802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (38392) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi
+I (41802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (46802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (48412) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi
+I (51802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (56802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (58402) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi
+I (61802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (66802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (68412) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi
+I (71802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (76802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (78402) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi
+I (81802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (86802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (88392) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi
+I (91802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (96802) demo_network: net: if=WiFi ready=Y state=3 lc=2 wifi_ph=5 cell_ph=3 fault=56 wifi(en=1 link=1 ip=1) cell(en=1 ip=0) raw_rdy=1 sw=0
+I (98422) lsd_net_mgmt: network quality A+ Excellent! netif Wi-Fi

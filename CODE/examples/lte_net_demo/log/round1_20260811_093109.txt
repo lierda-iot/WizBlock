@@ -1,0 +1,29 @@
+--- Miniterm on COM7  115200,8,N,1 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+I (16801) demo_network: net: if=4G ready=Y state=2 lc=2 wifi_ph=4 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (18451) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+I (21801) demo_network: net: if=4G ready=Y state=2 lc=2 wifi_ph=4 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (26801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (28421) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+I (31801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (36801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (38421) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+I (41801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (46801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (48421) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+I (51801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (56801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (58451) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+I (61801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (66801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (68431) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+I (71801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (76801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (78421) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+I (81801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (86801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (88421) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+I (91801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (96801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0
+I (98451) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+I (101801) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=5 cell_ph=6 fault=44 wifi(en=1 link=1 ip=1) cell(en=1 ip=1) raw_rdy=1 sw=0

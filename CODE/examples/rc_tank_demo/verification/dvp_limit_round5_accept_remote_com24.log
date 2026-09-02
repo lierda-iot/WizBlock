@@ -1,0 +1,3 @@
+I (2436382) rc_control: [DEBUG-DVP-LIMIT] ctrl_tx ok=43 stop=12 drive=31 fail=0 current=STOP
+I (2439821) rc_net: Video RX complete=12300 missing=5 last_seq=366
+I (2444382) rc_control: [DEBUG-DVP-LIMIT] ctrl_tx ok=43 stop=12 drive=31 fail=0 current=STOP

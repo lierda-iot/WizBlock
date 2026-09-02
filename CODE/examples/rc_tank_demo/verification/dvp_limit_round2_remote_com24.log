@@ -1,0 +1,29 @@
+I (419929) rc_net: Scanning for RC_TANK_* APs...
+I (422431) rc_net: Found tank AP: RC_TANK_F3AE79, RSSI: -47
+I (422432) rc_net: Connecting to tank AP, attempt 1/3
+I (422439) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (422440) wifi:state: init -> auth (0xb0)
+I (422444) wifi:state: auth -> assoc (0x0)
+I (422458) wifi:state: assoc -> run (0x10)
+I (422474) wifi:connected with RC_TANK_F3AE79, aid = 1, channel 1, 40U, bssid = 44:1b:f6:f3:ae:79
+I (422475) wifi:security: WPA2-PSK, phy: bgn, rssi: -47, cipher(pairwise:0x3, group:0x3), pmf:1
+I (422481) wifi:pm start, type: 1
+
+I (422484) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (422605) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (423510) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1
+I (423510) rc_net: Got IP: 192.168.4.2
+I (423510) rc_net: Connected to tank AP; waiting for disconnect
+I (423513) rc_video: Remote WiFi icon: connected=1 epoch=3
+I (423510) rc_control: Network connected: waiting for joystick release
+I (423528) rc_tank: Network connected, peer: 192.168.4.1
+I (423529) rc_control: Joystick released: motion control re-armed
+I (423539) rc_control: [DEBUG-DVP-LIMIT] ctrl_tx ok=2 stop=2 drive=0 fail=0 current=STOP
+I (423544) wifi:<ba-add>idx:0 (ifx:0, 44:1b:f6:f3:ae:79), tid:0, ssn:0, winSize:64
+I (431546) rc_control: [DEBUG-DVP-LIMIT] ctrl_tx ok=2 stop=2 drive=0 fail=0 current=STOP
+I (439546) rc_control: [DEBUG-DVP-LIMIT] ctrl_tx ok=2 stop=2 drive=0 fail=0 current=STOP
+I (443170) rc_net: Video RX complete=300 missing=0 last_seq=240
+I (447546) rc_control: [DEBUG-DVP-LIMIT] ctrl_tx ok=2 stop=2 drive=0 fail=0 current=STOP
+I (449393) rc_video: Video RX frames=300 fps=0.7 queue_ready=371 queue_drop=0 stale_drop=71
+I (455546) rc_control: [DEBUG-DVP-LIMIT] ctrl_tx ok=2 stop=2 drive=0 fail=0 current=STOP
+I (463546) rc_control: [DEBUG-DVP-LIMIT] ctrl_tx ok=2 stop=2 drive=0 fail=0 current=STOP

@@ -1,0 +1,130 @@
+menu "LAIWFS300 bring-up test options"
+
+config LAIWFS300_BRINGUP_TEST_LOG_TASK
+    bool "Enable continuous bring-up status logs"
+    default y
+    help
+        Periodically logs a small heartbeat so manual serial monitoring can prove
+        the firmware is running after reset.
+
+config LAIWFS300_BRINGUP_TEST_LOG_PERIOD_MS
+    int "Bring-up status log period ms"
+    depends on LAIWFS300_BRINGUP_TEST_LOG_TASK
+    default 2000
+    range 500 60000
+
+config LAIWFS300_ENABLE_MOTOR_SMOKE_TEST
+    bool "Enable motor smoke test (100% forward)"
+    default y
+    help
+        Enables the motor forward test. Drives both tracks at 100% forward
+        indefinitely. Keep disabled if motor hardware is not connected.
+
+config LAIWFS300_MOTOR_SMOKE_TEST_DRY_RUN
+    bool "Run motor smoke test in dry-run mode"
+    depends on LAIWFS300_ENABLE_MOTOR_SMOKE_TEST
+    default n
+    help
+        Logs the motor commands without driving GPIO/LEDC outputs.
+
+config LAIWFS300_ENABLE_DISPLAY_COLOR_TEST
+    bool "Enable display white/red color test"
+    default y
+    help
+        Initializes the 2.4 inch ST7789V3 display and alternates full-screen
+        white/red frames so manual bring-up can confirm the screen is working.
+
+config LAIWFS300_DISPLAY_COLOR_TEST_PERIOD_MS
+    int "Display color test period ms"
+    depends on LAIWFS300_ENABLE_DISPLAY_COLOR_TEST
+    default 1000
+    range 200 60000
+
+config LAIWFS300_ENABLE_CAMERA_PREVIEW_TEST
+    bool "Enable camera preview test (capture to LCD every 10s)"
+    default n
+    help
+        Initializes SP0A39 camera via DVP and displays a captured frame on
+        the LCD every 10 seconds. Requires I2C bus, IO expander, camera board
+        and display board connected.
+
+config LAIWFS300_ENABLE_TOUCH_TEST
+    bool "Enable touch IC bring-up test"
+    default y
+    help
+        Initializes FT6206 touch IC, reads chip ID, and periodically polls
+        touch events to verify the touch panel is responding.
+
+config LAIWFS300_TOUCH_TEST_POLL_MS
+    int "Touch test poll period ms"
+    depends on LAIWFS300_ENABLE_TOUCH_TEST
+    default 500
+    range 100 10000
+
+config LAIWFS300_ENABLE_RTC_TEST
+    bool "Enable AIP8563 RTC test"
+    default y
+    help
+        Sets RTC time and reads back after delay to verify counting.
+
+config LAIWFS300_ENABLE_IMU_TEST
+    bool "Enable BMI260 IMU test"
+    default y
+    help
+        Reads accelerometer and gyroscope data from BMI260.
+
+config LAIWFS300_ENABLE_AUDIO_TONE_TEST
+    bool "Enable ES8311 1kHz tone test"
+    default n
+    help
+        Plays a 1kHz sine wave through the speaker for 3 seconds.
+        Requires speaker connected and AMP_CTRL available via IOEX.
+
+config LAIWFS300_ENABLE_MIC_TEST
+    bool "Enable ES7210 MIC RMS test"
+    default n
+    help
+        Records audio from MIC and prints RMS level.
+
+config LAIWFS300_ENABLE_AUDIO_LOOPBACK_TEST
+    bool "Enable audio record-play test (record 10s then play 10s)"
+    default n
+    depends on !LAIWFS300_ENABLE_AUDIO_NS_TEST
+    help
+        Records 10 seconds of audio from MIC into PSRAM, then plays it back
+        through the speaker. A beep tone signals recording start and end.
+        Requires speaker and MIC board connected.
+
+config LAIWFS300_ENABLE_AUDIO_NS_TEST
+    bool "Enable audio NS denoise test (record 10s, play raw vs denoised)"
+    default y
+    help
+        Records 10 seconds, processes through ESP AFE NSNet noise suppression,
+        then plays both raw and denoised versions for comparison.
+        Requires speaker, MIC board, and PSRAM.
+
+config LAIWFS300_ENABLE_IOEX_INPUT_TEST
+    bool "Enable IOEX input pin read test"
+    default y
+    help
+        Reads TP_INT, TF_CD, RTC_INT input pins from TPT29555A.
+
+config LAIWFS300_ENABLE_LTE_NET_TEST
+    bool "Enable LTE/4G network test"
+    default n
+    help
+        Powers on LTE module via IOEX P1_1, initializes lsd_net_mgmt with
+        WiFi+4G dual-network management, and periodically logs network status.
+        Requires SIM card inserted and LTE antenna connected.
+
+config LAIWFS300_LTE_NET_TEST_WIFI_SSID
+    string "WiFi SSID for LTE net test"
+    depends on LAIWFS300_ENABLE_LTE_NET_TEST
+    default "test_wifi"
+
+config LAIWFS300_LTE_NET_TEST_WIFI_PASSWORD
+    string "WiFi password for LTE net test"
+    depends on LAIWFS300_ENABLE_LTE_NET_TEST
+    default "12345678"
+
+endmenu

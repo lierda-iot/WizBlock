@@ -1,0 +1,44 @@
+W (45308) rc_tank: [CAM-DIAG-C16I] WINDOW_01 repeat: wifi=off camera=off display=black cache=none
+W (45308) rc_video: [CAM-DIAG-C16I] PROFILE window=1 sensor=real display=camera idle=0ms full_probe=0 cache=none capture=0
+I (60316) rc_tank: [STEP] Camera init starting...
+I (60316) rc_video: Initializing camera (SP0A39 640x480 VYUY)
+W (60316) rc_video: [CAM-DIAG-C16I] direct DVP init core=0; Wi-Fi task core=0; free_internal=230923 largest_internal_dma=110592
+I (60326) board_camera: initializing SP0A39 camera mode=0 640x480
+I (60331) camera_hal: init SP0A39 DVP 640x480 (SCCB manual mode)
+I (60337) camera_hal: configuring IOEX pins for camera RESET/PWDN
+I (60344) camera_hal: PWDN=HIGH (power down)
+I (60357) camera_hal: PWDN=LOW (release sensor)
+I (60557) camera_hal: RESET=LOW (assert reset)
+I (60577) camera_hal: RESET=HIGH (release reset)
+I (61577) camera_hal: full I2C scan after camera power-up (diagnostic only)...
+I (61579) camera_hal:   post-powerup ACK at 0x15
+I (61579) camera_hal:   post-powerup ACK at 0x18
+I (61582) camera_hal:   post-powerup ACK at 0x21
+I (61586) camera_hal:   post-powerup ACK at 0x22
+I (61594) camera_hal:   post-powerup ACK at 0x40
+I (61596) camera_hal:   post-powerup ACK at 0x51
+I (61602) camera_hal:   post-powerup ACK at 0x68
+I (61605) camera_hal: DVP GPIO diagnostics (checking PCLK/VSYNC/HSYNC activity)...
+I (61671) camera_hal: DVP diagnostics: PCLK_changes=0 VSYNC_changes=0 HSYNC_changes=0
+W (61671) camera_hal: PCLK has no transitions - MCLK likely not reaching sensor or sensor not active
+I (61676) camera_hal: using sensor address 0x21
+I (61681) camera_hal: SP0A39 I2C device added at 0x21
+I (61687) camera_hal: SP0A39 chip ID: 0x0A39
+I (61809) camera_hal: SP0A39 register init done: VYUY 640x480 (359 regs)
+I (61810) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_table value=0x00 expected=0x01
+E (61812) camera_hal: camera_hal_verify_expected_output_p0_31(92): unexpected p0_31=0x00 at post_table
+W (61821) camera_hal: [CAM-PROBE] output state differs after table; continuing: ESP_ERR_INVALID_RESPONSE
+I (61851) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_delay value=0x01 expected=0x01
+I (61852) camera_hal: camera HAL initialized (sensor ready, DVP capture not yet implemented)
+I (61856) board_camera: camera ready
+I (61864) camera_hal: SP0A39 output regs: P0:1c=0x00 P0:30=0x01 P0:31=0x01 P1:32=0x15 P1:34=0xeb P1:35=0x00 P1:36=0x10
+I (61997) rc_video:   3 DMA-capable PSRAM framebuffers allocated (600 KB each)
+W (62039) rc_video: [CAM-DIAG-C16I] capture handoff uses rc_capture_pool + backup
+W (62040) rc_video: [DEBUG-C151] buffers fb0=0x3c0e0ec0 fb1=0x3c177000 fb2=0x3c20d140 backup=0x3c2a3280 payload=614400 storage=614400 alloc=614656 terminal_guard=256
+W (62050) rc_video: [DEBUG-C151] heap stage=framebuffers_allocated intact=1
+W (62059) rc_video: [DEBUG-C151] heap stage=dvp_controller_created_before_start intact=1
+W (62065) rc_video: [CAM-DIAG-C16I] direct DVP controller created; free_internal=228743 largest_internal_dma=110592
+I (62075) rc_video: Camera initialized
+I (62078) rc_tank: [STEP] Camera init OK
+E (62082) rc_tank: [CAM-DIAG-C16I] TASK_PRIO_ERROR window=2 task=dvp_task requested=23 reason=not_found
+E (62091) rc_tank: [DEBUG-C151] HOLD failure=task_priority_handle_not_found; network init/restart suppressed to preserve evidence

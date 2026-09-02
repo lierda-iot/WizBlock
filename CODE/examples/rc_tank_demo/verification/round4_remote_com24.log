@@ -1,0 +1,290 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+I (24) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader
+I (25) boot: compile time Aug 19 2026 20:26:32
+I (25) boot: Multicore bootloader
+I (26) boot: chip revision: v0.2
+I (29) boot: efuse block revision: v1.3
+I (32) boot.esp32s3: Boot SPI Speed : 80MHz
+I (36) boot.esp32s3: SPI Mode       : DIO
+I (40) boot.esp32s3: SPI Flash Size : 8MB
+I (44) boot: Enabling RNG early entropy source...
+I (48) boot: Partition Table:
+I (51) boot: ## Label            Usage          Type ST Offset   Length
+I (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (70) boot:  2 factory          factory app      00 00 00010000 00300000
+I (77) boot:  3 storage          Unknown data     01 82 00310000 00100000
+I (83) boot: End of partition table
+I (86) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=2a5d8h (173528) map
+I (124) esp_image: segment 1: paddr=0003a600 vaddr=3fca2800 size=053e8h ( 21480) load
+I (129) esp_image: segment 2: paddr=0003f9f0 vaddr=40374000 size=00628h (  1576) load
+I (130) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c41dch (803292) map
+I (277) esp_image: segment 4: paddr=00104204 vaddr=40374628 size=1e190h (123280) load
+I (304) esp_image: segment 5: paddr=0012239c vaddr=50000000 size=00020h (    32) load
+I (316) boot: Loaded app from partition at offset 0x10000
+I (316) boot: Disabling RNG early entropy source...
+I (327) esp_psram: Found 8MB PSRAM device
+I (327) esp_psram: Speed: 80MHz
+I (327) cpu_start: Multicore app
+I (1245) esp_psram: SPI SRAM memory test OK
+I (1253) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (1254) cpu_start: Pro cpu start user code
+I (1254) cpu_start: cpu freq: 240000000 Hz
+I (1256) app_init: Application information:
+I (1260) app_init: Project name:     rc_tank_demo
+I (1264) app_init: App version:      1
+I (1268) app_init: Compile time:     Aug 19 2026 20:25:52
+I (1273) app_init: ELF file SHA256:  22128527d...
+I (1277) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND
+I (1282) efuse_init: Min chip rev:     v0.0
+I (1286) efuse_init: Max chip rev:     v0.99 
+I (1290) efuse_init: Chip rev:         v0.2
+I (1294) heap_init: Initializing. RAM available for dynamic allocation:
+I (1300) heap_init: At 3FCABB88 len 0003DB88 (246 KiB): RAM
+I (1306) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (1311) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (1316) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (1322) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (1329) spi_flash: detected chip: generic
+I (1332) spi_flash: flash io: dio
+I (1335) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (1341) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (1348) main_task: Started on CPU0
+I (1372) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations
+I (1373) main_task: Calling app_main()
+I (1381) rc_tank: === RC Tank Demo (EX-035) Role: REMOTE ===
+I (1381) rc_tank: Startup delay 10 s (open serial monitor now)...
+I (1384) rc_tank:   starting in 10 s
+I (2387) rc_tank:   starting in 9 s
+I (3387) rc_tank:   starting in 8 s
+I (4387) rc_tank:   starting in 7 s
+I (5387) rc_tank:   starting in 6 s
+I (6387) rc_tank:   starting in 5 s
+I (7387) rc_tank:   starting in 4 s
+I (8387) rc_tank:   starting in 3 s
+I (9387) rc_tank:   starting in 2 s
+I (10387) rc_tank:   starting in 1 s
+I (11387) rc_tank: Starting Remote role (P1: network, P2: control stub, P3: video)
+I (11387) board_laiwfs300: init board support package
+I (11387) board_laiwfs300: init capability registry
+I (11392) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (11398) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (11404) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (11412) board_laiwfs300:   I2C device ACK at 0x15
+I (11414) board_laiwfs300:   I2C device ACK at 0x18
+I (11420) board_laiwfs300:   I2C device ACK at 0x22
+I (11427) board_laiwfs300:   I2C device ACK at 0x40
+I (11430) board_laiwfs300:   I2C device ACK at 0x51
+I (11436) board_laiwfs300:   I2C device ACK at 0x68
+I (11439) board_laiwfs300: --- I2C scan done: 6 device(s) found ---
+W (11443) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (11449) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (11454) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (11459) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (11464) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (11469) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+W (11475) board_laiwfs300: SP0A39 (Camera) NOT found at 0x21 (NACK)
+I (11482) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (11486) board_laiwfs300: ES7210 chip ID: 0x72
+I (11492) board_laiwfs300: AIP8563 RTC time: 09:33:15 (BCD raw)
+I (11496) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (11501) board_laiwfs300: init SPI bus manager
+I (11506) board_laiwfs300: init ADC service
+I (11510) board_adc: ADC1 oneshot initialized
+I (11514) board_laiwfs300: init board power service
+I (11519) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=1227 (~928 mV)
+I (11524) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=1613 (~1221 mV)
+I (11530) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (11536) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (11544) io_expander: TPT29555A initialized at 0x22
+I (11546) board_laiwfs300: IO expander initialized OK
+I (11551) board_laiwfs300: init module detect
+I (11555) board_laiwfs300: register detection rules
+I (11560) board_laiwfs300: register default capabilities
+I (11565) board_laiwfs300: board init complete (ioex=OK)
+I (11791) touch_hal: CST836U initialized at 0x15
+I (11793) touch_hal: CST836U info: module_id=0x01 fw_ver=0x19 chip_type=0x1300
+I (11793) board_touch: CST836U verify OK: module_id=0x01 fw=0x19 chip_type=0x1300
+I (11798) rc_control: Joystick init (landscape 320x240, center=108,136, forward=screen-up, 50Hz touch poll)
+I (11807) rc_video: Initializing video display
+I (11812) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+E (11958) spi: spi_bus_initialize(816): SPI bus already initialized.
+I (12079) display_hal: ST7789V3 LCD initialized
+I (12079) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=40000000
+I (12117) rc_video: Display initialized (landscape 320×240) and backlight ON
+I (12117) rc_video: Display theory: RGB565=153600 B/frame, SPI payload=30720 us/frame, max=32.55 fps, chunk=60 lines (7680 us)
+I (12159) rc_video: PSRAM buffers: jpeg_slot=43200B decoded=86400B canvas=153600B dma_chunk=38400B
+I (12159) rc_video: PSRAM state: free_psram=8015260 free_internal=242451 largest_internal_dma=126976
+I (12165) rc_video: Buffer caps: jpeg0=0x3c100eb0(psram=1) decoded=0x3c120950(psram=1) canvas=0x3c135af0(psram=1) dma=0x3fcc0600(dma=1)
+I (12177) rc_video: Video RX/display task started (240x180 at x=80 y=0; joystick per LCD chunk)
+I (12186) rc_audio: Initializing audio recording (ES7210 + SW3)
+I (12193) board_audio: I2S0 duplex: TX=STD RX=TDM MCLK=42 BCLK=41 WS=39 DOUT=38 DIN=40 rate=16000
+I (12209) ES8311: Work in Slave mode
+I (12216) ES7210: Work in Slave mode
+I (12228) ES7210: Enable ES7210_INPUT_MIC1
+I (12238) ES7210: Enable ES7210_INPUT_MIC2
+I (12241) ES7210: Enable ES7210_INPUT_MIC3
+I (12244) ES7210: Enable ES7210_INPUT_MIC4
+I (12250) ES7210: Enable TDM mode
+I (12254) board_audio: codec devices created (ES8311 out, ES7210 in)
+I (12255) I2S_IF: Paired data: 0x3fcee7c0, current mode: playback, paired in_enable: 0, paired out_enable: 0
+I (12259) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+I (12268) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (12291) Adev_Codec: Open codec device OK
+I (12292) I2S_IF: Peer mode playback need extend bits 32 to 64
+I (12292) I2S_IF: TDM: RX, data_bit: 16, slot_bit: 16, ws_width: 32, total_slot: 4, slot_mask: 0xf
+I (12298) I2S_IF: TDM: RX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (12305) I2S_IF: STD: TX, data_bit: 16, slot_bit: 32, ws_width: 32, slot_mode: MONO, slot_mask: 0x1
+I (12314) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (12322) ES7210: Bits 16
+I (12331) ES7210: Enable ES7210_INPUT_MIC1
+I (12333) ES7210: Enable ES7210_INPUT_MIC2
+I (12336) ES7210: Enable ES7210_INPUT_MIC3
+I (12339) ES7210: Enable ES7210_INPUT_MIC4
+I (12342) ES7210: Enable TDM mode
+I (12348) ES7210: Unmuted
+I (12348) Adev_Codec: Open codec device OK
+I (12350) board_audio: audio initialized (esp_codec_dev)
+I (12353) board_audio: RX TDM reconfigured: 4 slots, raw I2S read mode
+I (12361) opus_codec: Opus encoder: rate=16000 ch=1 frame=960 samples outbuf=220 bytes
+I (12367) rc_audio: Audio recording initialized
+I (12372) rc_net: Initializing as STA (Remote)
+I (12376) pp: pp rom version: e7ae62f
+I (12379) net80211: net80211 rom version: e7ae62f
+I (12385) wifi:wifi driver task: 3fcd0d10, prio:23, stack:6656, core=0
+I (12392) wifi:wifi firmware version: 0947e8b
+I (12393) wifi:wifi certification version: v7.0
+I (12398) wifi:config NVS flash: enabled
+I (12401) wifi:config nano formatting: disabled
+I (12406) wifi:Init data frame dynamic rx buffer num: 32
+I (12411) wifi:Init static rx mgmt buffer num: 5
+I (12415) wifi:Init management short buffer num: 32
+I (12420) wifi:Init dynamic tx buffer num: 64
+I (12424) wifi:Init static tx FG buffer num: 2
+I (12428) wifi:Init static rx buffer size: 1600
+I (12432) wifi:Init static rx buffer num: 10
+I (12436) wifi:Init dynamic rx buffer num: 32
+I (12441) wifi_init: rx ba win: 6
+I (12443) wifi_init: accept mbox: 6
+I (12446) wifi_init: tcpip mbox: 16
+I (12450) wifi_init: udp mbox: 16
+I (12453) wifi_init: tcp mbox: 6
+I (12456) wifi_init: tcp tx win: 5760
+I (12459) wifi_init: tcp rx win: 5760
+I (12462) wifi_init: tcp mss: 1440
+I (12465) wifi_init: WiFi IRAM OP enabled
+I (12469) wifi_init: WiFi RX IRAM OP enabled
+I (12474) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (12527) wifi:mode : sta (44:1b:f6:f3:ae:28)
+I (12528) wifi:enable tsf
+E (12530) rc_net: esp_wifi_connect failed: ESP_ERR_WIFI_SSID
+I (12629) rc_net: Scanning for RC_TANK_* APs...
+I (15131) rc_net: Found tank AP: RC_TANK_F3AE25, RSSI: -36
+I (15132) rc_net: Connecting to tank AP...
+I (15225) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (15226) wifi:state: init -> auth (0xb0)
+I (15249) wifi:state: auth -> assoc (0x0)
+I (15270) wifi:Association refused temporarily time 1500, comeback time 1600 (TUs)
+I (16909) wifi:state: assoc -> assoc (0x0)
+I (16930) wifi:state: assoc -> run (0x10)
+I (16951) wifi:connected with RC_TANK_F3AE25, aid = 1, channel 1, 40U, bssid = 44:1b:f6:f3:ae:25
+I (16951) wifi:security: WPA2-PSK, phy: bgn, rssi: -38, cipher(pairwise:0x3, group:0x3), pmf:1
+I (16957) wifi:pm start, type: 1
+
+I (16960) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (16968) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (16977) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (18038) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1
+I (18038) rc_net: Got IP: 192.168.4.2
+I (18038) rc_tank: Network connected, peer: 192.168.4.1
+I (18044) rc_net: Ctrl UDP socket ready
+I (18047) rc_net: Video UDP socket bound to port 8002
+I (18064) wifi:<ba-add>idx:0 (ifx:0, 44:1b:f6:f3:ae:25), tid:0, ssn:0, winSize:64
+I (18314) rc_net: Audio TCP connected to tank port 8003
+I (18315) rc_tank: Socket channels started
+I (18348) rc_video: Remote video started
+I (18348) rc_net: Connected to tank AP
+I (18348) rc_tank: Remote connected to tank
+I (18348) rc_control: Touch poll task started
+I (18353) rc_control: Ctrl TX task started (sending STOP heartbeat)
+I (18365) rc_control: Remote control started (touch poll + ctrl tx)
+I (18366) rc_tank: Remote running (control + PTT audio via SW3)
+I (20467) rc_net: Video RX complete=30 missing=2 last_seq=13366
+I (21161) rc_video: Displayed 30 frames (320x240 video at 240x180,80,0) | fps=3.34 theory_max=32.55 | Avg(ms): recv=2.9 decode=17.8 color=0.0 place=10.4 copy=6.8 overlay=11.2 dma=33.6 display=51.6 total=82.8 | JPEG=13006B
+I (21170) rc_video: Video queue: ready=44 queue_drop=0 stale_drop=12
+I (22318) rc_net: Video RX complete=60 missing=2 last_seq=13396
+I (23664) rc_video: Displayed 60 frames (320x240 video at 240x180,80,0) | fps=12.06 theory_max=32.55 | Avg(ms): recv=1.8 decode=17.3 color=0.0 place=10.8 copy=7.0 overlay=11.2 dma=33.4 display=51.6 total=81.6 | JPEG=11204B
+I (23673) rc_video: Video queue: ready=79 queue_drop=0 stale_drop=18
+I (24385) rc_net: Video RX complete=90 missing=2 last_seq=13426
+I (26097) rc_video: Displayed 90 frames (320x240 video at 240x180,80,0) | fps=12.41 theory_max=32.55 | Avg(ms): recv=0.1 decode=17.6 color=0.0 place=10.8 copy=7.1 overlay=11.2 dma=33.7 display=52.0 total=80.6 | JPEG=12091B
+I (26106) rc_video: Video queue: ready=115 queue_drop=0 stale_drop=23
+I (26473) rc_net: Video RX complete=120 missing=2 last_seq=13456
+I (28526) rc_video: Displayed 120 frames (320x240 video at 240x180,80,0) | fps=12.43 theory_max=32.55 | Avg(ms): recv=0.0 decode=17.8 color=0.0 place=10.6 copy=7.1 overlay=11.3 dma=33.6 display=52.0 total=80.4 | JPEG=13020B
+I (28535) rc_video: Video queue: ready=149 queue_drop=0 stale_drop=28
+I (28574) rc_net: Video RX complete=150 missing=2 last_seq=13486
+I (30678) rc_net: Video RX complete=180 missing=2 last_seq=13516
+I (30958) rc_video: Displayed 150 frames (320x240 video at 240x180,80,0) | fps=12.42 theory_max=32.55 | Avg(ms): recv=0.0 decode=18.0 color=0.0 place=10.5 copy=7.0 overlay=11.4 dma=33.6 display=52.0 total=80.5 | JPEG=10126B
+I (30967) rc_video: Video queue: ready=184 queue_drop=0 stale_drop=33
+I (32778) rc_net: Video RX complete=210 missing=2 last_seq=13546
+I (33404) rc_video: Displayed 180 frames (320x240 video at 240x180,80,0) | fps=12.34 theory_max=32.55 | Avg(ms): recv=0.4 decode=17.9 color=0.0 place=10.6 copy=7.1 overlay=11.2 dma=33.7 display=52.0 total=81.0 | JPEG=9780B
+I (33413) rc_video: Video queue: ready=219 queue_drop=0 stale_drop=38
+I (34831) rc_net: Video RX complete=240 missing=2 last_seq=13576
+I (35875) rc_video: Displayed 210 frames (320x240 video at 240x180,80,0) | fps=12.22 theory_max=32.55 | Avg(ms): recv=0.4 decode=17.9 color=0.0 place=10.8 copy=7.0 overlay=11.4 dma=33.6 display=52.1 total=81.2 | JPEG=12502B
+I (35884) rc_video: Video queue: ready=255 queue_drop=0 stale_drop=44
+I (36910) rc_net: Video RX complete=270 missing=2 last_seq=13606
+I (38343) rc_video: Displayed 240 frames (320x240 video at 240x180,80,0) | fps=12.24 theory_max=32.55 | Avg(ms): recv=1.6 decode=17.7 color=0.0 place=10.7 copy=7.0 overlay=11.1 dma=33.6 display=51.7 total=81.7 | JPEG=12622B
+I (38352) rc_video: Video queue: ready=290 queue_drop=0 stale_drop=49
+I (39004) rc_net: Video RX complete=300 missing=2 last_seq=13636
+I (40850) rc_video: Displayed 270 frames (320x240 video at 240x180,80,0) | fps=12.04 theory_max=32.55 | Avg(ms): recv=1.9 decode=17.7 color=0.0 place=10.7 copy=7.0 overlay=11.4 dma=33.7 display=52.1 total=82.4 | JPEG=11194B
+I (40859) rc_video: Video queue: ready=326 queue_drop=0 stale_drop=55
+I (41083) rc_net: Video RX complete=330 missing=2 last_seq=13666
+I (43180) rc_net: Video RX complete=360 missing=2 last_seq=13696
+I (43295) rc_video: Displayed 300 frames (320x240 video at 240x180,80,0) | fps=12.35 theory_max=32.55 | Avg(ms): recv=0.0 decode=18.0 color=0.0 place=10.9 copy=7.1 overlay=11.4 dma=33.5 display=52.1 total=81.0 | JPEG=11921B
+I (43304) rc_video: Video queue: ready=361 queue_drop=0 stale_drop=60
+I (45245) rc_net: Video RX complete=390 missing=2 last_seq=13726
+I (45743) rc_video: Displayed 330 frames (320x240 video at 240x180,80,0) | fps=12.33 theory_max=32.55 | Avg(ms): recv=0.7 decode=17.9 color=0.0 place=10.6 copy=7.0 overlay=11.4 dma=33.4 display=51.9 total=81.1 | JPEG=11368B
+I (45752) rc_video: Video queue: ready=397 queue_drop=0 stale_drop=65
+I (47324) rc_net: Video RX complete=420 missing=2 last_seq=13756
+I (48208) rc_video: Displayed 360 frames (320x240 video at 240x180,80,0) | fps=12.25 theory_max=32.55 | Avg(ms): recv=0.2 decode=17.9 color=0.0 place=10.7 copy=6.9 overlay=11.4 dma=33.7 display=52.1 total=81.0 | JPEG=10425B
+I (48217) rc_video: Video queue: ready=432 queue_drop=0 stale_drop=71
+I (49425) rc_net: Video RX complete=450 missing=2 last_seq=13786
+I (50640) rc_video: Displayed 390 frames (320x240 video at 240x180,80,0) | fps=12.41 theory_max=32.55 | Avg(ms): recv=0.3 decode=17.8 color=0.0 place=10.7 copy=7.0 overlay=11.2 dma=33.5 display=51.8 total=80.5 | JPEG=12131B
+I (50649) rc_video: Video queue: ready=467 queue_drop=0 stale_drop=76
+I (51522) rc_net: Video RX complete=480 missing=2 last_seq=13816
+I (53075) rc_video: Displayed 420 frames (320x240 video at 240x180,80,0) | fps=12.40 theory_max=32.55 | Avg(ms): recv=0.3 decode=17.9 color=0.0 place=10.6 copy=7.0 overlay=11.3 dma=33.5 display=51.8 total=80.6 | JPEG=13014B
+I (53084) rc_video: Video queue: ready=501 queue_drop=0 stale_drop=81
+I (53615) rc_net: Video RX complete=510 missing=2 last_seq=13846
+I (55573) rc_video: Displayed 450 frames (320x240 video at 240x180,80,0) | fps=12.09 theory_max=32.55 | Avg(ms): recv=1.1 decode=17.8 color=0.0 place=10.6 copy=7.1 overlay=11.2 dma=33.5 display=51.9 total=81.4 | JPEG=11113B
+I (55582) rc_video: Video queue: ready=538 queue_drop=0 stale_drop=87
+I (55698) rc_net: Video RX complete=540 missing=2 last_seq=13876
+I (57748) rc_net: Video RX complete=570 missing=2 last_seq=13906
+I (58022) rc_video: Displayed 480 frames (320x240 video at 240x180,80,0) | fps=12.33 theory_max=32.55 | Avg(ms): recv=0.7 decode=17.5 color=0.0 place=10.7 copy=6.9 overlay=11.4 dma=33.8 display=52.1 total=81.1 | JPEG=11035B
+I (58031) rc_video: Video queue: ready=574 queue_drop=0 stale_drop=92
+I (59855) rc_net: Video RX complete=600 missing=2 last_seq=13936
+I (60477) rc_video: Displayed 510 frames (320x240 video at 240x180,80,0) | fps=12.30 theory_max=32.55 | Avg(ms): recv=0.9 decode=18.0 color=0.0 place=10.6 copy=6.9 overlay=11.4 dma=33.5 display=51.8 total=81.3 | JPEG=10585B
+I (60486) rc_video: Video queue: ready=609 queue_drop=0 stale_drop=97
+I (61932) rc_net: Video RX complete=630 missing=2 last_seq=13966
+I (62918) rc_video: Displayed 540 frames (320x240 video at 240x180,80,0) | fps=12.37 theory_max=32.55 | Avg(ms): recv=0.2 decode=18.0 color=0.0 place=10.6 copy=7.0 overlay=11.3 dma=33.7 display=52.0 total=80.9 | JPEG=10904B
+I (62927) rc_video: Video queue: ready=644 queue_drop=0 stale_drop=103
+I (64033) rc_net: Video RX complete=660 missing=2 last_seq=13996
+I (65350) rc_video: Displayed 570 frames (320x240 video at 240x180,80,0) | fps=12.42 theory_max=32.55 | Avg(ms): recv=0.0 decode=17.6 color=0.0 place=10.9 copy=7.0 overlay=11.4 dma=33.5 display=51.9 total=80.5 | JPEG=10752B
+I (65359) rc_video: Video queue: ready=679 queue_drop=0 stale_drop=107
+I (66105) rc_net: Video RX complete=690 missing=2 last_seq=14026
+I (67787) rc_video: Displayed 600 frames (320x240 video at 240x180,80,0) | fps=12.39 theory_max=32.55 | Avg(ms): recv=0.1 decode=17.5 color=0.0 place=10.8 copy=7.3 overlay=11.3 dma=33.7 display=52.2 total=80.7 | JPEG=10784B
+I (67796) rc_video: Video queue: ready=714 queue_drop=0 stale_drop=113
+I (68235) rc_net: Video RX complete=720 missing=2 last_seq=14056
+I (70269) rc_video: Displayed 630 frames (320x240 video at 240x180,80,0) | fps=12.16 theory_max=32.55 | Avg(ms): recv=0.6 decode=17.5 color=0.0 place=10.9 copy=7.1 overlay=11.2 dma=33.6 display=51.9 total=80.9 | JPEG=13176B
+I (70278) rc_video: Video queue: ready=749 queue_drop=0 stale_drop=118
+I (70311) rc_net: Video RX complete=750 missing=2 last_seq=14086
+I (72351) rc_net: Video RX complete=780 missing=2 last_seq=14116
+I (72718) rc_video: Displayed 660 frames (320x240 video at 240x180,80,0) | fps=12.32 theory_max=32.55 | Avg(ms): recv=0.3 decode=17.6 color=0.0 place=10.7 copy=7.0 overlay=11.3 dma=33.5 display=51.8 total=80.5 | JPEG=12152B
+I (72728) rc_video: Video queue: ready=785 queue_drop=0 stale_drop=124
+I (74446) rc_net: Video RX complete=810 missing=2 last_seq=14146

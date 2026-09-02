@@ -1,0 +1,13 @@
+I (34930) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (34932) wifi:station: 44:1b:f6:f3:ae:40 join, AID=1, bgn, 40U
+I (34994) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:40
+I (35045) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (35046) rc_net: STA assigned IP: 192.168.4.2
+I (35046) rc_video: Local preview stop requested; waiting for video_tx handoff
+I (35053) rc_tank: Network connected, peer: 192.168.4.2
+I (35059) rc_net: Ctrl UDP socket bound to port 8001
+I (35063) rc_net: Video UDP socket bound to port 8002
+I (35069) rc_net: Audio TCP listening on port 8003
+I (35072) rc_tank: Socket channels started
+I (35076) rc_video: Local preview quiesced before video_tx; drained_ready_signals=0
+I (36087) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:40), tid:0, ssn:0, winSize:64

@@ -1,0 +1,79 @@
+esptool.py v4.12.dev2
+Serial port COM7
+Connecting.........
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 44:1b:f6:f3:ae:78
+Uploading stub...
+Running stub...
+Stub running...
+Erasing flash (this may take a while)...
+Chip erase completed successfully in 1.0 seconds.
+Hard resetting via RTS pin...
+esptool.py v4.12.dev2
+Serial port COM7
+Connecting.........
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 44:1b:f6:f3:ae:78
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x000f2fff...
+SHA digest in image updated
+Compressed 20832 bytes to 13348...
+Writing at 0x00000000... (100 %)
+Wrote 20832 bytes (13348 compressed) at 0x00000000 in 0.4 seconds (effective 431.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 119...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (119 compressed) at 0x00008000 in 0.0 seconds (effective 1567.8 kbit/s)...
+Hash of data verified.
+Compressed 925776 bytes to 562743...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d335... (5 %)
+Writing at 0x00029368... (8 %)
+Writing at 0x00032865... (11 %)
+Writing at 0x0003ca2e... (14 %)
+Writing at 0x000428d8... (17 %)
+Writing at 0x00048cc5... (20 %)
+Writing at 0x0004f0ea... (22 %)
+Writing at 0x0005519f... (25 %)
+Writing at 0x0005bed7... (28 %)
+Writing at 0x00061f88... (31 %)
+Writing at 0x000677b3... (34 %)
+Writing at 0x0006d4ff... (37 %)
+Writing at 0x000732a3... (40 %)
+Writing at 0x00078f1f... (42 %)
+Writing at 0x0007f148... (45 %)
+Writing at 0x00084d28... (48 %)
+Writing at 0x0008a820... (51 %)
+Writing at 0x0008f9bf... (54 %)
+Writing at 0x00094f86... (57 %)
+Writing at 0x0009a7e6... (60 %)
+Writing at 0x0009fd24... (62 %)
+Writing at 0x000a50c9... (65 %)
+Writing at 0x000aa6b8... (68 %)
+Writing at 0x000b0a5f... (71 %)
+Writing at 0x000b632a... (74 %)
+Writing at 0x000bc0b3... (77 %)
+Writing at 0x000c19ed... (80 %)
+Writing at 0x000c7087... (82 %)
+Writing at 0x000cfa74... (85 %)
+Writing at 0x000d5d89... (88 %)
+Writing at 0x000dc285... (91 %)
+Writing at 0x000e3d03... (94 %)
+Writing at 0x000ea852... (97 %)
+Writing at 0x000ef880... (100 %)
+Wrote 925776 bytes (562743 compressed) at 0x00010000 in 13.0 seconds (effective 570.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

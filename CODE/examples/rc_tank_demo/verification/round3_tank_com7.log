@@ -1,0 +1,115 @@
+clk_src: 6
+I (17007) I2S_IF: STD: TX, data_bit: 16, slot_bit: 32, ws_width: 32, slot_mode: MONO, slot_mask: 0x1
+I (17015) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (17024) ES7210: Bits 16
+I (17032) ES7210: Enable ES7210_INPUT_MIC1
+I (17036) ES7210: Enable ES7210_INPUT_MIC2
+I (17039) ES7210: Enable ES7210_INPUT_MIC3
+I (17043) ES7210: Enable ES7210_INPUT_MIC4
+I (17046) ES7210: Enable TDM mode
+I (17053) ES7210: Unmuted
+I (17053) Adev_Codec: Open codec device OK
+I (17055) board_audio: audio initialized (esp_codec_dev)
+I (17057) rc_audio: Audio playback initialized
+I (17058) rc_tank: [STEP] Audio play init OK
+I (17062) rc_tank: [STEP] Network init starting...
+I (17069) rc_net: Initializing as SoftAP (Tank)
+I (17074) pp: pp rom version: e7ae62f
+I (17076) net80211: net80211 rom version: e7ae62f
+I (17082) wifi:wifi driver task: 3fcce87c, prio:23, stack:6656, core=0
+I (17091) wifi:wifi firmware version: 0947e8b
+I (17091) wifi:wifi certification version: v7.0
+I (17093) wifi:config NVS flash: enabled
+I (17097) wifi:config nano formatting: disabled
+I (17102) wifi:Init data frame dynamic rx buffer num: 32
+I (17107) wifi:Init static rx mgmt buffer num: 5
+I (17111) wifi:Init management short buffer num: 32
+I (17115) wifi:Init dynamic tx buffer num: 64
+I (17119) wifi:Init static tx FG buffer num: 2
+I (17124) wifi:Init static rx buffer size: 1600
+I (17128) wifi:Init static rx buffer num: 10
+I (17132) wifi:Init dynamic rx buffer num: 32
+I (17138) wifi_init: rx ba win: 6
+I (17139) wifi_init: accept mbox: 6
+I (17142) wifi_init: tcpip mbox: 16
+I (17145) wifi_init: udp mbox: 6
+I (17148) wifi_init: tcp mbox: 6
+I (17151) wifi_init: tcp tx win: 5760
+I (17155) wifi_init: tcp rx win: 5760
+I (17158) wifi_init: tcp mss: 1440
+I (17161) wifi_init: WiFi IRAM OP enabled
+I (17165) wifi_init: WiFi RX IRAM OP enabled
+I (17170) rc_net: AP set_mode/config, SSID=RC_TANK_F3AE25 ch=1
+I (17254) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+W (17256) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration
+I (17297) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)
+I (17311) wifi:mode : softAP (44:1b:f6:f3:ae:25)
+I (17319) wifi:Total power save buffer number: 32
+I (17321) wifi:Init max length of beacon: 752/752
+I (17322) wifi:Init max length of beacon: 752/752
+I (17325) rc_net: SoftAP started, SSID: RC_TANK_F3AE25, Password: 12345678
+I (17327) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (17349) rc_tank: [STEP] Network init OK
+I (17352) rc_tank: Tank SoftAP ready, waiting for remote...
+I (17358) rc_control: Ctrl RX task started
+I (17362) rc_control: Tank control started
+I (17365) rc_tank: Tank running (control active)
+I (17370) rc_tank: app_main done, idle loop
+I (21214) rc_video: Round9 preview displayed=30 fps=5.02 capture_fps=18.22 Avg(ms): convert=67.7 draw=75.0 | complete=109 size_err=0 identity_err=0
+I (25397) rc_video: Round9 preview displayed=60 fps=7.17 capture_fps=25.10 Avg(ms): convert=65.5 draw=73.7 | complete=214 size_err=0 identity_err=0
+I (29592) rc_video: Round9 preview displayed=90 fps=7.15 capture_fps=25.27 Avg(ms): convert=65.7 draw=74.0 | complete=320 size_err=0 identity_err=0
+I (32377) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (32379) wifi:station: 44:1b:f6:f3:ae:28 join, AID=1, bgn, 40U
+I (32415) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:28
+I (32455) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (32456) rc_net: STA assigned IP: 192.168.4.2
+I (32457) rc_video: Round9 local preview stopped; Tank status display restored
+I (32463) rc_tank: Network connected, peer: 192.168.4.2
+I (32469) rc_net: Ctrl UDP socket bound to port 8001
+I (32473) rc_net: Video UDP socket bound to port 8002
+I (32480) rc_net: Audio TCP listening on port 8003
+I (32482) rc_tank: Socket channels started
+I (32504) rc_video: Video TX task started (240x180, sensor-driven, Q=45)
+I (32504) rc_video: TX theory: raw=614400 B/frame, encoded YUV=86400 B/frame, target10fps raw=0.86 MB/s
+I (32509) rc_video: PSRAM TX buffers: subsample=86400B jpeg=43200B send=43208B free_psram=5591272 free_internal=149667
+I (32519) rc_video: TX buffer caps: subsample=0x3c3705c0(psram=1) jpeg=0x3c385744(psram=1) send=0x3c390348(psram=1)
+I (32549) rc_video: Tank video started (camera source)
+I (32551) rc_audio: Audio RX task started
+I (32557) opus_codec: Opus decoder: rate=16000 ch=1 frame=960 samples
+I (32558) rc_audio: Audio play task started
+I (32558) rc_audio: Audio playback tasks started
+W (32609) rc_net: Video UDP send failed: seq=0 chunk=4/12 bytes=1208 sent=-1 errno=12 attempts=4
+W (32610) rc_video: Video send failed: ESP_FAIL
+W (32677) rc_video: Video send failed: ESP_FAIL
+W (32747) rc_video: Video send failed: ESP_FAIL
+W (32816) rc_video: Video send failed: ESP_FAIL
+W (32882) rc_video: Video send failed: ESP_FAIL
+W (32951) rc_video: Video send failed: ESP_FAIL
+W (33022) rc_video: Video send failed: ESP_FAIL
+W (33090) rc_video: Video send failed: ESP_FAIL
+W (33157) rc_video: Video send failed: ESP_FAIL
+W (33226) rc_video: Video send failed: ESP_FAIL
+W (33293) rc_video: Video send failed: ESP_FAIL
+W (33361) rc_video: Video send failed: ESP_FAIL
+W (33429) rc_video: Video send failed: ESP_FAIL
+I (33506) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:28), tid:0, ssn:0, winSize:64
+I (33525) rc_net: Audio client connected
+I (35676) rc_video: Sent 30 | cap_fps=25.3 send_fps=9.5 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=31.0 encode=29.0 send=13.7 total=73.8 | JPEG=14449B
+I (37867) rc_video: Sent 60 | cap_fps=25.1 send_fps=13.7 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=30.9 encode=28.8 send=11.9 total=71.7 | JPEG=13185B
+I (40143) rc_video: Sent 90 | cap_fps=25.5 send_fps=13.2 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=30.9 encode=29.1 send=14.6 total=74.6 | JPEG=13543B
+I (42330) rc_video: Sent 120 | cap_fps=25.1 send_fps=13.7 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=30.8 encode=28.9 send=11.8 total=71.7 | JPEG=15085B
+I (44524) rc_video: Sent 150 | cap_fps=25.5 send_fps=13.7 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=30.9 encode=29.1 send=11.7 total=71.8 | JPEG=12868B
+I (46768) rc_video: Sent 180 | cap_fps=25.0 send_fps=13.4 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=31.2 encode=28.9 send=13.3 total=73.5 | JPEG=15587B
+I (48976) rc_video: Sent 210 | cap_fps=25.4 send_fps=13.6 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=30.9 encode=29.1 send=12.3 total=72.4 | JPEG=14919B
+I (51200) rc_video: Sent 240 | cap_fps=25.2 send_fps=13.5 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=31.0 encode=28.8 send=12.9 total=72.8 | JPEG=15111B
+I (53403) rc_video: Sent 270 | cap_fps=25.4 send_fps=13.6 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=30.9 encode=28.9 send=12.2 total=72.1 | JPEG=14509B
+I (55586) rc_video: Sent 300 | cap_fps=25.2 send_fps=13.7 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=30.8 encode=28.9 send=11.7 total=71.4 | JPEG=15113B
+I (57814) rc_video: Sent 330 | cap_fps=25.1 send_fps=13.5 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=31.3 encode=28.7 send=12.9 total=73.0 | JPEG=12568B
+I (60019) rc_video: Sent 360 | cap_fps=25.4 send_fps=13.6 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=31.0 encode=28.9 send=12.3 total=72.2 | JPEG=14892B
+I (62220) rc_video: Sent 390 | cap_fps=25.5 send_fps=13.6 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=30.9 encode=28.8 send=12.2 total=72.0 | JPEG=13368B
+I (64446) rc_video: Sent 420 | cap_fps=25.2 send_fps=13.5 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=30.8 encode=29.0 send=13.0 total=72.9 | JPEG=14988B
+I (66667) rc_video: Sent 450 | cap_fps=25.2 send_fps=13.5 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=30.7 encode=29.1 send=12.9 total=72.8 | JPEG=15389B
+I (68914) rc_video: Sent 480 | cap_fps=25.4 send_fps=13.4 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=31.0 encode=28.9 send=13.6 total=73.6 | JPEG=14038B
+I (71115) rc_video: Sent 510 | cap_fps=25.0 send_fps=13.6 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=31.0 encode=29.0 send=11.9 total=72.1 | JPEG=13224B
+I (73329) rc_video: Sent 540 | cap_fps=25.3 send_fps=13.6 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=30.9 encode=29.1 send=12.4 total=72.4 | JPEG=12952B
+I (75554) rc_video: Sent 570 | cap_fps=25.6 send_fps=13.5 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=30.9 encode=28.8 send=13.1 total=72.9 | JPEG=12620B

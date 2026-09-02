@@ -1,0 +1,9 @@
+version: "1.0.0"
+description: XiaoZhi Audio Component - Audio capture, encode, decode and prompt playback
+
+targets:
+  - esp32s3
+
+dependencies:
+  espressif/esp_audio_simple_player:
+    version: "^0.9.4"

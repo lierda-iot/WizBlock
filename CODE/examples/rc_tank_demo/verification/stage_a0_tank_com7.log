@@ -1,0 +1,153 @@
+I (4616) esp_psram: SPI SRAM memory test OK
+I (4624) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (4625) cpu_start: Pro cpu start user code
+I (4626) cpu_start: cpu freq: 240000000 Hz
+I (4627) app_init: Application information:
+I (4631) app_init: Project name:     rc_tank_demo
+I (4635) app_init: App version:      1
+I (4639) app_init: Compile time:     Aug 20 2026 14:46:58
+I (4644) app_init: ELF file SHA256:  aa0f62c83...
+I (4648) app_init: ESP-IDF:          v5.5.4
+I (4652) efuse_init: Min chip rev:     v0.0
+I (4656) efuse_init: Max chip rev:     v0.99 
+I (4660) efuse_init: Chip rev:         v0.2
+I (4664) heap_init: Initializing. RAM available for dynamic allocation:
+I (4671) heap_init: At 3FCAE6B0 len 0003B060 (236 KiB): RAM
+I (4676) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (4681) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (4686) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (4692) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (4700) spi_flash: detected chip: generic
+I (4702) spi_flash: flash io: dio
+I (4706) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (4712) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (4719) main_task: Started on CPU0
+I (4743) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations
+I (4744) main_task: Calling app_main()
+I (4750) rc_tank: === RC Tank Demo (EX-035) Role: TANK ===
+I (4751) rc_tank: Startup delay 10 s (open serial monitor now)...
+I (4754) rc_tank:   starting in 10 s
+I (5758) rc_tank:   starting in 9 s
+I (6758) rc_tank:   starting in 8 s
+I (7758) rc_tank:   starting in 7 s
+I (8758) rc_tank:   starting in 6 s
+I (9758) rc_tank:   starting in 5 s
+I (10758) rc_tank:   starting in 4 s
+I (11758) rc_tank:   starting in 3 s
+I (12758) rc_tank:   starting in 2 s
+I (13758) rc_tank:   starting in 1 s
+W (14758) rc_tank: [CAM-DIAG-A0] isolated preview build=Aug 20 2026_14:47:38; motor=off audio=off network=off control=off video_tx=off
+I (14758) board_laiwfs300: init board support package
+I (14763) board_laiwfs300: init capability registry
+I (14768) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (14774) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (14780) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (14787) board_laiwfs300:   I2C device ACK at 0x15
+I (14790) board_laiwfs300:   I2C device ACK at 0x18
+I (14795) board_laiwfs300:   I2C device ACK at 0x21
+I (14799) board_laiwfs300:   I2C device ACK at 0x22
+I (14808) board_laiwfs300:   I2C device ACK at 0x40
+I (14810) board_laiwfs300:   I2C device ACK at 0x51
+I (14816) board_laiwfs300:   I2C device ACK at 0x68
+I (14819) board_laiwfs300: --- I2C scan done: 7 device(s) found ---
+W (14823) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (14829) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (14834) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (14839) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (14844) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (14849) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+I (14856) board_laiwfs300: SP0A39 (Camera) found at 0x21
+I (14862) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (14866) board_laiwfs300: ES7210 chip ID: 0x72
+I (14871) board_laiwfs300: AIP8563 RTC time: 02:23:48 (BCD raw)
+I (14876) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (14880) board_laiwfs300: init SPI bus manager
+I (14886) board_laiwfs300: init ADC service
+I (14889) board_adc: ADC1 oneshot initialized
+I (14893) board_laiwfs300: init board power service
+I (14898) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=2024 (~1532 mV)
+I (14904) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=1635 (~1237 mV)
+I (14910) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (14915) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (14924) io_expander: TPT29555A initialized at 0x22
+I (14926) board_laiwfs300: IO expander initialized OK
+I (14931) board_laiwfs300: init module detect
+I (14935) board_laiwfs300: register detection rules
+I (14939) board_laiwfs300: register default capabilities
+I (14944) board_laiwfs300: board init complete (ioex=OK)
+I (14949) rc_tank: [STEP] Display init starting...
+I (14954) rc_video: Initializing Tank display
+I (14959) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+E (15104) spi: spi_bus_initialize(816): SPI bus already initialized.
+I (15225) display_hal: ST7789V3 LCD initialized
+I (15225) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=20000000
+I (15230) rc_video: Tank display task started (status + Round9 local preview)
+I (15231) rc_video: Tank display initialized (status task owns LCD)
+I (15242) rc_tank: [STEP] Display init OK
+I (15246) rc_tank: [STEP] Camera init starting...
+I (15251) rc_video: Initializing camera (SP0A39 640x480 VYUY)
+I (15256) board_camera: initializing SP0A39 camera
+I (15261) camera_hal: init SP0A39 DVP 640x480 (SCCB manual mode)
+I (15266) camera_hal: configuring IOEX pins for camera RESET/PWDN
+I (15273) camera_hal: PWDN=HIGH (power down)
+I (15287) camera_hal: PWDN=LOW (release sensor)
+I (15487) camera_hal: RESET=LOW (assert reset)
+I (15507) camera_hal: RESET=HIGH (release reset)
+I (16507) camera_hal: full I2C scan after camera power-up (diagnostic only)...
+I (16509) camera_hal:   post-powerup ACK at 0x15
+I (16509) camera_hal:   post-powerup ACK at 0x18
+I (16512) camera_hal:   post-powerup ACK at 0x21
+I (16516) camera_hal:   post-powerup ACK at 0x22
+I (16524) camera_hal:   post-powerup ACK at 0x40
+I (16527) camera_hal:   post-powerup ACK at 0x51
+I (16532) camera_hal:   post-powerup ACK at 0x68
+I (16535) camera_hal: DVP GPIO diagnostics (checking PCLK/VSYNC/HSYNC activity)...
+I (16601) camera_hal: DVP diagnostics: PCLK_changes=0 VSYNC_changes=0 HSYNC_changes=0
+W (16601) camera_hal: PCLK has no transitions - MCLK likely not reaching sensor or sensor not active
+I (16606) camera_hal: using sensor address 0x21
+I (16611) camera_hal: SP0A39 I2C device added at 0x21
+I (16617) camera_hal: SP0A39 chip ID: 0x0A39
+I (16739) camera_hal: SP0A39 register init done (359 regs)
+I (16740) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_table value=0x00 expected=0x01
+E (16741) camera_hal: camera_hal_verify_expected_output_p0_31(61): unexpected p0_31=0x00 at post_table
+W (16750) camera_hal: [CAM-PROBE] output state differs after table; continuing: ESP_ERR_INVALID_RESPONSE
+I (16780) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_delay value=0x01 expected=0x01
+I (16781) camera_hal: camera HAL initialized (sensor ready, DVP capture not yet implemented)
+I (16785) board_camera: camera ready
+I (16793) camera_hal: SP0A39 output regs: P0:1c=0x00 P0:30=0x01 P0:31=0x01 P1:32=0x15 P1:34=0xeb P1:35=0x00 P1:36=0x10
+I (16925) rc_video:   3 framebuffers allocated (600 KB each)
+I (16927) rc_video: Camera initialized
+I (16928) rc_tank: [STEP] Camera init OK
+I (16930) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=dvp_started value=0x01 expected=0x01
+I (16935) rc_video: Round9 local camera preview enabled (240x180 at 80,0; DVP started)
+W (16942) rc_tank: [CAM-DIAG-A0] startup complete; waiting for >=100 preview frames
+I (16950) rc_tank: app_main done, idle loop
+I (17660) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=1 slot=0 gen=1->1 raw_crc=0x2150697e/0x2150697e raw_stable=1 convert=45.7ms draw=35.8ms
+I (18352) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=2 slot=1 gen=9->9 raw_crc=0x1915fc4b/0x1915fc4b raw_stable=1 convert=45.5ms draw=36.1ms
+I (19045) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=3 slot=2 gen=17->17 raw_crc=0xd651b45f/0xd651b45f raw_stable=1 convert=45.6ms draw=35.8ms
+I (19739) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=4 slot=1 gen=18->18 raw_crc=0xfc0493e6/0xfc0493e6 raw_stable=1 convert=45.6ms draw=35.5ms
+I (20433) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=5 slot=2 gen=26->26 raw_crc=0x9cf4938e/0x9cf4938e raw_stable=1 convert=45.7ms draw=35.6ms
+I (23069) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=30 slot=1 gen=39->39 raw_crc=0xe3621fc6/0xe3621fc6 raw_stable=1 convert=45.4ms draw=35.9ms
+I (23071) rc_video: Round9 preview displayed=30 fps=3.83 capture_fps=19.77 Avg(ms): convert=45.5 draw=35.6 | complete=155 size_err=0 identity_err=0
+I (26107) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=60 slot=2 gen=78->78 raw_crc=0xc1ed7101/0xc1ed7101 raw_stable=1 convert=45.5ms draw=35.0ms
+I (26110) rc_video: Round9 preview displayed=60 fps=9.87 capture_fps=25.01 Avg(ms): convert=45.4 draw=35.0 | complete=231 size_err=0 identity_err=0
+I (29145) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=90 slot=1 gen=85->85 raw_crc=0xd3460854/0xd3460854 raw_stable=1 convert=45.5ms draw=35.0ms
+I (29148) rc_video: Round9 preview displayed=90 fps=9.88 capture_fps=25.02 Avg(ms): convert=45.4 draw=35.0 | complete=308 size_err=0 identity_err=0
+I (32182) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=120 slot=0 gen=126->126 raw_crc=0x9640f3a9/0x9640f3a9 raw_stable=1 convert=45.4ms draw=35.0ms
+I (32185) rc_video: Round9 preview displayed=120 fps=9.88 capture_fps=25.02 Avg(ms): convert=45.4 draw=35.0 | complete=385 size_err=0 identity_err=0
+I (35220) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=150 slot=1 gen=142->142 raw_crc=0x15c8dbd0/0x15c8dbd0 raw_stable=1 convert=45.4ms draw=35.0ms
+I (35223) rc_video: Round9 preview displayed=150 fps=9.88 capture_fps=25.35 Avg(ms): convert=45.4 draw=35.0 | complete=462 size_err=0 identity_err=0
+I (38259) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=180 slot=1 gen=157->157 raw_crc=0x05896e42/0x05896e42 raw_stable=1 convert=45.5ms draw=35.0ms
+I (38262) rc_video: Round9 preview displayed=180 fps=9.87 capture_fps=25.01 Avg(ms): convert=45.4 draw=35.0 | complete=538 size_err=0 identity_err=0
+I (41297) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=210 slot=1 gen=183->183 raw_crc=0x828e853c/0x828e853c raw_stable=1 convert=45.4ms draw=35.0ms
+I (41300) rc_video: Round9 preview displayed=210 fps=9.87 capture_fps=25.02 Avg(ms): convert=45.4 draw=35.0 | complete=615 size_err=0 identity_err=0
+I (44335) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=240 slot=2 gen=233->233 raw_crc=0x4fafb7b9/0x4fafb7b9 raw_stable=1 convert=45.5ms draw=35.0ms
+I (44338) rc_video: Round9 preview displayed=240 fps=9.88 capture_fps=25.02 Avg(ms): convert=45.4 draw=35.0 | complete=692 size_err=0 identity_err=0
+I (47373) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=270 slot=2 gen=248->248 raw_crc=0xc65fd203/0xc65fd203 raw_stable=1 convert=45.5ms draw=35.0ms
+I (47376) rc_video: Round9 preview displayed=270 fps=9.87 capture_fps=25.35 Avg(ms): convert=45.4 draw=35.0 | complete=769 size_err=0 identity_err=0
+I (50411) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=300 slot=0 gen=296->296 raw_crc=0x69262625/0x69262625 raw_stable=1 convert=45.5ms draw=35.0ms
+I (50414) rc_video: Round9 preview displayed=300 fps=9.87 capture_fps=25.34 Avg(ms): convert=45.4 draw=35.0 | complete=846 size_err=0 identity_err=0
+I (53450) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=330 slot=2 gen=295->295 raw_crc=0x32e262a6/0x32e262a6 raw_stable=1 convert=45.3ms draw=35.0ms
+I (53453) rc_video: Round9 preview displayed=330 fps=9.87 capture_fps=25.01 Avg(ms): convert=45.4 draw=35.0 | complete=922 size_err=0 identity_err=0
+I (56488) rc_video: [CAM-DIAG-R4] PREVIEW_DIRECT frame=360 slot=2 gen=324->324 raw_crc=0x69107862/0x69107862 raw_stable=1 convert=45.5ms draw=35.0ms
+I (56491) rc_video: Round9 preview displayed=360 fps=9.87 capture_fps=25.01 Avg(ms): convert=45.4 draw=35.0 | complete=999 size_err=0 identity_err=0

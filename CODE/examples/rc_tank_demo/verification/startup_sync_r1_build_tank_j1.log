@@ -1,0 +1,12 @@
+ninja: Entering directory `C:\Users\15301\AppData\Local\Temp\laiwfs300_build\rc_tank_demo\build'
+[1/4] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\15301\AppData\Local\Temp\laiwfs300_build\rc_tank_demo\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.5.4/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/15301/AppData/Local/Temp/laiwfs300_build/rc_tank_demo/build/bootloader/bootloader.bin"
+
+Bootloader binary size 0x5160 bytes. 0x2ea0 bytes (36%) free.
+
+
+[2/4] No install step for 'bootloader'
+[3/4] Completed 'bootloader'
+[4/4] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\15301\AppData\Local\Temp\laiwfs300_build\rc_tank_demo\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.5.4/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/15301/AppData/Local/Temp/laiwfs300_build/rc_tank_demo/build/partition_table/partition-table.bin C:/Users/15301/AppData/Local/Temp/laiwfs300_build/rc_tank_demo/build/rc_tank_demo.bin"
+rc_tank_demo.bin binary size 0xe1570 bytes. Smallest app partition is 0x300000 bytes. 0x21ea90 bytes (71%) free.
+

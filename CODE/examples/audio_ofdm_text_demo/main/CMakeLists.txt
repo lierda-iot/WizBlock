@@ -1,0 +1,31 @@
+idf_component_register(
+    SRCS
+        "audio_ofdm_text_demo_main.c"
+        "ofdm_audio.c"
+        "ofdm_calibration.c"
+        "ofdm_crc.c"
+        "ofdm_fec.c"
+        "ofdm_font.c"
+        "ofdm_frame.c"
+        "ofdm_link.c"
+        "ofdm_phy.c"
+        "ofdm_sync.c"
+        "ofdm_ui.c"
+        "ofdm_utf8.c"
+    INCLUDE_DIRS "."
+    EMBED_FILES "ofdm_noto_sans_sc_16.bin"
+    REQUIRES
+        bus_i2c
+        display_hal
+        esp_codec_dev
+        io_expander
+        kissfft
+        laiwfs300
+        libcorrect
+        touch_hal
+    PRIV_REQUIRES
+        esp_driver_i2s
+        esp_driver_uart
+        esp_timer
+        lvgl
+)

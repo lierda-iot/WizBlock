@@ -1,0 +1,11 @@
+{
+  "id": "touch_2048_demo",
+  "name": "Touch 2048",
+  "version": "1.0.0",
+  "board": "laiwfs300",
+  "partition_scheme": "demo-hub-v2",
+  "app": "app.bin",
+  "app_size": @APP_SIZE@,
+  "app_sha256": "@APP_SHA256@",
+  "partitions": []
+}

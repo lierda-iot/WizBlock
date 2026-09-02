@@ -1,0 +1,231 @@
+I (32740) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (32741) wifi:station: 44:1b:f6:f3:ae:28 join, AID=1, bgn, 40U
+I (32768) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:28
+I (32813) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (32814) rc_net: STA assigned IP: 192.168.4.2
+I (32814) rc_tank: Network connected, peer: 192.168.4.2
+I (32820) rc_net: Ctrl UDP socket bound to port 8001
+I (32824) rc_net: Video UDP socket bound to port 8002
+I (32830) rc_net: Audio TCP listening on port 8003
+I (32833) rc_tank: Socket channels started
+I (32845) rc_video: Tank video started
+I (32845) rc_audio: Audio RX task started
+I (32849) rc_video: Video TX task started (240x180, sensor-driven, Q=60)
+I (32850) rc_video: TX theory: raw=614400 B/frame, encoded YUV=86400 B/frame, target10fps raw=0.86 MB/s
+I (32852) opus_codec: Opus decoder: rate=16000 ch=1 frame=960 samples
+I (32866) rc_audio: Audio play task started
+I (32870) rc_audio: Audio playback tasks started
+W (32987) rc_net: Video UDP send failed: seq=1 chunk=1/16 bytes=1208 sent=-1 errno=12 attempts=4
+W (32988) rc_video: Video send failed: ESP_FAIL
+W (33063) rc_video: Video send failed: ESP_FAIL
+W (33134) rc_video: Video send failed: ESP_FAIL
+W (33205) rc_video: Video send failed: ESP_FAIL
+W (33275) rc_video: Video send failed: ESP_FAIL
+W (33347) rc_video: Video send failed: ESP_FAIL
+W (33422) rc_video: Video send failed: ESP_FAIL
+W (33494) rc_video: Video send failed: ESP_FAIL
+W (33566) rc_video: Video send failed: ESP_FAIL
+W (33635) rc_video: Video send failed: ESP_FAIL
+W (33706) rc_video: Video send failed: ESP_FAIL
+W (33779) rc_video: Video send failed: ESP_FAIL
+W (33859) rc_video: Video send failed: ESP_FAIL
+I (33865) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:28), tid:0, ssn:0, winSize:64
+I (33897) rc_net: Audio client connected
+W (33953) rc_video: Video send failed: ESP_FAIL
+W (34025) rc_net: Video UDP send failed: seq=15 chunk=1/15 bytes=1208 sent=-1 errno=12 attempts=4
+W (34026) rc_video: Video send failed: ESP_FAIL
+W (34186) rc_video: Video send failed: ESP_FAIL
+W (34263) rc_video: Video send failed: ESP_FAIL
+W (34346) rc_video: Video send failed: ESP_FAIL
+W (34500) rc_video: Video send failed: ESP_FAIL
+W (34579) rc_video: Video send failed: ESP_FAIL
+W (34663) rc_video: Video send failed: ESP_FAIL
+W (34740) rc_video: Video send failed: ESP_FAIL
+W (34899) rc_video: Video send failed: ESP_FAIL
+W (34977) rc_video: Video send failed: ESP_FAIL
+W (35134) rc_net: Video UDP send failed: seq=29 chunk=14/15 bytes=1208 sent=-1 errno=12 attempts=4
+W (35136) rc_video: Video send failed: ESP_FAIL
+W (35293) rc_video: Video send failed: ESP_FAIL
+W (35374) rc_video: Video send failed: ESP_FAIL
+W (35605) rc_video: Video send failed: ESP_FAIL
+W (35685) rc_video: Video send failed: ESP_FAIL
+W (36008) rc_video: Video send failed: ESP_FAIL
+W (36085) rc_video: Video send failed: ESP_FAIL
+W (36399) rc_net: Video UDP send failed: seq=45 chunk=10/15 bytes=1208 sent=-1 errno=12 attempts=4
+W (36400) rc_video: Video send failed: ESP_FAIL
+W (36484) rc_video: Video send failed: ESP_FAIL
+W (36643) rc_video: Video send failed: ESP_FAIL
+W (36714) rc_video: Video send failed: ESP_FAIL
+W (37113) rc_video: Video send failed: ESP_FAIL
+W (37190) rc_video: Video send failed: ESP_FAIL
+W (37356) rc_video: Video send failed: ESP_FAIL
+W (37508) rc_net: Video UDP send failed: seq=59 chunk=10/15 bytes=1208 sent=-1 errno=12 attempts=4
+W (37509) rc_video: Video send failed: ESP_FAIL
+W (37587) rc_video: Video send failed: ESP_FAIL
+W (37667) rc_video: Video send failed: ESP_FAIL
+W (37821) rc_video: Video send failed: ESP_FAIL
+W (37901) rc_video: Video send failed: ESP_FAIL
+W (37999) rc_video: Video send failed: ESP_FAIL
+E (38002) spi_master: setup_dma_priv_buffer(1208): Failed to allocate priv TX buffer
+E (38002) lcd_panel.io.spi: panel_io_spi_tx_color(395): spi transmit (queue) color failed
+E (38009) lcd_panel.st7789: panel_st7789_draw_bitmap(229): io tx color failed
+W (38016) rc_video: Tank status display failed: ESP_ERR_NO_MEM
+I (38615) rc_video: Sent 30 | cap_fps=25.2 send_fps=5.2 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=31.3 encode=31.5 send=14.9 total=77.8 | JPEG=17536B
+W (38933) rc_net: Video UDP send failed: seq=77 chunk=17/17 bytes=832 sent=-1 errno=12 attempts=4
+W (38935) rc_video: Video send failed: ESP_FAIL
+W (40437) rc_net: Video UDP send failed: seq=96 chunk=17/17 bytes=809 sent=-1 errno=12 attempts=4
+W (40438) rc_video: Video send failed: ESP_FAIL
+I (41148) rc_video: Sent 60 | cap_fps=25.3 send_fps=11.8 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=31.3 encode=32.2 send=14.1 total=77.7 | JPEG=18247B
+W (41863) rc_net: Video UDP send failed: seq=114 chunk=17/17 bytes=122 sent=-1 errno=12 attempts=4
+W (41864) rc_video: Video send failed: ESP_FAIL
+W (42256) rc_video: Video send failed: ESP_FAIL
+W (42338) rc_video: Video send failed: ESP_FAIL
+W (42962) rc_net: Video UDP send failed: seq=128 chunk=17/17 bytes=428 sent=-1 errno=12 attempts=4
+W (42963) rc_video: Video send failed: ESP_FAIL
+W (43061) rc_video: Video send failed: ESP_FAIL
+E (43072) spi_master: setup_dma_priv_buffer(1208): Failed to allocate priv TX buffer
+E (43073) lcd_panel.io.spi: panel_io_spi_tx_color(395): spi transmit (queue) color failed
+E (43077) lcd_panel.st7789: panel_st7789_draw_bitmap(229): io tx color failed
+W (43084) rc_video: Tank status display failed: ESP_ERR_NO_MEM
+W (43147) rc_video: Video send failed: ESP_FAIL
+W (43840) rc_video: Video send failed: ESP_FAIL
+W (43915) rc_video: Video send failed: ESP_FAIL
+I (44153) rc_video: Sent 90 | cap_fps=25.3 send_fps=10.0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=31.1 encode=32.2 send=13.5 total=76.8 | JPEG=17805B
+W (44471) rc_net: Video UDP send failed: seq=147 chunk=17/18 bytes=1208 sent=-1 errno=12 attempts=4
+W (44472) rc_video: Video send failed: ESP_FAIL
+W (44555) rc_video: Video send failed: ESP_FAIL
+W (45263) rc_video: Video send failed: ESP_FAIL
+W (45581) rc_net: Video UDP send failed: seq=161 chunk=17/17 bytes=591 sent=-1 errno=12 attempts=4
+W (45582) rc_video: Video send failed: ESP_FAIL
+W (46057) rc_video: Video send failed: ESP_FAIL
+I (46927) rc_video: Sent 120 | cap_fps=25.2 send_fps=10.8 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=31.4 encode=32.4 send=13.9 total=77.7 | JPEG=17871B
+W (47167) rc_net: Video UDP send failed: seq=181 chunk=18/18 bytes=303 sent=-1 errno=12 attempts=4
+W (47168) rc_video: Video send failed: ESP_FAIL
+W (47481) rc_video: Video send failed: ESP_FAIL
+W (47563) rc_video: Video send failed: ESP_FAIL
+W (47795) rc_video: Video send failed: ESP_FAIL
+W (47877) rc_video: Video send failed: ESP_FAIL
+E (48148) spi_master: setup_dma_priv_buffer(1208): Failed to allocate priv TX buffer
+E (48148) lcd_panel.io.spi: panel_io_spi_tx_color(395): spi transmit (queue) color failed
+E (48152) lcd_panel.st7789: panel_st7789_draw_bitmap(229): io tx color failed
+W (48159) rc_video: Tank status display failed: ESP_ERR_NO_MEM
+W (49616) rc_net: Video UDP send failed: seq=212 chunk=17/17 bytes=738 sent=-1 errno=12 attempts=4
+W (49617) rc_video: Video send failed: ESP_FAIL
+W (49701) rc_video: Video send failed: ESP_FAIL
+I (49859) rc_video: Sent 150 | cap_fps=25.2 send_fps=10.2 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=31.3 encode=32.0 send=14.1 total=77.4 | JPEG=17670B
+W (50496) rc_video: Video send failed: ESP_FAIL
+W (50570) rc_video: Video send failed: ESP_FAIL
+W (50642) rc_net: Video UDP send failed: seq=225 chunk=1/15 bytes=1208 sent=-1 errno=12 attempts=4
+W (50644) rc_video: Video send failed: ESP_FAIL
+W (51123) rc_video: Video send failed: ESP_FAIL
+W (51205) rc_video: Video send failed: ESP_FAIL
+W (51600) rc_video: Video send failed: ESP_FAIL
+W (51834) rc_net: Video UDP send failed: seq=240 chunk=17/18 bytes=1208 sent=-1 errno=12 attempts=4
+W (51836) rc_video: Video send failed: ESP_FAIL
+W (52228) rc_video: Video send failed: ESP_FAIL
+I (52862) rc_video: Sent 180 | cap_fps=25.3 send_fps=10.0 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=31.4 encode=32.2 send=13.6 total=77.3 | JPEG=20305B
+W (53104) rc_net: Video UDP send failed: seq=256 chunk=17/18 bytes=1208 sent=-1 errno=12 attempts=4
+W (53105) rc_video: Video send failed: ESP_FAIL
+E (53218) spi_master: setup_dma_priv_buffer(1208): Failed to allocate priv TX buffer
+E (53219) lcd_panel.io.spi: panel_io_spi_tx_color(395): spi transmit (queue) color failed
+E (53223) lcd_panel.st7789: panel_st7789_draw_bitmap(229): io tx color failed
+W (53230) rc_video: Tank status display failed: ESP_ERR_NO_MEM
+W (54528) rc_net: Video UDP send failed: seq=274 chunk=17/17 bytes=1193 sent=-1 errno=12 attempts=4
+W (54529) rc_video: Video send failed: ESP_FAIL
+W (54923) rc_video: Video send failed: ESP_FAIL
+W (55159) rc_video: Video send failed: ESP_FAIL
+W (55554) rc_net: Video UDP send failed: seq=287 chunk=17/17 bytes=407 sent=-1 errno=12 attempts=4
+W (55555) rc_video: Video send failed: ESP_FAIL
+W (55639) rc_video: Video send failed: ESP_FAIL
+I (55719) rc_video: Sent 210 | cap_fps=25.5 send_fps=10.5 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=31.8 encode=31.9 send=13.7 total=77.5 | JPEG=17309B
+W (56425) rc_video: Video send failed: ESP_FAIL
+W (56663) rc_net: Video UDP send failed: seq=301 chunk=17/17 bytes=674 sent=-1 errno=12 attempts=4
+W (56664) rc_video: Video send failed: ESP_FAIL
+W (56746) rc_video: Video send failed: ESP_FAIL
+W (57139) rc_video: Video send failed: ESP_FAIL
+E (58289) spi_master: setup_dma_priv_buffer(1208): Failed to allocate priv TX buffer
+E (58289) lcd_panel.io.spi: panel_io_spi_tx_color(395): spi transmit (queue) color failed
+E (58293) lcd_panel.st7789: panel_st7789_draw_bitmap(229): io tx color failed
+W (58300) rc_video: Tank status display failed: ESP_ERR_NO_MEM
+I (58408) rc_video: Sent 240 | cap_fps=24.9 send_fps=11.2 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=32.0 encode=32.4 send=12.9 total=77.4 | JPEG=21192B
+W (58882) rc_net: Video UDP send failed: seq=329 chunk=17/18 bytes=1208 sent=-1 errno=12 attempts=4
+W (58884) rc_video: Video send failed: ESP_FAIL
+W (59042) rc_video: Video send failed: ESP_FAIL
+W (59357) rc_video: Video send failed: ESP_FAIL
+W (59749) rc_video: Video send failed: ESP_FAIL
+W (60066) rc_net: Video UDP send failed: seq=344 chunk=17/17 bytes=1021 sent=-1 errno=12 attempts=4
+W (60067) rc_video: Video send failed: ESP_FAIL
+W (61095) rc_net: Video UDP send failed: seq=357 chunk=17/17 bytes=787 sent=-1 errno=12 attempts=4
+W (61096) rc_video: Video send failed: ESP_FAIL
+W (61177) rc_video: Video send failed: ESP_FAIL
+I (61338) rc_video: Sent 270 | cap_fps=25.6 send_fps=10.2 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=31.4 encode=32.1 send=13.7 total=77.3 | JPEG=17695B
+W (61887) rc_video: Video send failed: ESP_FAIL
+W (61969) rc_video: Video send failed: ESP_FAIL
+W (62205) rc_net: Video UDP send failed: seq=371 chunk=17/17 bytes=346 sent=-1 errno=12 attempts=4
+W (62207) rc_video: Video send failed: ESP_FAIL
+W (62679) rc_video: Video send failed: ESP_FAIL
+W (62911) rc_video: Video send failed: ESP_FAIL
+W (62992) rc_video: Video send failed: ESP_FAIL
+E (63362) spi_master: setup_dma_priv_buffer(1208): Failed to allocate priv TX buffer
+E (63362) lcd_panel.io.spi: panel_io_spi_tx_color(395): spi transmit (queue) color failed
+E (63366) lcd_panel.st7789: panel_st7789_draw_bitmap(229): io tx color failed
+W (63373) rc_video: Tank status display failed: ESP_ERR_NO_MEM
+W (63413) rc_net: Video UDP send failed: seq=386 chunk=17/17 bytes=181 sent=-1 errno=12 attempts=4
+W (63414) rc_video: Video send failed: ESP_FAIL
+I (64260) rc_video: Sent 300 | cap_fps=25.0 send_fps=10.3 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.1 subsample=31.0 encode=32.3 send=13.0 total=76.3 | JPEG=18871B
+W (64420) rc_net: Video UDP send failed: seq=399 chunk=17/18 bytes=1208 sent=-1 errno=12 attempts=4
+W (64421) rc_video: Video send failed: ESP_FAIL
+W (64501) rc_video: Video send failed: ESP_FAIL
+W (64816) rc_video: Video send failed: ESP_FAIL
+W (64898) rc_video: Video send failed: ESP_FAIL
+W (65297) rc_video: Video send failed: ESP_FAIL
+W (65606) rc_net: Video UDP send failed: seq=414 chunk=17/18 bytes=1208 sent=-1 errno=12 attempts=4
+W (65607) rc_video: Video send failed: ESP_FAIL
+W (66009) rc_video: Video send failed: ESP_FAIL
+W (66719) rc_net: Video UDP send failed: seq=428 chunk=17/18 bytes=1208 sent=-1 errno=12 attempts=4
+W (66720) rc_video: Video send failed: ESP_FAIL
+I (67277) rc_video: Sent 330 | cap_fps=25.5 send_fps=9.9 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=31.7 encode=32.0 send=13.6 total=77.3 | JPEG=20649B
+W (67746) rc_net: Video UDP send failed: seq=441 chunk=17/17 bytes=605 sent=-1 errno=12 attempts=4
+W (67747) rc_video: Video send failed: ESP_FAIL
+W (68141) rc_video: Video send failed: ESP_FAIL
+W (68223) rc_video: Video send failed: ESP_FAIL
+E (68430) spi_master: setup_dma_priv_buffer(1208): Failed to allocate priv TX buffer
+E (68430) lcd_panel.io.spi: panel_io_spi_tx_color(395): spi transmit (queue) color failed
+E (68435) lcd_panel.st7789: panel_st7789_draw_bitmap(229): io tx color failed
+W (68441) rc_video: Tank status display failed: ESP_ERR_NO_MEM
+W (69327) rc_net: Video UDP send failed: seq=461 chunk=17/18 bytes=1208 sent=-1 errno=12 attempts=4
+W (69328) rc_video: Video send failed: ESP_FAIL
+W (69643) rc_video: Video send failed: ESP_FAIL
+W (70045) rc_video: Video send failed: ESP_FAIL
+I (70126) rc_video: Sent 360 | cap_fps=25.3 send_fps=10.5 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=31.7 encode=32.0 send=13.6 total=77.4 | JPEG=17884B
+W (70360) rc_net: Video UDP send failed: seq=474 chunk=17/18 bytes=1208 sent=-1 errno=12 attempts=4
+W (70361) rc_video: Video send failed: ESP_FAIL
+W (70756) rc_video: Video send failed: ESP_FAIL
+W (71066) rc_video: Video send failed: ESP_FAIL
+W (71464) rc_net: Video UDP send failed: seq=488 chunk=17/17 bytes=453 sent=-1 errno=12 attempts=4
+W (71465) rc_video: Video send failed: ESP_FAIL
+W (71862) rc_video: Video send failed: ESP_FAIL
+W (71944) rc_video: Video send failed: ESP_FAIL
+W (72177) rc_video: Video send failed: ESP_FAIL
+I (73028) rc_video: Sent 390 | cap_fps=25.2 send_fps=10.3 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=31.2 encode=32.3 send=13.2 total=76.8 | JPEG=17375B
+E (73485) spi_master: setup_dma_priv_buffer(1208): Failed to allocate priv TX buffer
+E (73485) lcd_panel.io.spi: panel_io_spi_tx_color(395): spi transmit (queue) color failed
+E (73489) lcd_panel.st7789: panel_st7789_draw_bitmap(229): io tx color failed
+W (73497) rc_video: Tank status display failed: ESP_ERR_NO_MEM
+W (73586) rc_net: Video UDP send failed: seq=515 chunk=17/18 bytes=1208 sent=-1 errno=12 attempts=4
+W (73587) rc_video: Video send failed: ESP_FAIL
+W (74196) rc_video: Video send failed: ESP_FAIL
+W (74280) rc_video: Video send failed: ESP_FAIL
+W (74593) rc_net: Video UDP send failed: seq=528 chunk=17/17 bytes=1005 sent=-1 errno=12 attempts=4
+W (74594) rc_video: Video send failed: ESP_FAIL
+W (75384) rc_video: Video send failed: ESP_FAIL
+W (75701) rc_net: Video UDP send failed: seq=542 chunk=17/17 bytes=804 sent=-1 errno=12 attempts=4
+W (75702) rc_video: Video send failed: ESP_FAIL
+I (75859) rc_video: Sent 420 | cap_fps=25.1 send_fps=10.6 capture_identity_errors=0 | Avg(ms): wait=0.0 cache=0.0 subsample=31.3 encode=32.4 send=13.3 total=77.1 | JPEG=20619B
+W (76097) rc_video: Video send failed: ESP_FAIL
+W (76808) rc_net: Video UDP send failed: seq=556 chunk=17/17 bytes=567 sent=-1 errno=12 attempts=4
+W (76809) rc_video: Video send failed: ESP_FAIL
+W (76892) rc_video: Video send failed: ESP_FAIL
+W (77915) rc_net: Video UDP send failed: seq=570 chunk=17/17 bytes=978 sent=-1 errno=12 attempts=4
+W (77916) rc_video: Video send failed: ESP_FAIL
+W (78314) rc_video: Video send failed: ESP_FAIL

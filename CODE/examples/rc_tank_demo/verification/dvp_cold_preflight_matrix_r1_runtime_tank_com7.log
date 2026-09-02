@@ -1,0 +1,863 @@
+
+[HOST-DVP-MATRIX 11:28:40] COLD-R1 capture begin
+
+[HOST-DVP-MATRIX 11:28:40] Tank RAM bootloader start
+esptool.py v4.12.dev2
+Serial port COM7
+Connecting..............
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 44:1b:f6:f3:ae:78
+Uploading stub...
+Running stub...
+Stub running...
+RAM boot...
+Downloading 5360 bytes at 3fce2820... done!
+Downloading 3364 bytes at 403c8700... done!
+Downloading 12016 bytes at 403cb700... done!
+All segments done, executing at 403c8924
+Exiting immediately.
+
+[HOST-DVP-MATRIX 11:28:45] Tank RAM bootloader complete
+ot: chip revision: v0.2
+I (2933) boot: efuse block revision: v1.3
+I (2936) boot.esp32s3: Boot SPI Speed : 80MHz
+I (2940) boot.esp32s3: SPI Mode       : SLOW READ
+I (2945) boot.esp32s3: SPI Flash Size : 8MB
+I (2949) boot: Enabling RNG early entropy source...
+I (2954) boot: Partition Table:
+I (2956) boot: ## Label            Usage          Type ST Offset   Length
+I (2963) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (2969) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (2976) boot:  2 factory          factory app      00 00 00010000 00300000
+I (2983) boot:  3 storage          Unknown data     01 82 00310000 00100000
+I (2990) boot: End of partition table
+I (2993) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=24f30h (151344) map
+I (3093) esp_image: segment 1: paddr=00034f58 vaddr=3fca0c00 size=05560h ( 21856) load
+I (3107) esp_image: segment 2: paddr=0003a4c0 vaddr=40374000 size=05b58h ( 23384) load
+I (3123) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9b978h (637304) map
+I (3512) esp_image: segment 4: paddr=000db9a0 vaddr=40379b58 size=17004h ( 94212) load
+I (3573) esp_image: segment 5: paddr=000f29ac vaddr=50000000 size=00020h (    32) load
+I (3585) boot: Loaded app from partition at offset 0x10000
+I (3585) boot: Disabling RNG early entropy source...
+I (3597) esp_psram: Found 8MB PSRAM device
+I (3597) esp_psram: Speed: 80MHz
+I (3597) cpu_start: Multicore app
+I (4515) esp_psram: SPI SRAM memory test OK
+I (4524) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (4525) cpu_start: Pro cpu start user code
+I (4525) cpu_start: cpu freq: 240000000 Hz
+I (4526) app_init: Application information:
+I (4530) app_init: Project name:     rc_tank_demo
+I (4535) app_init: App version:      1
+I (4538) app_init: Compile time:     Aug 26 2026 11:26:21
+I (4543) app_init: ELF file SHA256:  7b87d6974...
+I (4548) app_init: ESP-IDF:          GIT-NOTFOUND
+I (4552) efuse_init: Min chip rev:     v0.0
+I (4556) efuse_init: Max chip rev:     v0.99 
+I (4560) efuse_init: Chip rev:         v0.2
+I (4564) heap_init: Initializing. RAM available for dynamic allocation:
+I (4571) heap_init: At 3FCAA290 len 0003F480 (253 KiB): RAM
+I (4576) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (4581) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (4586) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (4592) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (4600) spi_flash: detected chip: generic
+I (4602) spi_flash: flash io: dio
+I (4606) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (4612) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (4619) main_task: Started on CPU0
+I (4643) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations
+I (4644) main_task: Calling app_main()
+I (4650) rc_tank: === RC Tank Demo (EX-035) Role: TANK ===
+I (4651) rc_tank: Startup delay 10 s (open serial monitor now)...
+I (4654) rc_tank:   starting in 10 s
+I (5658) rc_tank:   starting in 9 s
+I (6658) rc_tank:   starting in 8 s
+I (7658) rc_tank:   starting in 7 s
+I (8658) rc_tank:   starting in 6 s
+I (9658) rc_tank:   starting in 5 s
+I (10658) rc_tank:   starting in 4 s
+I (11658) rc_tank:   starting in 3 s
+I (12658) rc_tank:   starting in 2 s
+I (13658) rc_tank:   starting in 1 s
+I (14658) rc_tank: Starting Tank role (P1: network, P2: control, P3: video)
+I (14658) board_laiwfs300: init board support package
+I (14658) board_laiwfs300: init capability registry
+I (14663) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (14669) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (14675) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (14682) board_laiwfs300:   I2C device ACK at 0x15
+I (14685) board_laiwfs300:   I2C device ACK at 0x18
+I (14690) board_laiwfs300:   I2C device ACK at 0x21
+I (14694) board_laiwfs300:   I2C device ACK at 0x22
+I (14702) board_laiwfs300:   I2C device ACK at 0x40
+I (14705) board_laiwfs300:   I2C device ACK at 0x51
+I (14711) board_laiwfs300:   I2C device ACK at 0x68
+I (14714) board_laiwfs300: --- I2C scan done: 7 device(s) found ---
+W (14718) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (14724) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (14729) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (14734) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (14739) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (14744) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+I (14750) board_laiwfs300: SP0A39 (Camera) found at 0x21
+I (14757) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (14761) board_laiwfs300: ES7210 chip ID: 0x72
+I (14766) board_laiwfs300: AIP8563 RTC time: 23:01:58 (BCD raw)
+I (14770) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (14775) board_laiwfs300: init SPI bus manager
+I (14781) board_laiwfs300: init ADC service
+I (14784) board_adc: ADC1 oneshot initialized
+I (14788) board_laiwfs300: init board power service
+I (14793) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=4095 (~3100 mV)
+I (14798) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=1650 (~1249 mV)
+I (14804) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (14810) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (14819) io_expander: TPT29555A initialized at 0x22
+I (14821) board_laiwfs300: IO expander initialized OK
+I (14825) board_laiwfs300: init module detect
+I (14830) board_laiwfs300: register detection rules
+I (14834) board_laiwfs300: register default capabilities
+I (14839) board_laiwfs300: board init complete (ioex=OK)
+I (14844) rc_tank: [STEP] Motor init starting...
+I (14849) board_motor: motor input 1 -> GPIO5 / LEDC channel 0
+I (14854) board_motor: motor input 2 -> GPIO4 / LEDC channel 1
+I (14860) board_motor: motor input 3 -> GPIO37 / LEDC channel 2
+I (14865) board_motor: motor input 4 -> GPIO45 / LEDC channel 3
+I (14871) rc_control: Motor initialized
+I (14875) rc_tank: [STEP] Motor init OK
+I (14878) rc_tank: [STEP] Display init starting...
+I (14883) rc_video: Initializing Tank display
+I (14888) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+E (15033) spi: spi_bus_initialize(816): SPI bus already initialized.
+I (15154) display_hal: ST7789V3 LCD initialized
+I (15154) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=20000000
+I (15159) rc_video: Tank display task started (status screen)
+I (15160) rc_video: Tank display initialized (status task owns LCD)
+I (15170) rc_tank: [STEP] Display init OK
+I (15174) rc_tank: [STEP] Camera init starting...
+I (15178) rc_video: Initializing camera (SP0A39 640x480 VYUY)
+I (15184) board_camera: initializing SP0A39 camera mode=0 640x480
+I (15189) camera_hal: init SP0A39 DVP 640x480 (SCCB manual mode)
+I (15195) camera_hal: configuring IOEX pins for camera RESET/PWDN
+I (15202) camera_hal: PWDN=HIGH (power down)
+I (15215) camera_hal: PWDN=LOW (release sensor)
+I (15415) camera_hal: RESET=LOW (assert reset)
+I (15435) camera_hal: RESET=HIGH (release reset)
+I (16435) camera_hal: full I2C scan after camera power-up (diagnostic only)...
+I (16437) camera_hal:   post-powerup ACK at 0x15
+I (16437) camera_hal:   post-powerup ACK at 0x18
+I (16440) camera_hal:   post-powerup ACK at 0x21
+I (16444) camera_hal:   post-powerup ACK at 0x22
+I (16452) camera_hal:   post-powerup ACK at 0x40
+I (16455) camera_hal:   post-powerup ACK at 0x51
+I (16460) camera_hal:   post-powerup ACK at 0x68
+I (16463) camera_hal: DVP GPIO diagnostics (checking PCLK/VSYNC/HSYNC activity)...
+I (16529) camera_hal: DVP diagnostics: PCLK_changes=0 VSYNC_changes=0 HSYNC_changes=0
+W (16529) camera_hal: PCLK has no transitions - MCLK likely not reaching sensor or sensor not active
+I (16534) camera_hal: using sensor address 0x21
+I (16539) camera_hal: SP0A39 I2C device added at 0x21
+I (16545) camera_hal: SP0A39 chip ID: 0x0A39
+I (16667) camera_hal: SP0A39 register init done: VYUY 640x480 (359 regs)
+I (16668) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_table value=0x00 expected=0x01
+E (16671) camera_hal: camera_hal_verify_expected_output_p0_31(92): unexpected p0_31=0x00 at post_table
+W (16680) camera_hal: [CAM-PROBE] output state differs after table; continuing: ESP_ERR_INVALID_RESPONSE
+I (16709) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_delay value=0x01 expected=0x01
+I (16710) camera_hal: camera HAL initialized (sensor ready, DVP capture not yet implemented)
+I (16714) board_camera: camera ready
+I (16722) camera_hal: SP0A39 output regs: P0:1c=0x00 P0:30=0x01 P0:31=0x01 P1:32=0x15 P1:34=0xeb P1:35=0x00 P1:36=0x10
+I (16854) rc_video:   3 DMA-capable PSRAM framebuffers allocated (600 KB each)
+I (16857) dvp_ext: DVP Extended camera controller driver is initialized
+I (16858) dvp_ext: [STABLE-DVP] assembly uses GDMA-EOF direct copy; dma=102400 half=51200 queue_data_events=suppressed eof_desc=probe
+I (16869) rc_video: [STABLE-CAPTURE] staged DVP controller created dma=102400 half=51200
+I (16876) rc_video: Camera initialized
+I (16880) rc_tank: [STEP] Camera init OK
+W (16886) rc_tank: [DVP-MATRIX] pre-network stage=0 strategy=network_first frames=0 rebuild=0 wifi=off video_tx=not_created
+I (16894) rc_tank: [STEP] Network init starting...
+I (16900) rc_net: Initializing as SoftAP (Tank)
+I (16904) pp: pp rom version: e7ae62f
+I (16907) net80211: net80211 rom version: e7ae62f
+I (16913) wifi:wifi driver task: 3fce47d0, prio:23, stack:6656, core=0
+I (16921) wifi:wifi firmware version: 0947e8b
+I (16922) wifi:wifi certification version: v7.0
+I (16925) wifi:config NVS flash: enabled
+I (16929) wifi:config nano formatting: disabled
+I (16933) wifi:Init data frame dynamic rx buffer num: 32
+I (16938) wifi:Init static rx mgmt buffer num: 5
+I (16943) wifi:Init management short buffer num: 32
+I (16947) wifi:Init dynamic tx buffer num: 64
+I (16951) wifi:Init static tx FG buffer num: 2
+I (16956) wifi:Init static rx buffer size: 1600
+I (16960) wifi:Init static rx buffer num: 10
+I (16964) wifi:Init dynamic rx buffer num: 32
+I (16969) wifi_init: rx ba win: 6
+I (16971) wifi_init: accept mbox: 6
+I (16974) wifi_init: tcpip mbox: 16
+I (16977) wifi_init: udp mbox: 6
+I (16980) wifi_init: tcp mbox: 6
+I (16983) wifi_init: tcp tx win: 5760
+I (16987) wifi_init: tcp rx win: 5760
+I (16990) wifi_init: tcp mss: 1440
+I (16993) wifi_init: WiFi IRAM OP enabled
+I (16997) wifi_init: WiFi RX IRAM OP enabled
+I (17001) rc_net: AP set_mode/config, SSID=RC_TANK_F3AE79 ch=1
+I (17082) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+W (17083) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration
+I (17119) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)
+I (17129) wifi:mode : softAP (44:1b:f6:f3:ae:79)
+I (17133) wifi:Total power save buffer number: 32
+I (17134) wifi:Init max length of beacon: 752/752
+I (17135) wifi:Init max length of beacon: 752/752
+I (17137) rc_net: SoftAP started, SSID: RC_TANK_F3AE79, Password: 12345678
+I (17139) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (17151) rc_tank: [STEP] Network init OK
+I (17155) rc_tank: Tank SoftAP ready, waiting for remote...
+I (17160) rc_control: Ctrl RX task started
+I (17164) rc_control: Tank control started
+I (17167) rc_tank: Tank running (video + control; audio disabled)
+I (17173) rc_tank: app_main done, idle loop
+I (20329) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (20330) wifi:station: 44:1b:f6:f3:ae:40 join, AID=1, bgn, 40U
+I (20362) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:40
+I (20394) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (20395) rc_net: STA assigned IP: 192.168.4.2
+I (20395) rc_tank: Network connected, peer: 192.168.4.2
+W (20401) rc_tank: [DVP-MATRIX] start stage=0 strategy=network_first preflight_frames=0 video_tx=not_created
+I (20410) rc_net: Ctrl UDP socket bound to port 8001
+I (20415) rc_net: Video UDP socket bound to port 8002
+I (20420) rc_net: Audio TCP listening on port 8003
+I (20423) rc_tank: Socket channels started
+I (20427) rc_video: No local preview active; formal video handoff skipped
+I (20435) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=dvp_started value=0x01 expected=0x01
+I (20448) rc_video: Video TX task started (240x180, sensor-driven, Q=60)
+I (20449) rc_video: TX theory: raw=614400 B/frame, encoded YUV=86400 B/frame, target10fps raw=0.86 MB/s
+I (20451) rc_video: Tank video started (camera source)
+I (20457) rc_video: PSRAM TX buffers: subsample=86400B jpeg=43200B send=43208B free_psram=5592524 free_internal=60003
+I (20467) rc_video: TX buffer caps: subsample=0x3c350120(psram=1) jpeg=0x3c3652a4(psram=1) send=0x3c36fea8(psram=1)
+W (20462) rc_tank: [DVP-MATRIX] observe stage=0 strategy=network_first duration_ms=45000 under live Q60/UDP load
+I (20546) rc_net: [CAM-PROBE] Video TX seq=0 jpeg_len=9355 crc32=0x9a8b60cb chunks=8
+W (20594) rc_net: Video UDP send failed: seq=0 chunk=4/8 bytes=1208 sent=-1 errno=12 attempts=4
+W (20595) rc_video: Video send failed: ESP_FAIL
+W (20649) rc_video: Video send failed: ESP_FAIL
+
+[HOST-DVP-MATRIX 11:29:03] COLD-R1 stage=0 visible window begin
+W (20783) rc_video: Video send failed: ESP_FAIL
+W (21069) rc_video: Video send failed: ESP_FAIL
+W (21122) rc_video: Video send failed: ESP_FAIL
+W (21261) rc_video: Video send failed: ESP_FAIL
+W (21342) rc_video: Video send failed: ESP_FAIL
+I (21498) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:40), tid:0, ssn:0, winSize:64
+I (24267) rc_net: [CAM-PROBE] Video TX seq=30 jpeg_len=9517 crc32=0x320b86ab chunks=8
+I (24940) rc_video: Sent 30 | cap_fps=8.2 send_fps=6.7 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=52.9 cache=1.4 subsample=23.5 encode=25.3 send=6.7 total=109.8 | JPEG=9321B
+I (24940) rc_video: [VIDEO-TX] handoff cap=37 get=75 select_fail=0 finished=37 signal=37 acquire=37 acquire_fail=0 release_fail=0 backup=0/0
+I (24940) rc_video: [STABLE-CAPTURE] pause=37/37 timeout=0 quiesce=37 resume=37 lifecycle_errors=0 repairs=37 staged_events=626 copies=605 fallback=0 errors=0 prepare=38 stale_queue=0 pending_vsync=17 sync=60 complete=37 incomplete=23 incomplete_blocks=188 hold=37/37 hold_timeout=0
+I (27865) rc_net: [CAM-PROBE] Video TX seq=60 jpeg_len=4440 crc32=0x7aab83a6 chunks=4
+I (28459) rc_video: Sent 60 | cap_fps=8.5 send_fps=8.5 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=46.0 cache=1.4 subsample=23.7 encode=24.4 send=6.6 total=102.1 | JPEG=7635B
+I (28459) rc_video: [VIDEO-TX] handoff cap=67 get=135 select_fail=0 finished=67 signal=67 acquire=67 acquire_fail=0 release_fail=0 backup=0/0
+I (28503) rc_video: [STABLE-CAPTURE] pause=67/67 timeout=0 quiesce=67 resume=67 lifecycle_errors=0 repairs=67 staged_events=1107 copies=1067 fallback=0 errors=0 prepare=68 stale_queue=0 pending_vsync=27 sync=109 complete=68 incomplete=41 incomplete_blocks=318 hold=67/67 hold_timeout=0
+I (31568) rc_net: [CAM-PROBE] Video TX seq=90 jpeg_len=10361 crc32=0xf1c53c2f chunks=9
+I (32285) rc_video: Sent 90 | cap_fps=7.9 send_fps=7.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=56.3 cache=1.4 subsample=23.4 encode=25.5 send=8.2 total=114.8 | JPEG=11457B
+I (32292) rc_video: [VIDEO-TX] handoff cap=97 get=194 select_fail=0 finished=97 signal=97 acquire=97 acquire_fail=0 release_fail=0 backup=0/0
+I (32301) rc_video: [STABLE-CAPTURE] pause=97/97 timeout=0 quiesce=97 resume=97 lifecycle_errors=0 repairs=97 staged_events=1604 copies=1546 fallback=0 errors=0 prepare=98 stale_queue=0 pending_vsync=41 sync=161 complete=97 incomplete=64 incomplete_blocks=477 hold=97/97 hold_timeout=0
+I (34914) rc_net: [CAM-PROBE] Video TX seq=120 jpeg_len=9979 crc32=0xde4d030f chunks=9
+I (35725) rc_video: Sent 120 | cap_fps=8.7 send_fps=8.7 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=44.4 cache=1.5 subsample=23.3 encode=25.7 send=7.1 total=102.0 | JPEG=9447B
+I (35732) rc_video: [VIDEO-TX] handoff cap=127 get=254 select_fail=0 finished=127 signal=127 acquire=127 acquire_fail=0 release_fail=0 backup=0/0
+I (35745) rc_video: [STABLE-CAPTURE] pause=127/127 timeout=0 quiesce=127 resume=127 lifecycle_errors=0 repairs=127 staged_events=2071 copies=1996 fallback=0 errors=0 prepare=128 stale_queue=0 pending_vsync=54 sync=205 complete=126 incomplete=79 incomplete_blocks=607 hold=127/127 hold_timeout=0
+I (38591) rc_net: [CAM-PROBE] Video TX seq=150 jpeg_len=10029 crc32=0x81e71b3b chunks=9
+I (39267) rc_video: Sent 150 | cap_fps=8.4 send_fps=8.4 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=49.8 cache=1.5 subsample=23.6 encode=25.5 send=6.2 total=106.6 | JPEG=10008B
+I (39267) rc_video: [VIDEO-TX] handoff cap=157 get=315 select_fail=0 finished=157 signal=157 acquire=157 acquire_fail=0 release_fail=0 backup=0/0
+I (39267) rc_video: [STABLE-CAPTURE] pause=157/157 timeout=0 quiesce=157 resume=157 lifecycle_errors=0 repairs=157 staged_events=2566 copies=2476 fallback=0 errors=0 prepare=158 stale_queue=0 pending_vsync=67 sync=250 complete=156 incomplete=94 incomplete_blocks=747 hold=157/157 hold_timeout=0
+W (41375) rc_net: Video UDP send failed: seq=173 chunk=7/8 bytes=1208 sent=-1 errno=12 attempts=4
+W (41376) rc_video: Video send failed: ESP_FAIL
+W (41432) rc_video: Video send failed: ESP_FAIL
+W (41569) rc_video: Video send failed: ESP_FAIL
+W (41703) rc_video: Video send failed: ESP_FAIL
+I (42177) rc_net: [CAM-PROBE] Video TX seq=180 jpeg_len=10265 crc32=0xc12e55c6 chunks=9
+I (43248) rc_video: Sent 180 | cap_fps=8.6 send_fps=7.6 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=46.0 cache=1.5 subsample=23.4 encode=26.1 send=6.3 total=103.3 | JPEG=9498B
+I (43255) rc_video: [VIDEO-TX] handoff cap=191 get=382 select_fail=0 finished=191 signal=191 acquire=191 acquire_fail=0 release_fail=0 backup=0/0
+I (43265) rc_video: [STABLE-CAPTURE] pause=191/191 timeout=0 quiesce=191 resume=191 lifecycle_errors=0 repairs=191 staged_events=3091 copies=2979 fallback=0 errors=0 prepare=192 stale_queue=0 pending_vsync=81 sync=303 complete=189 incomplete=114 incomplete_blocks=895 hold=191/191 hold_timeout=0
+I (45579) rc_net: [CAM-PROBE] Video TX seq=210 jpeg_len=10256 crc32=0x4796d6a2 chunks=9
+I (46824) rc_video: Sent 210 | cap_fps=8.3 send_fps=8.3 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=51.0 cache=1.5 subsample=23.6 encode=25.5 send=6.1 total=107.7 | JPEG=10015B
+I (46824) rc_video: [VIDEO-TX] handoff cap=221 get=443 select_fail=0 finished=221 signal=221 acquire=221 acquire_fail=0 release_fail=0 backup=0/0
+I (46824) rc_video: [STABLE-CAPTURE] pause=221/221 timeout=0 quiesce=221 resume=221 lifecycle_errors=0 repairs=221 staged_events=3576 copies=3448 fallback=0 errors=0 prepare=222 stale_queue=0 pending_vsync=94 sync=349 complete=219 incomplete=130 incomplete_blocks=1025 hold=221/221 hold_timeout=0
+I (49159) rc_net: [CAM-PROBE] Video TX seq=240 jpeg_len=9989 crc32=0xf3b32a3d chunks=9
+I (50267) rc_video: Sent 240 | cap_fps=8.7 send_fps=8.7 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=45.4 cache=1.5 subsample=23.3 encode=25.9 send=6.4 total=102.5 | JPEG=9977B
+I (50267) rc_video: [VIDEO-TX] handoff cap=251 get=503 select_fail=0 finished=251 signal=251 acquire=251 acquire_fail=0 release_fail=0 backup=0/0
+I (50267) rc_video: [STABLE-CAPTURE] pause=251/251 timeout=0 quiesce=251 resume=251 lifecycle_errors=0 repairs=251 staged_events=4044 copies=3898 fallback=0 errors=0 prepare=252 stale_queue=0 pending_vsync=106 sync=394 complete=249 incomplete=145 incomplete_blocks=1145 hold=251/251 hold_timeout=0
+I (52447) rc_net: [CAM-PROBE] Video TX seq=270 jpeg_len=9988 crc32=0x54cefca7 chunks=9
+I (53592) rc_video: Sent 270 | cap_fps=9.0 send_fps=9.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=40.3 cache=1.4 subsample=23.6 encode=25.5 send=7.3 total=98.1 | JPEG=10006B
+I (53592) rc_video: [VIDEO-TX] handoff cap=281 get=563 select_fail=0 finished=281 signal=281 acquire=281 acquire_fail=0 release_fail=0 backup=0/0
+I (53592) rc_video: [STABLE-CAPTURE] pause=281/281 timeout=0 quiesce=281 resume=281 lifecycle_errors=0 repairs=281 staged_events=4491 copies=4329 fallback=0 errors=0 prepare=282 stale_queue=0 pending_vsync=120 sync=434 complete=278 incomplete=156 incomplete_blocks=1255 hold=281/281 hold_timeout=0
+I (55927) rc_net: [CAM-PROBE] Video TX seq=300 jpeg_len=9912 crc32=0x444b6f16 chunks=9
+I (57218) rc_video: Sent 300 | cap_fps=8.3 send_fps=8.3 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=51.8 cache=1.4 subsample=23.7 encode=25.3 send=6.2 total=108.5 | JPEG=9512B
+I (57225) rc_video: [VIDEO-TX] handoff cap=311 get=622 select_fail=0 finished=311 signal=311 acquire=311 acquire_fail=0 release_fail=0 backup=0/0
+I (57236) rc_video: [STABLE-CAPTURE] pause=311/311 timeout=0 quiesce=311 resume=311 lifecycle_errors=0 repairs=311 staged_events=4979 copies=4801 fallback=0 errors=0 prepare=312 stale_queue=0 pending_vsync=135 sync=481 complete=308 incomplete=173 incomplete_blocks=1405 hold=311/311 hold_timeout=0
+I (59710) rc_net: [CAM-PROBE] Video TX seq=330 jpeg_len=10382 crc32=0xde5a7d6e chunks=9
+I (60980) rc_video: Sent 330 | cap_fps=8.0 send_fps=8.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=56.4 cache=1.5 subsample=23.1 encode=25.7 send=6.4 total=113.1 | JPEG=10172B
+I (60988) rc_video: [VIDEO-TX] handoff cap=341 get=682 select_fail=0 finished=341 signal=341 acquire=341 acquire_fail=0 release_fail=0 backup=0/0
+I (60996) rc_video: [STABLE-CAPTURE] pause=341/341 timeout=0 quiesce=341 resume=341 lifecycle_errors=0 repairs=341 staged_events=5497 copies=5303 fallback=0 errors=0 prepare=342 stale_queue=0 pending_vsync=149 sync=532 complete=338 incomplete=194 incomplete_blocks=1575 hold=341/341 hold_timeout=0
+W (63300) rc_net: Video UDP send failed: seq=359 chunk=7/9 bytes=1208 sent=-1 errno=12 attempts=4
+W (63301) rc_video: Video send failed: ESP_FAIL
+I (63487) rc_net: [CAM-PROBE] Video TX seq=360 jpeg_len=11503 crc32=0x2f078ee8 chunks=10
+I (65030) rc_video: Sent 360 | cap_fps=7.6 send_fps=7.4 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=63.1 cache=1.5 subsample=23.6 encode=25.7 send=6.2 total=120.0 | JPEG=10088B
+I (65030) rc_video: [VIDEO-TX] handoff cap=372 get=745 select_fail=0 finished=372 signal=372 acquire=372 acquire_fail=0 release_fail=0 backup=0/0
+I (65082) rc_video: [STABLE-CAPTURE] pause=373/373 timeout=0 quiesce=372 resume=372 lifecycle_errors=0 repairs=372 staged_events=6055 copies=5844 fallback=0 errors=0 prepare=373 stale_queue=0 pending_vsync=163 sync=590 complete=370 incomplete=220 incomplete_blocks=1765 hold=373/373 hold_timeout=0
+W (65470) rc_tank: [DVP-MATRIX] result stage=0 strategy=network_first complete=373 incomplete=221 incomplete_blocks=1775 mismatch_hist=0,1,0,1,51,211,171,59,14,48,171 prepare=377 pending=164 hold=376/376 hold_timeout=0
+W (65505) rc_tank: [DVP-MATRIX] advance stage=1; restart in 1s
+I (66506) wifi:station: 44:1b:f6:f3:ae:40 leave, AID = 1, reason = 2, bss_flags is 756835, bss:0x3fcf12f8
+I (66507) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (66514) wifi:<ba-del>idx:2, tid:0
+I (66516) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (66526) rc_net: STA disconnected, MAC: 44:1b:f6:f3:ae:40
+W (66529) rc_control: Network disconnected: motor stop enforced
+W (66534) rc_tank: Network disconnected
+W (66568) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (66653) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (66791) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (66891) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (66973) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (67088) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (67168) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (67306) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+I (67365) wifi:flush txq
+I (67366) wifi:stop sw txq
+I (67366) wifi:lmac stop hw txq
+†žESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x3 (DOWNLOAD(USB/UART0))
+Saved PC:0x40381169
+waiting for download
+
+[HOST-DVP-MATRIX 11:29:50] COLD-R1 Tank restart recovery=2
+
+[HOST-DVP-MATRIX 11:29:50] Tank RAM bootloader start
+esptool.py v4.12.dev2
+Serial port COM7
+Connecting.........
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 44:1b:f6:f3:ae:78
+Uploading stub...
+Running stub...
+Stub running...
+RAM boot...
+Downloading 5360 bytes at 3fce2820... done!
+Downloading 3364 bytes at 403c8700... done!
+Downloading 12016 bytes at 403cb700... done!
+All segments done, executing at 403c8924
+Exiting immediately.
+
+[HOST-DVP-MATRIX 11:29:54] Tank RAM bootloader complete
+ (3434) boot: efuse block revision: v1.3
+I (3438) boot.esp32s3: Boot SPI Speed : 80MHz
+I (3442) boot.esp32s3: SPI Mode       : SLOW READ
+I (3447) boot.esp32s3: SPI Flash Size : 8MB
+I (3450) boot: Enabling RNG early entropy source...
+I (3455) boot: Partition Table:
+I (3458) boot: ## Label            Usage          Type ST Offset   Length
+I (3464) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (3471) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (3478) boot:  2 factory          factory app      00 00 00010000 00300000
+I (3484) boot:  3 storage          Unknown data     01 82 00310000 00100000
+I (3491) boot: End of partition table
+I (3495) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=24f30h (151344) map
+I (3595) esp_image: segment 1: paddr=00034f58 vaddr=3fca0c00 size=05560h ( 21856) load
+I (3609) esp_image: segment 2: paddr=0003a4c0 vaddr=40374000 size=05b58h ( 23384) load
+I (3624) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9b978h (637304) map
+I (4014) esp_image: segment 4: paddr=000db9a0 vaddr=40379b58 size=17004h ( 94212) load
+I (4075) esp_image: segment 5: paddr=000f29ac vaddr=50000000 size=00020h (    32) load
+I (4087) boot: Loaded app from partition at offset 0x10000
+I (4087) boot: Disabling RNG early entropy source...
+I (4099) esp_psram: Found 8MB PSRAM device
+I (4099) esp_psram: Speed: 80MHz
+I (4099) cpu_start: Multicore app
+I (5017) esp_psram: SPI SRAM memory test OK
+I (5026) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (5027) cpu_start: Pro cpu start user code
+I (5027) cpu_start: cpu freq: 240000000 Hz
+I (5028) app_init: Application information:
+I (5032) app_init: Project name:     rc_tank_demo
+I (5036) app_init: App version:      1
+I (5040) app_init: Compile time:     Aug 26 2026 11:26:21
+I (5045) app_init: ELF file SHA256:  7b87d6974...
+I (5050) app_init: ESP-IDF:          GIT-NOTFOUND
+I (5054) efuse_init: Min chip rev:     v0.0
+I (5058) efuse_init: Max chip rev:     v0.99 
+I (5062) efuse_init: Chip rev:         v0.2
+I (5066) heap_init: Initializing. RAM available for dynamic allocation:
+I (5072) heap_init: At 3FCAA290 len 0003F480 (253 KiB): RAM
+I (5077) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (5083) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (5088) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (5094) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (5101) spi_flash: detected chip: generic
+I (5104) spi_flash: flash io: dio
+I (5108) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (5113) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (5120) main_task: Started on CPU0
+I (5144) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations
+I (5145) main_task: Calling app_main()
+I (5162) rc_tank: === RC Tank Demo (EX-035) Role: TANK ===
+I (5162) rc_tank: Startup delay 10 s (open serial monitor now)...
+I (5162) rc_tank:   starting in 10 s
+I (6165) rc_tank:   starting in 9 s
+I (7165) rc_tank:   starting in 8 s
+I (8165) rc_tank:   starting in 7 s
+I (9165) rc_tank:   starting in 6 s
+I (10165) rc_tank:   starting in 5 s
+I (11165) rc_tank:   starting in 4 s
+I (12165) rc_tank:   starting in 3 s
+I (13165) rc_tank:   starting in 2 s
+I (14165) rc_tank:   starting in 1 s
+I (15165) rc_tank: Starting Tank role (P1: network, P2: control, P3: video)
+I (15165) board_laiwfs300: init board support package
+I (15165) board_laiwfs300: init capability registry
+I (15170) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (15176) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (15182) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (15189) board_laiwfs300:   I2C device ACK at 0x15
+I (15192) board_laiwfs300:   I2C device ACK at 0x18
+I (15197) board_laiwfs300:   I2C device ACK at 0x21
+I (15201) board_laiwfs300:   I2C device ACK at 0x22
+I (15209) board_laiwfs300:   I2C device ACK at 0x40
+I (15212) board_laiwfs300:   I2C device ACK at 0x51
+I (15218) board_laiwfs300:   I2C device ACK at 0x68
+I (15221) board_laiwfs300: --- I2C scan done: 7 device(s) found ---
+W (15225) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (15231) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (15236) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (15241) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (15246) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (15251) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+I (15257) board_laiwfs300: SP0A39 (Camera) found at 0x21
+I (15264) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (15268) board_laiwfs300: ES7210 chip ID: 0x72
+I (15273) board_laiwfs300: AIP8563 RTC time: 23:03:06 (BCD raw)
+I (15277) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (15282) board_laiwfs300: init SPI bus manager
+I (15288) board_laiwfs300: init ADC service
+I (15291) board_adc: ADC1 oneshot initialized
+I (15295) board_laiwfs300: init board power service
+I (15300) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=4095 (~3100 mV)
+I (15305) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=1650 (~1249 mV)
+I (15311) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (15317) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (15326) io_expander: TPT29555A initialized at 0x22
+I (15328) board_laiwfs300: IO expander initialized OK
+I (15332) board_laiwfs300: init module detect
+I (15337) board_laiwfs300: register detection rules
+I (15341) board_laiwfs300: register default capabilities
+I (15346) board_laiwfs300: board init complete (ioex=OK)
+I (15351) rc_tank: [STEP] Motor init starting...
+I (15356) board_motor: motor input 1 -> GPIO5 / LEDC channel 0
+I (15361) board_motor: motor input 2 -> GPIO4 / LEDC channel 1
+I (15367) board_motor: motor input 3 -> GPIO37 / LEDC channel 2
+I (15372) board_motor: motor input 4 -> GPIO45 / LEDC channel 3
+I (15378) rc_control: Motor initialized
+I (15382) rc_tank: [STEP] Motor init OK
+I (15385) rc_tank: [STEP] Display init starting...
+I (15390) rc_video: Initializing Tank display
+I (15395) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+E (15540) spi: spi_bus_initialize(816): SPI bus already initialized.
+I (15661) display_hal: ST7789V3 LCD initialized
+I (15661) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=20000000
+I (15666) rc_video: Tank display task started (status screen)
+I (15667) rc_video: Tank display initialized (status task owns LCD)
+I (15677) rc_tank: [STEP] Display init OK
+I (15681) rc_tank: [STEP] Camera init starting...
+I (15685) rc_video: Initializing camera (SP0A39 640x480 VYUY)
+I (15691) board_camera: initializing SP0A39 camera mode=0 640x480
+I (15696) camera_hal: init SP0A39 DVP 640x480 (SCCB manual mode)
+I (15702) camera_hal: configuring IOEX pins for camera RESET/PWDN
+I (15709) camera_hal: PWDN=HIGH (power down)
+I (15722) camera_hal: PWDN=LOW (release sensor)
+I (15922) camera_hal: RESET=LOW (assert reset)
+I (15942) camera_hal: RESET=HIGH (release reset)
+I (16942) camera_hal: full I2C scan after camera power-up (diagnostic only)...
+I (16944) camera_hal:   post-powerup ACK at 0x15
+I (16944) camera_hal:   post-powerup ACK at 0x18
+I (16947) camera_hal:   post-powerup ACK at 0x21
+I (16951) camera_hal:   post-powerup ACK at 0x22
+I (16959) camera_hal:   post-powerup ACK at 0x40
+I (16962) camera_hal:   post-powerup ACK at 0x51
+I (16967) camera_hal:   post-powerup ACK at 0x68
+I (16970) camera_hal: DVP GPIO diagnostics (checking PCLK/VSYNC/HSYNC activity)...
+I (17036) camera_hal: DVP diagnostics: PCLK_changes=0 VSYNC_changes=0 HSYNC_changes=0
+W (17036) camera_hal: PCLK has no transitions - MCLK likely not reaching sensor or sensor not active
+I (17041) camera_hal: using sensor address 0x21
+I (17046) camera_hal: SP0A39 I2C device added at 0x21
+I (17052) camera_hal: SP0A39 chip ID: 0x0A39
+I (17174) camera_hal: SP0A39 register init done: VYUY 640x480 (359 regs)
+I (17175) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_table value=0x00 expected=0x01
+E (17178) camera_hal: camera_hal_verify_expected_output_p0_31(92): unexpected p0_31=0x00 at post_table
+W (17187) camera_hal: [CAM-PROBE] output state differs after table; continuing: ESP_ERR_INVALID_RESPONSE
+I (17216) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_delay value=0x01 expected=0x01
+I (17217) camera_hal: camera HAL initialized (sensor ready, DVP capture not yet implemented)
+I (17221) board_camera: camera ready
+I (17229) camera_hal: SP0A39 output regs: P0:1c=0x00 P0:30=0x01 P0:31=0x01 P1:32=0x15 P1:34=0xeb P1:35=0x00 P1:36=0x10
+I (17361) rc_video:   3 DMA-capable PSRAM framebuffers allocated (600 KB each)
+I (17364) dvp_ext: DVP Extended camera controller driver is initialized
+I (17365) dvp_ext: [STABLE-DVP] assembly uses GDMA-EOF direct copy; dma=102400 half=51200 queue_data_events=suppressed eof_desc=probe
+I (17376) rc_video: [STABLE-CAPTURE] staged DVP controller created dma=102400 half=51200
+I (17383) rc_video: Camera initialized
+I (17387) rc_tank: [STEP] Camera init OK
+W (17391) rc_tank: [DVP-MATRIX] pre-network stage=1 strategy=cold_preview_30 frames=30 rebuild=0 wifi=off video_tx=not_created
+I (17403) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=dvp_started value=0x01 expected=0x01
+I (17451) rc_video: Round9 local camera preview enabled (240x180 at 80,0; DVP started)
+W (22042) rc_video: [COLD-PREFLIGHT] complete target=30 captured=30 complete_delta=30 incomplete_delta=0 incomplete_blocks_delta=0; not a pass gate until live Q60/UDP
+I (22046) rc_tank: [STEP] Network init starting...
+I (22052) rc_net: Initializing as SoftAP (Tank)
+I (22056) pp: pp rom version: e7ae62f
+I (22059) net80211: net80211 rom version: e7ae62f
+I (22064) wifi:wifi driver task: 3fce48f8, prio:23, stack:6656, core=0
+I (22076) wifi:wifi firmware version: 0947e8b
+I (22076) wifi:wifi certification version: v7.0
+I (22077) wifi:config NVS flash: enabled
+I (22081) wifi:config nano formatting: disabled
+I (22085) wifi:Init data frame dynamic rx buffer num: 32
+I (22090) wifi:Init static rx mgmt buffer num: 5
+I (22095) wifi:Init management short buffer num: 32
+I (22099) wifi:Init dynamic tx buffer num: 64
+I (22103) wifi:Init static tx FG buffer num: 2
+I (22108) wifi:Init static rx buffer size: 1600
+I (22112) wifi:Init static rx buffer num: 10
+I (22116) wifi:Init dynamic rx buffer num: 32
+I (22121) wifi_init: rx ba win: 6
+I (22123) wifi_init: accept mbox: 6
+I (22126) wifi_init: tcpip mbox: 16
+I (22129) wifi_init: udp mbox: 6
+I (22132) wifi_init: tcp mbox: 6
+I (22133) rc_video: Round9 preview displayed=30 fps=4.64 capture_fps=4.64 Avg(ms): convert=42.0 draw=36.0 | complete=30 size_err=0 identity_err=0
+I (22135) wifi_init: tcp tx win: 5760
+I (22151) wifi_init: tcp rx win: 5760
+I (22155) wifi_init: tcp mss: 1440
+I (22158) wifi_init: WiFi IRAM OP enabled
+I (22201) wifi_init: WiFi RX IRAM OP enabled
+I (22202) rc_net: AP set_mode/config, SSID=RC_TANK_F3AE79 ch=1
+I (22208) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (22253) wifi:mode : softAP (44:1b:f6:f3:ae:79)
+I (22259) wifi:Total power save buffer number: 32
+I (22259) wifi:Init max length of beacon: 752/752
+I (22260) wifi:Init max length of beacon: 752/752
+I (22263) rc_net: SoftAP started, SSID: RC_TANK_F3AE79, Password: 12345678
+I (22264) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (22276) rc_tank: [STEP] Network init OK
+I (22280) rc_tank: Tank SoftAP ready, waiting for remote...
+I (22285) rc_control: Ctrl RX task started
+I (22289) rc_control: Tank control started
+I (22293) rc_tank: Tank running (video + control; audio disabled)
+I (22299) rc_tank: app_main done, idle loop
+I (26870) rc_video: Round9 preview displayed=60 fps=6.33 capture_fps=6.33 Avg(ms): convert=42.2 draw=35.2 | complete=60 size_err=0 identity_err=0
+I (31565) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (31567) wifi:station: 44:1b:f6:f3:ae:40 join, AID=1, bgn, 40U
+I (31598) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:40
+I (31625) rc_video: Round9 preview displayed=90 fps=6.31 capture_fps=6.31 Avg(ms): convert=41.9 draw=35.3 | complete=90 size_err=0 identity_err=0
+I (31634) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (31635) rc_net: STA assigned IP: 192.168.4.2
+I (31639) rc_video: Local preview stop requested; waiting for video_tx handoff
+I (31646) rc_tank: Network connected, peer: 192.168.4.2
+W (31652) rc_tank: [DVP-MATRIX] start stage=1 strategy=cold_preview_30 preflight_frames=30 video_tx=not_created
+I (31702) rc_net: Ctrl UDP socket bound to port 8001
+I (31704) rc_net: Video UDP socket bound to port 8002
+I (31705) rc_net: Audio TCP listening on port 8003
+I (31706) rc_tank: Socket channels started
+I (31710) rc_video: Local preview quiesced before video_tx; drained_ready_signals=0 stable_ready_preserved=1
+E (31755) spi_master: spi_device_acquire_bus(1357): Cannot acquire bus when a polling transaction is in progress.
+E (31755) lcd_panel.io.spi: panel_io_spi_tx_param(213): acquire spi bus failed
+E (31760) lcd_panel.st7789: panel_st7789_draw_bitmap(215): io tx param failed
+W (31767) rc_video: Tank display clear after preview failed: ESP_ERR_INVALID_STATE
+I (31780) rc_video: Video TX task started (240x180, sensor-driven, Q=60)
+I (31781) rc_video: TX theory: raw=614400 B/frame, encoded YUV=86400 B/frame, target10fps raw=0.86 MB/s
+I (31786) rc_video: Tank video started (camera source)
+I (31790) rc_video: PSRAM TX buffers: subsample=86400B jpeg=43200B send=43208B free_psram=5592524 free_internal=59783
+W (31795) rc_tank: [DVP-MATRIX] observe stage=1 strategy=cold_preview_30 duration_ms=45000 under live Q60/UDP load
+I (31805) rc_video: TX buffer caps: subsample=0x3c350120(psram=1) jpeg=0x3c3652a4(psram=1) send=0x3c36fea8(psram=1)
+
+[HOST-DVP-MATRIX 11:30:23] COLD-R1 stage=1 visible window begin
+I (32688) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:40), tid:0, ssn:0, winSize:64
+W (33825) rc_video: [CAM-DIAG-R4] TX wait timeout #1 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (35830) rc_video: [CAM-DIAG-R4] TX wait timeout #2 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (37835) rc_video: [CAM-DIAG-R4] TX wait timeout #3 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (39840) rc_video: [CAM-DIAG-R4] TX wait timeout #4 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (41845) rc_video: [CAM-DIAG-R4] TX wait timeout #5 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (43850) rc_video: [CAM-DIAG-R4] TX wait timeout #6 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (45855) rc_video: [CAM-DIAG-R4] TX wait timeout #7 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (47860) rc_video: [CAM-DIAG-R4] TX wait timeout #8 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (49865) rc_video: [CAM-DIAG-R4] TX wait timeout #9 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (51870) rc_video: [CAM-DIAG-R4] TX wait timeout #10 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (53875) rc_video: [CAM-DIAG-R4] TX wait timeout #11 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (55880) rc_video: [CAM-DIAG-R4] TX wait timeout #12 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (57885) rc_video: [CAM-DIAG-R4] TX wait timeout #13 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (59890) rc_video: [CAM-DIAG-R4] TX wait timeout #14 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (61895) rc_video: [CAM-DIAG-R4] TX wait timeout #15 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (63900) rc_video: [CAM-DIAG-R4] TX wait timeout #16 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (65905) rc_video: [CAM-DIAG-R4] TX wait timeout #17 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (67910) rc_video: [CAM-DIAG-R4] TX wait timeout #18 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (69915) rc_video: [CAM-DIAG-R4] TX wait timeout #19 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (71920) rc_video: [CAM-DIAG-R4] TX wait timeout #20 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (73925) rc_video: [CAM-DIAG-R4] TX wait timeout #21 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (75930) rc_video: [CAM-DIAG-R4] TX wait timeout #22 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+W (76822) rc_tank: [DVP-MATRIX] result stage=1 strategy=cold_preview_30 complete=91 incomplete=0 incomplete_blocks=0 mismatch_hist=0,0,0,0,0,0,0,0,0,0,91 prepare=91 pending=91 hold=91/91 hold_timeout=0
+W (76832) rc_tank: [DVP-MATRIX] advance stage=2; restart in 1s
+I (77834) wifi:station: 44:1b:f6:f3:ae:40 leave, AID = 1, reason = 2, bss_flags is 756835, bss:0x3fcf1374
+I (77836) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (77842) wifi:<ba-del>idx:2, tid:0
+I (77844) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (77853) rc_net: STA disconnected, MAC: 44:1b:f6:f3:ae:40
+W (77857) rc_control: Network disconnected: motor stop enforced
+W (77862) rc_tank: Network disconnected
+W (77935) rc_video: [CAM-DIAG-R4] TX wait timeout #23 cap=91 get=182 select_fail=0 finished=91 signal=91 acquire=90 acquire_fail=0 release_fail=0 backup=0/0 pool=F2/W0/R1/D0 latest=0
+I (78683) wifi:flush txq
+I (78683) wifi:stop sw txq
+I (78683) wifi:lmac stop hw txq
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x3 (DOWNLOAD(USB/UART0))
+Saved PC:0x4037e836
+waiting for download
+
+[HOST-DVP-MATRIX 11:31:09] COLD-R1 Tank restart recovery=3
+
+[HOST-DVP-MATRIX 11:31:09] Tank RAM bootloader start
+esptool.py v4.12.dev2
+Serial port COM7
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 44:1b:f6:f3:ae:78
+Uploading stub...
+Running stub...
+Stub running...
+RAM boot...
+Downloading 5360 bytes at 3fce2820... done!
+Downloading 3364 bytes at 403c8700... done!
+Downloading 12016 bytes at 403cb700... done!
+All segments done, executing at 403c8924
+Exiting immediately.
+
+[HOST-DVP-MATRIX 11:31:13] Tank RAM bootloader complete
+I (2936) boot: chip revision: v0.2
+I (2939) boot: efuse block revision: v1.3
+I (2942) boot.esp32s3: Boot SPI Speed : 80MHz
+I (2947) boot.esp32s3: SPI Mode       : SLOW READ
+I (2951) boot.esp32s3: SPI Flash Size : 8MB
+I (2955) boot: Enabling RNG early entropy source...
+I (2960) boot: Partition Table:
+I (2962) boot: ## Label            Usage          Type ST Offset   Length
+I (2969) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (2976) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (2982) boot:  2 factory          factory app      00 00 00010000 00300000
+I (2989) boot:  3 storage          Unknown data     01 82 00310000 00100000
+I (2996) boot: End of partition table
+I (2999) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=24f30h (151344) map
+I (3099) esp_image: segment 1: paddr=00034f58 vaddr=3fca0c00 size=05560h ( 21856) load
+I (3113) esp_image: segment 2: paddr=0003a4c0 vaddr=40374000 size=05b58h ( 23384) load
+I (3129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9b978h (637304) map
+I (3518) esp_image: segment 4: paddr=000db9a0 vaddr=40379b58 size=17004h ( 94212) load
+I (3579) esp_image: segment 5: paddr=000f29ac vaddr=50000000 size=00020h (    32) load
+I (3591) boot: Loaded app from partition at offset 0x10000
+I (3591) boot: Disabling RNG early entropy source...
+I (3603) esp_psram: Found 8MB PSRAM device
+I (3603) esp_psram: Speed: 80MHz
+I (3604) cpu_start: Multicore app
+I (4521) esp_psram: SPI SRAM memory test OK
+I (4530) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (4531) cpu_start: Pro cpu start user code
+I (4531) cpu_start: cpu freq: 240000000 Hz
+I (4533) app_init: Application information:
+I (4536) app_init: Project name:     rc_tank_demo
+I (4541) app_init: App version:      1
+I (4544) app_init: Compile time:     Aug 26 2026 11:26:21
+I (4550) app_init: ELF file SHA256:  7b87d6974...
+I (4554) app_init: ESP-IDF:          GIT-NOTFOUND
+I (4558) efuse_init: Min chip rev:     v0.0
+I (4562) efuse_init: Max chip rev:     v0.99 
+I (4566) efuse_init: Chip rev:         v0.2
+I (4570) heap_init: Initializing. RAM available for dynamic allocation:
+I (4577) heap_init: At 3FCAA290 len 0003F480 (253 KiB): RAM
+I (4582) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (4587) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (4592) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (4598) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (4606) spi_flash: detected chip: generic
+I (4608) spi_flash: flash io: dio
+I (4612) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (4618) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (4625) main_task: Started on CPU0
+I (4649) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations
+I (4650) main_task: Calling app_main()
+I (4667) rc_tank: === RC Tank Demo (EX-035) Role: TANK ===
+I (4667) rc_tank: Startup delay 10 s (open serial monitor now)...
+I (4667) rc_tank:   starting in 10 s
+I (5670) rc_tank:   starting in 9 s
+I (6670) rc_tank:   starting in 8 s
+I (7670) rc_tank:   starting in 7 s
+I (8670) rc_tank:   starting in 6 s
+I (9670) rc_tank:   starting in 5 s
+I (10670) rc_tank:   starting in 4 s
+I (11670) rc_tank:   starting in 3 s
+I (12670) rc_tank:   starting in 2 s
+I (13670) rc_tank:   starting in 1 s
+I (14670) rc_tank: Starting Tank role (P1: network, P2: control, P3: video)
+I (14670) board_laiwfs300: init board support package
+I (14670) board_laiwfs300: init capability registry
+I (14675) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (14681) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (14687) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (14694) board_laiwfs300:   I2C device ACK at 0x15
+I (14697) board_laiwfs300:   I2C device ACK at 0x18
+I (14702) board_laiwfs300:   I2C device ACK at 0x21
+I (14706) board_laiwfs300:   I2C device ACK at 0x22
+I (14714) board_laiwfs300:   I2C device ACK at 0x40
+I (14717) board_laiwfs300:   I2C device ACK at 0x51
+I (14723) board_laiwfs300:   I2C device ACK at 0x68
+I (14726) board_laiwfs300: --- I2C scan done: 7 device(s) found ---
+W (14730) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (14736) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (14741) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (14746) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (14751) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (14756) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+I (14762) board_laiwfs300: SP0A39 (Camera) found at 0x21
+I (14769) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (14773) board_laiwfs300: ES7210 chip ID: 0x72
+I (14778) board_laiwfs300: AIP8563 RTC time: 23:04:25 (BCD raw)
+I (14782) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (14787) board_laiwfs300: init SPI bus manager
+I (14793) board_laiwfs300: init ADC service
+I (14796) board_adc: ADC1 oneshot initialized
+I (14800) board_laiwfs300: init board power service
+I (14805) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=4095 (~3100 mV)
+I (14810) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=1648 (~1247 mV)
+I (14816) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (14822) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (14831) io_expander: TPT29555A initialized at 0x22
+I (14833) board_laiwfs300: IO expander initialized OK
+I (14837) board_laiwfs300: init module detect
+I (14842) board_laiwfs300: register detection rules
+I (14846) board_laiwfs300: register default capabilities
+I (14851) board_laiwfs300: board init complete (ioex=OK)
+I (14856) rc_tank: [STEP] Motor init starting...
+I (14861) board_motor: motor input 1 -> GPIO5 / LEDC channel 0
+I (14866) board_motor: motor input 2 -> GPIO4 / LEDC channel 1
+I (14872) board_motor: motor input 3 -> GPIO37 / LEDC channel 2
+I (14877) board_motor: motor input 4 -> GPIO45 / LEDC channel 3
+I (14883) rc_control: Motor initialized
+I (14887) rc_tank: [STEP] Motor init OK
+I (14890) rc_tank: [STEP] Display init starting...
+I (14895) rc_video: Initializing Tank display
+I (14900) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+E (15045) spi: spi_bus_initialize(816): SPI bus already initialized.
+I (15166) display_hal: ST7789V3 LCD initialized
+I (15166) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=20000000
+I (15171) rc_video: Tank display task started (status screen)
+I (15172) rc_video: Tank display initialized (status task owns LCD)
+I (15182) rc_tank: [STEP] Display init OK
+I (15186) rc_tank: [STEP] Camera init starting...
+I (15190) rc_video: Initializing camera (SP0A39 640x480 VYUY)
+I (15196) board_camera: initializing SP0A39 camera mode=0 640x480
+I (15201) camera_hal: init SP0A39 DVP 640x480 (SCCB manual mode)
+I (15207) camera_hal: configuring IOEX pins for camera RESET/PWDN
+I (15214) camera_hal: PWDN=HIGH (power down)
+I (15227) camera_hal: PWDN=LOW (release sensor)
+I (15427) camera_hal: RESET=LOW (assert reset)
+I (15447) camera_hal: RESET=HIGH (release reset)
+I (16447) camera_hal: full I2C scan after camera power-up (diagnostic only)...
+I (16449) camera_hal:   post-powerup ACK at 0x15
+I (16449) camera_hal:   post-powerup ACK at 0x18
+I (16452) camera_hal:   post-powerup ACK at 0x21
+I (16456) camera_hal:   post-powerup ACK at 0x22
+I (16464) camera_hal:   post-powerup ACK at 0x40
+I (16467) camera_hal:   post-powerup ACK at 0x51
+I (16472) camera_hal:   post-powerup ACK at 0x68
+I (16475) camera_hal: DVP GPIO diagnostics (checking PCLK/VSYNC/HSYNC activity)...
+I (16541) camera_hal: DVP diagnostics: PCLK_changes=0 VSYNC_changes=0 HSYNC_changes=0
+W (16541) camera_hal: PCLK has no transitions - MCLK likely not reaching sensor or sensor not active
+I (16546) camera_hal: using sensor address 0x21
+I (16551) camera_hal: SP0A39 I2C device added at 0x21
+I (16557) camera_hal: SP0A39 chip ID: 0x0A39
+I (16679) camera_hal: SP0A39 register init done: VYUY 640x480 (359 regs)
+I (16680) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_table value=0x00 expected=0x01
+E (16683) camera_hal: camera_hal_verify_expected_output_p0_31(92): unexpected p0_31=0x00 at post_table
+W (16692) camera_hal: [CAM-PROBE] output state differs after table; continuing: ESP_ERR_INVALID_RESPONSE
+I (16721) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_delay value=0x01 expected=0x01
+I (16722) camera_hal: camera HAL initialized (sensor ready, DVP capture not yet implemented)
+I (16726) board_camera: camera ready
+I (16734) camera_hal: SP0A39 output regs: P0:1c=0x00 P0:30=0x01 P0:31=0x01 P1:32=0x15 P1:34=0xeb P1:35=0x00 P1:36=0x10
+I (16866) rc_video:   3 DMA-capable PSRAM framebuffers allocated (600 KB each)
+I (16869) dvp_ext: DVP Extended camera controller driver is initialized
+I (16870) dvp_ext: [STABLE-DVP] assembly uses GDMA-EOF direct copy; dma=102400 half=51200 queue_data_events=suppressed eof_desc=probe
+I (16880) rc_video: [STABLE-CAPTURE] staged DVP controller created dma=102400 half=51200
+I (16888) rc_video: Camera initialized
+I (16892) rc_tank: [STEP] Camera init OK
+W (16896) rc_tank: [DVP-MATRIX] pre-network stage=2 strategy=cold_preview_120 frames=120 rebuild=0 wifi=off video_tx=not_created
+I (16908) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=dvp_started value=0x01 expected=0x01
+I (16956) rc_video: Round9 local camera preview enabled (240x180 at 80,0; DVP started)
+I (21626) rc_video: Round9 preview displayed=30 fps=4.65 capture_fps=4.65 Avg(ms): convert=41.5 draw=35.9 | complete=30 size_err=0 identity_err=0
+I (26376) rc_video: Round9 preview displayed=60 fps=6.32 capture_fps=6.32 Avg(ms): convert=41.5 draw=36.5 | complete=60 size_err=0 identity_err=0
+I (31126) rc_video: Round9 preview displayed=90 fps=6.32 capture_fps=6.32 Avg(ms): convert=41.5 draw=36.5 | complete=90 size_err=0 identity_err=0
+W (35802) rc_video: [COLD-PREFLIGHT] complete target=120 captured=120 complete_delta=120 incomplete_delta=0 incomplete_blocks_delta=0; not a pass gate until live Q60/UDP
+I (35806) rc_tank: [STEP] Network init starting...
+I (35814) rc_net: Initializing as SoftAP (Tank)
+I (35820) pp: pp rom version: e7ae62f
+I (35821) net80211: net80211 rom version: e7ae62f
+I (35824) wifi:wifi driver task: 3fce4990, prio:23, stack:6656, core=0
+I (35835) wifi:wifi firmware version: 0947e8b
+I (35836) wifi:wifi certification version: v7.0
+I (35837) wifi:config NVS flash: enabled
+I (35841) wifi:config nano formatting: disabled
+I (35845) wifi:Init data frame dynamic rx buffer num: 32
+I (35850) wifi:Init static rx mgmt buffer num: 5
+I (35854) wifi:Init management short buffer num: 32
+I (35859) wifi:Init dynamic tx buffer num: 64
+I (35863) wifi:Init static tx FG buffer num: 2
+I (35867) wifi:Init static rx buffer size: 1600
+I (35871) wifi:Init static rx buffer num: 10
+I (35875) wifi:Init dynamic rx buffer num: 32
+I (35882) wifi_init: rx ba win: 6
+I (35882) wifi_init: accept mbox: 6
+I (35886) wifi_init: tcpip mbox: 16
+I (35890) wifi_init: udp mbox: 6
+I (35892) wifi_init: tcp mbox: 6
+I (35896) wifi_init: tcp tx win: 5760
+I (35898) wifi_init: tcp rx win: 5760
+I (35902) wifi_init: tcp mss: 1440
+I (35906) wifi_init: WiFi IRAM OP enabled
+I (35908) wifi_init: WiFi RX IRAM OP enabled
+I (35913) rc_net: AP set_mode/config, SSID=RC_TANK_F3AE79 ch=1
+I (35923) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (35964) wifi:mode : softAP (44:1b:f6:f3:ae:79)
+I (35968) wifi:Total power save buffer number: 32
+I (35969) wifi:Init max length of beacon: 752/752
+I (35970) wifi:Init max length of beacon: 752/752
+I (35972) rc_net: SoftAP started, SSID: RC_TANK_F3AE79, Password: 12345678
+I (35974) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (35989) rc_tank: [STEP] Network init OK
+I (35993) rc_tank: Tank SoftAP ready, waiting for remote...
+I (35998) rc_control: Ctrl RX task started
+I (36002) rc_video: Round9 preview displayed=120 fps=6.15 capture_fps=6.15 Avg(ms): convert=43.9 draw=38.3 | complete=120 size_err=0 identity_err=0
+I (36003) rc_control: Tank control started
+I (36018) rc_tank: Tank running (video + control; audio disabled)
+I (36024) rc_tank: app_main done, idle loop
+I (39870) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (39872) wifi:station: 44:1b:f6:f3:ae:40 join, AID=1, bgn, 40U
+I (39915) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:40
+I (39947) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (39948) rc_net: STA assigned IP: 192.168.4.2
+I (39948) rc_video: Local preview stop requested; waiting for video_tx handoff
+I (39955) rc_tank: Network connected, peer: 192.168.4.2
+W (39961) rc_tank: [DVP-MATRIX] start stage=2 strategy=cold_preview_120 preflight_frames=120 video_tx=not_created
+I (39971) rc_net: Ctrl UDP socket bound to port 8001
+I (39975) rc_net: Video UDP socket bound to port 8002
+I (39980) rc_net: Audio TCP listening on port 8003
+I (39984) rc_tank: Socket channels started
+I (40007) rc_video: Local preview quiesced before video_tx; drained_ready_signals=0 stable_ready_preserved=1
+
+[HOST-DVP-MATRIX 11:31:50] COLD-R1 stage=2 visible window begin
+I (41001) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:40), tid:0, ssn:0, winSize:64
+
+[HOST-DVP-MATRIX 11:43:45] COLD-R1 capture end stages=[0, 1, 2] recoveries=3 complete=False

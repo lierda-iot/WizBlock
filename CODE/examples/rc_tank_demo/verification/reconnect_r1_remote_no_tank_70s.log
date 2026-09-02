@@ -1,0 +1,183 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+I (24) boot: ESP-IDF v5.5.4 2nd stage bootloader
+I (25) boot: compile time Aug 25 2026 14:08:39
+I (25) boot: Multicore bootloader
+I (25) boot: chip revision: v0.2
+I (28) boot: efuse block revision: v1.3
+I (31) boot.esp32s3: Boot SPI Speed : 80MHz
+I (35) boot.esp32s3: SPI Mode       : DIO
+I (39) boot.esp32s3: SPI Flash Size : 8MB
+I (43) boot: Enabling RNG early entropy source...
+I (47) boot: Partition Table:
+I (50) boot: ## Label            Usage          Type ST Offset   Length
+I (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (69) boot:  2 factory          factory app      00 00 00010000 00300000
+I (76) boot:  3 storage          Unknown data     01 82 00310000 00100000
+I (82) boot: End of partition table
+I (85) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=214f4h (136436) map
+I (117) esp_image: segment 1: paddr=0003151c vaddr=3fca2500 size=053d8h ( 21464) load
+I (122) esp_image: segment 2: paddr=000368fc vaddr=40374000 size=0971ch ( 38684) load
+I (130) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9c9fch (641532) map
+I (244) esp_image: segment 4: paddr=000dca24 vaddr=4037d71c size=14ce8h ( 85224) load
+I (262) esp_image: segment 5: paddr=000f1714 vaddr=50000000 size=00020h (    32) load
+I (274) boot: Loaded app from partition at offset 0x10000
+I (275) boot: Disabling RNG early entropy source...
+I (285) esp_psram: Found 8MB PSRAM device
+I (285) esp_psram: Speed: 80MHz
+I (285) cpu_start: Multicore app
+I (1203) esp_psram: SPI SRAM memory test OK
+I (1212) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (1212) cpu_start: Pro cpu start user code
+I (1212) cpu_start: cpu freq: 240000000 Hz
+I (1214) app_init: Application information:
+I (1218) app_init: Project name:     rc_tank_demo
+I (1223) app_init: App version:      1
+I (1226) app_init: Compile time:     Aug 25 2026 14:05:23
+I (1231) app_init: ELF file SHA256:  ad1498c1f...
+I (1236) app_init: ESP-IDF:          v5.5.4
+I (1240) efuse_init: Min chip rev:     v0.0
+I (1243) efuse_init: Max chip rev:     v0.99 
+I (1248) efuse_init: Chip rev:         v0.2
+I (1251) heap_init: Initializing. RAM available for dynamic allocation:
+I (1258) heap_init: At 3FCAB848 len 0003DEC8 (247 KiB): RAM
+I (1263) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (1268) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (1274) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (1279) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (1286) spi_flash: detected chip: generic
+I (1289) spi_flash: flash io: dio
+I (1293) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (1299) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (1306) main_task: Started on CPU0
+I (1330) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations
+I (1331) main_task: Calling app_main()
+I (1339) rc_tank: === RC Tank Demo (EX-035) Role: REMOTE ===
+I (1339) rc_tank: Startup delay 10 s (open serial monitor now)...
+I (1342) rc_tank:   starting in 10 s
+I (2345) rc_tank:   starting in 9 s
+I (3345) rc_tank:   starting in 8 s
+I (4345) rc_tank:   starting in 7 s
+I (5345) rc_tank:   starting in 6 s
+I (6345) rc_tank:   starting in 5 s
+I (7345) rc_tank:   starting in 4 s
+I (8345) rc_tank:   starting in 3 s
+I (9345) rc_tank:   starting in 2 s
+I (10345) rc_tank:   starting in 1 s
+I (11345) rc_tank: Starting Remote role (P1: network, P2: control stub, P3: video)
+I (11345) board_laiwfs300: init board support package
+I (11345) board_laiwfs300: init capability registry
+I (11350) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (11356) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (11362) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (11370) board_laiwfs300:   I2C device ACK at 0x15
+I (11372) board_laiwfs300:   I2C device ACK at 0x18
+I (11378) board_laiwfs300:   I2C device ACK at 0x22
+I (11385) board_laiwfs300:   I2C device ACK at 0x40
+I (11388) board_laiwfs300:   I2C device ACK at 0x51
+I (11394) board_laiwfs300:   I2C device ACK at 0x68
+I (11397) board_laiwfs300: --- I2C scan done: 6 device(s) found ---
+W (11401) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (11407) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (11412) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (11417) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (11422) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (11427) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+W (11433) board_laiwfs300: SP0A39 (Camera) NOT found at 0x21 (NACK)
+I (11440) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (11444) board_laiwfs300: ES7210 chip ID: 0x72
+I (11450) board_laiwfs300: AIP8563 RTC time: 3D:39:45 (BCD raw)
+I (11454) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (11459) board_laiwfs300: init SPI bus manager
+I (11464) board_laiwfs300: init ADC service
+I (11468) board_adc: ADC1 oneshot initialized
+I (11472) board_laiwfs300: init board power service
+I (11477) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=995 (~753 mV)
+I (11482) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=1463 (~1107 mV)
+I (11488) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (11494) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (11502) io_expander: TPT29555A initialized at 0x22
+I (11504) board_laiwfs300: IO expander initialized OK
+I (11509) board_laiwfs300: init module detect
+I (11513) board_laiwfs300: register detection rules
+I (11518) board_laiwfs300: register default capabilities
+I (11523) board_laiwfs300: board init complete (ioex=OK)
+I (11749) touch_hal: CST836U initialized at 0x15
+I (11751) touch_hal: CST836U info: module_id=0x01 fw_ver=0x19 chip_type=0x1300
+I (11751) board_touch: CST836U verify OK: module_id=0x01 fw=0x19 chip_type=0x1300
+I (11756) rc_control: Joystick init (landscape 320x240, center=108,136, forward=screen-up, 50Hz touch poll)
+I (11765) rc_video: Initializing video display
+I (11770) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+E (11916) spi: spi_bus_initialize(816): SPI bus already initialized.
+I (12036) display_hal: ST7789V3 LCD initialized
+I (12036) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=40000000
+I (12074) rc_video: Display initialized (landscape 320×240) and backlight ON
+I (12074) rc_video: Display theory: RGB565=153600 B/frame, SPI payload=30720 us/frame, max=32.55 fps, chunk=60 lines (7680 us)
+I (12116) rc_video: PSRAM buffers: jpeg_slot=43200B decoded=86400B canvas=153600B dma_chunk=38400B
+I (12116) rc_video: PSRAM state: free_psram=8015260 free_internal=243283 largest_internal_dma=126976
+I (12122) rc_video: Buffer caps: jpeg0=0x3c0d0eb0(psram=1) decoded=0x3c0f0950(psram=1) canvas=0x3c105af0(psram=1) dma=0x3fcc02c0(dma=1)
+I (12134) rc_video: Video RX/display task started (240x180 at x=80 y=0; joystick per LCD chunk)
+I (12154) rc_net: Initializing as STA (Remote)
+I (12155) pp: pp rom version: e7ae62f
+I (12156) net80211: net80211 rom version: e7ae62f
+I (12157) wifi:wifi driver task: 3fcccc40, prio:23, stack:6656, core=0
+I (12164) wifi:wifi firmware version: 0947e8b
+I (12166) wifi:wifi certification version: v7.0
+I (12170) wifi:config NVS flash: enabled
+I (12174) wifi:config nano formatting: disabled
+I (12178) wifi:Init data frame dynamic rx buffer num: 32
+I (12183) wifi:Init static rx mgmt buffer num: 5
+I (12187) wifi:Init management short buffer num: 32
+I (12192) wifi:Init dynamic tx buffer num: 64
+I (12196) wifi:Init static tx FG buffer num: 2
+I (12200) wifi:Init static rx buffer size: 1600
+I (12204) wifi:Init static rx buffer num: 10
+I (12208) wifi:Init dynamic rx buffer num: 32
+I (12213) wifi_init: rx ba win: 6
+I (12217) wifi_init: accept mbox: 6
+I (12219) wifi_init: tcpip mbox: 16
+I (12222) wifi_init: udp mbox: 16
+I (12225) wifi_init: tcp mbox: 6
+I (12228) wifi_init: tcp tx win: 5760
+I (12231) wifi_init: tcp rx win: 5760
+I (12235) wifi_init: tcp mss: 1440
+I (12238) wifi_init: WiFi IRAM OP enabled
+I (12241) wifi_init: WiFi RX IRAM OP enabled
+I (12246) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (12296) wifi:mode : sta (44:1b:f6:f3:ae:40)
+I (12297) wifi:enable tsf
+W (12298) rc_control: Network disconnected: control TX paused
+I (12298) rc_net: STA started; recovery task owns scan/connect
+W (12303) rc_tank: Network disconnected
+I (12306) rc_net: Remote network recovery active; init does not wait for AP
+I (12313) rc_tank: Remote network recovery started; waiting for tank as needed
+I (12320) rc_control: Touch poll task started
+I (12324) rc_control: Ctrl TX task started (sending STOP heartbeat)
+I (12330) rc_control: Remote control started (touch poll + ctrl tx)
+I (12336) rc_tank: Remote running (video + control; audio disabled)
+I (12342) rc_tank: app_main done, idle loop
+I (12406) rc_net: Remote recovery task started (scan loop, 3 direct attempts, 5000 ms interval)
+I (12507) rc_net: Scanning for RC_TANK_* APs...
+W (15009) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (20109) rc_net: Scanning for RC_TANK_* APs...
+W (22610) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (27711) rc_net: Scanning for RC_TANK_* APs...
+W (30213) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (35313) rc_net: Scanning for RC_TANK_* APs...
+W (37815) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (42915) rc_net: Scanning for RC_TANK_* APs...
+W (45417) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (50517) rc_net: Scanning for RC_TANK_* APs...
+W (53019) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (58119) rc_net: Scanning for RC_TANK_* APs...
+W (60621) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (65721) rc_net: Scanning for RC_TANK_* APs...
+W (68223) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms

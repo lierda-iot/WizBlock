@@ -1,0 +1,17 @@
+I (130200) rc_video: Displayed 630 frames (320x240) | fps=5.50 theory_max=16.28 | Avg(ms): recv=76.6 decode=29.9 display=75.3 total=181.9 | JPEG=22593B
+I (135650) rc_video: Displayed 660 frames (320x240) | fps=5.51 theory_max=16.28 | Avg(ms): recv=74.4 decode=31.7 display=75.4 total=181.5 | JPEG=24795B
+I (141100) rc_video: Displayed 690 frames (320x240) | fps=5.51 theory_max=16.28 | Avg(ms): recv=75.8 decode=30.4 display=75.3 total=181.6 | JPEG=26398B
+I (146662) rc_video: Displayed 720 frames (320x240) | fps=5.40 theory_max=16.28 | Avg(ms): recv=79.8 decode=30.0 display=75.4 total=185.3 | JPEG=27714B
+I (152141) rc_video: Displayed 750 frames (320x240) | fps=5.48 theory_max=16.28 | Avg(ms): recv=75.8 decode=31.1 display=75.6 total=182.5 | JPEG=20545B
+I (157437) rc_video: Displayed 780 frames (320x240) | fps=5.67 theory_max=16.28 | Avg(ms): recv=71.0 decode=30.1 display=75.4 total=176.4 | JPEG=19166B
+I (162511) rc_video: Displayed 810 frames (320x240) | fps=5.92 theory_max=16.28 | Avg(ms): recv=63.1 decode=30.7 display=75.2 total=169.0 | JPEG=27028B
+I (167935) rc_video: Displayed 840 frames (320x240) | fps=5.53 theory_max=16.28 | Avg(ms): recv=74.0 decode=31.8 display=74.9 total=180.7 | JPEG=23063B
+I (173182) rc_video: Displayed 870 frames (320x240) | fps=5.72 theory_max=16.28 | Avg(ms): recv=68.0 decode=31.2 display=75.5 total=174.8 | JPEG=24569B
+I (178629) rc_video: Displayed 900 frames (320x240) | fps=5.51 theory_max=16.28 | Avg(ms): recv=76.2 decode=30.0 display=75.3 total=181.5 | JPEG=27053B
+I (183767) rc_video: Displayed 930 frames (320x240) | fps=5.84 theory_max=16.28 | Avg(ms): recv=64.8 decode=30.7 display=75.6 total=171.1 | JPEG=22252B
+I (189227) rc_video: Displayed 960 frames (320x240) | fps=5.50 theory_max=16.28 | Avg(ms): recv=76.2 decode=30.3 display=75.4 total=181.9 | JPEG=25800B
+I (194484) rc_video: Displayed 990 frames (320x240) | fps=5.71 theory_max=16.28 | Avg(ms): recv=68.1 decode=31.7 display=75.3 total=175.1 | JPEG=20790B
+I (199608) rc_video: Displayed 1020 frames (320x240) | fps=5.86 theory_max=16.28 | Avg(ms): recv=64.7 decode=30.7 display=75.3 total=170.7 | JPEG=26061B
+I (205135) rc_video: Displayed 1050 frames (320x240) | fps=5.43 theory_max=16.28 | Avg(ms): recv=78.3 decode=30.5 display=75.4 total=184.1 | JPEG=21389B
+I (210382) rc_video: Displayed 1080 frames (320x240) | fps=5.72 theory_max=16.28 | Avg(ms): recv=65.3 decode=34.4 display=75.0 total=174.7 | JPEG=32984B
+I (215834) rc_video: Displayed 1110 frames (320x240) | fps=5.50 theory_max=16.28 | Avg(ms): recv=76.5 decode=29.5 display=75.6 total=181.6 | JPEG=27681B

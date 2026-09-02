@@ -1,0 +1,17 @@
+menu "Touch 2048 Demo"
+
+choice TOUCH_2048_LCD_PIXEL_CLOCK
+    prompt "LCD SPI pixel clock"
+    default TOUCH_2048_LCD_PIXEL_CLOCK_40MHZ
+    help
+        Keep 40 MHz for the validated fast path. Select 20 MHz only if the
+        target display fails the 40 MHz stability gate.
+
+    config TOUCH_2048_LCD_PIXEL_CLOCK_40MHZ
+        bool "40 MHz"
+
+    config TOUCH_2048_LCD_PIXEL_CLOCK_20MHZ
+        bool "20 MHz compatibility fallback"
+endchoice
+
+endmenu

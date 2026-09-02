@@ -1,0 +1,27 @@
+menu "XiaoZhi AI Demo Configuration"
+
+    config XIAOZHI_DEVICE_MAC
+        string "Device MAC address"
+        default "2e:ee:8c:6b:58:28"
+        help
+            MAC address used for device identification on XiaoZhi platform.
+
+    config XIAOZHI_OTA_URL
+        string "OTA/Version check URL"
+        default "https://api.tenclass.net/xiaozhi/ota/"
+        help
+            Server URL for version check and WebSocket endpoint discovery.
+
+    config XIAOZHI_ACTIVATION_URL
+        string "Activation check URL"
+        default "https://api.tenclass.net/xiaozhi/ota/activate"
+        help
+            Server URL for device activation.
+
+    config XIAOZHI_LANG
+        string "Language setting"
+        default "zh-CN"
+        help
+            Language for TTS and STT.
+
+endmenu

@@ -1,0 +1,346 @@
+W (45320) rc_tank: [CAM-DIAG-C16K] WINDOW_01 repeat: wifi=off camera=off display=black cache=none; camera_init=next
+W (45320) rc_video: [CAM-DIAG-C16K] PROFILE window=1 sensor=real display=camera idle=0ms full_probe=0 cache=none capture=0
+I (45329) rc_tank: [STEP] Camera init starting...
+I (45334) rc_video: Initializing camera (SP0A39 640x480 VYUY)
+W (45339) rc_video: [CAM-DIAG-C16K] direct DVP init core=0; Wi-Fi task core=0; free_internal=231403 largest_internal_dma=110592
+I (45351) board_camera: initializing SP0A39 camera mode=0 640x480
+I (45356) camera_hal: init SP0A39 DVP 640x480 (SCCB manual mode)
+I (45362) camera_hal: configuring IOEX pins for camera RESET/PWDN
+I (45369) camera_hal: PWDN=HIGH (power down)
+I (45382) camera_hal: PWDN=LOW (release sensor)
+I (45582) camera_hal: RESET=LOW (assert reset)
+I (45602) camera_hal: RESET=HIGH (release reset)
+I (46602) camera_hal: full I2C scan after camera power-up (diagnostic only)...
+I (46604) camera_hal:   post-powerup ACK at 0x15
+I (46604) camera_hal:   post-powerup ACK at 0x18
+I (46607) camera_hal:   post-powerup ACK at 0x21
+I (46611) camera_hal:   post-powerup ACK at 0x22
+I (46619) camera_hal:   post-powerup ACK at 0x40
+I (46621) camera_hal:   post-powerup ACK at 0x51
+I (46627) camera_hal:   post-powerup ACK at 0x68
+I (46630) camera_hal: DVP GPIO diagnostics (checking PCLK/VSYNC/HSYNC activity)...
+I (46696) camera_hal: DVP diagnostics: PCLK_changes=0 VSYNC_changes=0 HSYNC_changes=0
+W (46696) camera_hal: PCLK has no transitions - MCLK likely not reaching sensor or sensor not active
+I (46701) camera_hal: using sensor address 0x21
+I (46706) camera_hal: SP0A39 I2C device added at 0x21
+I (46712) camera_hal: SP0A39 chip ID: 0x0A39
+I (46834) camera_hal: SP0A39 register init done: VYUY 640x480 (359 regs)
+I (46835) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_table value=0x00 expected=0x01
+E (46837) camera_hal: camera_hal_verify_expected_output_p0_31(92): unexpected p0_31=0x00 at post_table
+W (46846) camera_hal: [CAM-PROBE] output state differs after table; continuing: ESP_ERR_INVALID_RESPONSE
+I (46876) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_delay value=0x01 expected=0x01
+I (46877) camera_hal: camera HAL initialized (sensor ready, DVP capture not yet implemented)
+I (46881) board_camera: camera ready
+I (46889) camera_hal: SP0A39 output regs: P0:1c=0x00 P0:30=0x01 P0:31=0x01 P1:32=0x15 P1:34=0xeb P1:35=0x00 P1:36=0x10
+I (47022) rc_video:   3 DMA-capable PSRAM framebuffers allocated (600 KB each)
+W (47064) rc_video: [CAM-DIAG-C16K] capture handoff uses rc_capture_pool + backup
+W (47064) rc_video: [DEBUG-C151] buffers fb0=0x3c0e0ec0 fb1=0x3c177000 fb2=0x3c20d140 backup=0x3c2a3280 payload=614400 storage=614400 alloc=614656 terminal_guard=256
+W (47075) rc_video: [DEBUG-C151] heap stage=framebuffers_allocated intact=1
+W (47084) rc_video: [DEBUG-C151] heap stage=dvp_controller_created_before_start intact=1
+W (47089) rc_video: [CAM-DIAG-C16K] direct DVP controller created; free_internal=229223 largest_internal_dma=110592
+I (47100) rc_video: Camera initialized
+I (47103) rc_tank: [STEP] Camera init OK
+W (47107) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=2 requested=0 result=ESP_OK
+W (47114) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=2 beacon=0 after=0us budget=0us result=ESP_OK
+W (47123) rc_video: [CAM-DIAG-C16K] PROFILE window=2 sensor=real display=camera idle=0ms full_probe=0 cache=c2m capture=0
+W (47133) rc_tank: [CAM-DIAG-C16K] WINDOW_02 start: wifi=off sensor=real display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=off beacon=0 guard_after=0us capture_budget=0us
+W (47133) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=1 sensor=real display=camera idle=0ms full_probe=0 cache=none frames=0 changes=0 sync_changes=0 sync_calls=0 sync_skips=0 unique=0 overflow=0 pre=00000000 post=00000000 avg_probe=0.000ms max_probe=0.000ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (47152) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=dvp_started value=0x01 expected=0x01
+W (47186) rc_video: [CAM-DIAG-C16K] scaled camera preview enabled (240x180 at 80,0; DVP started)
+W (47195) rc_tank: [CAM-DIAG-C16K] burst-64 VYUY camera preview started while Wi-Fi is off
+W (51378) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=2 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=29 sync_changes=0 sync_calls=30 sync_skips=0 unique=8 overflow=22 pre=2b8b6006 post=2b8b6006 avg_probe=1.023ms max_probe=1.501ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (51396) rc_video: [CAM-DIAG-C16K] HEALTH window=2 display_frame=30 guard_errors=0 quiesce=30 resume_before=29 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (55693) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=2 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=60 changes=59 sync_changes=0 sync_calls=60 sync_skips=0 unique=8 overflow=52 pre=33e22317 post=33e22317 avg_probe=1.015ms max_probe=1.501ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (55711) rc_video: [CAM-DIAG-C16K] HEALTH window=2 display_frame=60 guard_errors=0 quiesce=60 resume_before=59 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (59204) rc_tank: [DEBUG-C151] heap stage=window_2_end intact=1
+W (59207) camera_hal: [CAM-DIAG-C16I] SP0A39 test_pattern=on P1:32 before=0x15 write=0x95 read=0x80 expected_bit=0x80
+W (59309) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=3 requested=0 result=ESP_OK
+W (59309) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=3 beacon=0 after=0us budget=0us result=ESP_OK
+W (59314) rc_video: [CAM-DIAG-C16K] PROFILE window=3 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m capture=85
+W (59325) rc_tank: [CAM-DIAG-C16K] WINDOW_03 start: wifi=off sensor=pattern display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=off beacon=0 guard_after=0us capture_budget=0us
+W (59415) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=2 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=86 changes=85 sync_changes=0 sync_calls=86 sync_skips=0 unique=8 overflow=78 pre=65437cb1 post=65437cb1 avg_probe=1.018ms max_probe=1.501ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (63212) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=3 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=0 sync_changes=0 sync_calls=30 sync_skips=0 unique=1 overflow=0 pre=94fc122d post=94fc122d avg_probe=1.007ms max_probe=1.047ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (63230) rc_video: [CAM-DIAG-C16K] HEALTH window=3 display_frame=116 guard_errors=0 quiesce=116 resume_before=115 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (67091) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=3 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=60 changes=0 sync_changes=0 sync_calls=60 sync_skips=0 unique=1 overflow=0 pre=94fc122d post=94fc122d avg_probe=1.007ms max_probe=1.047ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (67109) rc_video: [CAM-DIAG-C16K] HEALTH window=3 display_frame=146 guard_errors=0 quiesce=146 resume_before=145 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (70930) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=3 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=90 changes=0 sync_changes=0 sync_calls=90 sync_skips=0 unique=1 overflow=0 pre=94fc122d post=94fc122d avg_probe=1.007ms max_probe=1.047ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (70948) rc_video: [CAM-DIAG-C16K] HEALTH window=3 display_frame=176 guard_errors=0 quiesce=176 resume_before=175 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (71342) rc_tank: [DEBUG-C151] heap stage=window_3_end_before_network intact=1
+I (71343) rc_tank: [STEP] Network init starting...
+I (71344) rc_net: Initializing as SoftAP (Tank)
+I (71349) pp: pp rom version: e7ae62f
+I (71351) net80211: net80211 rom version: e7ae62f
+I (71358) wifi:wifi driver task: 3fcd04dc, prio:23, stack:6656, core=0
+I (71366) wifi:wifi firmware version: 0947e8b
+I (71366) wifi:wifi certification version: v7.0
+I (71370) wifi:config NVS flash: enabled
+I (71373) wifi:config nano formatting: disabled
+I (71378) wifi:Init data frame dynamic rx buffer num: 32
+I (71383) wifi:Init static rx mgmt buffer num: 5
+I (71387) wifi:Init management short buffer num: 32
+I (71391) wifi:Init dynamic tx buffer num: 64
+I (71396) wifi:Init static tx FG buffer num: 2
+I (71400) wifi:Init static rx buffer size: 1600
+I (71404) wifi:Init static rx buffer num: 10
+I (71408) wifi:Init dynamic rx buffer num: 32
+I (71413) wifi_init: rx ba win: 6
+I (71415) wifi_init: accept mbox: 6
+I (71418) wifi_init: tcpip mbox: 16
+I (71421) wifi_init: udp mbox: 6
+I (71424) wifi_init: tcp mbox: 6
+I (71427) wifi_init: tcp tx win: 5760
+I (71431) wifi_init: tcp rx win: 5760
+I (71434) wifi_init: tcp mss: 1440
+I (71437) wifi_init: WiFi IRAM OP enabled
+I (71441) wifi_init: WiFi RX IRAM OP enabled
+I (71446) rc_net: AP set_mode/config, SSID=RC_TANK_F3AE79 ch=1
+I (71521) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+W (71522) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration
+I (71558) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)
+I (71568) wifi:mode : softAP (44:1b:f6:f3:ae:79)
+I (71573) wifi:Total power save buffer number: 32
+I (71574) wifi:Init max length of beacon: 752/752
+I (71574) wifi:Init max length of beacon: 752/752
+I (71577) rc_net: SoftAP started, SSID: RC_TANK_F3AE79, Password: 12345678
+I (71578) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (71591) rc_tank: [STEP] Network init OK
+I (71594) rc_tank: Tank SoftAP ready, waiting for remote...
+W (71600) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=4 requested=0 result=ESP_OK
+W (71607) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=4 before=0x07 requested=0x07 after=0x07 name=bgn changed=0
+W (71617) rc_tank: [CAM-DIAG-C16K] BEACON window=4 before=100 requested=100 after=100 changed=0
+W (71625) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=4 beacon=100 after=0us budget=0us result=ESP_OK
+W (71634) rc_video: [CAM-DIAG-C16K] PROFILE window=4 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m capture=180
+W (71645) rc_tank: [CAM-DIAG-C16K] WINDOW_04 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=bgn beacon=100 guard_after=0us capture_budget=0us
+W (71727) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=3 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=95 changes=2 sync_changes=0 sync_calls=95 sync_skips=0 unique=3 overflow=0 pre=7110fbff post=7110fbff avg_probe=1.018ms max_probe=1.580ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (76472) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=4 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=22 sync_changes=0 sync_calls=30 sync_skips=0 unique=8 overflow=6 pre=94fc122d post=94fc122d avg_probe=1.087ms max_probe=2.090ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (76490) rc_video: [CAM-DIAG-C16K] HEALTH window=4 display_frame=211 guard_errors=0 quiesce=211 resume_before=210 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (81261) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=4 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=60 changes=45 sync_changes=0 sync_calls=60 sync_skips=0 unique=8 overflow=19 pre=94fc122d post=94fc122d avg_probe=1.068ms max_probe=2.090ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (81279) rc_video: [CAM-DIAG-C16K] HEALTH window=4 display_frame=241 guard_errors=0 quiesce=241 resume_before=240 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (83662) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=5 requested=0 result=ESP_OK
+I (83664) wifi:ifx:1, phymode(new:2, sta nvs: 3 ap nvs: 3)
+I (83668) wifi:Total power save buffer number: 32
+W (83670) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=5 before=0x07 requested=0x03 after=0x03 name=bg changed=1
+I (83672) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+W (83686) rc_tank: [CAM-DIAG-C16K] BEACON window=5 before=100 requested=100 after=100 changed=0
+W (83694) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=5 beacon=100 after=0us budget=0us result=ESP_OK
+W (83703) rc_video: [CAM-DIAG-C16K] PROFILE window=5 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m capture=256
+W (83714) rc_tank: [CAM-DIAG-C16K] WINDOW_05 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=bg beacon=100 guard_after=0us capture_budget=0us
+W (83798) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=4 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=76 changes=56 sync_changes=0 sync_calls=76 sync_skips=0 unique=8 overflow=27 pre=b910eb65 post=b910eb65 avg_probe=1.073ms max_probe=2.090ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (88544) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=5 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=18 sync_changes=0 sync_calls=30 sync_skips=0 unique=8 overflow=2 pre=94fc122d post=94fc122d avg_probe=1.059ms max_probe=1.416ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (88562) rc_video: [CAM-DIAG-C16K] HEALTH window=5 display_frame=287 guard_errors=0 quiesce=287 resume_before=286 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (93333) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=5 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=60 changes=38 sync_changes=0 sync_calls=60 sync_skips=0 unique=8 overflow=13 pre=94fc122d post=94fc122d avg_probe=1.059ms max_probe=1.416ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (93351) rc_video: [CAM-DIAG-C16K] HEALTH window=5 display_frame=317 guard_errors=0 quiesce=317 resume_before=316 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (95731) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=6 requested=0 result=ESP_OK
+I (95733) wifi:ifx:1, phymode(new:1, sta nvs: 3 ap nvs: 2)
+I (95738) wifi:Total power save buffer number: 32
+W (95740) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=6 before=0x03 requested=0x01 after=0x01 name=b changed=1
+I (95742) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+W (95755) rc_tank: [CAM-DIAG-C16K] BEACON window=6 before=100 requested=100 after=100 changed=0
+W (95763) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=6 beacon=100 after=0us budget=0us result=ESP_OK
+W (95772) rc_video: [CAM-DIAG-C16K] PROFILE window=6 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m capture=332
+W (95783) rc_tank: [CAM-DIAG-C16K] WINDOW_06 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=b beacon=100 guard_after=0us capture_budget=0us
+W (95906) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=5 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=76 changes=48 sync_changes=0 sync_calls=76 sync_skips=0 unique=8 overflow=18 pre=52383ca4 post=52383ca4 avg_probe=1.058ms max_probe=1.416ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (100655) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=6 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=18 sync_changes=0 sync_calls=30 sync_skips=0 unique=8 overflow=3 pre=8efe1dbd post=8efe1dbd avg_probe=1.053ms max_probe=1.238ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (100674) rc_video: [CAM-DIAG-C16K] HEALTH window=6 display_frame=363 guard_errors=0 quiesce=363 resume_before=362 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (105445) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=6 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=60 changes=41 sync_changes=0 sync_calls=60 sync_skips=0 unique=8 overflow=16 pre=eed9bffc post=eed9bffc avg_probe=1.067ms max_probe=1.409ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (105463) rc_video: [CAM-DIAG-C16K] HEALTH window=6 display_frame=393 guard_errors=0 quiesce=393 resume_before=392 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (107800) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=7 requested=0 result=ESP_OK
+I (107802) wifi:ifx:1, phymode(new:3, sta nvs: 3 ap nvs: 1)
+I (107806) wifi:Total power save buffer number: 32
+W (107809) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=7 before=0x01 requested=0x07 after=0x07 name=bgn changed=1
+I (107810) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (107836) wifi:Total power save buffer number: 32
+W (107837) rc_tank: [CAM-DIAG-C16K] BEACON window=7 before=100 requested=200 after=200 changed=1
+I (107839) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+W (107851) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=7 beacon=200 after=0us budget=0us result=ESP_OK
+W (107860) rc_video: [CAM-DIAG-C16K] PROFILE window=7 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m capture=408
+W (107867) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=6 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=75 changes=52 sync_changes=0 sync_calls=75 sync_skips=0 unique=8 overflow=24 pre=35eda1a7 post=35eda1a7 avg_probe=1.067ms max_probe=1.409ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (107871) rc_tank: [CAM-DIAG-C16K] WINDOW_07 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=bgn beacon=200 guard_after=0us capture_budget=0us
+W (112608) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=7 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=22 sync_changes=0 sync_calls=30 sync_skips=0 unique=8 overflow=7 pre=94fc122d post=94fc122d avg_probe=1.052ms max_probe=1.247ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (112627) rc_video: [CAM-DIAG-C16K] HEALTH window=7 display_frame=438 guard_errors=0 quiesce=438 resume_before=437 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (117357) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=7 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=60 changes=39 sync_changes=0 sync_calls=60 sync_skips=0 unique=8 overflow=16 pre=df45d5cc post=df45d5cc avg_probe=1.050ms max_probe=1.249ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (117376) rc_video: [CAM-DIAG-C16K] HEALTH window=7 display_frame=468 guard_errors=0 quiesce=468 resume_before=467 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (119917) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=8 requested=0 result=ESP_OK
+I (119918) wifi:ifx:1, phymode(new:2, sta nvs: 3 ap nvs: 3)
+I (119923) wifi:Total power save buffer number: 32
+W (119925) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=8 before=0x07 requested=0x03 after=0x03 name=bg changed=1
+I (119926) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+W (119942) rc_tank: [CAM-DIAG-C16K] BEACON window=8 before=200 requested=200 after=200 changed=0
+W (119950) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=8 beacon=200 after=0us budget=0us result=ESP_OK
+W (119959) rc_video: [CAM-DIAG-C16K] PROFILE window=8 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m capture=484
+W (119970) rc_tank: [CAM-DIAG-C16K] WINDOW_08 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=bg beacon=200 guard_after=0us capture_budget=0us
+W (120052) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=7 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=77 changes=47 sync_changes=0 sync_calls=77 sync_skips=0 unique=8 overflow=21 pre=cbaeefad post=cbaeefad avg_probe=1.052ms max_probe=1.466ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (124799) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=8 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=11 sync_changes=0 sync_calls=30 sync_skips=0 unique=7 overflow=0 pre=340da28a post=340da28a avg_probe=1.078ms max_probe=1.490ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (124817) rc_video: [CAM-DIAG-C16K] HEALTH window=8 display_frame=515 guard_errors=0 quiesce=515 resume_before=514 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (129588) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=8 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=60 changes=23 sync_changes=0 sync_calls=60 sync_skips=0 unique=8 overflow=5 pre=94fc122d post=94fc122d avg_probe=1.063ms max_probe=1.490ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (129606) rc_video: [CAM-DIAG-C16K] HEALTH window=8 display_frame=545 guard_errors=0 quiesce=545 resume_before=544 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (131987) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=9 requested=0 result=ESP_OK
+I (131989) wifi:ifx:1, phymode(new:1, sta nvs: 3 ap nvs: 2)
+I (131994) wifi:Total power save buffer number: 32
+W (131995) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=9 before=0x03 requested=0x01 after=0x01 name=b changed=1
+I (131997) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+W (132012) rc_tank: [CAM-DIAG-C16K] BEACON window=9 before=200 requested=200 after=200 changed=0
+W (132020) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=9 beacon=200 after=0us budget=0us result=ESP_OK
+W (132028) rc_video: [CAM-DIAG-C16K] PROFILE window=9 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m capture=560
+W (132040) rc_tank: [CAM-DIAG-C16K] WINDOW_09 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=b beacon=200 guard_after=0us capture_budget=0us
+W (132161) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=8 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=76 changes=32 sync_changes=0 sync_calls=76 sync_skips=0 unique=8 overflow=11 pre=0c948206 post=0c948206 avg_probe=1.059ms max_probe=1.490ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (136870) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=9 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=13 sync_changes=0 sync_calls=30 sync_skips=0 unique=8 overflow=0 pre=94fc122d post=94fc122d avg_probe=1.045ms max_probe=1.271ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (136889) rc_video: [CAM-DIAG-C16K] HEALTH window=9 display_frame=591 guard_errors=0 quiesce=591 resume_before=590 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (141620) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=9 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=60 changes=29 sync_changes=0 sync_calls=60 sync_skips=0 unique=8 overflow=10 pre=94fc122d post=94fc122d avg_probe=1.044ms max_probe=1.271ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (141638) rc_video: [CAM-DIAG-C16K] HEALTH window=9 display_frame=621 guard_errors=0 quiesce=621 resume_before=620 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (144057) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=10 requested=0 result=ESP_OK
+I (144058) wifi:ifx:1, phymode(new:3, sta nvs: 3 ap nvs: 1)
+I (144063) wifi:Total power save buffer number: 32
+W (144065) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=10 before=0x01 requested=0x07 after=0x07 name=bgn changed=1
+I (144067) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+W (144082) rc_tank: [CAM-DIAG-C16K] BEACON window=10 before=200 requested=200 after=200 changed=0
+W (144090) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=10 beacon=200 after=0us budget=80000us result=ESP_OK
+W (144099) rc_video: [CAM-DIAG-C16K] PROFILE window=10 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m capture=636
+W (144111) rc_tank: [CAM-DIAG-C16K] WINDOW_10 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=bgn beacon=200 guard_after=0us capture_budget=80000us
+W (144269) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=9 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=76 changes=39 sync_changes=0 sync_calls=76 sync_skips=0 unique=8 overflow=16 pre=3f0f8f13 post=3f0f8f13 avg_probe=1.049ms max_probe=1.438ms tsf_waits=2 tsf_wait_us=74452 tsf_wait_max_us=73278 tsf_errors=0
+W (150367) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=10 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=15 sync_changes=0 sync_calls=30 sync_skips=0 unique=8 overflow=2 pre=94fc122d post=94fc122d avg_probe=1.065ms max_probe=1.075ms tsf_waits=68 tsf_wait_us=1992402 tsf_wait_max_us=84943 tsf_errors=0
+I (150387) rc_video: [CAM-DIAG-C16K] HEALTH window=10 display_frame=667 guard_errors=0 quiesce=667 resume_before=666 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=70 tsf_wait_us=2066854 tsf_wait_max_us=84943 tsf_errors=0
+W (156128) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=11 requested=0 result=ESP_OK
+W (156128) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=11 before=0x07 requested=0x07 after=0x07 name=bgn changed=0
+W (156135) rc_tank: [CAM-DIAG-C16K] BEACON window=11 before=200 requested=200 after=200 changed=0
+W (156143) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=11 beacon=200 after=20000us budget=80000us result=ESP_OK
+W (156153) rc_video: [CAM-DIAG-C16K] PROFILE window=11 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m capture=695
+W (156164) rc_tank: [CAM-DIAG-C16K] WINDOW_11 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=bgn beacon=200 guard_after=20000us capture_budget=80000us
+W (156372) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=10 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=59 changes=30 sync_changes=0 sync_calls=59 sync_skips=0 unique=8 overflow=10 pre=94fc122d post=94fc122d avg_probe=1.067ms max_probe=1.199ms tsf_waits=139 tsf_wait_us=3962762 tsf_wait_max_us=68034 tsf_errors=0
+W (162439) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=11 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=8 sync_changes=0 sync_calls=30 sync_skips=0 unique=6 overflow=0 pre=37c2a13a post=37c2a13a avg_probe=1.067ms max_probe=1.078ms tsf_waits=67 tsf_wait_us=1950535 tsf_wait_max_us=84072 tsf_errors=0
+I (162458) rc_video: [CAM-DIAG-C16K] HEALTH window=11 display_frame=726 guard_errors=0 quiesce=726 resume_before=725 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=208 tsf_wait_us=5987749 tsf_wait_max_us=84072 tsf_errors=0
+W (168182) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=12 requested=0 result=ESP_OK
+W (168183) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=12 before=0x07 requested=0x07 after=0x07 name=bgn changed=0
+W (168189) rc_tank: [CAM-DIAG-C16K] BEACON window=12 before=200 requested=200 after=200 changed=0
+W (168197) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=12 beacon=200 after=40000us budget=80000us result=ESP_OK
+W (168207) rc_video: [CAM-DIAG-C16K] PROFILE window=12 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m capture=754
+W (168218) rc_tank: [CAM-DIAG-C16K] WINDOW_12 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=bgn beacon=200 guard_after=40000us capture_budget=80000us
+W (168251) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=11 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=58 changes=18 sync_changes=0 sync_calls=58 sync_skips=0 unique=8 overflow=4 pre=54f6a854 post=54f6a854 avg_probe=1.067ms max_probe=1.078ms tsf_waits=133 tsf_wait_us=3888511 tsf_wait_max_us=1639 tsf_errors=0
+W (174352) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=12 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=9 sync_changes=0 sync_calls=30 sync_skips=0 unique=6 overflow=0 pre=94fc122d post=94fc122d avg_probe=1.086ms max_probe=1.661ms tsf_waits=72 tsf_wait_us=2004254 tsf_wait_max_us=99699 tsf_errors=0
+I (174372) rc_video: [CAM-DIAG-C16K] HEALTH window=12 display_frame=784 guard_errors=0 quiesce=784 resume_before=783 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=346 tsf_wait_us=9929979 tsf_wait_max_us=99699 tsf_errors=0
+W (180236) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=13 requested=0 result=ESP_OK
+W (180237) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=13 before=0x07 requested=0x07 after=0x07 name=bgn changed=0
+W (180243) rc_tank: [CAM-DIAG-C16K] BEACON window=13 before=200 requested=200 after=200 changed=0
+W (180251) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=13 beacon=200 after=20000us budget=60000us result=ESP_OK
+W (180261) rc_video: [CAM-DIAG-C16K] PROFILE window=13 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m capture=813
+W (180272) rc_tank: [CAM-DIAG-C16K] WINDOW_13 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=bgn beacon=200 guard_after=20000us capture_budget=60000us
+W (180334) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=12 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=59 changes=24 sync_changes=0 sync_calls=59 sync_skips=0 unique=8 overflow=8 pre=94fc122d post=94fc122d avg_probe=1.077ms max_probe=1.661ms tsf_waits=145 tsf_wait_us=3992821 tsf_wait_max_us=38690 tsf_errors=0
+W (186424) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=13 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=5 sync_changes=0 sync_calls=30 sync_skips=0 unique=4 overflow=0 pre=94fc122d post=94fc122d avg_probe=1.065ms max_probe=1.070ms tsf_waits=70 tsf_wait_us=1953863 tsf_wait_max_us=84597 tsf_errors=0
+I (186443) rc_video: [CAM-DIAG-C16K] HEALTH window=13 display_frame=843 guard_errors=0 quiesce=843 resume_before=842 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=489 tsf_wait_us=13872409 tsf_wait_max_us=84597 tsf_errors=0
+W (192290) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=14 requested=0 result=ESP_OK
+W (192291) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=14 before=0x07 requested=0x07 after=0x07 name=bgn changed=0
+W (192297) rc_tank: [CAM-DIAG-C16K] BEACON window=14 before=200 requested=200 after=200 changed=0
+W (192305) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=14 beacon=200 after=20000us budget=100000us result=ESP_OK
+W (192315) rc_video: [CAM-DIAG-C16K] PROFILE window=14 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m capture=872
+W (192326) rc_tank: [CAM-DIAG-C16K] WINDOW_14 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=bgn beacon=200 guard_after=20000us capture_budget=100000us
+W (192417) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=13 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=59 changes=15 sync_changes=0 sync_calls=59 sync_skips=0 unique=8 overflow=2 pre=94fc122d post=94fc122d avg_probe=1.066ms max_probe=1.072ms tsf_waits=142 tsf_wait_us=3944948 tsf_wait_max_us=50317 tsf_errors=0
+W (198495) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=14 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=10 sync_changes=0 sync_calls=30 sync_skips=0 unique=7 overflow=0 pre=94fc122d post=94fc122d avg_probe=1.066ms max_probe=1.102ms tsf_waits=75 tsf_wait_us=1981602 tsf_wait_max_us=83999 tsf_errors=0
+I (198515) rc_video: [CAM-DIAG-C16K] HEALTH window=14 display_frame=902 guard_errors=0 quiesce=902 resume_before=901 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=636 tsf_wait_us=17845096 tsf_wait_max_us=83999 tsf_errors=0
+W (204344) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=15 requested=0 result=ESP_OK
+W (204346) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=15 before=0x07 requested=0x07 after=0x07 name=bgn changed=0
+I (204357) wifi:Total power save buffer number: 32
+W (204359) rc_tank: [CAM-DIAG-C16K] BEACON window=15 before=200 requested=300 after=300 changed=1
+I (204361) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+W (204378) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=15 beacon=300 after=40000us budget=100000us result=ESP_OK
+W (204388) rc_video: [CAM-DIAG-C16K] PROFILE window=15 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m capture=931
+W (204399) rc_tank: [CAM-DIAG-C16K] WINDOW_15 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=bgn beacon=300 guard_after=40000us capture_budget=100000us
+W (204440) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=14 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=59 changes=20 sync_changes=0 sync_calls=59 sync_skips=0 unique=8 overflow=5 pre=b6c59ff5 post=b6c59ff5 avg_probe=1.079ms max_probe=1.842ms tsf_waits=151 tsf_wait_us=3912923 tsf_wait_max_us=0 tsf_errors=0
+W (209617) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=15 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=12 sync_changes=0 sync_calls=30 sync_skips=0 unique=7 overflow=0 pre=94fc122d post=94fc122d avg_probe=1.051ms max_probe=1.070ms tsf_waits=32 tsf_wait_us=710071 tsf_wait_max_us=148856 tsf_errors=0
+I (209636) rc_video: [CAM-DIAG-C16K] HEALTH window=15 display_frame=961 guard_errors=0 quiesce=961 resume_before=960 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=744 tsf_wait_us=20486488 tsf_wait_max_us=148856 tsf_errors=0
+W (214842) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=15 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=60 changes=21 sync_changes=0 sync_calls=60 sync_skips=0 unique=8 overflow=4 pre=94fc122d post=94fc122d avg_probe=1.053ms max_probe=1.074ms tsf_waits=64 tsf_wait_us=1422524 tsf_wait_max_us=148856 tsf_errors=0
+I (214862) rc_video: [CAM-DIAG-C16K] HEALTH window=15 display_frame=991 guard_errors=0 quiesce=991 resume_before=990 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=776 tsf_wait_us=21198941 tsf_wait_max_us=148856 tsf_errors=0
+W (216419) camera_hal: [CAM-DIAG-C16I] SP0A39 test_pattern=off P1:32 before=0x80 write=0x00 read=0x15 expected_bit=0x00
+W (216520) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=16 requested=0 result=ESP_OK
+W (216520) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=16 before=0x07 requested=0x07 after=0x07 name=bgn changed=0
+I (216532) wifi:Total power save buffer number: 32
+W (216533) rc_tank: [CAM-DIAG-C16K] BEACON window=16 before=300 requested=100 after=100 changed=1
+I (216535) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+W (216548) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=16 beacon=100 after=0us budget=0us result=ESP_OK
+W (216556) rc_video: [CAM-DIAG-C16K] PROFILE window=16 sensor=real display=camera idle=0ms full_probe=0 cache=c2m capture=1001
+W (216567) rc_tank: [CAM-DIAG-C16K] WINDOW_16 start: wifi=on sensor=real display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=bgn beacon=100 guard_after=0us capture_budget=0us
+W (216704) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=15 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m frames=71 changes=25 sync_changes=0 sync_calls=71 sync_skips=0 unique=8 overflow=7 pre=f087d222 post=f087d222 avg_probe=1.053ms max_probe=1.074ms tsf_waits=74 tsf_wait_us=1579762 tsf_wait_max_us=0 tsf_errors=0
+W (221451) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=29 sync_changes=0 sync_calls=30 sync_skips=0 unique=8 overflow=22 pre=a55e4cec post=a55e4cec avg_probe=1.044ms max_probe=1.073ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (221470) rc_video: [CAM-DIAG-C16K] HEALTH window=16 display_frame=1032 guard_errors=0 quiesce=1032 resume_before=1031 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=786 tsf_wait_us=21356179 tsf_wait_max_us=0 tsf_errors=0
+W (226240) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=16 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=60 changes=59 sync_changes=0 sync_calls=60 sync_skips=0 unique=8 overflow=52 pre=d68fea38 post=d68fea38 avg_probe=1.044ms max_probe=1.144ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (226258) rc_video: [CAM-DIAG-C16K] HEALTH window=16 display_frame=1062 guard_errors=0 quiesce=1062 resume_before=1061 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=786 tsf_wait_us=21356179 tsf_wait_max_us=0 tsf_errors=0
+W (228584) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=17 requested=0 result=ESP_OK
+W (228585) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=17 before=0x07 requested=0x07 after=0x07 name=bgn changed=0
+I (228596) wifi:Total power save buffer number: 32
+W (228598) rc_tank: [CAM-DIAG-C16K] BEACON window=17 before=100 requested=200 after=200 changed=1
+I (228599) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+W (228612) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=17 beacon=200 after=0us budget=0us result=ESP_OK
+W (228621) rc_video: [CAM-DIAG-C16K] PROFILE window=17 sensor=real display=camera idle=0ms full_probe=0 cache=c2m capture=1077
+W (228632) rc_tank: [CAM-DIAG-C16K] WINDOW_17 start: wifi=on sensor=real display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=bgn beacon=200 guard_after=0us capture_budget=0us
+W (228664) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=16 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=75 changes=74 sync_changes=0 sync_calls=75 sync_skips=0 unique=8 overflow=67 pre=3df697c7 post=3df697c7 avg_probe=1.045ms max_probe=1.144ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (233404) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=17 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=29 sync_changes=0 sync_calls=30 sync_skips=0 unique=8 overflow=22 pre=91bf962b post=91bf962b avg_probe=1.039ms max_probe=1.080ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (233422) rc_video: [CAM-DIAG-C16K] HEALTH window=17 display_frame=1107 guard_errors=0 quiesce=1107 resume_before=1106 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=786 tsf_wait_us=21356179 tsf_wait_max_us=0 tsf_errors=0
+W (238193) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=17 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=60 changes=59 sync_changes=0 sync_calls=60 sync_skips=0 unique=8 overflow=52 pre=010e9445 post=010e9445 avg_probe=1.040ms max_probe=1.080ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+I (238211) rc_video: [CAM-DIAG-C16K] HEALTH window=17 display_frame=1137 guard_errors=0 quiesce=1137 resume_before=1136 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=786 tsf_wait_us=21356179 tsf_wait_max_us=0 tsf_errors=0
+W (240649) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=18 requested=0 result=ESP_OK
+W (240650) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=18 before=0x07 requested=0x07 after=0x07 name=bgn changed=0
+W (240656) rc_tank: [CAM-DIAG-C16K] BEACON window=18 before=200 requested=200 after=200 changed=0
+W (240664) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=18 beacon=200 after=0us budget=80000us result=ESP_OK
+W (240674) rc_video: [CAM-DIAG-C16K] PROFILE window=18 sensor=real display=camera idle=0ms full_probe=0 cache=c2m capture=1152
+W (240685) rc_tank: [CAM-DIAG-C16K] WINDOW_18 start: wifi=on sensor=real display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=bgn beacon=200 guard_after=0us capture_budget=80000us
+W (240771) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=17 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=76 changes=75 sync_changes=0 sync_calls=76 sync_skips=0 unique=8 overflow=68 pre=0a7d7bb0 post=0a7d7bb0 avg_probe=1.045ms max_probe=1.431ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_us=0 tsf_errors=0
+W (246743) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=18 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=29 sync_changes=0 sync_calls=30 sync_skips=0 unique=8 overflow=22 pre=1b6797d0 post=1b6797d0 avg_probe=1.063ms max_probe=1.071ms tsf_waits=72 tsf_wait_us=1843857 tsf_wait_max_us=83794 tsf_errors=0
+I (246762) rc_video: [CAM-DIAG-C16K] HEALTH window=18 display_frame=1183 guard_errors=0 quiesce=1183 resume_before=1182 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=858 tsf_wait_us=23200036 tsf_wait_max_us=83794 tsf_errors=0
+W (252702) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=19 requested=0 result=ESP_OK
+W (252702) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=19 before=0x07 requested=0x07 after=0x07 name=bgn changed=0
+W (252709) rc_tank: [CAM-DIAG-C16K] BEACON window=19 before=200 requested=200 after=200 changed=0
+W (252717) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=19 beacon=200 after=20000us budget=80000us result=ESP_OK
+W (252727) rc_video: [CAM-DIAG-C16K] PROFILE window=19 sensor=real display=camera idle=0ms full_probe=0 cache=c2m capture=1212
+W (252738) rc_tank: [CAM-DIAG-C16K] WINDOW_19 start: wifi=on sensor=real display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=bgn beacon=200 guard_after=20000us capture_budget=80000us
+W (252764) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=18 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=59 changes=58 sync_changes=0 sync_calls=59 sync_skips=0 unique=8 overflow=51 pre=82dafd3d post=82dafd3d avg_probe=1.065ms max_probe=1.086ms tsf_waits=147 tsf_wait_us=3869928 tsf_wait_max_us=1617 tsf_errors=0
+W (258854) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=19 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=29 sync_changes=0 sync_calls=30 sync_skips=0 unique=8 overflow=22 pre=38d03bd2 post=38d03bd2 avg_probe=1.066ms max_probe=1.074ms tsf_waits=76 tsf_wait_us=1966468 tsf_wait_max_us=84900 tsf_errors=0
+I (258873) rc_video: [CAM-DIAG-C16K] HEALTH window=19 display_frame=1242 guard_errors=0 quiesce=1242 resume_before=1241 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=1009 tsf_wait_us=27192575 tsf_wait_max_us=84900 tsf_errors=0
+W (264755) rc_tank: [CAM-DIAG-C16K] GDMA_PRIORITY window=20 requested=0 result=ESP_OK
+W (264756) rc_tank: [CAM-DIAG-C16K] PROTOCOL window=20 before=0x07 requested=0x07 after=0x07 name=bgn changed=0
+W (264762) rc_tank: [CAM-DIAG-C16K] BEACON window=20 before=200 requested=200 after=200 changed=0
+W (264770) rc_tank: [CAM-DIAG-C16K] TSF_GUARD window=20 beacon=200 after=40000us budget=80000us result=ESP_OK
+W (264780) rc_video: [CAM-DIAG-C16K] PROFILE window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m capture=1271
+W (264791) rc_tank: [CAM-DIAG-C16K] WINDOW_20 start: wifi=on sensor=real display=camera idle=0ms full_probe=off cache=c2m gdma_prio=0 protocol=bgn beacon=200 guard_after=40000us capture_budget=80000us
+W (264808) rc_tank: [CAM-DIAG-C16K] protocol/beacon/TSF-guard matrix complete; hold WINDOW_20 wifi=on real cache=c2m gdma_prio=0 protocol=bgn beacon=200 guard_after=40000us capture_budget=80000us
+I (264825) rc_tank: Tank running (video + control; audio disabled)
+I (264831) rc_tank: app_main done, idle loop
+W (264887) rc_video: [CAM-DIAG-C16K] LIGHT stage=complete window=19 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=59 changes=58 sync_changes=0 sync_calls=59 sync_skips=0 unique=8 overflow=51 pre=67efb38c post=67efb38c avg_probe=1.068ms max_probe=1.177ms tsf_waits=152 tsf_wait_us=3970765 tsf_wait_max_us=92096 tsf_errors=0
+W (270965) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=30 changes=29 sync_changes=0 sync_calls=30 sync_skips=0 unique=8 overflow=22 pre=68c138d7 post=68c138d7 avg_probe=1.064ms max_probe=1.075ms tsf_waits=78 tsf_wait_us=1978265 tsf_wait_max_us=92096 tsf_errors=0
+I (270984) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1301 guard_errors=0 quiesce=1301 resume_before=1300 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=1163 tsf_wait_us=31175137 tsf_wait_max_us=92096 tsf_errors=0
+W (277100) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=60 changes=59 sync_changes=0 sync_calls=60 sync_skips=0 unique=8 overflow=52 pre=944459fa post=944459fa avg_probe=1.065ms max_probe=1.075ms tsf_waits=158 tsf_wait_us=3971704 tsf_wait_max_us=92096 tsf_errors=0
+I (277120) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1331 guard_errors=0 quiesce=1331 resume_before=1330 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=1243 tsf_wait_us=33168576 tsf_wait_max_us=92096 tsf_errors=0
+W (283235) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=90 changes=89 sync_changes=0 sync_calls=90 sync_skips=0 unique=8 overflow=82 pre=92c09742 post=92c09742 avg_probe=1.067ms max_probe=1.075ms tsf_waits=236 tsf_wait_us=5996920 tsf_wait_max_us=92096 tsf_errors=0
+I (283254) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1361 guard_errors=0 quiesce=1361 resume_before=1360 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=1321 tsf_wait_us=35193792 tsf_wait_max_us=92096 tsf_errors=0
+W (289410) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=120 changes=119 sync_changes=0 sync_calls=120 sync_skips=0 unique=8 overflow=112 pre=36b0fc08 post=36b0fc08 avg_probe=1.066ms max_probe=1.075ms tsf_waits=311 tsf_wait_us=7973794 tsf_wait_max_us=92096 tsf_errors=0
+I (289429) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1391 guard_errors=0 quiesce=1391 resume_before=1390 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=1396 tsf_wait_us=37170666 tsf_wait_max_us=92096 tsf_errors=0
+W (295544) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=150 changes=149 sync_changes=0 sync_calls=150 sync_skips=0 unique=8 overflow=142 pre=9002167b post=9002167b avg_probe=1.066ms max_probe=1.075ms tsf_waits=386 tsf_wait_us=9949464 tsf_wait_max_us=92096 tsf_errors=0
+I (295564) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1421 guard_errors=0 quiesce=1421 resume_before=1420 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=1471 tsf_wait_us=39146336 tsf_wait_max_us=92096 tsf_errors=0
+W (301679) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=180 changes=179 sync_changes=0 sync_calls=180 sync_skips=0 unique=8 overflow=172 pre=605397b0 post=605397b0 avg_probe=1.069ms max_probe=1.419ms tsf_waits=462 tsf_wait_us=11968558 tsf_wait_max_us=92096 tsf_errors=0
+I (301698) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1451 guard_errors=0 quiesce=1451 resume_before=1450 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=1547 tsf_wait_us=41165430 tsf_wait_max_us=92096 tsf_errors=0
+W (307814) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=210 changes=209 sync_changes=0 sync_calls=210 sync_skips=0 unique=8 overflow=202 pre=df790cb0 post=df790cb0 avg_probe=1.068ms max_probe=1.419ms tsf_waits=537 tsf_wait_us=13938286 tsf_wait_max_us=92096 tsf_errors=0
+I (307833) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1481 guard_errors=0 quiesce=1481 resume_before=1480 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=1622 tsf_wait_us=43135158 tsf_wait_max_us=92096 tsf_errors=0
+W (313989) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=240 changes=239 sync_changes=0 sync_calls=240 sync_skips=0 unique=8 overflow=232 pre=f8c30bc8 post=f8c30bc8 avg_probe=1.069ms max_probe=1.419ms tsf_waits=607 tsf_wait_us=15942625 tsf_wait_max_us=92096 tsf_errors=0
+I (314009) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1511 guard_errors=0 quiesce=1511 resume_before=1510 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=1692 tsf_wait_us=45139497 tsf_wait_max_us=92096 tsf_errors=0
+W (320123) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=270 changes=269 sync_changes=0 sync_calls=270 sync_skips=0 unique=8 overflow=262 pre=e10338fe post=e10338fe avg_probe=1.069ms max_probe=1.419ms tsf_waits=681 tsf_wait_us=17907424 tsf_wait_max_us=92096 tsf_errors=0
+I (320142) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1541 guard_errors=0 quiesce=1541 resume_before=1540 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=1766 tsf_wait_us=47104296 tsf_wait_max_us=92096 tsf_errors=0
+W (326258) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=300 changes=299 sync_changes=0 sync_calls=300 sync_skips=0 unique=8 overflow=292 pre=7072ad54 post=7072ad54 avg_probe=1.069ms max_probe=1.419ms tsf_waits=752 tsf_wait_us=19868226 tsf_wait_max_us=92096 tsf_errors=0
+I (326277) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1571 guard_errors=0 quiesce=1571 resume_before=1570 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=1837 tsf_wait_us=49065098 tsf_wait_max_us=92096 tsf_errors=0
+W (332393) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=330 changes=329 sync_changes=0 sync_calls=330 sync_skips=0 unique=8 overflow=322 pre=3b551c3e post=3b551c3e avg_probe=1.069ms max_probe=1.419ms tsf_waits=823 tsf_wait_us=21868034 tsf_wait_max_us=92096 tsf_errors=0
+I (332412) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1601 guard_errors=0 quiesce=1601 resume_before=1600 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=1908 tsf_wait_us=51064906 tsf_wait_max_us=92096 tsf_errors=0
+W (338567) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=360 changes=359 sync_changes=0 sync_calls=360 sync_skips=0 unique=8 overflow=352 pre=c05f8d0d post=c05f8d0d avg_probe=1.069ms max_probe=1.419ms tsf_waits=896 tsf_wait_us=23868756 tsf_wait_max_us=92096 tsf_errors=0
+I (338586) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1631 guard_errors=0 quiesce=1631 resume_before=1630 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=1981 tsf_wait_us=53065628 tsf_wait_max_us=92096 tsf_errors=0
+W (344702) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=390 changes=389 sync_changes=0 sync_calls=390 sync_skips=0 unique=8 overflow=382 pre=4b90a648 post=4b90a648 avg_probe=1.069ms max_probe=1.419ms tsf_waits=966 tsf_wait_us=25821289 tsf_wait_max_us=92096 tsf_errors=0
+I (344722) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1661 guard_errors=0 quiesce=1661 resume_before=1660 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=2051 tsf_wait_us=55018161 tsf_wait_max_us=92096 tsf_errors=0
+W (350836) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=420 changes=419 sync_changes=0 sync_calls=420 sync_skips=0 unique=8 overflow=412 pre=5c8e3dfc post=5c8e3dfc avg_probe=1.069ms max_probe=1.419ms tsf_waits=1039 tsf_wait_us=27821231 tsf_wait_max_us=92096 tsf_errors=0
+I (350856) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1691 guard_errors=0 quiesce=1691 resume_before=1690 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=2124 tsf_wait_us=57018103 tsf_wait_max_us=92096 tsf_errors=0
+W (356971) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=450 changes=449 sync_changes=0 sync_calls=450 sync_skips=0 unique=8 overflow=442 pre=11682042 post=11682042 avg_probe=1.069ms max_probe=1.419ms tsf_waits=1114 tsf_wait_us=29784158 tsf_wait_max_us=92096 tsf_errors=0
+I (356991) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1721 guard_errors=0 quiesce=1721 resume_before=1720 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=2199 tsf_wait_us=58981030 tsf_wait_max_us=92096 tsf_errors=0
+W (363106) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=480 changes=479 sync_changes=0 sync_calls=480 sync_skips=0 unique=8 overflow=472 pre=80dec18f post=80dec18f avg_probe=1.069ms max_probe=1.419ms tsf_waits=1194 tsf_wait_us=31802565 tsf_wait_max_us=92096 tsf_errors=0
+I (363126) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1751 guard_errors=0 quiesce=1751 resume_before=1750 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=2279 tsf_wait_us=60999437 tsf_wait_max_us=92096 tsf_errors=0
+W (369280) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=510 changes=509 sync_changes=0 sync_calls=510 sync_skips=0 unique=8 overflow=502 pre=2a5b2d91 post=2a5b2d91 avg_probe=1.069ms max_probe=1.419ms tsf_waits=1273 tsf_wait_us=33812127 tsf_wait_max_us=92096 tsf_errors=0
+I (369300) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1781 guard_errors=0 quiesce=1781 resume_before=1780 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=2358 tsf_wait_us=63008999 tsf_wait_max_us=92096 tsf_errors=0
+W (375416) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=540 changes=539 sync_changes=0 sync_calls=540 sync_skips=0 unique=8 overflow=532 pre=694c396c post=694c396c avg_probe=1.069ms max_probe=1.419ms tsf_waits=1352 tsf_wait_us=35784034 tsf_wait_max_us=92096 tsf_errors=0
+I (375436) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1811 guard_errors=0 quiesce=1811 resume_before=1810 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=2437 tsf_wait_us=64980906 tsf_wait_max_us=92096 tsf_errors=0
+W (381550) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=570 changes=569 sync_changes=0 sync_calls=570 sync_skips=0 unique=8 overflow=562 pre=e9d167f0 post=e9d167f0 avg_probe=1.069ms max_probe=1.419ms tsf_waits=1430 tsf_wait_us=37794718 tsf_wait_max_us=92096 tsf_errors=0
+I (381570) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1841 guard_errors=0 quiesce=1841 resume_before=1840 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=2515 tsf_wait_us=66991590 tsf_wait_max_us=92096 tsf_errors=0
+W (387685) rc_video: [CAM-DIAG-C16K] LIGHT stage=periodic window=20 sensor=real display=camera idle=0ms full_probe=0 cache=c2m frames=600 changes=599 sync_changes=0 sync_calls=600 sync_skips=0 unique=8 overflow=592 pre=ceafe832 post=ceafe832 avg_probe=1.069ms max_probe=1.419ms tsf_waits=1505 tsf_wait_us=39794694 tsf_wait_max_us=92096 tsf_errors=0
+I (387705) rc_video: [CAM-DIAG-C16K] HEALTH window=20 display_frame=1871 guard_errors=0 quiesce=1871 resume_before=1870 lifecycle_errors=0 cache_sync_err=0 overlap=0 finish_collision=0 tsf_waits=2590 tsf_wait_us=68991566 tsf_wait_max_us=92096 tsf_errors=0

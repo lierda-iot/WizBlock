@@ -1,0 +1,6 @@
+I (57085) rc_net: [CAM-PROBE] Video TX seq=210 jpeg_len=8384 crc32=0x0abc0846 chunks=7
+I (60050) rc_net: [CAM-PROBE] Video TX seq=240 jpeg_len=7941 crc32=0x1a05a40b chunks=7
+I (63021) rc_net: [CAM-PROBE] Video TX seq=270 jpeg_len=8521 crc32=0x8971eae3 chunks=8
+I (65992) rc_net: [CAM-PROBE] Video TX seq=300 jpeg_len=8565 crc32=0xcf54a6ed chunks=8
+I (66787) rc_video: Sent 300 | cap_fps=10.1 send_fps=9.8 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=24.4 cache=0.9 subsample=23.8 encode=43.9 send=5.3 total=98.4 | JPEG=8581B
+I (68929) rc_net: [CAM-PROBE] Video TX seq=330 jpeg_len=8539 crc32=0xad0ccac2 chunks=8

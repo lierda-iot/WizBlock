@@ -1,0 +1,480 @@
+I (30554) rc_video: Sent 210 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.3 | JPEG=4656B
+I (30562) rc_video: [VIDEO-TX] handoff cap=237 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (30574) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (30713) rc_net: [CAM-PROBE] Video TX seq=240 jpeg_len=4628 crc32=0xff6c66b3 chunks=4
+I (31552) rc_video: Sent 240 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.1 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4657B
+I (31560) rc_video: [VIDEO-TX] handoff cap=267 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (31572) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (31710) rc_net: [CAM-PROBE] Video TX seq=270 jpeg_len=4651 crc32=0xfb56bbd8 chunks=4
+I (32548) rc_video: Sent 270 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.2 | JPEG=4659B
+I (32555) rc_video: [VIDEO-TX] handoff cap=297 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (32568) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (32707) rc_net: [CAM-PROBE] Video TX seq=300 jpeg_len=4655 crc32=0xfb06839b chunks=4
+I (33555) rc_video: Sent 300 | cap_fps=29.8 send_fps=29.8 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.7 send=3.4 total=31.4 | JPEG=4698B
+I (33562) rc_video: [VIDEO-TX] handoff cap=327 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (33574) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (33713) rc_net: [CAM-PROBE] Video TX seq=330 jpeg_len=4687 crc32=0xc97eb5dd chunks=4
+I (34553) rc_video: Sent 330 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4683B
+I (34560) rc_video: [VIDEO-TX] handoff cap=357 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (34572) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (34710) rc_net: [CAM-PROBE] Video TX seq=360 jpeg_len=4651 crc32=0xfb56bbd8 chunks=4
+I (35551) rc_video: Sent 360 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.7 send=3.3 total=31.2 | JPEG=4684B
+I (35559) rc_video: [VIDEO-TX] handoff cap=387 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (35571) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (35711) rc_net: [CAM-PROBE] Video TX seq=390 jpeg_len=4689 crc32=0x726e01dd chunks=4
+I (36548) rc_video: Sent 390 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.1 | JPEG=4691B
+I (36555) rc_video: [VIDEO-TX] handoff cap=417 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (36567) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (36704) rc_net: [CAM-PROBE] Video TX seq=420 jpeg_len=4696 crc32=0x663ec1b0 chunks=4
+I (37539) rc_video: Sent 420 | cap_fps=30.3 send_fps=30.3 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.5 send=3.3 total=31.1 | JPEG=4685B
+I (37546) rc_video: [VIDEO-TX] handoff cap=447 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (37559) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (37698) rc_net: [CAM-PROBE] Video TX seq=450 jpeg_len=4685 crc32=0x7b559580 chunks=4
+I (38543) rc_video: Sent 450 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.7 send=3.6 total=31.5 | JPEG=4696B
+I (38551) rc_video: [VIDEO-TX] handoff cap=477 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (38563) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (38701) rc_net: [CAM-PROBE] Video TX seq=480 jpeg_len=4685 crc32=0x7b559580 chunks=4
+I (39540) rc_video: Sent 480 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.7 send=3.2 total=31.1 | JPEG=4685B
+I (39548) rc_video: [VIDEO-TX] handoff cap=507 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (39560) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (39696) rc_net: [CAM-PROBE] Video TX seq=510 jpeg_len=4689 crc32=0x5b7468ac chunks=4
+I (40532) rc_video: Sent 510 | cap_fps=30.2 send_fps=30.2 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.1 total=31.0 | JPEG=4683B
+I (40539) rc_video: [VIDEO-TX] handoff cap=537 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (40551) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (40688) rc_net: [CAM-PROBE] Video TX seq=540 jpeg_len=4678 crc32=0xfd26bbec chunks=4
+I (41532) rc_video: Sent 540 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.7 send=3.3 total=31.1 | JPEG=4643B
+I (41539) rc_video: [VIDEO-TX] handoff cap=567 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (41551) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (41688) rc_net: [CAM-PROBE] Video TX seq=570 jpeg_len=4670 crc32=0x1305b080 chunks=4
+I (42528) rc_video: Sent 570 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.6 send=3.4 total=31.1 | JPEG=4625B
+I (42535) rc_video: [VIDEO-TX] handoff cap=597 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (42547) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (42685) rc_net: [CAM-PROBE] Video TX seq=600 jpeg_len=4675 crc32=0x71b25de1 chunks=4
+I (43534) rc_video: Sent 600 | cap_fps=29.8 send_fps=29.8 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.5 send=3.7 total=31.5 | JPEG=4629B
+I (43541) rc_video: [VIDEO-TX] handoff cap=627 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (43553) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (43691) rc_net: [CAM-PROBE] Video TX seq=630 jpeg_len=4628 crc32=0xff6c66b3 chunks=4
+I (44532) rc_video: Sent 630 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.6 total=31.3 | JPEG=4648B
+I (44540) rc_video: [VIDEO-TX] handoff cap=657 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (44552) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (44691) rc_net: [CAM-PROBE] Video TX seq=660 jpeg_len=4641 crc32=0x4688f8ad chunks=4
+I (45532) rc_video: Sent 660 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4666B
+I (45540) rc_video: [VIDEO-TX] handoff cap=687 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (45552) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (45691) rc_net: [CAM-PROBE] Video TX seq=690 jpeg_len=4639 crc32=0xf7580ae2 chunks=4
+I (46531) rc_video: Sent 690 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4652B
+I (46538) rc_video: [VIDEO-TX] handoff cap=717 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (46550) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (46689) rc_net: [CAM-PROBE] Video TX seq=720 jpeg_len=4628 crc32=0xff6c66b3 chunks=4
+I (47530) rc_video: Sent 720 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.3 | JPEG=4656B
+I (47538) rc_video: [VIDEO-TX] handoff cap=747 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (47550) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (47688) rc_net: [CAM-PROBE] Video TX seq=750 jpeg_len=4660 crc32=0x875ef1f4 chunks=4
+I (48536) rc_video: Sent 750 | cap_fps=29.8 send_fps=29.8 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.5 total=31.5 | JPEG=4656B
+I (48544) rc_video: [VIDEO-TX] handoff cap=777 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (48556) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (48695) rc_net: [CAM-PROBE] Video TX seq=780 jpeg_len=4662 crc32=0x62faf04c chunks=4
+I (49537) rc_video: Sent 780 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4689B
+I (49544) rc_video: [VIDEO-TX] handoff cap=807 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (49556) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (49693) rc_net: [CAM-PROBE] Video TX seq=810 jpeg_len=4651 crc32=0xfb56bbd8 chunks=4
+I (50535) rc_video: Sent 810 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.1 cache=0.0 subsample=0.0 encode=18.7 send=3.3 total=31.1 | JPEG=4681B
+I (50543) rc_video: [VIDEO-TX] handoff cap=837 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (50555) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (50694) rc_net: [CAM-PROBE] Video TX seq=840 jpeg_len=4681 crc32=0x8efbc526 chunks=4
+I (51538) rc_video: Sent 840 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.6 total=31.4 | JPEG=4686B
+I (51546) rc_video: [VIDEO-TX] handoff cap=867 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (51558) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (51698) rc_net: [CAM-PROBE] Video TX seq=870 jpeg_len=4694 crc32=0x5e570e31 chunks=4
+I (52540) rc_video: Sent 870 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.6 total=31.3 | JPEG=4693B
+I (52547) rc_video: [VIDEO-TX] handoff cap=897 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (52559) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (52698) rc_net: [CAM-PROBE] Video TX seq=900 jpeg_len=4685 crc32=0x7b559580 chunks=4
+I (53545) rc_video: Sent 900 | cap_fps=29.8 send_fps=29.8 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.6 send=3.6 total=31.4 | JPEG=4690B
+I (53552) rc_video: [VIDEO-TX] handoff cap=927 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (53564) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (53702) rc_net: [CAM-PROBE] Video TX seq=930 jpeg_len=4691 crc32=0x1c639850 chunks=4
+I (54540) rc_video: Sent 930 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.5 send=3.3 total=31.2 | JPEG=4666B
+I (54548) rc_video: [VIDEO-TX] handoff cap=957 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (54560) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (54698) rc_net: [CAM-PROBE] Video TX seq=960 jpeg_len=4685 crc32=0x7b559580 chunks=4
+I (55540) rc_video: Sent 960 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.6 total=31.3 | JPEG=4694B
+I (55548) rc_video: [VIDEO-TX] handoff cap=987 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (55560) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (55697) rc_net: [CAM-PROBE] Video TX seq=990 jpeg_len=4678 crc32=0xfd26bbec chunks=4
+I (56537) rc_video: Sent 990 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.3 total=31.2 | JPEG=4667B
+I (56544) rc_video: [VIDEO-TX] handoff cap=1017 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (56556) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (56693) rc_net: [CAM-PROBE] Video TX seq=1020 jpeg_len=4677 crc32=0x99836112 chunks=4
+I (57535) rc_video: Sent 1020 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4643B
+I (57543) rc_video: [VIDEO-TX] handoff cap=1047 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (57555) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (57692) rc_net: [CAM-PROBE] Video TX seq=1050 jpeg_len=4689 crc32=0x3bed02da chunks=4
+I (58537) rc_video: Sent 1050 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.4 total=31.3 | JPEG=4642B
+I (58544) rc_video: [VIDEO-TX] handoff cap=1077 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (58556) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (58691) rc_net: [CAM-PROBE] Video TX seq=1080 jpeg_len=4678 crc32=0xfd26bbec chunks=4
+I (59530) rc_video: Sent 1080 | cap_fps=30.2 send_fps=30.2 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.3 total=31.1 | JPEG=4641B
+I (59537) rc_video: [VIDEO-TX] handoff cap=1107 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (59549) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (59688) rc_net: [CAM-PROBE] Video TX seq=1110 jpeg_len=4636 crc32=0x7f00d98f chunks=4
+I (60527) rc_video: Sent 1110 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.6 send=3.3 total=31.2 | JPEG=4630B
+I (60535) rc_video: [VIDEO-TX] handoff cap=1137 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (60547) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (60686) rc_net: [CAM-PROBE] Video TX seq=1140 jpeg_len=4626 crc32=0xb1daf5b5 chunks=4
+I (61524) rc_video: Sent 1140 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.1 | JPEG=4662B
+I (61531) rc_video: [VIDEO-TX] handoff cap=1167 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (61543) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (61683) rc_net: [CAM-PROBE] Video TX seq=1170 jpeg_len=4628 crc32=0xff6c66b3 chunks=4
+I (62527) rc_video: Sent 1170 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.3 | JPEG=4653B
+I (62535) rc_video: [VIDEO-TX] handoff cap=1197 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (62547) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (62685) rc_net: [CAM-PROBE] Video TX seq=1200 jpeg_len=4628 crc32=0xff6c66b3 chunks=4
+I (63525) rc_video: Sent 1200 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.7 send=3.3 total=31.3 | JPEG=4678B
+I (63532) rc_video: [VIDEO-TX] handoff cap=1227 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (63545) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (63682) rc_net: [CAM-PROBE] Video TX seq=1230 jpeg_len=4668 crc32=0x78e1416b chunks=4
+I (64519) rc_video: Sent 1230 | cap_fps=30.2 send_fps=30.2 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.1 | JPEG=4660B
+I (64527) rc_video: [VIDEO-TX] handoff cap=1257 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (64539) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (64678) rc_net: [CAM-PROBE] Video TX seq=1260 jpeg_len=4651 crc32=0xfb56bbd8 chunks=4
+I (65517) rc_video: Sent 1260 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.7 send=3.3 total=31.2 | JPEG=4688B
+I (65525) rc_video: [VIDEO-TX] handoff cap=1287 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (65537) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (65676) rc_net: [CAM-PROBE] Video TX seq=1290 jpeg_len=4656 crc32=0x0a6206ec chunks=4
+I (66510) rc_video: Sent 1290 | cap_fps=30.2 send_fps=30.2 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.6 send=3.2 total=31.0 | JPEG=4696B
+I (66517) rc_video: [VIDEO-TX] handoff cap=1317 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (66529) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (66668) rc_net: [CAM-PROBE] Video TX seq=1320 jpeg_len=4675 crc32=0x7a4c17d7 chunks=4
+I (67510) rc_video: Sent 1320 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4687B
+I (67517) rc_video: [VIDEO-TX] handoff cap=1347 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (67529) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (67666) rc_net: [CAM-PROBE] Video TX seq=1350 jpeg_len=4685 crc32=0x7b559580 chunks=4
+I (68516) rc_video: Sent 1350 | cap_fps=29.8 send_fps=29.8 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.7 send=3.5 total=31.4 | JPEG=4684B
+I (68524) rc_video: [VIDEO-TX] handoff cap=1377 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (68536) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (68673) rc_net: [CAM-PROBE] Video TX seq=1380 jpeg_len=4689 crc32=0x909e5929 chunks=4
+I (69514) rc_video: Sent 1380 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.4 total=31.2 | JPEG=4689B
+I (69522) rc_video: [VIDEO-TX] handoff cap=1407 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (69534) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (69672) rc_net: [CAM-PROBE] Video TX seq=1410 jpeg_len=4686 crc32=0x5edd477f chunks=4
+I (70519) rc_video: Sent 1410 | cap_fps=29.8 send_fps=29.8 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.7 send=3.4 total=31.4 | JPEG=4693B
+I (70527) rc_video: [VIDEO-TX] handoff cap=1437 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (70539) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (70678) rc_net: [CAM-PROBE] Video TX seq=1440 jpeg_len=4685 crc32=0x7b559580 chunks=4
+I (71518) rc_video: Sent 1440 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.1 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4684B
+I (71526) rc_video: [VIDEO-TX] handoff cap=1467 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (71538) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (71677) rc_net: [CAM-PROBE] Video TX seq=1470 jpeg_len=4677 crc32=0x07f792ce chunks=4
+I (72524) rc_video: Sent 1470 | cap_fps=29.8 send_fps=29.8 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.6 send=3.7 total=31.4 | JPEG=4694B
+I (72532) rc_video: [VIDEO-TX] handoff cap=1497 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (72544) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (72682) rc_net: [CAM-PROBE] Video TX seq=1500 jpeg_len=4676 crc32=0xc52aa45a chunks=4
+I (73526) rc_video: Sent 1500 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4626B
+I (73533) rc_video: [VIDEO-TX] handoff cap=1527 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (73545) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (73686) rc_net: [CAM-PROBE] Video TX seq=1530 jpeg_len=4678 crc32=0xfd26bbec chunks=4
+I (74531) rc_video: Sent 1530 | cap_fps=29.8 send_fps=29.8 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.6 send=3.6 total=31.4 | JPEG=4638B
+I (74538) rc_video: [VIDEO-TX] handoff cap=1557 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (74550) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (74688) rc_net: [CAM-PROBE] Video TX seq=1560 jpeg_len=4666 crc32=0xa5f7d2e2 chunks=4
+I (75534) rc_video: Sent 1560 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.4 total=31.3 | JPEG=4637B
+I (75542) rc_video: [VIDEO-TX] handoff cap=1587 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (75554) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (75691) rc_net: [CAM-PROBE] Video TX seq=1590 jpeg_len=4626 crc32=0x72268f6f chunks=4
+I (76538) rc_video: Sent 1590 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.6 total=31.3 | JPEG=4636B
+I (76545) rc_video: [VIDEO-TX] handoff cap=1617 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (76558) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (76695) rc_net: [CAM-PROBE] Video TX seq=1620 jpeg_len=4628 crc32=0xff6c66b3 chunks=4
+I (77539) rc_video: Sent 1620 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.1 cache=0.0 subsample=0.0 encode=18.6 send=3.6 total=31.3 | JPEG=4660B
+I (77547) rc_video: [VIDEO-TX] handoff cap=1647 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (77559) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (77695) rc_net: [CAM-PROBE] Video TX seq=1650 jpeg_len=4623 crc32=0x8ed03bb8 chunks=4
+I (78535) rc_video: Sent 1650 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.1 | JPEG=4656B
+I (78543) rc_video: [VIDEO-TX] handoff cap=1677 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (78555) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (78695) rc_net: [CAM-PROBE] Video TX seq=1680 jpeg_len=4628 crc32=0xff6c66b3 chunks=4
+I (79535) rc_video: Sent 1680 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.7 send=3.4 total=31.3 | JPEG=4657B
+I (79542) rc_video: [VIDEO-TX] handoff cap=1707 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (79554) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (79691) rc_net: [CAM-PROBE] Video TX seq=1710 jpeg_len=4651 crc32=0xfb56bbd8 chunks=4
+I (80534) rc_video: Sent 1710 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4659B
+I (80541) rc_video: [VIDEO-TX] handoff cap=1737 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (80553) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (80691) rc_net: [CAM-PROBE] Video TX seq=1740 jpeg_len=4655 crc32=0xfb06839b chunks=4
+I (81532) rc_video: Sent 1740 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.1 | JPEG=4698B
+I (81539) rc_video: [VIDEO-TX] handoff cap=1767 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (81552) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (81691) rc_net: [CAM-PROBE] Video TX seq=1770 jpeg_len=4687 crc32=0xc97eb5dd chunks=4
+I (82531) rc_video: Sent 1770 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4683B
+I (82538) rc_video: [VIDEO-TX] handoff cap=1797 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (82550) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (82688) rc_net: [CAM-PROBE] Video TX seq=1800 jpeg_len=4651 crc32=0xfb56bbd8 chunks=4
+I (83522) rc_video: Sent 1800 | cap_fps=30.3 send_fps=30.3 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.2 total=31.0 | JPEG=4684B
+I (83530) rc_video: [VIDEO-TX] handoff cap=1827 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (83542) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (83680) rc_net: [CAM-PROBE] Video TX seq=1830 jpeg_len=4689 crc32=0x726e01dd chunks=4
+I (84529) rc_video: Sent 1830 | cap_fps=29.8 send_fps=29.8 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.7 send=3.5 total=31.5 | JPEG=4691B
+I (84537) rc_video: [VIDEO-TX] handoff cap=1857 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (84549) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (84688) rc_net: [CAM-PROBE] Video TX seq=1860 jpeg_len=4696 crc32=0x663ec1b0 chunks=4
+I (85528) rc_video: Sent 1860 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.1 cache=0.0 subsample=0.0 encode=18.6 send=3.6 total=31.3 | JPEG=4685B
+I (85536) rc_video: [VIDEO-TX] handoff cap=1887 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (85548) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (85686) rc_net: [CAM-PROBE] Video TX seq=1890 jpeg_len=4685 crc32=0x7b559580 chunks=4
+I (86529) rc_video: Sent 1890 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.5 total=31.3 | JPEG=4696B
+I (86537) rc_video: [VIDEO-TX] handoff cap=1917 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (86549) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (86686) rc_net: [CAM-PROBE] Video TX seq=1920 jpeg_len=4685 crc32=0x7b559580 chunks=4
+I (87530) rc_video: Sent 1920 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.3 | JPEG=4685B
+I (87537) rc_video: [VIDEO-TX] handoff cap=1947 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (87550) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (87687) rc_net: [CAM-PROBE] Video TX seq=1950 jpeg_len=4689 crc32=0x5b7468ac chunks=4
+I (88529) rc_video: Sent 1950 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.2 | JPEG=4683B
+I (88536) rc_video: [VIDEO-TX] handoff cap=1977 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (88549) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (88685) rc_net: [CAM-PROBE] Video TX seq=1980 jpeg_len=4678 crc32=0xfd26bbec chunks=4
+I (89534) rc_video: Sent 1980 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.8 send=3.2 total=31.3 | JPEG=4643B
+I (89541) rc_video: [VIDEO-TX] handoff cap=2007 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (89553) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (89691) rc_net: [CAM-PROBE] Video TX seq=2010 jpeg_len=4670 crc32=0x1305b080 chunks=4
+I (90531) rc_video: Sent 2010 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.1 cache=0.0 subsample=0.0 encode=18.6 send=3.5 total=31.1 | JPEG=4625B
+I (90538) rc_video: [VIDEO-TX] handoff cap=2037 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (90550) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (90689) rc_net: [CAM-PROBE] Video TX seq=2040 jpeg_len=4675 crc32=0x71b25de1 chunks=4
+I (91530) rc_video: Sent 2040 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4629B
+I (91538) rc_video: [VIDEO-TX] handoff cap=2067 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (91550) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (91688) rc_net: [CAM-PROBE] Video TX seq=2070 jpeg_len=4628 crc32=0xff6c66b3 chunks=4
+I (92532) rc_video: Sent 2070 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.1 cache=0.0 subsample=0.0 encode=18.6 send=3.5 total=31.2 | JPEG=4648B
+I (92539) rc_video: [VIDEO-TX] handoff cap=2097 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (92551) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (92688) rc_net: [CAM-PROBE] Video TX seq=2100 jpeg_len=4641 crc32=0x4688f8ad chunks=4
+I (93528) rc_video: Sent 2100 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.1 | JPEG=4666B
+I (93535) rc_video: [VIDEO-TX] handoff cap=2127 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (93547) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (93684) rc_net: [CAM-PROBE] Video TX seq=2130 jpeg_len=4639 crc32=0xf7580ae2 chunks=4
+I (94537) rc_video: Sent 2130 | cap_fps=29.7 send_fps=29.7 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.7 send=3.5 total=31.5 | JPEG=4652B
+I (94545) rc_video: [VIDEO-TX] handoff cap=2157 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (94557) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (94695) rc_net: [CAM-PROBE] Video TX seq=2160 jpeg_len=4628 crc32=0xff6c66b3 chunks=4
+I (95531) rc_video: Sent 2160 | cap_fps=30.2 send_fps=30.2 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.1 cache=0.0 subsample=0.0 encode=18.6 send=3.3 total=31.0 | JPEG=4656B
+I (95538) rc_video: [VIDEO-TX] handoff cap=2187 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (95551) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (95690) rc_net: [CAM-PROBE] Video TX seq=2190 jpeg_len=4660 crc32=0x875ef1f4 chunks=4
+I (96529) rc_video: Sent 2190 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4656B
+I (96536) rc_video: [VIDEO-TX] handoff cap=2217 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (96549) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (96686) rc_net: [CAM-PROBE] Video TX seq=2220 jpeg_len=4662 crc32=0x62faf04c chunks=4
+I (97525) rc_video: Sent 2220 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.1 | JPEG=4689B
+I (97533) rc_video: [VIDEO-TX] handoff cap=2247 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (97545) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (97683) rc_net: [CAM-PROBE] Video TX seq=2250 jpeg_len=4651 crc32=0xfb56bbd8 chunks=4
+I (98522) rc_video: Sent 2250 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.1 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.1 | JPEG=4681B
+I (98529) rc_video: [VIDEO-TX] handoff cap=2277 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (98542) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (98682) rc_net: [CAM-PROBE] Video TX seq=2280 jpeg_len=4681 crc32=0x8efbc526 chunks=4
+I (99526) rc_video: Sent 2280 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.7 send=3.4 total=31.5 | JPEG=4686B
+I (99533) rc_video: [VIDEO-TX] handoff cap=2307 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (99546) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (99684) rc_net: [CAM-PROBE] Video TX seq=2310 jpeg_len=4694 crc32=0x5e570e31 chunks=4
+I (100528) rc_video: Sent 2310 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.2 | JPEG=4693B
+I (100535) rc_video: [VIDEO-TX] handoff cap=2337 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (100548) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (100688) rc_net: [CAM-PROBE] Video TX seq=2340 jpeg_len=4685 crc32=0x7b559580 chunks=4
+I (101533) rc_video: Sent 2340 | cap_fps=29.8 send_fps=29.8 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.1 cache=0.0 subsample=0.0 encode=18.6 send=3.6 total=31.4 | JPEG=4690B
+I (101540) rc_video: [VIDEO-TX] handoff cap=2367 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (101553) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (101693) rc_net: [CAM-PROBE] Video TX seq=2370 jpeg_len=4691 crc32=0x1c639850 chunks=4
+I (102531) rc_video: Sent 2370 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.6 send=3.5 total=31.2 | JPEG=4666B
+I (102538) rc_video: [VIDEO-TX] handoff cap=2397 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (102551) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (102690) rc_net: [CAM-PROBE] Video TX seq=2400 jpeg_len=4685 crc32=0x7b559580 chunks=4
+I (103531) rc_video: Sent 2400 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.6 total=31.3 | JPEG=4694B
+I (103538) rc_video: [VIDEO-TX] handoff cap=2427 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (103550) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (103689) rc_net: [CAM-PROBE] Video TX seq=2430 jpeg_len=4678 crc32=0xfd26bbec chunks=4
+I (104531) rc_video: Sent 2430 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.7 send=3.2 total=31.3 | JPEG=4667B
+I (104539) rc_video: [VIDEO-TX] handoff cap=2457 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (104551) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (104689) rc_net: [CAM-PROBE] Video TX seq=2460 jpeg_len=4677 crc32=0x99836112 chunks=4
+I (105534) rc_video: Sent 2460 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.6 send=3.4 total=31.3 | JPEG=4643B
+I (105542) rc_video: [VIDEO-TX] handoff cap=2487 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (105554) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (105691) rc_net: [CAM-PROBE] Video TX seq=2490 jpeg_len=4689 crc32=0x3bed02da chunks=4
+I (106529) rc_video: Sent 2490 | cap_fps=30.2 send_fps=30.2 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.6 send=3.3 total=31.0 | JPEG=4642B
+I (106536) rc_video: [VIDEO-TX] handoff cap=2517 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (106548) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (106686) rc_net: [CAM-PROBE] Video TX seq=2520 jpeg_len=4678 crc32=0xfd26bbec chunks=4
+I (107529) rc_video: Sent 2520 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.3 total=31.2 | JPEG=4641B
+I (107536) rc_video: [VIDEO-TX] handoff cap=2547 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (107548) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (107685) rc_net: [CAM-PROBE] Video TX seq=2550 jpeg_len=4636 crc32=0x7f00d98f chunks=4
+I (108529) rc_video: Sent 2550 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.3 total=31.1 | JPEG=4630B
+I (108536) rc_video: [VIDEO-TX] handoff cap=2577 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (108549) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (108687) rc_net: [CAM-PROBE] Video TX seq=2580 jpeg_len=4626 crc32=0xb1daf5b5 chunks=4
+I (109533) rc_video: Sent 2580 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.5 total=31.3 | JPEG=4662B
+I (109541) rc_video: [VIDEO-TX] handoff cap=2607 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (109553) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (109690) rc_net: [CAM-PROBE] Video TX seq=2610 jpeg_len=4628 crc32=0xff6c66b3 chunks=4
+I (110533) rc_video: Sent 2610 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.3 | JPEG=4653B
+I (110541) rc_video: [VIDEO-TX] handoff cap=2637 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (110553) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (110691) rc_net: [CAM-PROBE] Video TX seq=2640 jpeg_len=4628 crc32=0xff6c66b3 chunks=4
+I (111531) rc_video: Sent 2640 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.1 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.1 | JPEG=4678B
+I (111538) rc_video: [VIDEO-TX] handoff cap=2667 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (111551) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (111688) rc_net: [CAM-PROBE] Video TX seq=2670 jpeg_len=4668 crc32=0x78e1416b chunks=4
+I (112528) rc_video: Sent 2670 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.6 send=3.4 total=31.1 | JPEG=4660B
+I (112535) rc_video: [VIDEO-TX] handoff cap=2697 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (112548) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (112685) rc_net: [CAM-PROBE] Video TX seq=2700 jpeg_len=4651 crc32=0xfb56bbd8 chunks=4
+I (113525) rc_video: Sent 2700 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.5 send=3.3 total=31.1 | JPEG=4688B
+I (113532) rc_video: [VIDEO-TX] handoff cap=2727 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (113545) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (113682) rc_net: [CAM-PROBE] Video TX seq=2730 jpeg_len=4656 crc32=0x0a6206ec chunks=4
+I (114527) rc_video: Sent 2730 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.6 send=3.6 total=31.4 | JPEG=4696B
+I (114535) rc_video: [VIDEO-TX] handoff cap=2757 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (114547) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (114685) rc_net: [CAM-PROBE] Video TX seq=2760 jpeg_len=4675 crc32=0x7a4c17d7 chunks=4
+I (115527) rc_video: Sent 2760 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.3 | JPEG=4687B
+I (115535) rc_video: [VIDEO-TX] handoff cap=2787 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (115547) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (115687) rc_net: [CAM-PROBE] Video TX seq=2790 jpeg_len=4685 crc32=0x7b559580 chunks=4
+I (116523) rc_video: Sent 2790 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.2 | JPEG=4684B
+I (116531) rc_video: [VIDEO-TX] handoff cap=2817 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (116543) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (116682) rc_net: [CAM-PROBE] Video TX seq=2820 jpeg_len=4689 crc32=0x909e5929 chunks=4
+I (117519) rc_video: Sent 2820 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.4 total=31.2 | JPEG=4689B
+I (117526) rc_video: [VIDEO-TX] handoff cap=2847 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (117538) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (117676) rc_net: [CAM-PROBE] Video TX seq=2850 jpeg_len=4686 crc32=0x5edd477f chunks=4
+I (118518) rc_video: Sent 2850 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.4 total=31.2 | JPEG=4693B
+I (118525) rc_video: [VIDEO-TX] handoff cap=2877 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (118538) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (118675) rc_net: [CAM-PROBE] Video TX seq=2880 jpeg_len=4685 crc32=0x7b559580 chunks=4
+I (119524) rc_video: Sent 2880 | cap_fps=29.8 send_fps=29.8 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.7 send=3.6 total=31.5 | JPEG=4684B
+I (119532) rc_video: [VIDEO-TX] handoff cap=2907 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (119544) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (119681) rc_net: [CAM-PROBE] Video TX seq=2910 jpeg_len=4677 crc32=0x07f792ce chunks=4
+I (120524) rc_video: Sent 2910 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.6 total=31.2 | JPEG=4694B
+I (120531) rc_video: [VIDEO-TX] handoff cap=2937 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (120544) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (120682) rc_net: [CAM-PROBE] Video TX seq=2940 jpeg_len=4676 crc32=0xc52aa45a chunks=4
+I (121525) rc_video: Sent 2940 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.4 total=31.3 | JPEG=4626B
+I (121533) rc_video: [VIDEO-TX] handoff cap=2967 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (121545) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (121681) rc_net: [CAM-PROBE] Video TX seq=2970 jpeg_len=4678 crc32=0xfd26bbec chunks=4
+I (122525) rc_video: Sent 2970 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.1 cache=0.0 subsample=0.0 encode=18.6 send=3.5 total=31.1 | JPEG=4638B
+I (122532) rc_video: [VIDEO-TX] handoff cap=2997 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (122544) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (122683) rc_net: [CAM-PROBE] Video TX seq=3000 jpeg_len=4666 crc32=0xa5f7d2e2 chunks=4
+I (123521) rc_video: Sent 3000 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.3 total=31.1 | JPEG=4637B
+I (123528) rc_video: [VIDEO-TX] handoff cap=3027 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (123541) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (123680) rc_net: [CAM-PROBE] Video TX seq=3030 jpeg_len=4626 crc32=0x72268f6f chunks=4
+I (124530) rc_video: Sent 3030 | cap_fps=29.7 send_fps=29.7 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.5 send=3.6 total=31.5 | JPEG=4636B
+I (124538) rc_video: [VIDEO-TX] handoff cap=3057 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (124550) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (124687) rc_net: [CAM-PROBE] Video TX seq=3060 jpeg_len=4628 crc32=0xff6c66b3 chunks=4
+I (125532) rc_video: Sent 3060 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.1 cache=0.0 subsample=0.0 encode=18.5 send=3.6 total=31.3 | JPEG=4660B
+I (125540) rc_video: [VIDEO-TX] handoff cap=3087 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (125552) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (125687) rc_net: [CAM-PROBE] Video TX seq=3090 jpeg_len=4623 crc32=0x8ed03bb8 chunks=4
+I (126538) rc_video: Sent 3090 | cap_fps=29.8 send_fps=29.8 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.6 send=3.5 total=31.3 | JPEG=4656B
+I (126546) rc_video: [VIDEO-TX] handoff cap=3117 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (126558) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (126695) rc_net: [CAM-PROBE] Video TX seq=3120 jpeg_len=4628 crc32=0xff6c66b3 chunks=4
+I (127536) rc_video: Sent 3120 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.1 | JPEG=4657B
+I (127544) rc_video: [VIDEO-TX] handoff cap=3147 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (127556) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (127693) rc_net: [CAM-PROBE] Video TX seq=3150 jpeg_len=4651 crc32=0xfb56bbd8 chunks=4
+I (128527) rc_video: Sent 3150 | cap_fps=30.3 send_fps=30.3 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.1 cache=0.0 subsample=0.0 encode=18.5 send=3.3 total=30.9 | JPEG=4659B
+I (128534) rc_video: [VIDEO-TX] handoff cap=3177 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (128547) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (128685) rc_net: [CAM-PROBE] Video TX seq=3180 jpeg_len=4655 crc32=0xfb06839b chunks=4
+I (129525) rc_video: Sent 3180 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.6 send=3.3 total=31.1 | JPEG=4698B
+I (129533) rc_video: [VIDEO-TX] handoff cap=3207 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (129545) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (129690) rc_net: [CAM-PROBE] Video TX seq=3210 jpeg_len=4687 crc32=0xc97eb5dd chunks=4
+I (130532) rc_video: Sent 3210 | cap_fps=29.8 send_fps=29.8 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.7 send=3.5 total=31.5 | JPEG=4683B
+I (130540) rc_video: [VIDEO-TX] handoff cap=3237 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (130552) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (130691) rc_net: [CAM-PROBE] Video TX seq=3240 jpeg_len=4651 crc32=0xfb56bbd8 chunks=4
+I (131533) rc_video: Sent 3240 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4684B
+I (131541) rc_video: [VIDEO-TX] handoff cap=3267 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (131553) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (131691) rc_net: [CAM-PROBE] Video TX seq=3270 jpeg_len=4689 crc32=0x726e01dd chunks=4
+I (132530) rc_video: Sent 3270 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.1 | JPEG=4691B
+I (132537) rc_video: [VIDEO-TX] handoff cap=3297 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (132550) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (132689) rc_net: [CAM-PROBE] Video TX seq=3300 jpeg_len=4696 crc32=0x663ec1b0 chunks=4
+I (133527) rc_video: Sent 3300 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4685B
+I (133535) rc_video: [VIDEO-TX] handoff cap=3327 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (133547) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (133685) rc_net: [CAM-PROBE] Video TX seq=3330 jpeg_len=4685 crc32=0x7b559580 chunks=4
+I (134530) rc_video: Sent 3330 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.5 send=3.6 total=31.4 | JPEG=4696B
+I (134538) rc_video: [VIDEO-TX] handoff cap=3357 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (134550) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (134693) rc_net: [CAM-PROBE] Video TX seq=3360 jpeg_len=4685 crc32=0x7b559580 chunks=4
+I (135541) rc_video: Sent 3360 | cap_fps=29.7 send_fps=29.7 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.7 send=3.6 total=31.5 | JPEG=4685B
+I (135548) rc_video: [VIDEO-TX] handoff cap=3387 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (135561) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (135699) rc_net: [CAM-PROBE] Video TX seq=3390 jpeg_len=4689 crc32=0x5b7468ac chunks=4
+I (136543) rc_video: Sent 3390 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.4 total=31.2 | JPEG=4683B
+I (136551) rc_video: [VIDEO-TX] handoff cap=3417 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (136563) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (136701) rc_net: [CAM-PROBE] Video TX seq=3420 jpeg_len=4678 crc32=0xfd26bbec chunks=4
+I (137544) rc_video: Sent 3420 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.2 | JPEG=4643B
+I (137551) rc_video: [VIDEO-TX] handoff cap=3447 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (137564) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (137701) rc_net: [CAM-PROBE] Video TX seq=3450 jpeg_len=4670 crc32=0x1305b080 chunks=4
+I (138546) rc_video: Sent 3450 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.6 send=3.4 total=31.2 | JPEG=4625B
+I (138553) rc_video: [VIDEO-TX] handoff cap=3477 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (138565) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (138703) rc_net: [CAM-PROBE] Video TX seq=3480 jpeg_len=4675 crc32=0x71b25de1 chunks=4
+I (139544) rc_video: Sent 3480 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.1 | JPEG=4629B
+I (139552) rc_video: [VIDEO-TX] handoff cap=3507 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (139564) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (139702) rc_net: [CAM-PROBE] Video TX seq=3510 jpeg_len=4628 crc32=0xff6c66b3 chunks=4
+I (140549) rc_video: Sent 3510 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.4 total=31.3 | JPEG=4648B
+I (140556) rc_video: [VIDEO-TX] handoff cap=3537 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (140569) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (140708) rc_net: [CAM-PROBE] Video TX seq=3540 jpeg_len=4641 crc32=0x4688f8ad chunks=4
+I (141554) rc_video: Sent 3540 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.6 total=31.3 | JPEG=4666B
+I (141561) rc_video: [VIDEO-TX] handoff cap=3567 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (141574) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (141713) rc_net: [CAM-PROBE] Video TX seq=3570 jpeg_len=4639 crc32=0xf7580ae2 chunks=4
+I (142556) rc_video: Sent 3570 | cap_fps=29.9 send_fps=29.9 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.6 total=31.3 | JPEG=4652B
+I (142564) rc_video: [VIDEO-TX] handoff cap=3597 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (142576) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (142713) rc_net: [CAM-PROBE] Video TX seq=3600 jpeg_len=4628 crc32=0xff6c66b3 chunks=4
+I (143548) rc_video: Sent 3600 | cap_fps=30.2 send_fps=30.2 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.1 | JPEG=4656B
+I (143555) rc_video: [VIDEO-TX] handoff cap=3627 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (143568) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (143705) rc_net: [CAM-PROBE] Video TX seq=3630 jpeg_len=4660 crc32=0x875ef1f4 chunks=4
+I (144546) rc_video: Sent 3630 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.6 send=3.4 total=31.2 | JPEG=4656B
+I (144553) rc_video: [VIDEO-TX] handoff cap=3657 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (144566) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (144704) rc_net: [CAM-PROBE] Video TX seq=3660 jpeg_len=4662 crc32=0x62faf04c chunks=4
+I (145552) rc_video: Sent 3660 | cap_fps=29.8 send_fps=29.8 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.5 send=3.4 total=31.3 | JPEG=4689B
+I (145560) rc_video: [VIDEO-TX] handoff cap=3687 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (145572) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (145712) rc_net: [CAM-PROBE] Video TX seq=3690 jpeg_len=4651 crc32=0xfb56bbd8 chunks=4
+I (146554) rc_video: Sent 3690 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.1 cache=0.0 subsample=0.0 encode=18.5 send=3.7 total=31.3 | JPEG=4681B
+I (146562) rc_video: [VIDEO-TX] handoff cap=3717 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (146574) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (146711) rc_net: [CAM-PROBE] Video TX seq=3720 jpeg_len=4681 crc32=0x8efbc526 chunks=4
+I (147552) rc_video: Sent 3720 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.3 total=31.1 | JPEG=4686B
+I (147559) rc_video: [VIDEO-TX] handoff cap=3747 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (147571) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (147708) rc_net: [CAM-PROBE] Video TX seq=3750 jpeg_len=4694 crc32=0x5e570e31 chunks=4
+I (148548) rc_video: Sent 3750 | cap_fps=30.1 send_fps=30.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=18.6 send=3.2 total=31.0 | JPEG=4693B
+I (148556) rc_video: [VIDEO-TX] handoff cap=3777 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (148568) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (148703) rc_net: [CAM-PROBE] Video TX seq=3780 jpeg_len=4685 crc32=0x7b559580 chunks=4
+I (149547) rc_video: Sent 3780 | cap_fps=30.0 send_fps=30.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=9.2 cache=0.0 subsample=0.0 encode=18.5 send=3.5 total=31.2 | JPEG=4690B
+I (149555) rc_video: [VIDEO-TX] handoff cap=3807 get=0 select_fail=0 finished=0 signal=0 acquire=0 acquire_fail=0 release_fail=0 backup=0/0
+I (149567) rc_video: [STABLE-CAPTURE] pause=0/0 timeout=0 quiesce=0 resume=0 lifecycle_errors=0 repairs=0 staged_events=0 copies=0 fallback=0 errors=0
+I (149706) rc_net: [CAM-PROBE] Video TX seq=3810 jpeg_len=4691 crc32=0x1c639850 chunks=4

@@ -1,0 +1,300 @@
+ 00310000 00100000
+I (2840) boot: End of partition table
+I (2843) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=2be68h (179816) map
+I (2960) esp_image: segment 1: paddr=0003be90 vaddr=3fca0a00 size=04188h ( 16776) load
+I (2971) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=b2080h (729216) map
+I (3417) esp_image: segment 3: paddr=000f20a8 vaddr=3fca4b88 size=013f8h (  5112) load
+I (3420) esp_image: segment 4: paddr=000f34a8 vaddr=40374000 size=1c970h (117104) load
+I (3497) esp_image: segment 5: paddr=0010fe20 vaddr=50000000 size=00020h (    32) load
+I (3508) boot: Loaded app from partition at offset 0x10000
+I (3508) boot: Disabling RNG early entropy source...
+I (3520) esp_psram: Found 8MB PSRAM device
+I (3520) esp_psram: Speed: 80MHz
+I (3521) cpu_start: Multicore app
+I (4439) esp_psram: SPI SRAM memory test OK
+I (4447) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (4448) cpu_start: Pro cpu start user code
+I (4448) cpu_start: cpu freq: 240000000 Hz
+I (4450) app_init: Application information:
+I (4454) app_init: Project name:     rc_tank_demo
+I (4458) app_init: App version:      1
+I (4462) app_init: Compile time:     Aug 17 2026 22:03:49
+I (4467) app_init: ELF file SHA256:  54d6fec45...
+I (4471) app_init: ESP-IDF:          v5.5.4
+I (4475) efuse_init: Min chip rev:     v0.0
+I (4479) efuse_init: Max chip rev:     v0.99 
+I (4483) efuse_init: Chip rev:         v0.2
+I (4487) heap_init: Initializing. RAM available for dynamic allocation:
+I (4493) heap_init: At 3FCA9F90 len 0003F780 (253 KiB): RAM
+I (4499) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (4504) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (4509) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (4515) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (4522) spi_flash: detected chip: generic
+I (4525) spi_flash: flash io: dio
+I (4529) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (4534) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (4541) main_task: Started on CPU0
+I (4565) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations
+I (4566) main_task: Calling app_main()
+I (4582) rc_tank: === RC Tank Demo (EX-035) Role: TANK ===
+I (4582) rc_tank: Startup delay 10 s (open serial monitor now)...
+I (4582) rc_tank:   starting in 10 s
+I (5585) rc_tank:   starting in 9 s
+I (6585) rc_tank:   starting in 8 s
+I (7585) rc_tank:   starting in 7 s
+I (8585) rc_tank:   starting in 6 s
+I (9585) rc_tank:   starting in 5 s
+I (10585) rc_tank:   starting in 4 s
+I (11585) rc_tank:   starting in 3 s
+I (12585) rc_tank:   starting in 2 s
+I (13585) rc_tank:   starting in 1 s
+I (14585) rc_tank: Starting Tank role (P1: network, P2: control, P3: video)
+I (14585) board_laiwfs300: init board support package
+I (14585) board_laiwfs300: init capability registry
+I (14589) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (14596) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (14602) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (14609) board_laiwfs300:   I2C device ACK at 0x18
+I (14613) board_laiwfs300:   I2C device ACK at 0x21
+I (14616) board_laiwfs300:   I2C device ACK at 0x22
+I (14624) board_laiwfs300:   I2C device ACK at 0x38
+I (14626) board_laiwfs300:   I2C device ACK at 0x40
+I (14632) board_laiwfs300:   I2C device ACK at 0x51
+I (14638) board_laiwfs300:   I2C device ACK at 0x68
+I (14641) board_laiwfs300: --- I2C scan done: 7 device(s) found ---
+W (14645) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (14651) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (14656) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (14661) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (14666) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (14671) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+I (14677) board_laiwfs300: SP0A39 (Camera) found at 0x21
+I (14684) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (14687) board_laiwfs300: ES7210 chip ID: 0x72
+I (14693) board_laiwfs300: AIP8563 RTC time: 09:44:40 (BCD raw)
+I (14697) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (14702) board_laiwfs300: init SPI bus manager
+I (14708) board_laiwfs300: init ADC service
+I (14711) board_adc: ADC1 oneshot initialized
+I (14715) board_laiwfs300: init board power service
+I (14720) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=4095 (~3100 mV)
+I (14725) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=1604 (~1214 mV)
+I (14731) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (14737) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (14746) io_expander: TPT29555A initialized at 0x22
+I (14748) board_laiwfs300: IO expander initialized OK
+I (14752) board_laiwfs300: init module detect
+I (14756) board_laiwfs300: register detection rules
+I (14761) board_laiwfs300: register default capabilities
+I (14766) board_laiwfs300: board init complete (ioex=OK)
+I (14771) rc_tank: [STEP] Motor init starting...
+I (14776) board_motor: motor input 1 -> GPIO5 / LEDC channel 0
+I (14781) board_motor: motor input 2 -> GPIO4 / LEDC channel 1
+I (14787) board_motor: motor input 3 -> GPIO37 / LEDC channel 2
+I (14792) board_motor: motor input 4 -> GPIO45 / LEDC channel 3
+I (14798) rc_control: Motor initialized
+I (14801) rc_tank: [STEP] Motor init OK
+I (14805) rc_tank: [STEP] Display init starting...
+I (14809) rc_video: Initializing Tank display
+I (14815) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+E (14960) spi: spi_bus_initialize(816): SPI bus already initialized.
+I (15081) display_hal: ST7789V3 LCD initialized
+I (15081) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=10000000
+I (15223) rc_video: Tank display initialized (pixel tank rendered)
+I (15223) rc_tank: [STEP] Display init OK
+I (15223) rc_tank: [STEP] Camera init starting...
+I (15226) rc_video: Initializing camera (SP0A39 640x480 VYUY)
+I (15231) board_camera: initializing SP0A39 camera
+I (15236) camera_hal: init SP0A39 DVP 640x480 (SCCB manual mode)
+I (15241) camera_hal: configuring IOEX pins for camera RESET/PWDN
+I (15248) camera_hal: PWDN=HIGH (power down)
+I (15261) camera_hal: PWDN=LOW (release sensor)
+I (15461) camera_hal: RESET=LOW (assert reset)
+I (15481) camera_hal: RESET=HIGH (release reset)
+I (16481) camera_hal: full I2C scan after camera power-up (looking for new devices)...
+I (16483) camera_hal:   post-powerup ACK at 0x18
+I (16485) camera_hal:   post-powerup ACK at 0x21
+I (16486) camera_hal:   post-powerup ACK at 0x22
+I (16493) camera_hal:   post-powerup ACK at 0x38
+I (16496) camera_hal:   post-powerup ACK at 0x40
+I (16501) camera_hal:   post-powerup ACK at 0x51
+I (16506) camera_hal:   post-powerup ACK at 0x68
+I (16510) camera_hal: DVP GPIO diagnostics (checking PCLK/VSYNC/HSYNC activity)...
+I (16576) camera_hal: DVP diagnostics: PCLK_changes=0 VSYNC_changes=0 HSYNC_changes=0
+W (16576) camera_hal: PCLK has no transitions - MCLK likely not reaching sensor or sensor not active
+I (16581) camera_hal: using sensor address 0x21
+I (16585) camera_hal: SP0A39 I2C device added at 0x21
+I (16592) camera_hal: SP0A39 chip ID: 0x0A39
+I (16714) camera_hal: SP0A39 register init done (359 regs)
+I (16714) camera_hal: camera HAL initialized (sensor ready, DVP capture not yet implemented)
+I (16716) board_camera: camera ready
+I (16846) rc_video:   3 framebuffers allocated (600 KB each)
+I (16848) rc_video: Camera initialized
+I (16848) rc_tank: [STEP] Camera init OK
+I (16848) rc_tank: [STEP] Audio play init starting...
+I (16852) rc_audio: Initializing audio playback
+I (16859) board_audio: I2S0 duplex: TX=STD RX=TDM MCLK=42 BCLK=41 WS=39 DOUT=38 DIN=40 rate=16000
+I (16872) ES8311: Work in Slave mode
+I (16878) ES7210: Work in Slave mode
+I (16885) ES7210: Enable ES7210_INPUT_MIC1
+I (16888) ES7210: Enable ES7210_INPUT_MIC2
+I (16891) ES7210: Enable ES7210_INPUT_MIC3
+I (16893) ES7210: Enable ES7210_INPUT_MIC4
+I (16897) ES7210: Enable TDM mode
+I (16901) board_audio: codec devices created (ES8311 out, ES7210 in)
+I (16901) I2S_IF: Paired data: 0x3fceec40, current mode: playback, paired in_enable: 0, paired out_enable: 0
+I (16908) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+I (16917) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (16940) Adev_Codec: Open codec device OK
+I (16941) I2S_IF: Peer mode playback need extend bits 32 to 64
+I (16942) I2S_IF: TDM: RX, data_bit: 16, slot_bit: 16, ws_width: 32, total_slot: 4, slot_mask: 0xf
+I (16948) I2S_IF: TDM: RX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (16955) I2S_IF: STD: TX, data_bit: 16, slot_bit: 32, ws_width: 32, slot_mode: MONO, slot_mask: 0x1
+I (16963) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (16972) ES7210: Bits 16
+I (16980) ES7210: Enable ES7210_INPUT_MIC1
+I (16983) ES7210: Enable ES7210_INPUT_MIC2
+I (16986) ES7210: Enable ES7210_INPUT_MIC3
+I (16989) ES7210: Enable ES7210_INPUT_MIC4
+I (16992) ES7210: Enable TDM mode
+I (16998) ES7210: Unmuted
+I (16998) Adev_Codec: Open codec device OK
+I (17000) board_audio: audio initialized (esp_codec_dev)
+I (17003) rc_audio: Audio playback initialized
+I (17007) rc_tank: [STEP] Audio play init OK
+I (17011) rc_tank: [STEP] Network init starting...
+I (17016) rc_net: Initializing as SoftAP (Tank)
+I (17021) pp: pp rom version: e7ae62f
+I (17023) net80211: net80211 rom version: e7ae62f
+I (17029) wifi:wifi driver task: 3fce7fac, prio:23, stack:6656, core=0
+I (17040) wifi:wifi firmware version: 0947e8b
+I (17041) wifi:wifi certification version: v7.0
+I (17042) wifi:config NVS flash: enabled
+I (17045) wifi:config nano formatting: disabled
+I (17050) wifi:Init data frame dynamic rx buffer num: 32
+I (17055) wifi:Init static rx mgmt buffer num: 5
+I (17059) wifi:Init management short buffer num: 32
+I (17064) wifi:Init dynamic tx buffer num: 32
+I (17068) wifi:Init static tx FG buffer num: 2
+I (17072) wifi:Init static rx buffer size: 1600
+I (17076) wifi:Init static rx buffer num: 10
+I (17080) wifi:Init dynamic rx buffer num: 32
+I (17085) wifi_init: rx ba win: 6
+I (17087) wifi_init: accept mbox: 6
+I (17090) wifi_init: tcpip mbox: 16
+I (17094) wifi_init: udp mbox: 6
+I (17097) wifi_init: tcp mbox: 6
+I (17100) wifi_init: tcp tx win: 32768
+I (17103) wifi_init: tcp rx win: 32768
+I (17107) wifi_init: tcp mss: 1440
+I (17110) wifi_init: WiFi IRAM OP enabled
+I (17113) wifi_init: WiFi RX IRAM OP enabled
+I (17118) rc_net: AP set_mode/config, SSID=RC_TANK_F3AE25 ch=1
+I (17128) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (17173) wifi:mode : softAP (44:1b:f6:f3:ae:25)
+I (17178) wifi:Total power save buffer number: 16
+I (17178) wifi:Init max length of beacon: 752/752
+I (17179) wifi:Init max length of beacon: 752/752
+I (17182) rc_net: SoftAP started, SSID: RC_TANK_F3AE25, Password: 12345678
+I (17183) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (17195) rc_tank: [STEP] Network init OK
+I (17199) rc_tank: Tank SoftAP ready, waiting for remote...
+I (17204) rc_control: Ctrl RX task started
+I (17208) rc_control: Tank control started
+I (17212) rc_tank: Tank running (control active)
+I (17216) rc_tank: app_main done, idle loop
+I (30188) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (30189) wifi:station: 44:1b:f6:f3:ae:70 join, AID=1, bgn, 40U
+I (30212) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:70
+I (30252) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (30253) rc_net: STA assigned IP: 192.168.4.2
+I (30253) rc_tank: Network connected, peer: 192.168.4.2
+I (30258) rc_net: Ctrl UDP socket bound to port 8001
+I (30264) rc_net: Video TCP listening on port 8002
+I (30268) rc_net: Audio TCP listening on port 8003
+I (30272) rc_tank: Socket channels started
+I (30290) rc_video: Tank video started
+I (30290) rc_audio: Audio RX task started
+I (30297) opus_codec: Opus decoder: rate=16000 ch=1 frame=960 samples
+I (30299) rc_audio: Audio play task started
+I (30299) rc_audio: Audio playback tasks started
+I (30299) rc_video: Video TX task started (sensor-driven, no artificial cap, Q=60)
+I (30309) rc_video: TX theory: raw=614400 B/frame, QVGA YUV=153600 B/frame, target10fps raw=1.54 MB/s
+I (31277) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:70), tid:0, ssn:0, winSize:64
+I (31290) rc_net: Video client connected
+I (31342) rc_net: Audio client connected
+W (34030) rc_net: Video send failed, closing client
+W (34033) rc_video: Video send failed: ESP_FAIL
+W (35120) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (36202) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (37287) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (38372) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (39454) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (40538) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (41622) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (42707) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (43788) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (44870) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (45954) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (47038) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (48123) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (49208) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (50294) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (51377) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (52460) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (53543) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (54627) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (55711) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (56794) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (57875) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (58960) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (60043) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (61127) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (62212) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (63296) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (64378) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (65462) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (66544) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (67627) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (68712) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (69796) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (70881) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (71966) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (73049) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (74136) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (75222) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (76307) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (77389) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (78473) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (79557) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (80641) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (81726) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (82807) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (83888) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (84972) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (86057) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (87143) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (88227) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (89311) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (90392) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (91475) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (92558) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (93640) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (94725) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (95808) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (96891) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (97973) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (99056) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (100141) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (101229) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (102311) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (103393) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (104477) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (105562) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (106646) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (107731) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (108816) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (109899) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (110984) rc_video: Video send failed: ESP_ERR_INVALID_STATE
+W (112066) rc_video: Video send failed: ESP_ERR_INVALID_STATE

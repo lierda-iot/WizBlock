@@ -1,0 +1,26 @@
+idf_component_register(
+    SRCS
+        "notifier_main.c"
+        "notifier_font.c"
+        "notifier_model.c"
+        "notifier_protocol.c"
+        "notifier_ui.c"
+        "notifier_wifi_config.c"
+        "third_party/jsmn.c"
+    INCLUDE_DIRS
+        "."
+        "third_party"
+    EMBED_FILES
+        "notifier_noto_sans_sc_16.bin"
+    REQUIRES
+        display_hal
+        esp_http_client
+        esp_netif
+        esp_wifi
+        laiwfs300
+        nvs_flash
+        touch_hal
+    PRIV_REQUIRES
+        esp_timer
+        lvgl
+)

@@ -1,0 +1,129 @@
+I (13263) camera_hal: full I2C scan after camera power-up (looking for new devices)...
+I (13265) camera_hal:   post-powerup ACK at 0x18
+I (13266) camera_hal:   post-powerup ACK at 0x21
+I (13268) camera_hal:   post-powerup ACK at 0x22
+I (13275) camera_hal:   post-powerup ACK at 0x38
+I (13278) camera_hal:   post-powerup ACK at 0x40
+I (13283) camera_hal:   post-powerup ACK at 0x51
+I (13288) camera_hal:   post-powerup ACK at 0x68
+I (13292) camera_hal: DVP GPIO diagnostics (checking PCLK/VSYNC/HSYNC activity)...
+I (13357) camera_hal: DVP diagnostics: PCLK_changes=0 VSYNC_changes=0 HSYNC_changes=0
+W (13357) camera_hal: PCLK has no transitions - MCLK likely not reaching sensor or sensor not active
+I (13363) camera_hal: using sensor address 0x21
+I (13367) camera_hal: SP0A39 I2C device added at 0x21
+I (13373) camera_hal: SP0A39 chip ID: 0x0A39
+I (13496) camera_hal: SP0A39 register init done (359 regs)
+I (13496) camera_hal: camera HAL initialized (sensor ready, DVP capture not yet implemented)
+I (13498) board_camera: camera ready
+I (13627) rc_video:   3 framebuffers allocated (600 KB each)
+I (13629) rc_video: Camera initialized
+I (13629) rc_tank: [STEP] Camera init OK
+I (13629) rc_tank: [STEP] Audio play init starting...
+I (13634) rc_audio: Initializing audio playback
+I (13640) board_audio: I2S0 duplex: TX=STD RX=TDM MCLK=42 BCLK=41 WS=39 DOUT=38 DIN=40 rate=16000
+I (13653) ES8311: Work in Slave mode
+I (13659) ES7210: Work in Slave mode
+I (13666) ES7210: Enable ES7210_INPUT_MIC1
+I (13668) ES7210: Enable ES7210_INPUT_MIC2
+I (13671) ES7210: Enable ES7210_INPUT_MIC3
+I (13674) ES7210: Enable ES7210_INPUT_MIC4
+I (13677) ES7210: Enable TDM mode
+I (13681) board_audio: codec devices created (ES8311 out, ES7210 in)
+I (13681) I2S_IF: Paired data: 0x3fceeae4, current mode: playback, paired in_enable: 0, paired out_enable: 0
+I (13689) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+I (13697) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (13721) Adev_Codec: Open codec device OK
+I (13721) I2S_IF: Peer mode playback need extend bits 32 to 64
+I (13722) I2S_IF: TDM: RX, data_bit: 16, slot_bit: 16, ws_width: 32, total_slot: 4, slot_mask: 0xf
+I (13728) I2S_IF: TDM: RX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (13735) I2S_IF: STD: TX, data_bit: 16, slot_bit: 32, ws_width: 32, slot_mode: MONO, slot_mask: 0x1
+I (13744) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (13752) ES7210: Bits 16
+I (13760) ES7210: Enable ES7210_INPUT_MIC1
+I (13763) ES7210: Enable ES7210_INPUT_MIC2
+I (13766) ES7210: Enable ES7210_INPUT_MIC3
+I (13769) ES7210: Enable ES7210_INPUT_MIC4
+I (13772) ES7210: Enable TDM mode
+I (13778) ES7210: Unmuted
+I (13778) Adev_Codec: Open codec device OK
+I (13780) board_audio: audio initialized (esp_codec_dev)
+I (13783) rc_audio: Audio playback initialized
+I (13787) rc_tank: [STEP] Audio play init OK
+I (13791) rc_tank: [STEP] Network init starting...
+I (13796) rc_net: Initializing as SoftAP (Tank)
+I (13800) pp: pp rom version: e7ae62f
+I (13803) net80211: net80211 rom version: e7ae62f
+I (13810) wifi:wifi driver task: 3fce7ef0, prio:23, stack:6656, core=0
+I (13817) wifi:wifi firmware version: 0947e8b
+I (13818) wifi:wifi certification version: v7.0
+I (13822) wifi:config NVS flash: enabled
+I (13826) wifi:config nano formatting: disabled
+I (13830) wifi:Init data frame dynamic rx buffer num: 32
+I (13835) wifi:Init static rx mgmt buffer num: 5
+I (13839) wifi:Init management short buffer num: 32
+I (13844) wifi:Init dynamic tx buffer num: 32
+I (13848) wifi:Init static tx FG buffer num: 2
+I (13852) wifi:Init static rx buffer size: 1600
+I (13856) wifi:Init static rx buffer num: 10
+I (13860) wifi:Init dynamic rx buffer num: 32
+I (13865) wifi_init: rx ba win: 6
+I (13867) wifi_init: accept mbox: 6
+I (13871) wifi_init: tcpip mbox: 16
+I (13874) wifi_init: udp mbox: 6
+I (13877) wifi_init: tcp mbox: 6
+I (13880) wifi_init: tcp tx win: 5760
+I (13883) wifi_init: tcp rx win: 5760
+I (13886) wifi_init: tcp mss: 1440
+I (13890) wifi_init: WiFi IRAM OP enabled
+I (13893) wifi_init: WiFi RX IRAM OP enabled
+I (13898) rc_net: AP set_mode/config, SSID=RC_TANK_F3AE25 ch=1
+I (13978) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+W (13978) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration
+I (14013) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)
+I (14021) wifi:mode : softAP (44:1b:f6:f3:ae:25)
+I (14024) wifi:Total power save buffer number: 16
+I (14025) wifi:Init max length of beacon: 752/752
+I (14025) wifi:Init max length of beacon: 752/752
+I (14030) rc_net: SoftAP started, SSID: RC_TANK_F3AE25, Password: 12345678
+I (14031) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (14044) rc_tank: [STEP] Network init OK
+I (14048) rc_tank: Tank SoftAP ready, waiting for remote...
+I (14053) rc_control: Ctrl RX task started
+I (14057) rc_control: Tank control started
+I (14061) rc_tank: Tank running (control active)
+I (14065) rc_tank: app_main done, idle loop
+I (19787) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (19788) wifi:station: 44:1b:f6:f3:ae:70 join, AID=1, bgn, 40U
+I (19830) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:70
+I (19892) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (19892) rc_net: STA assigned IP: 192.168.4.2
+I (19892) rc_tank: Network connected, peer: 192.168.4.2
+I (19898) rc_net: Ctrl UDP socket bound to port 8001
+I (19902) rc_net: Video TCP listening on port 8002
+I (19907) rc_net: Audio TCP listening on port 8003
+I (19911) rc_tank: Socket channels started
+I (19934) rc_video: Video TX task started (sensor-driven, no artificial cap, Q=60)
+I (19935) rc_video: TX theory: raw=614400 B/frame, QVGA YUV=153600 B/frame, target10fps raw=1.54 MB/s
+I (19942) rc_video: Tank video started
+I (19943) rc_audio: Audio RX task started
+I (19953) opus_codec: Opus decoder: rate=16000 ch=1 frame=960 samples
+I (19953) rc_audio: Audio play task started
+I (19957) rc_audio: Audio playback tasks started
+I (20950) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:70), tid:0, ssn:0, winSize:64
+I (21019) rc_net: Video client connected
+I (21092) rc_net: Audio client connected
+I (25952) rc_video: Sent 30 | cap_fps=25.1 send_fps=5.0 | Avg(ms): wait=0.0 cache=0.0 subsample=45.7 encode=50.4 send=103.3 total=199.5 | JPEG=29730B
+I (31588) rc_video: Sent 60 | cap_fps=25.4 send_fps=5.3 | Avg(ms): wait=0.0 cache=0.0 subsample=45.6 encode=50.4 send=90.7 total=186.7 | JPEG=19715B
+I (36979) rc_video: Sent 90 | cap_fps=25.2 send_fps=5.6 | Avg(ms): wait=0.0 cache=0.0 subsample=45.4 encode=49.0 send=84.1 total=178.6 | JPEG=26929B
+I (42409) rc_video: Sent 120 | cap_fps=25.2 send_fps=5.5 | Avg(ms): wait=0.0 cache=0.0 subsample=45.3 encode=50.7 send=83.9 total=179.9 | JPEG=25146B
+I (47950) rc_video: Sent 150 | cap_fps=25.3 send_fps=5.4 | Avg(ms): wait=0.0 cache=0.0 subsample=45.7 encode=49.5 send=88.3 total=183.5 | JPEG=22843B
+I (53714) rc_video: Sent 180 | cap_fps=25.3 send_fps=5.2 | Avg(ms): wait=0.0 cache=0.0 subsample=45.4 encode=49.9 send=95.6 total=190.9 | JPEG=31985B
+I (58996) rc_video: Sent 210 | cap_fps=25.2 send_fps=5.7 | Avg(ms): wait=0.0 cache=0.0 subsample=45.7 encode=48.8 send=80.4 total=175.0 | JPEG=24464B
+I (64314) rc_video: Sent 240 | cap_fps=25.4 send_fps=5.6 | Avg(ms): wait=0.0 cache=0.0 subsample=45.9 encode=48.8 send=81.5 total=176.2 | JPEG=22130B
+I (69823) rc_video: Sent 270 | cap_fps=25.2 send_fps=5.4 | Avg(ms): wait=0.0 cache=0.0 subsample=45.5 encode=51.3 send=85.7 total=182.6 | JPEG=23301B
+I (75208) rc_video: Sent 300 | cap_fps=25.3 send_fps=5.6 | Avg(ms): wait=0.0 cache=0.0 subsample=45.5 encode=49.4 send=83.5 total=178.5 | JPEG=26723B
+I (80679) rc_video: Sent 330 | cap_fps=25.2 send_fps=5.5 | Avg(ms): wait=0.0 cache=0.0 subsample=45.5 encode=49.2 send=86.5 total=181.3 | JPEG=29123B
+I (86177) rc_video: Sent 360 | cap_fps=25.3 send_fps=5.5 | Avg(ms): wait=0.0 cache=0.0 subsample=45.8 encode=49.4 send=86.9 total=182.2 | JPEG=24666B
+I (91749) rc_video: Sent 390 | cap_fps=25.3 send_fps=5.4 | Avg(ms): wait=0.0 cache=0.0 subsample=45.4 encode=49.7 send=89.4 total=184.6 | JPEG=36320B
+I (96856) rc_video: Sent 420 | cap_fps=25.3 send_fps=5.9 | Avg(ms): wait=0.0 cache=0.0 subsample=46.0 encode=50.6 send=72.5 total=169.1 | JPEG=23527B
+I (102478) rc_video: Sent 450 | cap_fps=25.3 send_fps=5.3 | Avg(ms): wait=0.0 cache=0.0 subsample=46.2 encode=48.5 send=91.6 total=186.4 | JPEG=24913B

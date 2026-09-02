@@ -1,0 +1,280 @@
+I (13154) rc_tank:   starting in 2 s
+I (14154) rc_tank:   starting in 1 s
+W (15154) rc_tank: [CAM-DIAG-C16W] SP0A39 640x480 VYUY fixed RGB line repair build=Aug 25 2026_17:27:00; frame=614400B staged_dma=102400B half=51200B; GDMA-EOF direct copy; audio/control/transport=off; W1=30s W2..W7=10s; screen marker=01..07; W2/W5/W7=real; W3/W4/W6=pattern; all active frames use fixed RGB interpolation raw_y=392 rows=8; no row scan and no delay variables; rgb_gain=110%; full_probe=off
+I (15178) board_laiwfs300: init board support package
+I (15183) board_laiwfs300: init capability registry
+I (15187) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (15194) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (15199) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (15207) board_laiwfs300:   I2C device ACK at 0x15
+I (15210) board_laiwfs300:   I2C device ACK at 0x18
+I (15215) board_laiwfs300:   I2C device ACK at 0x21
+I (15219) board_laiwfs300:   I2C device ACK at 0x22
+I (15227) board_laiwfs300:   I2C device ACK at 0x40
+I (15230) board_laiwfs300:   I2C device ACK at 0x51
+I (15235) board_laiwfs300:   I2C device ACK at 0x68
+I (15239) board_laiwfs300: --- I2C scan done: 7 device(s) found ---
+W (15243) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (15249) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (15254) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (15259) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (15264) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (15269) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+I (15275) board_laiwfs300: SP0A39 (Camera) found at 0x21
+I (15281) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (15285) board_laiwfs300: ES7210 chip ID: 0x72
+I (15290) board_laiwfs300: AIP8563 RTC time: 05:02:26 (BCD raw)
+I (15295) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (15300) board_laiwfs300: init SPI bus manager
+I (15305) board_laiwfs300: init ADC service
+I (15308) board_adc: ADC1 oneshot initialized
+I (15312) board_laiwfs300: init board power service
+I (15318) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=2011 (~1522 mV)
+I (15323) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=1643 (~1243 mV)
+I (15329) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (15335) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (15343) io_expander: TPT29555A initialized at 0x22
+I (15345) board_laiwfs300: IO expander initialized OK
+I (15350) board_laiwfs300: init module detect
+I (15354) board_laiwfs300: register detection rules
+I (15359) board_laiwfs300: register default capabilities
+I (15364) board_laiwfs300: board init complete (ioex=OK)
+I (15369) rc_tank: [STEP] Display init starting...
+W (15373) rc_video: [CAM-DIAG-C16W] initializing common landscape 240x180 presenter
+I (15382) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+E (15527) spi: spi_bus_initialize(816): SPI bus already initialized.
+I (15648) display_hal: ST7789V3 LCD initialized
+I (15648) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=20000000
+W (15718) rc_video: [CAM-DIAG-C16W] landscape 240x180 presenter initialized; diagnostic task owns LCD
+I (15718) rc_tank: [STEP] Display init OK
+W (15718) rc_video: [CAM-DIAG-C16W] preview canvas=0x3c0d0e80 bytes=86400 external=1; LCD source remains internal DMA chunk
+W (15719) rc_tank: [CAM-DIAG-C16W] proven-safe motor init before fixed-line repair windows
+W (15730) rc_video: [CAM-DIAG-C16W] display task uses direct/canvas matrix + common landscape submit, 240x180 at 80,0, 20MHz, 30/60/80-line chunks, raw_fingerprint=on
+I (15739) board_motor: motor input 1 -> GPIO5 / LEDC channel 0
+W (15753) rc_video: [CAM-DIAG-C16W] ownership=rc_capture_pool + backup
+I (15758) board_motor: motor input 2 -> GPIO4 / LEDC channel 1
+I (15770) board_motor: motor input 3 -> GPIO37 / LEDC channel 2
+I (15776) board_motor: motor input 4 -> GPIO45 / LEDC channel 3
+I (15782) rc_control: Motor initialized
+I (15785) rc_tank: [CAM-DIAG-C16W] Motor init OK
+W (15789) rc_tank: [CAM-DIAG-C16W] WINDOW_01 start: wifi=off camera=off display=black cache=none
+W (15798) rc_video: [CAM-DIAG-C16W] PROFILE window=1 sensor=real display=camera idle=0ms full_probe=0 cache=none capture=0
+W (45809) rc_tank: [CAM-DIAG-C16W] WINDOW_01 repeat: wifi=off camera=off display=black cache=none; camera_init=next
+W (45809) rc_video: [CAM-DIAG-C16W] PROFILE window=1 sensor=real display=camera idle=0ms full_probe=0 cache=none capture=0
+I (45819) rc_tank: [STEP] Camera init starting...
+I (45823) rc_video: Initializing camera (SP0A39 640x480 VYUY)
+W (45828) rc_video: [CAM-DIAG-C16W] staged DVP init core=0; Wi-Fi task core=0; configured_internal_dma=102400; free_internal=246275 largest_internal_dma=126976
+I (45842) board_camera: initializing SP0A39 camera mode=0 640x480
+I (45848) camera_hal: init SP0A39 DVP 640x480 (SCCB manual mode)
+I (45854) camera_hal: configuring IOEX pins for camera RESET/PWDN
+I (45861) camera_hal: PWDN=HIGH (power down)
+I (45874) camera_hal: PWDN=LOW (release sensor)
+I (46074) camera_hal: RESET=LOW (assert reset)
+I (46094) camera_hal: RESET=HIGH (release reset)
+I (47094) camera_hal: full I2C scan after camera power-up (diagnostic only)...
+I (47096) camera_hal:   post-powerup ACK at 0x15
+I (47096) camera_hal:   post-powerup ACK at 0x18
+I (47099) camera_hal:   post-powerup ACK at 0x21
+I (47103) camera_hal:   post-powerup ACK at 0x22
+I (47111) camera_hal:   post-powerup ACK at 0x40
+I (47114) camera_hal:   post-powerup ACK at 0x51
+I (47119) camera_hal:   post-powerup ACK at 0x68
+I (47122) camera_hal: DVP GPIO diagnostics (checking PCLK/VSYNC/HSYNC activity)...
+I (47188) camera_hal: DVP diagnostics: PCLK_changes=0 VSYNC_changes=0 HSYNC_changes=0
+W (47188) camera_hal: PCLK has no transitions - MCLK likely not reaching sensor or sensor not active
+I (47193) camera_hal: using sensor address 0x21
+I (47198) camera_hal: SP0A39 I2C device added at 0x21
+I (47204) camera_hal: SP0A39 chip ID: 0x0A39
+I (47326) camera_hal: SP0A39 register init done: VYUY 640x480 (359 regs)
+I (47327) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_table value=0x00 expected=0x01
+E (47330) camera_hal: camera_hal_verify_expected_output_p0_31(92): unexpected p0_31=0x00 at post_table
+W (47339) camera_hal: [CAM-PROBE] output state differs after table; continuing: ESP_ERR_INVALID_RESPONSE
+I (47368) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_delay value=0x01 expected=0x01
+I (47369) camera_hal: camera HAL initialized (sensor ready, DVP capture not yet implemented)
+I (47373) board_camera: camera ready
+I (47381) camera_hal: SP0A39 output regs: P0:1c=0x00 P0:30=0x01 P0:31=0x01 P1:32=0x15 P1:34=0xeb P1:35=0x00 P1:36=0x10
+I (47515) rc_video:   3 DMA-capable PSRAM framebuffers allocated (600 KB each)
+W (47558) rc_video: [CAM-DIAG-C16W] capture handoff uses rc_capture_pool + backup
+W (47558) rc_video: [DEBUG-C151] buffers fb0=0x3c0e6040 fb1=0x3c17c180 fb2=0x3c2122c0 backup=0x3c2a8400 payload=614400 storage=614400 alloc=614656 terminal_guard=256
+W (47569) rc_video: [DEBUG-C151] heap stage=framebuffers_allocated intact=1
+I (47577) dvp_ext: DVP Extended camera controller driver is initialized
+I (47581) dvp_ext: [STABLE-DVP] assembly uses GDMA-EOF direct copy; dma=102400 half=51200 queue_data_events=suppressed eof_desc=probe
+W (47593) rc_video: [DEBUG-C151] heap stage=dvp_controller_created_before_start intact=1
+W (47601) rc_video: [CAM-DIAG-C16W] staged DVP controller created; configured_internal_dma=102400 free_internal=139195 largest_internal_dma=63488
+I (47614) rc_video: Camera initialized
+I (47617) rc_tank: [STEP] Camera init OK
+W (47621) rc_tank: [CAM-DIAG-C16W] TSF_GUARD window=2 beacon=0 after=0us budget=0us result=ESP_OK
+W (47629) rc_tank: [CAM-DIAG-C16W] TSF_TARGET window=2 phase=0us tolerance=0us result=ESP_OK
+W (47637) rc_tank: [CAM-DIAG-C16W] RGB_GAIN window=2 requested=110 result=ESP_OK
+W (47645) rc_tank: [CAM-DIAG-C16W] PRESENT window=2 mode=canvas chunk_lines=60 repeats=1 result=ESP_OK
+W (47654) rc_tank: [CAM-DIAG-C16W] TAIL_DRAIN window=2 requested=0us result=ESP_OK
+W (47661) rc_tank: [CAM-DIAG-C16W] EOF_PROFILE window=2 mode=software_index settle=0us result=ESP_OK
+W (47670) rc_tank: [CAM-DIAG-C16W] ROW_PROFILE window=2 mode=4 boundary=392 band=8 result=ESP_OK
+W (47678) rc_video: [CAM-DIAG-C16W] PROFILE window=2 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv capture=0
+W (47689) rc_tank: [CAM-DIAG-C16W] WINDOW_02 start: wifi=off sensor=real display=camera idle=0ms full_probe=off cache=c2m_inv dvp=staged100k protocol=off beacon=0 guard_after=0us capture_budget=0us target=0us tolerance=0us rgb_gain=110% present=canvas chunk_lines=60 repeats=1 tail_drain=0us eof_mode=software_index eof_settle=0us row_mode=4 row_boundary=392 row_band=8
+W (47689) rc_video: [CAM-DIAG-C16W] LIGHT stage=complete window=1 sensor=real display=camera idle=0ms full_probe=0 cache=none frames=0 changes=0 sync_changes=0 sync_calls=0 sync_skips=0 unique=0 overflow=0 pre=00000000 post=00000000 luma_avg=0.0 luma_min=255 luma_max=0 luma_last=0 avg_probe=0.000ms max_probe=0.000ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (47723) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=dvp_started value=0x01 expected=0x01
+W (47802) rc_video: [CAM-DIAG-C16W] scaled camera preview enabled (240x180 at 80,0; DVP started)
+W (47807) rc_tank: [CAM-DIAG-C16W] staged-100KiB VYUY camera preview started while Wi-Fi is off
+W (52496) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=2 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv frames=30 changes=29 sync_changes=0 sync_calls=30 sync_skips=0 unique=8 overflow=22 pre=710246ab post=710246ab luma_avg=171.9 luma_min=160 luma_max=174 luma_last=174 avg_probe=2.705ms max_probe=3.308ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (52527) rc_video: [CAM-DIAG-C16W] ROW_MAP window=2 frame=30 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=30
+I (52551) rc_video: [CAM-DIAG-C16W] HEALTH window=2 display_frame=30 guard_errors=0 quiesce=30 resume_before=29 lifecycle_errors=0 pause_req=30 pause_ack=30 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=330 staged_copies=330 staged_bytes=16896000 staged_tail=0 staged_forward=60 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=330 eof_valid=330 eof_invalid=0 eof_mismatch=31 eof_half0=151 eof_half1=179 eof_mm_blocks=0/0/0/0/0/0/0/0/0/1/30 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (57404) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=2 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv frames=60 changes=59 sync_changes=0 sync_calls=60 sync_skips=0 unique=8 overflow=52 pre=7817d62d post=7817d62d luma_avg=172.6 luma_min=160 luma_max=175 luma_last=172 avg_probe=2.694ms max_probe=3.308ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (57435) rc_video: [CAM-DIAG-C16W] ROW_MAP window=2 frame=60 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=60
+I (57459) rc_video: [CAM-DIAG-C16W] HEALTH window=2 display_frame=60 guard_errors=0 quiesce=60 resume_before=59 lifecycle_errors=0 pause_req=60 pause_ack=60 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=660 staged_copies=660 staged_bytes=33792000 staged_tail=0 staged_forward=120 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=660 eof_valid=660 eof_invalid=0 eof_mismatch=61 eof_half0=301 eof_half1=359 eof_mm_blocks=0/0/0/0/0/0/0/0/0/1/60 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (57815) rc_tank: [DEBUG-C151] heap stage=window_2_end intact=1
+W (57818) camera_hal: [CAM-DIAG-C16I] SP0A39 test_pattern=on P1:32 before=0x15 write=0x95 read=0x80 expected_bit=0x80
+W (57933) rc_tank: [CAM-DIAG-C16W] TSF_GUARD window=3 beacon=0 after=0us budget=0us result=ESP_OK
+W (57934) rc_tank: [CAM-DIAG-C16W] TSF_TARGET window=3 phase=0us tolerance=0us result=ESP_OK
+W (57940) rc_tank: [CAM-DIAG-C16W] RGB_GAIN window=3 requested=110 result=ESP_OK
+W (57947) rc_tank: [CAM-DIAG-C16W] PRESENT window=3 mode=canvas chunk_lines=60 repeats=1 result=ESP_OK
+W (57956) rc_tank: [CAM-DIAG-C16W] TAIL_DRAIN window=3 requested=0us result=ESP_OK
+W (57963) rc_tank: [CAM-DIAG-C16W] EOF_PROFILE window=3 mode=software_index settle=0us result=ESP_OK
+W (57972) rc_tank: [CAM-DIAG-C16W] ROW_PROFILE window=3 mode=4 boundary=392 band=8 result=ESP_OK
+W (57980) rc_video: [CAM-DIAG-C16W] PROFILE window=3 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m_inv capture=63
+W (57992) rc_tank: [CAM-DIAG-C16W] WINDOW_03 start: wifi=off sensor=pattern display=camera idle=0ms full_probe=off cache=c2m_inv dvp=staged100k protocol=off beacon=0 guard_after=0us capture_budget=0us target=0us tolerance=0us rgb_gain=110% present=canvas chunk_lines=60 repeats=1 tail_drain=0us eof_mode=software_index eof_settle=0us row_mode=4 row_boundary=392 row_band=8
+W (58049) rc_video: [CAM-DIAG-C16W] LIGHT stage=complete window=2 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv frames=63 changes=62 sync_changes=0 sync_calls=63 sync_skips=0 unique=8 overflow=55 pre=1ba8d701 post=1ba8d701 luma_avg=171.8 luma_min=123 luma_max=175 luma_last=123 avg_probe=2.707ms max_probe=3.449ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+W (62826) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=3 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m_inv frames=30 changes=0 sync_changes=0 sync_calls=30 sync_skips=0 unique=1 overflow=0 pre=1ba8d701 post=1ba8d701 luma_avg=123.0 luma_min=123 luma_max=123 luma_last=123 avg_probe=2.680ms max_probe=2.754ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (62857) rc_video: [CAM-DIAG-C16W] ROW_MAP window=3 frame=93 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=93
+I (62881) rc_video: [CAM-DIAG-C16W] HEALTH window=3 display_frame=93 guard_errors=0 quiesce=93 resume_before=92 lifecycle_errors=0 pause_req=93 pause_ack=93 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=1023 staged_copies=1023 staged_bytes=52377600 staged_tail=0 staged_forward=186 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=1023 eof_valid=1023 eof_invalid=0 eof_mismatch=94 eof_half0=466 eof_half1=557 eof_mm_blocks=0/0/0/0/0/0/0/0/0/1/93 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (67733) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=3 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m_inv frames=60 changes=0 sync_changes=0 sync_calls=60 sync_skips=0 unique=1 overflow=0 pre=1ba8d701 post=1ba8d701 luma_avg=123.0 luma_min=123 luma_max=123 luma_last=123 avg_probe=2.681ms max_probe=2.755ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (67764) rc_video: [CAM-DIAG-C16W] ROW_MAP window=3 frame=123 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=123
+I (67789) rc_video: [CAM-DIAG-C16W] HEALTH window=3 display_frame=123 guard_errors=0 quiesce=123 resume_before=122 lifecycle_errors=0 pause_req=123 pause_ack=123 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=1353 staged_copies=1353 staged_bytes=69273600 staged_tail=0 staged_forward=246 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=1353 eof_valid=1353 eof_invalid=0 eof_mismatch=124 eof_half0=616 eof_half1=737 eof_mm_blocks=0/0/0/0/0/0/0/0/0/1/123 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (68024) rc_tank: [DEBUG-C151] heap stage=window_3_end_before_network intact=1
+I (68025) rc_tank: [STEP] Network init starting...
+I (68027) rc_net: Initializing as SoftAP (Tank)
+I (68031) pp: pp rom version: e7ae62f
+I (68033) net80211: net80211 rom version: e7ae62f
+I (68040) wifi:wifi driver task: 3fce6550, prio:23, stack:6656, core=0
+I (68048) wifi:wifi firmware version: 0947e8b
+I (68048) wifi:wifi certification version: v7.0
+I (68052) wifi:config NVS flash: enabled
+I (68056) wifi:config nano formatting: disabled
+I (68060) wifi:Init data frame dynamic rx buffer num: 32
+I (68066) wifi:Init static rx mgmt buffer num: 5
+I (68101) wifi:Init management short buffer num: 32
+I (68102) wifi:Init dynamic tx buffer num: 64
+I (68102) wifi:Init static tx FG buffer num: 2
+I (68106) wifi:Init static rx buffer size: 1600
+I (68111) wifi:Init static rx buffer num: 10
+I (68115) wifi:Init dynamic rx buffer num: 32
+I (68120) wifi_init: rx ba win: 6
+I (68122) wifi_init: accept mbox: 6
+I (68125) wifi_init: tcpip mbox: 16
+I (68128) wifi_init: udp mbox: 6
+I (68131) wifi_init: tcp mbox: 6
+I (68134) wifi_init: tcp tx win: 5760
+I (68137) wifi_init: tcp rx win: 5760
+I (68141) wifi_init: tcp mss: 1440
+I (68144) wifi_init: WiFi IRAM OP enabled
+I (68148) wifi_init: WiFi RX IRAM OP enabled
+I (68152) rc_net: AP set_mode/config, SSID=RC_TANK_F3AE79 ch=1
+I (68228) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+W (68229) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration
+I (68304) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)
+I (68315) wifi:mode : softAP (44:1b:f6:f3:ae:79)
+I (68320) wifi:Total power save buffer number: 32
+I (68321) wifi:Init max length of beacon: 752/752
+I (68322) wifi:Init max length of beacon: 752/752
+I (68325) rc_net: SoftAP started, SSID: RC_TANK_F3AE79, Password: 12345678
+I (68326) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (68338) rc_tank: [STEP] Network init OK
+I (68342) rc_tank: Tank SoftAP ready, waiting for remote...
+W (68347) rc_tank: [CAM-DIAG-C16W] PROTOCOL window=4 before=0x07 requested=0x07 after=0x07 name=bgn changed=0
+I (68363) wifi:Total power save buffer number: 32
+I (68366) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+W (68365) rc_tank: [CAM-DIAG-C16W] BEACON window=4 before=100 requested=200 after=200 changed=1
+W (68378) rc_tank: [CAM-DIAG-C16W] TSF_GUARD window=4 beacon=200 after=0us budget=0us result=ESP_OK
+W (68386) rc_tank: [CAM-DIAG-C16W] TSF_TARGET window=4 phase=0us tolerance=0us result=ESP_OK
+W (68395) rc_tank: [CAM-DIAG-C16W] RGB_GAIN window=4 requested=110 result=ESP_OK
+W (68402) rc_tank: [CAM-DIAG-C16W] PRESENT window=4 mode=canvas chunk_lines=60 repeats=1 result=ESP_OK
+W (68411) rc_tank: [CAM-DIAG-C16W] TAIL_DRAIN window=4 requested=0us result=ESP_OK
+W (68418) rc_tank: [CAM-DIAG-C16W] EOF_PROFILE window=4 mode=software_index settle=0us result=ESP_OK
+W (68427) rc_tank: [CAM-DIAG-C16W] ROW_PROFILE window=4 mode=4 boundary=392 band=8 result=ESP_OK
+W (68435) rc_video: [CAM-DIAG-C16W] PROFILE window=4 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m_inv capture=126
+W (68447) rc_tank: [CAM-DIAG-C16W] WINDOW_04 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=off cache=c2m_inv dvp=staged100k protocol=bgn beacon=200 guard_after=0us capture_budget=0us target=0us tolerance=0us rgb_gain=110% present=canvas chunk_lines=60 repeats=1 tail_drain=0us eof_mode=software_index eof_settle=0us row_mode=4 row_boundary=392 row_band=8
+W (68606) rc_video: [CAM-DIAG-C16W] LIGHT stage=complete window=3 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m_inv frames=64 changes=0 sync_changes=0 sync_calls=64 sync_skips=0 unique=1 overflow=0 pre=1ba8d701 post=1ba8d701 luma_avg=123.0 luma_min=123 luma_max=123 luma_last=123 avg_probe=2.789ms max_probe=7.933ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+W (73394) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=4 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m_inv frames=30 changes=0 sync_changes=0 sync_calls=30 sync_skips=0 unique=1 overflow=0 pre=1ba8d701 post=1ba8d701 luma_avg=123.0 luma_min=123 luma_max=123 luma_last=123 avg_probe=2.812ms max_probe=3.077ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (73425) rc_video: [CAM-DIAG-C16W] ROW_MAP window=4 frame=157 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=157
+I (73449) rc_video: [CAM-DIAG-C16W] HEALTH window=4 display_frame=157 guard_errors=0 quiesce=157 resume_before=156 lifecycle_errors=0 pause_req=157 pause_ack=157 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=1727 staged_copies=1727 staged_bytes=88422400 staged_tail=0 staged_forward=314 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=1727 eof_valid=1727 eof_invalid=0 eof_mismatch=158 eof_half0=786 eof_half1=941 eof_mm_blocks=0/0/0/0/0/0/0/0/0/1/157 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (78303) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=4 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m_inv frames=60 changes=0 sync_changes=0 sync_calls=60 sync_skips=0 unique=1 overflow=0 pre=1ba8d701 post=1ba8d701 luma_avg=123.0 luma_min=123 luma_max=123 luma_last=123 avg_probe=2.801ms max_probe=3.181ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (78334) rc_video: [CAM-DIAG-C16W] ROW_MAP window=4 frame=187 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=187
+I (78358) rc_video: [CAM-DIAG-C16W] HEALTH window=4 display_frame=187 guard_errors=0 quiesce=187 resume_before=186 lifecycle_errors=0 pause_req=187 pause_ack=187 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=2057 staged_copies=2057 staged_bytes=105318400 staged_tail=0 staged_forward=374 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=2057 eof_valid=2057 eof_invalid=0 eof_mismatch=188 eof_half0=936 eof_half1=1121 eof_mm_blocks=0/0/0/0/0/0/0/0/0/1/187 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (78516) camera_hal: [CAM-DIAG-C16I] SP0A39 test_pattern=off P1:32 before=0x80 write=0x00 read=0x15 expected_bit=0x00
+W (78617) rc_tank: [CAM-DIAG-C16W] PROTOCOL window=5 before=0x07 requested=0x07 after=0x07 name=bgn changed=0
+W (78618) rc_tank: [CAM-DIAG-C16W] BEACON window=5 before=200 requested=200 after=200 changed=0
+W (78625) rc_tank: [CAM-DIAG-C16W] TSF_GUARD window=5 beacon=200 after=0us budget=0us result=ESP_OK
+W (78633) rc_tank: [CAM-DIAG-C16W] TSF_TARGET window=5 phase=0us tolerance=0us result=ESP_OK
+W (78674) rc_tank: [CAM-DIAG-C16W] RGB_GAIN window=5 requested=110 result=ESP_OK
+W (78678) rc_tank: [CAM-DIAG-C16W] PRESENT window=5 mode=canvas chunk_lines=60 repeats=1 result=ESP_OK
+W (78687) rc_tank: [CAM-DIAG-C16W] TAIL_DRAIN window=5 requested=0us result=ESP_OK
+W (78694) rc_tank: [CAM-DIAG-C16W] EOF_PROFILE window=5 mode=software_index settle=0us result=ESP_OK
+W (78703) rc_tank: [CAM-DIAG-C16W] ROW_PROFILE window=5 mode=4 boundary=392 band=8 result=ESP_OK
+W (78711) rc_video: [CAM-DIAG-C16W] PROFILE window=5 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv capture=189
+W (78723) rc_tank: [CAM-DIAG-C16W] WINDOW_05 start: wifi=on sensor=real display=camera idle=0ms full_probe=off cache=c2m_inv dvp=staged100k protocol=bgn beacon=200 guard_after=0us capture_budget=0us target=0us tolerance=0us rgb_gain=110% present=canvas chunk_lines=60 repeats=1 tail_drain=0us eof_mode=software_index eof_settle=0us row_mode=4 row_boundary=392 row_band=8
+W (78791) rc_video: [CAM-DIAG-C16W] LIGHT stage=complete window=4 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m_inv frames=62 changes=1 sync_changes=0 sync_calls=62 sync_skips=0 unique=2 overflow=0 pre=bbd6b5e0 post=bbd6b5e0 luma_avg=123.8 luma_min=123 luma_max=174 luma_last=174 avg_probe=2.810ms max_probe=3.445ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+W (83567) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=5 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv frames=30 changes=29 sync_changes=0 sync_calls=30 sync_skips=0 unique=8 overflow=22 pre=2b6ead2b post=2b6ead2b luma_avg=172.0 luma_min=163 luma_max=173 luma_last=172 avg_probe=2.799ms max_probe=3.080ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (83598) rc_video: [CAM-DIAG-C16W] ROW_MAP window=5 frame=219 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=219
+I (83623) rc_video: [CAM-DIAG-C16W] HEALTH window=5 display_frame=219 guard_errors=0 quiesce=219 resume_before=218 lifecycle_errors=0 pause_req=219 pause_ack=219 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=2409 staged_copies=2409 staged_bytes=123340800 staged_tail=0 staged_forward=438 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=2409 eof_valid=2409 eof_invalid=0 eof_mismatch=220 eof_half0=1096 eof_half1=1313 eof_mm_blocks=0/0/0/0/0/0/0/0/0/1/219 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (88475) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=5 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv frames=60 changes=59 sync_changes=0 sync_calls=60 sync_skips=0 unique=8 overflow=52 pre=d19761cd post=d19761cd luma_avg=172.3 luma_min=163 luma_max=173 luma_last=172 avg_probe=2.800ms max_probe=3.297ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (88506) rc_video: [CAM-DIAG-C16W] ROW_MAP window=5 frame=249 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=249
+I (88530) rc_video: [CAM-DIAG-C16W] HEALTH window=5 display_frame=249 guard_errors=0 quiesce=249 resume_before=248 lifecycle_errors=0 pause_req=249 pause_ack=249 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=2739 staged_copies=2739 staged_bytes=140236800 staged_tail=0 staged_forward=498 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=2739 eof_valid=2739 eof_invalid=0 eof_mismatch=250 eof_half0=1246 eof_half1=1493 eof_mm_blocks=0/0/0/0/0/0/0/0/0/1/249 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (88757) camera_hal: [CAM-DIAG-C16I] SP0A39 test_pattern=on P1:32 before=0x00 write=0x80 read=0x80 expected_bit=0x80
+W (88858) rc_tank: [CAM-DIAG-C16W] PROTOCOL window=6 before=0x07 requested=0x07 after=0x07 name=bgn changed=0
+W (88859) rc_tank: [CAM-DIAG-C16W] BEACON window=6 before=200 requested=200 after=200 changed=0
+W (88866) rc_tank: [CAM-DIAG-C16W] TSF_GUARD window=6 beacon=200 after=0us budget=0us result=ESP_OK
+W (88875) rc_tank: [CAM-DIAG-C16W] TSF_TARGET window=6 phase=0us tolerance=0us result=ESP_OK
+W (88883) rc_tank: [CAM-DIAG-C16W] RGB_GAIN window=6 requested=110 result=ESP_OK
+W (88890) rc_tank: [CAM-DIAG-C16W] PRESENT window=6 mode=canvas chunk_lines=60 repeats=1 result=ESP_OK
+W (88899) rc_tank: [CAM-DIAG-C16W] TAIL_DRAIN window=6 requested=0us result=ESP_OK
+W (88906) rc_tank: [CAM-DIAG-C16W] EOF_PROFILE window=6 mode=software_index settle=0us result=ESP_OK
+W (88915) rc_tank: [CAM-DIAG-C16W] ROW_PROFILE window=6 mode=4 boundary=392 band=8 result=ESP_OK
+W (88924) rc_video: [CAM-DIAG-C16W] PROFILE window=6 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m_inv capture=251
+W (88935) rc_tank: [CAM-DIAG-C16W] WINDOW_06 start: wifi=on sensor=pattern display=camera idle=0ms full_probe=off cache=c2m_inv dvp=staged100k protocol=bgn beacon=200 guard_after=0us capture_budget=0us target=0us tolerance=0us rgb_gain=110% present=canvas chunk_lines=60 repeats=1 tail_drain=0us eof_mode=software_index eof_settle=0us row_mode=4 row_boundary=392 row_band=8
+W (88959) rc_video: [CAM-DIAG-C16W] LIGHT stage=complete window=5 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv frames=62 changes=61 sync_changes=0 sync_calls=62 sync_skips=0 unique=8 overflow=54 pre=5d9a6f9b post=5d9a6f9b luma_avg=171.5 luma_min=123 luma_max=173 luma_last=123 avg_probe=2.806ms max_probe=3.297ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+W (93737) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=6 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m_inv frames=30 changes=0 sync_changes=0 sync_calls=30 sync_skips=0 unique=1 overflow=0 pre=5d9a6f9b post=5d9a6f9b luma_avg=123.0 luma_min=123 luma_max=123 luma_last=123 avg_probe=2.774ms max_probe=3.127ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (93768) rc_video: [CAM-DIAG-C16W] ROW_MAP window=6 frame=281 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=281
+I (93793) rc_video: [CAM-DIAG-C16W] HEALTH window=6 display_frame=281 guard_errors=0 quiesce=281 resume_before=280 lifecycle_errors=0 pause_req=281 pause_ack=281 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=3091 staged_copies=3091 staged_bytes=158259200 staged_tail=0 staged_forward=562 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=3091 eof_valid=3091 eof_invalid=0 eof_mismatch=283 eof_half0=1407 eof_half1=1684 eof_mm_blocks=0/0/0/0/0/0/0/0/0/2/281 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (98646) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=6 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m_inv frames=60 changes=0 sync_changes=0 sync_calls=60 sync_skips=0 unique=1 overflow=0 pre=5d9a6f9b post=5d9a6f9b luma_avg=123.0 luma_min=123 luma_max=123 luma_last=123 avg_probe=2.800ms max_probe=3.575ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (98677) rc_video: [CAM-DIAG-C16W] ROW_MAP window=6 frame=311 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=311
+I (98702) rc_video: [CAM-DIAG-C16W] HEALTH window=6 display_frame=311 guard_errors=0 quiesce=311 resume_before=310 lifecycle_errors=0 pause_req=311 pause_ack=311 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=3421 staged_copies=3421 staged_bytes=175155200 staged_tail=0 staged_forward=622 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=3421 eof_valid=3421 eof_invalid=0 eof_mismatch=313 eof_half0=1557 eof_half1=1864 eof_mm_blocks=0/0/0/0/0/0/0/0/0/2/311 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (98970) camera_hal: [CAM-DIAG-C16I] SP0A39 test_pattern=off P1:32 before=0x80 write=0x00 read=0x00 expected_bit=0x00
+W (99073) rc_tank: [CAM-DIAG-C16W] PROTOCOL window=7 before=0x07 requested=0x07 after=0x07 name=bgn changed=0
+W (99074) rc_tank: [CAM-DIAG-C16W] BEACON window=7 before=200 requested=200 after=200 changed=0
+W (99080) rc_tank: [CAM-DIAG-C16W] TSF_GUARD window=7 beacon=200 after=0us budget=0us result=ESP_OK
+W (99089) rc_tank: [CAM-DIAG-C16W] TSF_TARGET window=7 phase=0us tolerance=0us result=ESP_OK
+W (99097) rc_tank: [CAM-DIAG-C16W] RGB_GAIN window=7 requested=110 result=ESP_OK
+W (99104) rc_tank: [CAM-DIAG-C16W] PRESENT window=7 mode=canvas chunk_lines=60 repeats=1 result=ESP_OK
+W (99113) rc_tank: [CAM-DIAG-C16W] TAIL_DRAIN window=7 requested=0us result=ESP_OK
+W (99121) rc_tank: [CAM-DIAG-C16W] EOF_PROFILE window=7 mode=software_index settle=0us result=ESP_OK
+W (99130) rc_tank: [CAM-DIAG-C16W] ROW_PROFILE window=7 mode=4 boundary=392 band=8 result=ESP_OK
+W (99171) rc_video: [CAM-DIAG-C16W] PROFILE window=7 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv capture=313
+W (99173) rc_tank: [CAM-DIAG-C16W] WINDOW_07 start: wifi=on sensor=real display=camera idle=0ms full_probe=off cache=c2m_inv dvp=staged100k protocol=bgn beacon=200 guard_after=0us capture_budget=0us target=0us tolerance=0us rgb_gain=110% present=canvas chunk_lines=60 repeats=1 tail_drain=0us eof_mode=software_index eof_settle=0us row_mode=4 row_boundary=392 row_band=8
+W (99206) rc_tank: [CAM-DIAG-C16W] final fixed-line sequence complete; hold WINDOW_07 wifi=on real cache=c2m_inv staged_dma=102400B protocol=bgn beacon=200 tsf_guard=off rgb_gain=110% present=canvas chunk_lines=60 repeats=1 tail_drain=0us eof_mode=software_index eof_settle=0us row_mode=rgb_fixed raw_y=392 rows=8 row_scan=off
+I (99234) rc_tank: Tank running (video + control; audio disabled)
+I (99240) rc_tank: app_main done, idle loop
+W (99293) rc_video: [CAM-DIAG-C16W] LIGHT stage=complete window=6 sensor=pattern display=camera idle=0ms full_probe=0 cache=c2m_inv frames=63 changes=2 sync_changes=0 sync_calls=63 sync_skips=0 unique=3 overflow=0 pre=ae209a65 post=ae209a65 luma_avg=124.6 luma_min=123 luma_max=172 luma_last=172 avg_probe=2.812ms max_probe=3.575ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+W (104069) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=7 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv frames=30 changes=29 sync_changes=0 sync_calls=30 sync_skips=0 unique=8 overflow=22 pre=13dea613 post=13dea613 luma_avg=169.8 luma_min=168 luma_max=171 luma_last=171 avg_probe=2.783ms max_probe=3.081ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (104100) rc_video: [CAM-DIAG-C16W] ROW_MAP window=7 frame=344 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=344
+I (104124) rc_video: [CAM-DIAG-C16W] HEALTH window=7 display_frame=344 guard_errors=0 quiesce=344 resume_before=343 lifecycle_errors=0 pause_req=344 pause_ack=344 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=3784 staged_copies=3784 staged_bytes=193740800 staged_tail=0 staged_forward=688 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=3784 eof_valid=3784 eof_invalid=0 eof_mismatch=346 eof_half0=1722 eof_half1=2062 eof_mm_blocks=0/0/0/0/0/0/0/0/0/2/344 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (108977) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=7 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv frames=60 changes=59 sync_changes=0 sync_calls=60 sync_skips=0 unique=8 overflow=52 pre=329da5c2 post=329da5c2 luma_avg=171.2 luma_min=168 luma_max=173 luma_last=172 avg_probe=2.786ms max_probe=3.081ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (109008) rc_video: [CAM-DIAG-C16W] ROW_MAP window=7 frame=374 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=374
+I (109032) rc_video: [CAM-DIAG-C16W] HEALTH window=7 display_frame=374 guard_errors=0 quiesce=374 resume_before=373 lifecycle_errors=0 pause_req=374 pause_ack=374 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=4114 staged_copies=4114 staged_bytes=210636800 staged_tail=0 staged_forward=748 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=4114 eof_valid=4114 eof_invalid=0 eof_mismatch=376 eof_half0=1872 eof_half1=2242 eof_mm_blocks=0/0/0/0/0/0/0/0/0/2/374 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (113884) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=7 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv frames=90 changes=89 sync_changes=0 sync_calls=90 sync_skips=0 unique=8 overflow=82 pre=887aea28 post=887aea28 luma_avg=171.4 luma_min=168 luma_max=173 luma_last=173 avg_probe=2.783ms max_probe=3.110ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (113915) rc_video: [CAM-DIAG-C16W] ROW_MAP window=7 frame=404 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=404
+I (113940) rc_video: [CAM-DIAG-C16W] HEALTH window=7 display_frame=404 guard_errors=0 quiesce=404 resume_before=403 lifecycle_errors=0 pause_req=404 pause_ack=404 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=4444 staged_copies=4444 staged_bytes=227532800 staged_tail=0 staged_forward=808 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=4444 eof_valid=4444 eof_invalid=0 eof_mismatch=406 eof_half0=2022 eof_half1=2422 eof_mm_blocks=0/0/0/0/0/0/0/0/0/2/404 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (118792) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=7 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv frames=120 changes=119 sync_changes=0 sync_calls=120 sync_skips=0 unique=8 overflow=112 pre=e295b76b post=e295b76b luma_avg=171.5 luma_min=168 luma_max=173 luma_last=170 avg_probe=2.784ms max_probe=3.215ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (118824) rc_video: [CAM-DIAG-C16W] ROW_MAP window=7 frame=434 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=434
+I (118848) rc_video: [CAM-DIAG-C16W] HEALTH window=7 display_frame=434 guard_errors=0 quiesce=434 resume_before=433 lifecycle_errors=0 pause_req=434 pause_ack=434 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=4774 staged_copies=4774 staged_bytes=244428800 staged_tail=0 staged_forward=868 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=4774 eof_valid=4774 eof_invalid=0 eof_mismatch=436 eof_half0=2172 eof_half1=2602 eof_mm_blocks=0/0/0/0/0/0/0/0/0/2/434 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (123700) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=7 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv frames=150 changes=149 sync_changes=0 sync_calls=150 sync_skips=0 unique=8 overflow=142 pre=d0c3167a post=d0c3167a luma_avg=171.2 luma_min=168 luma_max=173 luma_last=169 avg_probe=2.788ms max_probe=3.215ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (123732) rc_video: [CAM-DIAG-C16W] ROW_MAP window=7 frame=464 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=464
+I (123756) rc_video: [CAM-DIAG-C16W] HEALTH window=7 display_frame=464 guard_errors=0 quiesce=464 resume_before=463 lifecycle_errors=0 pause_req=464 pause_ack=464 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=5104 staged_copies=5104 staged_bytes=261324800 staged_tail=0 staged_forward=928 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=5104 eof_valid=5104 eof_invalid=0 eof_mismatch=466 eof_half0=2322 eof_half1=2782 eof_mm_blocks=0/0/0/0/0/0/0/0/0/2/464 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (128608) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=7 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv frames=180 changes=179 sync_changes=0 sync_calls=180 sync_skips=0 unique=8 overflow=172 pre=512f60c4 post=512f60c4 luma_avg=171.1 luma_min=168 luma_max=173 luma_last=173 avg_probe=2.793ms max_probe=3.215ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (128639) rc_video: [CAM-DIAG-C16W] ROW_MAP window=7 frame=494 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=494
+I (128664) rc_video: [CAM-DIAG-C16W] HEALTH window=7 display_frame=494 guard_errors=0 quiesce=494 resume_before=493 lifecycle_errors=0 pause_req=494 pause_ack=494 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=5434 staged_copies=5434 staged_bytes=278220800 staged_tail=0 staged_forward=988 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=5434 eof_valid=5434 eof_invalid=0 eof_mismatch=496 eof_half0=2472 eof_half1=2962 eof_mm_blocks=0/0/0/0/0/0/0/0/0/2/494 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (133515) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=7 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv frames=210 changes=209 sync_changes=0 sync_calls=210 sync_skips=0 unique=8 overflow=202 pre=a912b400 post=a912b400 luma_avg=171.2 luma_min=168 luma_max=173 luma_last=171 avg_probe=2.792ms max_probe=3.215ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (133547) rc_video: [CAM-DIAG-C16W] ROW_MAP window=7 frame=524 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=524
+I (133571) rc_video: [CAM-DIAG-C16W] HEALTH window=7 display_frame=524 guard_errors=0 quiesce=524 resume_before=523 lifecycle_errors=0 pause_req=524 pause_ack=524 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=5764 staged_copies=5764 staged_bytes=295116800 staged_tail=0 staged_forward=1048 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=5764 eof_valid=5764 eof_invalid=0 eof_mismatch=526 eof_half0=2622 eof_half1=3142 eof_mm_blocks=0/0/0/0/0/0/0/0/0/2/524 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0
+W (138423) rc_video: [CAM-DIAG-C16W] LIGHT stage=periodic window=7 sensor=real display=camera idle=0ms full_probe=0 cache=c2m_inv frames=240 changes=239 sync_changes=0 sync_calls=240 sync_skips=0 unique=8 overflow=232 pre=d326ef7e post=d326ef7e luma_avg=171.2 luma_min=168 luma_max=173 luma_last=171 avg_probe=2.793ms max_probe=3.215ms tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 launch_phase_samples=0 launch_phase_avg=0.0 launch_phase_min=0 launch_phase_max=0 tsf_errors=0
+I (138455) rc_video: [CAM-DIAG-C16W] ROW_MAP window=7 frame=554 mode=rgb_fixed boundary=392 band=8 valid=1 target=392 source=0 rows=8 target_sig=00000000 source_sig=00000000 raw_repaired=0 rgb_repaired=1 repair_start=0 repair_rows=0 scans=0 matches=0 raw_repairs=0 rgb_repairs=554
+I (138479) rc_video: [CAM-DIAG-C16W] HEALTH window=7 display_frame=554 guard_errors=0 quiesce=554 resume_before=553 lifecycle_errors=0 pause_req=554 pause_ack=554 pause_timeout=0 cache_sync_err=0 raw_post_err=0 overlap=0 finish_collision=0 tsf_waits=0 tsf_wait_us=0 tsf_wait_max_global_us=0 target=0 tolerance=0 launch_samples=0 launch_min=0 launch_max=0 rgb_gain=110 present=canvas chunk_lines=60 repeats=1 tsf_errors=0 staged_events=6094 staged_copies=6094 staged_bytes=312012800 staged_tail=0 staged_forward=1108 staged_fallback=0 staged_errors=0 tail_drain=0 tail_waits=0 tail_wait_us=0 eof_callbacks=6094 eof_valid=6094 eof_invalid=0 eof_mismatch=556 eof_half0=2772 eof_half1=3322 eof_mm_blocks=0/0/0/0/0/0/0/0/0/2/554 eof_settle=0 eof_settle_events=0 eof_settle_us=0 defer_events=0 drained=0 pending_collisions=0 drain_errors=0

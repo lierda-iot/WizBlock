@@ -1,0 +1,162 @@
+I (14635) rc_tank: Starting Tank role
+I (14635) board_laiwfs300: init board support package
+I (14635) board_laiwfs300: init capability registry
+I (14636) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (14643) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (14648) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (14656) board_laiwfs300:   I2C device ACK at 0x15
+I (14659) board_laiwfs300:   I2C device ACK at 0x18
+I (14664) board_laiwfs300:   I2C device ACK at 0x21
+I (14667) board_laiwfs300:   I2C device ACK at 0x22
+I (14676) board_laiwfs300:   I2C device ACK at 0x40
+I (14679) board_laiwfs300:   I2C device ACK at 0x51
+I (14684) board_laiwfs300:   I2C device ACK at 0x68
+I (14688) board_laiwfs300: --- I2C scan done: 7 device(s) found ---
+W (14692) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (14698) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (14703) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (14708) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (14713) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (14718) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+I (14724) board_laiwfs300: SP0A39 (Camera) found at 0x21
+I (14730) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (14734) board_laiwfs300: ES7210 chip ID: 0x72
+I (14739) board_laiwfs300: AIP8563 RTC time: 22:36:34 (BCD raw)
+I (14744) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (14749) board_laiwfs300: init SPI bus manager
+I (14754) board_laiwfs300: init ADC service
+I (14757) board_adc: ADC1 oneshot initialized
+I (14761) board_laiwfs300: init board power service
+I (14767) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=2024 (~1532 mV)
+I (14772) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=1600 (~1211 mV)
+I (14778) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (14784) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (14792) io_expander: TPT29555A initialized at 0x22
+I (14794) board_laiwfs300: IO expander initialized OK
+I (14799) board_laiwfs300: init module detect
+I (14803) board_laiwfs300: register detection rules
+I (14808) board_laiwfs300: register default capabilities
+I (14813) board_laiwfs300: board init complete (ioex=OK)
+I (14819) board_motor: motor input 1 -> GPIO5 / LEDC channel 0
+I (14823) board_motor: motor input 2 -> GPIO4 / LEDC channel 1
+I (14829) board_motor: motor input 3 -> GPIO37 / LEDC channel 2
+I (14835) board_motor: motor input 4 -> GPIO45 / LEDC channel 3
+I (14841) rc_control: Motor initialized for continuous track control
+I (14846) rc_video: Initializing Tank display
+I (14852) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+E (14997) spi: spi_bus_initialize(816): SPI bus already initialized.
+I (15118) display_hal: ST7789V3 LCD initialized
+I (15118) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=20000000
+I (15123) rc_video: Tank display task started
+I (15124) rc_video: Tank display initialized (status task owns LCD)
+I (15133) rc_video: Initializing camera (SP0A39 640x480 VYUY)
+I (15138) board_camera: initializing SP0A39 camera mode=0 640x480
+I (15144) camera_hal: init SP0A39 DVP 640x480 (SCCB manual mode)
+I (15150) camera_hal: configuring IOEX pins for camera RESET/PWDN
+I (15157) camera_hal: PWDN=HIGH (power down)
+I (15170) camera_hal: PWDN=LOW (release sensor)
+I (15370) camera_hal: RESET=LOW (assert reset)
+I (15390) camera_hal: RESET=HIGH (release reset)
+I (16390) camera_hal: full I2C scan after camera power-up (diagnostic only)...
+I (16392) camera_hal:   post-powerup ACK at 0x15
+I (16392) camera_hal:   post-powerup ACK at 0x18
+I (16395) camera_hal:   post-powerup ACK at 0x21
+I (16399) camera_hal:   post-powerup ACK at 0x22
+I (16407) camera_hal:   post-powerup ACK at 0x40
+I (16409) camera_hal:   post-powerup ACK at 0x51
+I (16415) camera_hal:   post-powerup ACK at 0x68
+I (16418) camera_hal: DVP GPIO diagnostics (checking PCLK/VSYNC/HSYNC activity)...
+I (16484) camera_hal: DVP diagnostics: PCLK_changes=0 VSYNC_changes=0 HSYNC_changes=0
+W (16484) camera_hal: PCLK has no transitions - MCLK likely not reaching sensor or sensor not active
+I (16489) camera_hal: using sensor address 0x21
+I (16494) camera_hal: SP0A39 I2C device added at 0x21
+I (16500) camera_hal: SP0A39 chip ID: 0x0A39
+I (16622) camera_hal: SP0A39 register init done: VYUY 640x480 (359 regs)
+I (16623) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_table value=0x00 expected=0x01
+E (16626) camera_hal: camera_hal_verify_expected_output_p0_31(92): unexpected p0_31=0x00 at post_table
+W (16635) camera_hal: [CAM-PROBE] output state differs after table; continuing: ESP_ERR_INVALID_RESPONSE
+I (16664) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_delay value=0x01 expected=0x01
+I (16665) camera_hal: camera HAL initialized (sensor ready, DVP capture not yet implemented)
+I (16669) board_camera: camera ready
+I (16799) rc_video:   3 DMA-capable PSRAM framebuffers allocated (600 KB each)
+E (16800) dvp_ext: rc_cam_new_dvp_ctlr_staged_impl(864): no mem for CAM DVP DMA receive buffer
+E (16803) rc_video: DVP controller create failed: ESP_ERR_NO_MEM
+E (16809) rc_tank: Camera init failed: ESP_ERR_NO_MEM (use fallback source)
+W (16816) rc_video: Synthetic video source enabled (camera unavailable)
+I (16825) rc_net: Initializing as SoftAP (Tank)
+I (16828) pp: pp rom version: e7ae62f
+I (16830) net80211: net80211 rom version: e7ae62f
+I (16837) wifi:wifi driver task: 3fcca470, prio:23, stack:6656, core=0
+I (16845) wifi:wifi firmware version: 0947e8b
+I (16845) wifi:wifi certification version: v7.0
+I (16849) wifi:config NVS flash: enabled
+I (16852) wifi:config nano formatting: disabled
+I (16857) wifi:Init data frame dynamic rx buffer num: 32
+I (16862) wifi:Init static rx mgmt buffer num: 5
+I (16866) wifi:Init management short buffer num: 32
+I (16870) wifi:Init dynamic tx buffer num: 64
+I (16875) wifi:Init static tx FG buffer num: 2
+I (16879) wifi:Init static rx buffer size: 1600
+I (16883) wifi:Init static rx buffer num: 10
+I (16887) wifi:Init dynamic rx buffer num: 32
+I (16892) wifi_init: rx ba win: 6
+I (16894) wifi_init: accept mbox: 6
+I (16897) wifi_init: tcpip mbox: 16
+I (16901) wifi_init: udp mbox: 6
+I (16903) wifi_init: tcp mbox: 6
+I (16906) wifi_init: tcp tx win: 5760
+I (16910) wifi_init: tcp rx win: 5760
+I (16913) wifi_init: tcp mss: 1440
+I (16916) wifi_init: WiFi IRAM OP enabled
+I (16920) wifi_init: WiFi RX IRAM OP enabled
+I (16925) rc_net: AP set_mode/config, SSID=RC_TANK_F3AE79 ch=1
+I (17005) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+W (17006) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration
+I (17042) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)
+I (17052) wifi:mode : softAP (44:1b:f6:f3:ae:79)
+I (17057) wifi:Total power save buffer number: 32
+I (17057) wifi:Init max length of beacon: 752/752
+I (17058) wifi:Init max length of beacon: 752/752
+I (17060) rc_net: SoftAP started, SSID: RC_TANK_F3AE79
+I (17062) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (17073) rc_control: Ctrl RX task started
+I (17076) rc_control: Tank control started
+I (17080) rc_tank: Tank ready; waiting for Remote
+I (22965) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (22966) wifi:station: 44:1b:f6:f3:ae:40 join, AID=1, bgn, 40U
+I (22992) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:40
+I (23030) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (23031) rc_net: STA assigned IP: 192.168.4.2
+I (23031) rc_control: Network connected
+I (23034) rc_tank: Network connected, peer: 192.168.4.2
+I (23041) rc_net: Ctrl UDP socket bound to port 8001
+I (23044) rc_net: Video UDP socket bound to port 8002
+I (23050) rc_net: Audio TCP listening on port 8003
+I (23059) rc_video: Video TX task started (240x180 Q=60)
+I (23089) rc_video: Tank video started (synthetic source)
+W (23095) rc_net: Video UDP send failed: seq=0 chunk=4/4 bytes=1093 sent=-1 errno=12 attempts=4
+W (23095) rc_video: Video send failed count=1 err=ESP_FAIL
+W (24042) rc_video: Video send failed count=30 err=ESP_FAIL
+I (24082) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:40), tid:0, ssn:0, winSize:64
+W (24385) rc_control: Control timeout: motor stop enforced
+I (31091) rc_tank: [DVP-HEALTH] retry=0 complete=0 incomplete=0 total=0 verdict=reject
+I (31092) rc_tank: [DEBUG-DVP-LIMIT] ctrl_rx=1 recv=0 recovered10=0 eof_match=0 eof_mismatch=0 eof_invalid=0 near_control=0_2:0,2_10:0,gt10:0
+I (31101) rc_tank: [DEBUG-DVP-LIMIT] sync_blocks 0=0 1=0 2=0 3=0 4=0 5=0 6=0 7=0 8=0 9=0 10=0 11=0 12plus=0
+I (31110) rc_tank: [DEBUG-DVP-LIMIT] eof_mismatch_block 0=0 1=0 2=0 3=0 4=0 5=0 6=0 7=0 8=0 9=0 10=0 11plus=0
+W (31123) rc_tank: [DVP-HEALTH] retry=1/5; restarting in 1s
+I (32126) wifi:station: 44:1b:f6:f3:ae:40 leave, AID = 1, reason = 2, bss_flags is 756835, bss:0x3fcd2594
+I (32127) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (32133) wifi:<ba-del>idx:2, tid:0
+I (32136) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (32154) rc_net: STA disconnected, MAC: 44:1b:f6:f3:ae:40
+W (32155) rc_net: Video UDP send failed: seq=276 chunk=1/4 bytes=1208 sent=-1 errno=-1 attempts=4
+I (32158) rc_control: Network disconnected: motor stopped
+W (32164) rc_tank: Network disconnected
+I (32446) wifi:flush txq
+I (32447) wifi:stop sw txq
+I (32447) wifi:lmac stop hw txq
+~ÊESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x1 (DOWNLOAD(USB/UART0))
+Saved PC:0x42013d3c
+waiting for download

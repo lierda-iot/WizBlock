@@ -1,0 +1,67 @@
+esptool.py v4.12.dev2
+Serial port COM7
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 44:1b:f6:f3:ae:78
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x000fffff...
+SHA digest in image updated
+Compressed 20832 bytes to 13346...
+Writing at 0x00000000... (100 %)
+Wrote 20832 bytes (13346 compressed) at 0x00000000 in 0.4 seconds (effective 431.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 119...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (119 compressed) at 0x00008000 in 0.0 seconds (effective 1665.4 kbit/s)...
+Hash of data verified.
+Compressed 980768 bytes to 579689...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d3ae... (5 %)
+Writing at 0x00029a51... (8 %)
+Writing at 0x000326a9... (11 %)
+Writing at 0x0003cdc0... (13 %)
+Writing at 0x00044ab1... (16 %)
+Writing at 0x0004ad82... (19 %)
+Writing at 0x00051157... (22 %)
+Writing at 0x0005ab40... (25 %)
+Writing at 0x00061441... (27 %)
+Writing at 0x00067e42... (30 %)
+Writing at 0x0006d8fa... (33 %)
+Writing at 0x00073397... (36 %)
+Writing at 0x00079084... (38 %)
+Writing at 0x0007ee62... (41 %)
+Writing at 0x00084e3f... (44 %)
+Writing at 0x0008ae46... (47 %)
+Writing at 0x00090d69... (50 %)
+Writing at 0x00095eb1... (52 %)
+Writing at 0x0009ae2c... (55 %)
+Writing at 0x000a07e0... (58 %)
+Writing at 0x000a5eee... (61 %)
+Writing at 0x000ab3fc... (63 %)
+Writing at 0x000b0902... (66 %)
+Writing at 0x000b650e... (69 %)
+Writing at 0x000bc2c7... (72 %)
+Writing at 0x000c1e56... (75 %)
+Writing at 0x000c7c6d... (77 %)
+Writing at 0x000cd40d... (80 %)
+Writing at 0x000d369c... (83 %)
+Writing at 0x000dbde5... (86 %)
+Writing at 0x000e1cba... (88 %)
+Writing at 0x000e7d8f... (91 %)
+Writing at 0x000f112e... (94 %)
+Writing at 0x000f7bb2... (97 %)
+Writing at 0x000fcc0b... (100 %)
+Wrote 980768 bytes (579689 compressed) at 0x00010000 in 13.3 seconds (effective 589.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

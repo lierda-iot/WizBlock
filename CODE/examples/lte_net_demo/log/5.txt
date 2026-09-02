@@ -1,0 +1,1372 @@
+[2026-08-12 15:31:23.102]# RECV ASCII>
+I (1259) esp_psram: SPI SRAM memory test OK
+I (1267) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (1268) cpu_start: Pro cpu start user code
+I (1268) cpu_start: cpu freq: 160000000 Hz
+I (1270) app_init: Application information:
+I (1274) app_init: Project name:     lte_net_demo
+I (1278) app_init: App version:      1
+I (1282) app_init: Compile time:     Aug 12 2026 15:26:52
+I (1287) app_init: ELF file SHA256:  bb7effecb...
+I (1291) app_init: ESP-IDF:          v5.5.4
+I (1295) efuse_in
+
+[2026-08-12 15:31:23.137]# RECV ASCII>
+it: Min chip rev:     v0.0
+I (1299) efuse_init: Max chip rev:     v0.99 
+I (1303) efuse_init: Chip rev:         v0.2
+I (1307) heap_init: Initializing. RAM available for dynamic allocation:
+I (1314) heap_init: At 3FCB3728 len 00035FE8 (215 KiB): RAM
+I (1319) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (1324) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (1329) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (1335) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+
+[2026-08-12 15:31:23.204]# RECV ASCII>
+
+I (1342) spi_flash: detected chip: generic
+I (1345) spi_flash: flash io: dio
+I (1349) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (1355) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (1362) main_task: Started on CPU0
+I (1392) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+I (1392) main_task: Calling app_main()
+I (1392) lte_net_demo: LTE Net Demo starting (network_manager)
+I (1402) board_laiwfs300: init board support packag
+
+[2026-08-12 15:31:23.242]# RECV ASCII>
+e
+I (1402) board_laiwfs300: init capability registry
+I (1412) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (1412) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (1422) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (1422) board_laiwfs300:   I2C device ACK at 0x15
+I (1432) board_laiwfs300:   I2C device ACK at 0x18
+I (1432) board_laiwfs300:   I2C device ACK at 0x22
+I (1442) board_laiwfs300:   I2C device ACK at 0x40
+I (1442) board_laiwfs300:   I2C device ACK at 0x51
+
+
+[2026-08-12 15:31:23.286]# RECV ASCII>
+I (1452) board_laiwfs300:   I2C device ACK at 0x68
+I (1452) board_laiwfs300: --- I2C scan done: 6 device(s) found ---
+W (1462) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (1462) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (1472) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (1472) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (1482) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (1482) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+W (1492) board_laiwfs300: S
+
+[2026-08-12 15:31:23.330]# RECV ASCII>
+P0A39 (Camera) NOT found at 0x21 (NACK)
+I (1492) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (1502) board_laiwfs300: ES7210 chip ID: 0x72
+I (1502) board_laiwfs300: AIP8563 RTC time: 02:27:15 (BCD raw)
+I (1512) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (1512) board_laiwfs300: init SPI bus manager
+I (1522) board_laiwfs300: init ADC service
+I (1522) board_adc: ADC1 oneshot initialized
+I (1522) board_laiwfs300: init board power service
+I (1532) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=4
+
+[2026-08-12 15:31:23.374]# RECV ASCII>
+095 (~3100 mV)
+I (1542) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=1615 (~1222 mV)
+I (1542) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (1552) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (1552) io_expander: TPT29555A initialized at 0x22
+I (1562) board_laiwfs300: IO expander initialized OK
+I (1562) board_laiwfs300: init module detect
+I (1572) board_laiwfs300: register detection rules
+I (1572) board_laiwfs300: register default capabilities
+I (1582) board_laiwfs300: board in
+
+[2026-08-12 15:31:23.441]# RECV ASCII>
+it complete (ioex=OK)
+I (1592) lte_net_demo: no legacy WiFi config, using defaults
+I (1592) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+
+
+[2026-08-12 15:31:23.565]# RECV ASCII>
+E (1732) spi: spi_bus_initialize(816): SPI bus already initialized.
+
+
+[2026-08-12 15:31:23.689]# RECV ASCII>
+I (1852) display_hal: ST7789V3 LCD initialized
+I (1852) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=10000000
+
+
+[2026-08-12 15:31:23.906]# RECV ASCII>
+I (2072) touch_hal: CST836U initialized at 0x15
+
+
+[2026-08-12 15:31:24.023]# RECV ASCII>
+I (2192) demo_ui: demo UI initialized: 320x240 landscape with touch
+I (2202) pp: pp rom version: e7ae62f
+I (2202) net80211: net80211 rom version: e7ae62f
+I (2212) wifi:wifi driver task: 3fcd0be0, prio:23, stack:6656, core=0
+I (2212) wifi:wifi firmware version: 0947e8b
+I (2212) wifi:wifi certification version: v7.0
+I (2212) wifi:config NVS flash: enabled
+I (2212) wifi:config nano formatting: disabled
+I (2222) wifi:Init data frame dynamic rx buffer num: 32
+I (2222) wifi:Init static rx mgmt buffer num
+
+[2026-08-12 15:31:24.066]# RECV ASCII>
+: 5
+I (2232) wifi:Init management short buffer num: 32
+I (2232) wifi:Init dynamic tx buffer num: 32
+I (2242) wifi:Init static tx FG buffer num: 2
+I (2242) wifi:Init static rx buffer size: 1600
+I (2242) wifi:Init static rx buffer num: 10
+I (2252) wifi:Init dynamic rx buffer num: 32
+I (2252) wifi_init: rx ba win: 6
+I (2262) wifi_init: accept mbox: 6
+I (2262) wifi_init: tcpip mbox: 32
+I (2262) wifi_init: udp mbox: 6
+I (2262) wifi_init: tcp mbox: 6
+I (2272) wifi_init: tcp tx win: 5760
+I (2272) wifi
+
+[2026-08-12 15:31:24.144]# RECV ASCII>
+_init: tcp rx win: 5760
+I (2272) wifi_init: tcp mss: 1440
+I (2282) wifi_init: WiFi IRAM OP enabled
+I (2282) wifi_init: WiFi RX IRAM OP enabled
+I (2292) lte_hal: init ok, power off
+I (2292) network_manager: [NM_DIAG] Starting LTE power-on sequence
+I (2292) lte_hal: powering on LTE module (IOEX P1_1 HIGH)
+
+
+[2026-08-12 15:31:27.180]# RECV ASCII>
+I (5302) lte_hal: LTE module powered on, ready for USB ECM enumeration
+I (5302) network_manager: [NM_DIAG] lte_hal_power_on() returned: ESP_OK (0x0)
+I (5302) network_manager: [NM_DIAG] Starting lsd_network_mgmt_init(true)
+I (5342) network_manager: [NM_DIAG] lsd_network_mgmt_init(true) returned: ESP_OK (0x0)
+I (5342) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (5382) wifi:mode : sta (44:1b:f6:f3:ae:24)
+I (5382) wifi:enable tsf
+W (5392) demo_network: [FIELD_TEST] cellular recovery cfg: in
+
+[2026-08-12 15:31:27.232]# RECV ASCII>
+terval=20000ms limit=2 ret=ESP_OK
+I (5392) demo_network: demo_network initialized: mode=Dual Auto
+I (5392) lte_net_demo: UI ready, waiting for user WiFi confirmation on screen
+
+
+[2026-08-12 15:31:27.558]# RECV ASCII>
+I (5722) lsd_4g: 4G Device Connected
+
+
+[2026-08-12 15:31:28.232]# RECV ASCII>
+I (6392) lsd_4g: Module IMEI is: 864297085472907
+I (6402) lsd_4g: Module ICCID is: 89860876112590546065
+
+
+[2026-08-12 15:31:28.623]# RECV ASCII>
+I (6742) network_manager: [CELLULAR_EVENT] IP_EVENT_ETH_GOT_IP at 5380 ms
+I (6742) lsd_4g: Got IP: 10.85.225.59
+I (6742) lsd_net_mgmt: Processing 4g connected event in lsd net mgmt
+I (6792) demo_network: net: if=NONE ready=N state=4 lc=2 wifi_ph=1 cell_ph=5 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:31:29.744]# RECV ASCII>
+I (7902) lsd_net_mgmt: Target 4G AVAILABLE
+I (7902) lsd_net_mgmt: Current network interface: 4G fromNetMode: Unknown
+
+
+[2026-08-12 15:31:30.273]# RECV ASCII>
+I (8432) lsd_net_mgmt: Target 4G AVAILABLE
+
+
+[2026-08-12 15:31:33.629]# RECV ASCII>
+I (11792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:31:38.629]# RECV ASCII>
+I (16792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:31:40.202]# RECV ASCII>
+I (18362) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:31:43.628]# RECV ASCII>
+I (21792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:31:48.627]# RECV ASCII>
+I (26792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:31:50.204]# RECV ASCII>
+I (28372) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:31:53.631]# RECV ASCII>
+I (31792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:31:58.632]# RECV ASCII>
+I (36792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:32:00.204]# RECV ASCII>
+I (38362) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:32:03.628]# RECV ASCII>
+I (41792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:32:08.620]# RECV ASCII>
+I (46792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:32:10.224]# RECV ASCII>
+I (48382) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:32:13.633]# RECV ASCII>
+I (51792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:32:18.633]# RECV ASCII>
+I (56792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:32:20.196]# RECV ASCII>
+I (58362) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:32:23.631]# RECV ASCII>
+I (61792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:32:28.619]# RECV ASCII>
+I (66792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:32:30.209]# RECV ASCII>
+I (68362) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:32:33.624]# RECV ASCII>
+I (71792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:32:38.619]# RECV ASCII>
+I (76792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:32:40.205]# RECV ASCII>
+I (78362) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:32:43.624]# RECV ASCII>
+I (81792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:32:48.632]# RECV ASCII>
+I (86792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:32:50.208]# RECV ASCII>
+I (88362) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:32:53.620]# RECV ASCII>
+I (91792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:32:58.625]# RECV ASCII>
+I (96792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:33:00.201]# RECV ASCII>
+I (98372) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:33:03.623]# RECV ASCII>
+I (101792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:33:08.618]# RECV ASCII>
+I (106792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:33:10.196]# RECV ASCII>
+I (108362) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:33:13.625]# RECV ASCII>
+I (111792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:33:18.621]# RECV ASCII>
+I (116792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:33:20.209]# RECV ASCII>
+I (118372) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:33:23.629]# RECV ASCII>
+I (121792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:33:28.631]# RECV ASCII>
+I (126792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:33:30.198]# RECV ASCII>
+I (128362) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:33:33.630]# RECV ASCII>
+I (131792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:33:38.627]# RECV ASCII>
+I (136792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:33:40.197]# RECV ASCII>
+I (138362) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:33:43.620]# RECV ASCII>
+I (141792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:33:48.624]# RECV ASCII>
+I (146792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:33:50.197]# RECV ASCII>
+I (148362) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:33:53.626]# RECV ASCII>
+I (151742) lsd_4g: 4G Network Disconnected
+I (151742) lsd_net_mgmt: Processing 4g disconnected event in lsd net mgmt
+W (151742) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (151742) lsd_net_mgmt: Target WiFi has no IP
+I (151792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:33:57.142]# RECV ASCII>
+E (155302) ping_sock: send error=0
+
+
+[2026-08-12 15:33:58.140]# RECV ASCII>
+E (156302) ping_sock: send error=0
+
+
+[2026-08-12 15:33:58.629]# RECV ASCII>
+I (156792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:33:59.144]# RECV ASCII>
+E (157302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:00.137]# RECV ASCII>
+E (158302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:01.153]# RECV ASCII>
+W (159302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (159302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (159302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (159302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:34:03.626]# RECV ASCII>
+I (161792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:34:07.139]# RECV ASCII>
+E (165302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:08.138]# RECV ASCII>
+E (166302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:08.631]# RECV ASCII>
+I (166792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:34:09.141]# RECV ASCII>
+E (167302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:10.141]# RECV ASCII>
+E (168302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:11.152]# RECV ASCII>
+W (169302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (169302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (169302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (169302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:34:13.625]# RECV ASCII>
+I (171792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:34:17.131]# RECV ASCII>
+E (175302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:18.130]# RECV ASCII>
+E (176302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:18.629]# RECV ASCII>
+I (176792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:34:19.127]# RECV ASCII>
+E (177302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:20.140]# RECV ASCII>
+E (178302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:21.165]# RECV ASCII>
+W (179302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (179302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (179302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (179302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:34:23.628]# RECV ASCII>
+I (181792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:34:24.144]# RECV ASCII>
+W (182312) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:34:27.137]# RECV ASCII>
+E (185302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:28.133]# RECV ASCII>
+E (186302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:28.633]# RECV ASCII>
+I (186792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:34:29.146]# RECV ASCII>
+E (187302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:30.135]# RECV ASCII>
+E (188302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:31.163]# RECV ASCII>
+W (189302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (189302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (189302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (189302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:34:33.623]# RECV ASCII>
+I (191792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:34:37.139]# RECV ASCII>
+E (195302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:38.137]# RECV ASCII>
+E (196302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:38.633]# RECV ASCII>
+I (196792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:34:39.130]# RECV ASCII>
+E (197302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:40.134]# RECV ASCII>
+E (198302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:41.162]# RECV ASCII>
+W (199302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (199302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (199302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (199302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:34:43.622]# RECV ASCII>
+I (201792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:34:47.130]# RECV ASCII>
+E (205302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:48.144]# RECV ASCII>
+E (206302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:48.628]# RECV ASCII>
+I (206792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:34:49.132]# RECV ASCII>
+E (207302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:50.130]# RECV ASCII>
+E (208302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:51.159]# RECV ASCII>
+W (209302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (209302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (209302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (209302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:34:53.622]# RECV ASCII>
+I (211792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:34:57.136]# RECV ASCII>
+E (215302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:58.132]# RECV ASCII>
+E (216302) ping_sock: send error=0
+
+
+[2026-08-12 15:34:58.632]# RECV ASCII>
+I (216792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:34:59.129]# RECV ASCII>
+E (217302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:00.142]# RECV ASCII>
+E (218302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:01.155]# RECV ASCII>
+W (219302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (219302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (219302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (219302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:35:03.622]# RECV ASCII>
+I (221792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:35:07.132]# RECV ASCII>
+E (225302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:08.129]# RECV ASCII>
+E (226302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:08.626]# RECV ASCII>
+I (226792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:35:09.129]# RECV ASCII>
+E (227302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:10.126]# RECV ASCII>
+E (228302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:11.154]# RECV ASCII>
+W (229302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (229302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (229302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (229302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:35:13.632]# RECV ASCII>
+I (231792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:35:17.135]# RECV ASCII>
+E (235302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:18.133]# RECV ASCII>
+E (236302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:18.632]# RECV ASCII>
+I (236792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:35:19.131]# RECV ASCII>
+E (237302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:20.127]# RECV ASCII>
+E (238302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:21.157]# RECV ASCII>
+W (239302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (239302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (239302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (239302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:35:23.623]# RECV ASCII>
+I (241792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:35:27.132]# RECV ASCII>
+E (245302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:28.127]# RECV ASCII>
+E (246302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:28.626]# RECV ASCII>
+I (246792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:35:29.140]# RECV ASCII>
+E (247302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:30.140]# RECV ASCII>
+E (248302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:31.151]# RECV ASCII>
+W (249302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (249302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (249302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (249302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:35:33.625]# RECV ASCII>
+I (251792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:35:37.129]# RECV ASCII>
+E (255302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:38.132]# RECV ASCII>
+E (256302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:38.625]# RECV ASCII>
+I (256792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:35:39.140]# RECV ASCII>
+E (257302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:40.141]# RECV ASCII>
+E (258302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:41.150]# RECV ASCII>
+W (259302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (259302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (259302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (259302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:35:43.628]# RECV ASCII>
+I (261792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:35:47.129]# RECV ASCII>
+E (265302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:48.129]# RECV ASCII>
+E (266302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:48.626]# RECV ASCII>
+I (266792) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:35:49.134]# RECV ASCII>
+E (267302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:50.140]# RECV ASCII>
+E (268302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:51.153]# RECV ASCII>
+W (269302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (269302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (269302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (269302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:35:53.621]# RECV ASCII>
+I (271742) network_manager: [CELLULAR_EVENT] IP_EVENT_ETH_LOST_IP at 270380 ms
+I (271792) demo_network: net: if=NONE ready=N state=1 lc=2 wifi_ph=1 cell_ph=7 fault=55 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:35:57.139]# RECV ASCII>
+E (275302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:58.138]# RECV ASCII>
+E (276302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:58.601]# RECV ASCII>
+I (276782) lte_hal: powering off LTE module (IOEX P1_1 LOW)
+I (276782) lsd_4g: 4G Network Disconnected
+I (276782) lsd_net_mgmt: Processing 4g disconnected event in lsd net mgmt
+W (276782) lsd_4g: CDC Device Disconnected
+W (276782) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+E (276782) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+W (276792) lsd_net_mgmt: Target WiFi has no IP
+E (276802) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+I (276792) demo_network: net: if=NONE r
+
+[2026-08-12 15:35:58.717]# RECV ASCII>
+eady=N state=1 lc=2 wifi_ph=1 cell_ph=8 fault=55 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+E (276812) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+E (276872) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+E (276872) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+E (276872) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+W (276882) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:35:58.812]# RECV ASCII>
+W (276982) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:35:58.921]# RECV ASCII>
+W (277082) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:35:59.014]# RECV ASCII>
+W (277182) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:35:59.124]# RECV ASCII>
+W (277282) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+E (277302) ping_sock: send error=0
+
+
+[2026-08-12 15:35:59.218]# RECV ASCII>
+W (277382) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:35:59.314]# RECV ASCII>
+W (277482) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:35:59.421]# RECV ASCII>
+W (277582) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:35:59.513]# RECV ASCII>
+W (277682) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:35:59.624]# RECV ASCII>
+W (277782) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+I (277782) lte_hal: powering on LTE module (IOEX P1_1 HIGH)
+
+
+[2026-08-12 15:36:00.133]# RECV ASCII>
+E (278302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:00.492]# RECV ASCII>
+I (278652) lsd_4g: 4G Device Connected
+
+
+[2026-08-12 15:36:01.143]# RECV ASCII>
+W (279302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (279302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (279302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+
+
+[2026-08-12 15:36:02.610]# RECV ASCII>
+I (280782) lte_hal: LTE module powered on, ready for USB ECM enumeration
+
+
+[2026-08-12 15:36:03.660]# RECV ASCII>
+I (281822) demo_network: net: if=NONE ready=N state=4 lc=2 wifi_ph=1 cell_ph=4 fault=55 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:36:07.144]# RECV ASCII>
+E (285302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:08.137]# RECV ASCII>
+E (286302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:08.651]# RECV ASCII>
+I (286822) demo_network: net: if=NONE ready=N state=4 lc=2 wifi_ph=1 cell_ph=4 fault=55 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:36:09.135]# RECV ASCII>
+E (287302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:10.131]# RECV ASCII>
+E (288302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:11.142]# RECV ASCII>
+W (289302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (289302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (289302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (289302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:36:13.662]# RECV ASCII>
+I (291822) demo_network: net: if=NONE ready=N state=4 lc=2 wifi_ph=1 cell_ph=4 fault=55 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:36:17.128]# RECV ASCII>
+E (295302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:18.129]# RECV ASCII>
+E (296302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:18.664]# RECV ASCII>
+I (296822) demo_network: net: if=NONE ready=N state=4 lc=2 wifi_ph=1 cell_ph=4 fault=55 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:36:19.131]# RECV ASCII>
+E (297302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:20.131]# RECV ASCII>
+E (298302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:21.145]# RECV ASCII>
+W (299302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (299302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (299302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (299302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:36:23.659]# RECV ASCII>
+I (301822) demo_network: net: if=NONE ready=N state=4 lc=2 wifi_ph=1 cell_ph=4 fault=57 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:36:24.602]# RECV ASCII>
+I (302782) lte_hal: powering off LTE module (IOEX P1_1 LOW)
+I (302782) lsd_4g: 4G Network Disconnected
+I (302782) lsd_net_mgmt: Processing 4g disconnected event in lsd net mgmt
+W (302782) lsd_4g: CDC Device Disconnected
+W (302782) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+E (302782) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+W (302792) lsd_net_mgmt: Target WiFi has no IP
+E (302802) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+E (302812) USB HOST: EP command error: 
+
+[2026-08-12 15:36:24.724]# RECV ASCII>
+ESP_ERR_INVALID_STATE
+E (302862) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+E (302862) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+E (302862) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+W (302882) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:36:24.818]# RECV ASCII>
+W (302982) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:36:24.911]# RECV ASCII>
+W (303082) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:36:25.017]# RECV ASCII>
+W (303182) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:36:25.113]# RECV ASCII>
+W (303282) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:36:25.222]# RECV ASCII>
+W (303382) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:36:25.314]# RECV ASCII>
+W (303482) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:36:25.411]# RECV ASCII>
+W (303582) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:36:25.522]# RECV ASCII>
+W (303682) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:36:25.616]# RECV ASCII>
+W (303782) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+I (303782) lte_hal: powering on LTE module (IOEX P1_1 HIGH)
+
+
+[2026-08-12 15:36:26.490]# RECV ASCII>
+I (304652) lsd_4g: 4G Device Connected
+
+
+[2026-08-12 15:36:27.129]# RECV ASCII>
+E (305302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:28.135]# RECV ASCII>
+E (306302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:28.651]# RECV ASCII>
+I (306782) lte_hal: LTE module powered on, ready for USB ECM enumeration
+I (306822) demo_network: net: if=NONE ready=N state=1 lc=2 wifi_ph=1 cell_ph=9 fault=57 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:36:29.130]# RECV ASCII>
+E (307302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:30.127]# RECV ASCII>
+E (308302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:31.141]# RECV ASCII>
+W (309302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (309302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (309302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (309302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:36:33.657]# RECV ASCII>
+I (311822) demo_network: net: if=NONE ready=N state=4 lc=2 wifi_ph=1 cell_ph=4 fault=57 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:36:37.138]# RECV ASCII>
+E (315302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:38.142]# RECV ASCII>
+E (316302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:38.663]# RECV ASCII>
+I (316822) demo_network: net: if=NONE ready=N state=4 lc=2 wifi_ph=1 cell_ph=4 fault=57 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:36:39.144]# RECV ASCII>
+E (317302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:40.132]# RECV ASCII>
+E (318302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:41.157]# RECV ASCII>
+W (319302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (319302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (319302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (319302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:36:43.659]# RECV ASCII>
+I (321822) demo_network: net: if=NONE ready=N state=4 lc=2 wifi_ph=1 cell_ph=4 fault=57 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:36:47.135]# RECV ASCII>
+E (325302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:48.134]# RECV ASCII>
+E (326302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:48.655]# RECV ASCII>
+I (326822) demo_network: net: if=NONE ready=N state=4 lc=2 wifi_ph=1 cell_ph=4 fault=61 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:36:49.127]# RECV ASCII>
+E (327302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:50.138]# RECV ASCII>
+E (328302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:51.141]# RECV ASCII>
+W (329302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (329302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (329302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (329302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:36:53.656]# RECV ASCII>
+I (331822) demo_network: net: if=NONE ready=N state=7 lc=2 wifi_ph=1 cell_ph=4 fault=61 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:36:57.130]# RECV ASCII>
+E (335302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:58.141]# RECV ASCII>
+E (336302) ping_sock: send error=0
+
+
+[2026-08-12 15:36:58.657]# RECV ASCII>
+I (336822) demo_network: net: if=NONE ready=N state=7 lc=2 wifi_ph=1 cell_ph=4 fault=61 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:36:59.129]# RECV ASCII>
+E (337302) ping_sock: send error=0
+
+
+[2026-08-12 15:37:00.127]# RECV ASCII>
+E (338302) ping_sock: send error=0
+
+
+[2026-08-12 15:37:01.148]# RECV ASCII>
+W (339302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (339302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (339302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (339302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:37:03.651]# RECV ASCII>
+I (341822) demo_network: net: if=NONE ready=N state=7 lc=2 wifi_ph=1 cell_ph=4 fault=61 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:37:05.604]# RECV ASCII>
+W (343782) network_manager: [EXHAUSTED_EXIT] retry_exhausted cleared: phase 4->8, raw_link=1 raw_ipv4=0 internet=1 at 342420 ms
+I (343782) lte_hal: powering off LTE module (IOEX P1_1 LOW)
+I (343782) lsd_4g: 4G Network Disconnected
+I (343792) lsd_net_mgmt: Processing 4g disconnected event in lsd net mgmt
+W (343792) lsd_4g: CDC Device Disconnected
+W (343792) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+E (343802) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+W (343802) lsd_net_m
+
+[2026-08-12 15:37:05.717]# RECV ASCII>
+gmt: Target WiFi has no IP
+E (343812) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+E (343822) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+E (343872) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+E (343872) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+E (343872) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+W (343882) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:05.811]# RECV ASCII>
+W (343982) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:05.920]# RECV ASCII>
+W (344082) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:06.011]# RECV ASCII>
+W (344182) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:06.118]# RECV ASCII>
+W (344282) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:06.213]# RECV ASCII>
+W (344382) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:06.322]# RECV ASCII>
+W (344482) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:06.416]# RECV ASCII>
+W (344582) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:06.513]# RECV ASCII>
+W (344682) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:06.606]# RECV ASCII>
+W (344782) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+I (344782) lte_hal: powering on LTE module (IOEX P1_1 HIGH)
+
+
+[2026-08-12 15:37:07.129]# RECV ASCII>
+E (345302) ping_sock: send error=0
+
+
+[2026-08-12 15:37:07.487]# RECV ASCII>
+I (345652) lsd_4g: 4G Device Connected
+
+
+[2026-08-12 15:37:08.134]# RECV ASCII>
+E (346302) ping_sock: send error=0
+
+
+[2026-08-12 15:37:08.664]# RECV ASCII>
+I (346822) demo_network: net: if=NONE ready=N state=7 lc=2 wifi_ph=1 cell_ph=3 fault=58 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:37:09.137]# RECV ASCII>
+E (347302) ping_sock: send error=0
+
+
+[2026-08-12 15:37:09.608]# RECV ASCII>
+I (347782) lte_hal: LTE module powered on, ready for USB ECM enumeration
+
+
+[2026-08-12 15:37:10.130]# RECV ASCII>
+E (348302) ping_sock: send error=0
+
+
+[2026-08-12 15:37:11.145]# RECV ASCII>
+W (349302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (349302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (349302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (349302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:37:13.656]# RECV ASCII>
+I (351822) demo_network: net: if=NONE ready=N state=7 lc=2 wifi_ph=1 cell_ph=4 fault=58 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:37:17.134]# RECV ASCII>
+E (355302) ping_sock: send error=0
+
+
+[2026-08-12 15:37:18.133]# RECV ASCII>
+E (356302) ping_sock: send error=0
+
+
+[2026-08-12 15:37:18.661]# RECV ASCII>
+I (356822) demo_network: net: if=NONE ready=N state=7 lc=2 wifi_ph=1 cell_ph=4 fault=58 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:37:19.132]# RECV ASCII>
+E (357302) ping_sock: send error=0
+
+
+[2026-08-12 15:37:20.130]# RECV ASCII>
+E (358302) ping_sock: send error=0
+
+
+[2026-08-12 15:37:21.138]# RECV ASCII>
+W (359302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (359302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (359302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (359302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:37:23.660]# RECV ASCII>
+I (361822) demo_network: net: if=NONE ready=N state=7 lc=2 wifi_ph=1 cell_ph=4 fault=58 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:37:24.147]# RECV ASCII>
+W (362312) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:37:27.140]# RECV ASCII>
+E (365302) ping_sock: send error=0
+
+
+[2026-08-12 15:37:28.140]# RECV ASCII>
+E (366302) ping_sock: send error=0
+
+
+[2026-08-12 15:37:28.654]# RECV ASCII>
+I (366822) demo_network: net: if=NONE ready=N state=7 lc=2 wifi_ph=1 cell_ph=4 fault=57 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:37:29.127]# RECV ASCII>
+E (367302) ping_sock: send error=0
+
+
+[2026-08-12 15:37:30.138]# RECV ASCII>
+E (368302) ping_sock: send error=0
+
+
+[2026-08-12 15:37:31.149]# RECV ASCII>
+W (369302) lsd_net_mgmt: network quality F  Bad! netif 4G
+W (369302) lsd_net_mgmt: Network quality CRITICAL! Triggering switch...
+W (369302) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+W (369302) lsd_net_mgmt: Target WiFi has no IP
+
+
+[2026-08-12 15:37:31.639]# RECV ASCII>
+I (369782) lte_hal: powering off LTE module (IOEX P1_1 LOW)
+I (369782) lsd_4g: 4G Network Disconnected
+I (369782) lsd_net_mgmt: Processing 4g disconnected event in lsd net mgmt
+W (369782) lsd_4g: CDC Device Disconnected
+W (369782) lsd_net_mgmt: Current network poor, evaluating switch to WiFi...
+E (369782) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+E (369802) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+E (369802) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+E (369862) USB HOST: EP c
+
+[2026-08-12 15:37:31.710]# RECV ASCII>
+ommand error: ESP_ERR_INVALID_STATE
+E (369862) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+E (369862) USB HOST: EP command error: ESP_ERR_INVALID_STATE
+W (369882) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:31.819]# RECV ASCII>
+W (369982) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:31.911]# RECV ASCII>
+W (370082) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:32.021]# RECV ASCII>
+W (370182) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:32.115]# RECV ASCII>
+W (370282) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:32.209]# RECV ASCII>
+W (370382) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:32.318]# RECV ASCII>
+W (370482) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:32.412]# RECV ASCII>
+W (370582) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:32.521]# RECV ASCII>
+W (370682) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+
+
+[2026-08-12 15:37:32.616]# RECV ASCII>
+W (370782) network_manager: Modem not READY (state=0); forcing cellular link/ipv4 down
+I (370782) lte_hal: powering on LTE module (IOEX P1_1 HIGH)
+
+
+[2026-08-12 15:37:33.492]# RECV ASCII>
+I (371652) lsd_4g: 4G Device Connected
+
+
+[2026-08-12 15:37:33.663]# RECV ASCII>
+I (371822) demo_network: net: if=NONE ready=N state=7 lc=2 wifi_ph=1 cell_ph=3 fault=57 wifi(en=1 link=0 ip=0) cell(en=1 ip=0) raw_rdy=0 sw=1
+
+
+[2026-08-12 15:37:35.607]# RECV ASCII>
+I (373782) lte_hal: LTE module powered on, ready for USB ECM enumeration
+
+
+[2026-08-12 15:37:35.950]# RECV ASCII>
+I (374112) network_manager: [CELLULAR_EVENT] IP_EVENT_ETH_GOT_IP at 372750 ms
+I (374112) lsd_4g: Got IP: 10.10.6.37
+I (374112) lsd_net_mgmt: Processing 4g connected event in lsd net mgmt
+
+
+[2026-08-12 15:37:37.009]# RECV ASCII>
+I (375172) lsd_net_mgmt: Target 4G AVAILABLE
+
+
+[2026-08-12 15:37:38.659]# RECV ASCII>
+I (376822) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:37:40.189]# RECV ASCII>
+I (378362) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:37:43.654]# RECV ASCII>
+I (381822) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:37:48.656]# RECV ASCII>
+I (386822) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:37:50.196]# RECV ASCII>
+I (388352) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:37:53.667]# RECV ASCII>
+I (391822) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:37:58.655]# RECV ASCII>
+I (396822) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:38:00.189]# RECV ASCII>
+I (398352) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:38:03.654]# RECV ASCII>
+I (401822) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:38:08.664]# RECV ASCII>
+I (406822) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:38:10.195]# RECV ASCII>
+I (408352) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:38:13.659]# RECV ASCII>
+I (411822) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:38:18.667]# RECV ASCII>
+I (416822) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:38:20.187]# RECV ASCII>
+I (418352) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+
+
+[2026-08-12 15:38:23.652]# RECV ASCII>
+I (421822) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:38:28.663]# RECV ASCII>
+I (426822) demo_network: net: if=4G ready=Y state=5 lc=2 wifi_ph=1 cell_ph=6 fault=0 wifi(en=1 link=0 ip=0) cell(en=1 ip=1) raw_rdy=1 sw=0
+
+
+[2026-08-12 15:38:30.191]# RECV ASCII>
+I (428352) lsd_net_mgmt: network quality A+ Excellent! netif 4G
+

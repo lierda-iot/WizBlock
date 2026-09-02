@@ -1,0 +1,6 @@
+esptool.py v4.12.dev2
+Serial port COM7
+Connecting......................................
+
+A fatal error occurred: Failed to connect to ESP32-S3: Wrong boot mode detected (0xb)! The chip needs to be in download mode.
+For troubleshooting steps visit: https://docs.espressif.com/projects/esptool/en/latest/troubleshooting.html

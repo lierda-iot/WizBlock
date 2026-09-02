@@ -1,0 +1,572 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+I (24) boot: ESP-IDF v5.5.4 2nd stage bootloader
+I (25) boot: compile time Aug 17 2026 19:30:58
+I (25) boot: Multicore bootloader
+I (25) boot: chip revision: v0.2
+I (28) boot: efuse block revision: v1.3
+I (31) boot.esp32s3: Boot SPI Speed : 80MHz
+I (35) boot.esp32s3: SPI Mode       : DIO
+I (39) boot.esp32s3: SPI Flash Size : 8MB
+I (43) boot: Enabling RNG early entropy source...
+I (47) boot: Partition Table:
+I (50) boot: ## Label            Usage          Type ST Offset   Length
+I (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (69) boot:  2 factory          factory app      00 00 00010000 00300000
+I (76) boot:  3 storage          Unknown data     01 82 00310000 00100000
+I (82) boot: End of partition table
+I (85) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=2a368h (172904) map
+I (123) esp_image: segment 1: paddr=0003a390 vaddr=3fca2800 size=053e8h ( 21480) load
+I (128) esp_image: segment 2: paddr=0003f780 vaddr=40374000 size=00898h (  2200) load
+I (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c3200h (799232) map
+I (275) esp_image: segment 4: paddr=00103228 vaddr=40374898 size=1df20h (122656) load
+I (302) esp_image: segment 5: paddr=00121150 vaddr=50000000 size=00020h (    32) load
+I (314) boot: Loaded app from partition at offset 0x10000
+I (315) boot: Disabling RNG early entropy source...
+I (325) esp_psram: Found 8MB PSRAM device
+I (325) esp_psram: Speed: 80MHz
+I (325) cpu_start: Multicore app
+I (1243) esp_psram: SPI SRAM memory test OK
+I (1251) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (1252) cpu_start: Pro cpu start user code
+I (1252) cpu_start: cpu freq: 160000000 Hz
+I (1254) app_init: Application information:
+I (1258) app_init: Project name:     rc_tank_demo
+I (1262) app_init: App version:      1
+I (1266) app_init: Compile time:     Aug 17 2026 19:30:16
+I (1271) app_init: ELF file SHA256:  13ded24ac...
+I (1275) app_init: ESP-IDF:          v5.5.4
+I (1279) efuse_init: Min chip rev:     v0.0
+I (1283) efuse_init: Max chip rev:     v0.99 
+I (1287) efuse_init: Chip rev:         v0.2
+I (1291) heap_init: Initializing. RAM available for dynamic allocation:
+I (1297) heap_init: At 3FCABB30 len 0003DBE0 (246 KiB): RAM
+I (1303) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (1308) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (1313) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (1319) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (1326) spi_flash: detected chip: generic
+I (1329) spi_flash: flash io: dio
+I (1333) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (1338) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (1345) main_task: Started on CPU0
+I (1369) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations
+I (1370) main_task: Calling app_main()
+I (1380) rc_tank: === RC Tank Demo (EX-033) Role: REMOTE ===
+I (1381) rc_tank: Startup delay 10 s (open serial monitor now)...
+I (1381) rc_tank:   starting in 10 s
+I (2384) rc_tank:   starting in 9 s
+I (3384) rc_tank:   starting in 8 s
+I (4384) rc_tank:   starting in 7 s
+I (5384) rc_tank:   starting in 6 s
+I (6384) rc_tank:   starting in 5 s
+I (7384) rc_tank:   starting in 4 s
+I (8384) rc_tank:   starting in 3 s
+I (9384) rc_tank:   starting in 2 s
+I (10384) rc_tank:   starting in 1 s
+I (11384) rc_tank: Starting Remote role (P1: network, P2: control stub, P3: video)
+I (11384) board_laiwfs300: init board support package
+I (11385) board_laiwfs300: init capability registry
+I (11389) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (11395) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (11401) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (11409) board_laiwfs300:   I2C device ACK at 0x15
+I (11412) board_laiwfs300:   I2C device ACK at 0x18
+I (11417) board_laiwfs300:   I2C device ACK at 0x22
+I (11425) board_laiwfs300:   I2C device ACK at 0x40
+I (11428) board_laiwfs300:   I2C device ACK at 0x51
+I (11433) board_laiwfs300:   I2C device ACK at 0x68
+I (11436) board_laiwfs300: --- I2C scan done: 6 device(s) found ---
+W (11440) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (11446) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (11451) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (11456) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (11461) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (11466) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+W (11472) board_laiwfs300: SP0A39 (Camera) NOT found at 0x21 (NACK)
+I (11479) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (11483) board_laiwfs300: ES7210 chip ID: 0x72
+I (11489) board_laiwfs300: AIP8563 RTC time: 04:16:23 (BCD raw)
+I (11493) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (11498) board_laiwfs300: init SPI bus manager
+I (11503) board_laiwfs300: init ADC service
+I (11507) board_adc: ADC1 oneshot initialized
+I (11511) board_laiwfs300: init board power service
+I (11516) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=4095 (~3100 mV)
+I (11521) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=1476 (~1117 mV)
+I (11527) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (11533) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (11541) io_expander: TPT29555A initialized at 0x22
+I (11544) board_laiwfs300: IO expander initialized OK
+I (11548) board_laiwfs300: init module detect
+I (11552) board_laiwfs300: register detection rules
+I (11557) board_laiwfs300: register default capabilities
+I (11562) board_laiwfs300: board init complete (ioex=OK)
+I (11788) touch_hal: CST836U initialized at 0x15
+I (11790) touch_hal: CST836U info: module_id=0x01 fw_ver=0x19 chip_type=0x1300
+I (11790) board_touch: CST836U verify OK: module_id=0x01 fw=0x19 chip_type=0x1300
+I (11795) rc_control: Joystick init (landscape 320x240, center=72,168, forward=screen-up, 50Hz touch poll)
+I (11804) rc_video: Initializing video display
+I (11809) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+E (11955) spi: spi_bus_initialize(816): SPI bus already initialized.
+I (12076) display_hal: ST7789V3 LCD initialized
+I (12076) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=20000000
+I (12144) rc_video: Display initialized (landscape 320Ã—240) and backlight ON
+I (12144) rc_video: Display theory: RGB565=153600 B/frame, SPI payload=61440 us/frame, max=16.28 fps, chunk=40 lines (10240 us)
+I (12151) rc_audio: Initializing audio recording (ES7210 + SW3)
+I (12159) board_audio: I2S0 duplex: TX=STD RX=TDM MCLK=42 BCLK=41 WS=39 DOUT=38 DIN=40 rate=16000
+I (12172) ES8311: Work in Slave mode
+I (12179) ES7210: Work in Slave mode
+I (12186) ES7210: Enable ES7210_INPUT_MIC1
+I (12189) ES7210: Enable ES7210_INPUT_MIC2
+I (12192) ES7210: Enable ES7210_INPUT_MIC3
+I (12195) ES7210: Enable ES7210_INPUT_MIC4
+I (12198) ES7210: Enable TDM mode
+I (12202) board_audio: codec devices created (ES8311 out, ES7210 in)
+I (12203) I2S_IF: Paired data: 0x3fceeb24, current mode: playback, paired in_enable: 0, paired out_enable: 0
+I (12209) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+I (12217) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (12242) Adev_Codec: Open codec device OK
+I (12243) I2S_IF: Peer mode playback need extend bits 32 to 64
+I (12243) I2S_IF: TDM: RX, data_bit: 16, slot_bit: 16, ws_width: 32, total_slot: 4, slot_mask: 0xf
+I (12249) I2S_IF: TDM: RX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (12256) I2S_IF: STD: TX, data_bit: 16, slot_bit: 32, ws_width: 32, slot_mode: MONO, slot_mask: 0x1
+I (12265) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (12273) ES7210: Bits 16
+I (12282) ES7210: Enable ES7210_INPUT_MIC1
+I (12285) ES7210: Enable ES7210_INPUT_MIC2
+I (12288) ES7210: Enable ES7210_INPUT_MIC3
+I (12291) ES7210: Enable ES7210_INPUT_MIC4
+I (12294) ES7210: Enable TDM mode
+I (12301) ES7210: Unmuted
+I (12301) Adev_Codec: Open codec device OK
+I (12303) board_audio: audio initialized (esp_codec_dev)
+I (12304) board_audio: RX TDM reconfigured: 4 slots, raw I2S read mode
+I (12311) opus_codec: Opus encoder: rate=16000 ch=1 frame=960 samples outbuf=220 bytes
+I (12318) rc_audio: Audio recording initialized
+I (12323) rc_net: Initializing as STA (Remote)
+I (12327) pp: pp rom version: e7ae62f
+I (12330) net80211: net80211 rom version: e7ae62f
+I (12335) wifi:wifi driver task: 3fcc5428, prio:23, stack:6656, core=0
+I (12343) wifi:wifi firmware version: 0947e8b
+I (12344) wifi:wifi certification version: v7.0
+I (12348) wifi:config NVS flash: enabled
+I (12352) wifi:config nano formatting: disabled
+I (12356) wifi:Init data frame dynamic rx buffer num: 32
+I (12362) wifi:Init static rx mgmt buffer num: 5
+I (12366) wifi:Init management short buffer num: 32
+I (12370) wifi:Init dynamic tx buffer num: 32
+I (12374) wifi:Init static tx FG buffer num: 2
+I (12379) wifi:Init static rx buffer size: 1600
+I (12383) wifi:Init static rx buffer num: 10
+I (12387) wifi:Init dynamic rx buffer num: 32
+I (12392) wifi_init: rx ba win: 6
+I (12394) wifi_init: accept mbox: 6
+I (12397) wifi_init: tcpip mbox: 16
+I (12400) wifi_init: udp mbox: 6
+I (12403) wifi_init: tcp mbox: 6
+I (12406) wifi_init: tcp tx win: 5760
+I (12410) wifi_init: tcp rx win: 5760
+I (12413) wifi_init: tcp mss: 1440
+I (12416) wifi_init: WiFi IRAM OP enabled
+I (12420) wifi_init: WiFi RX IRAM OP enabled
+I (12425) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (12466) wifi:mode : sta (44:1b:f6:f3:ae:70)
+I (12466) wifi:enable tsf
+E (12469) rc_net: esp_wifi_connect failed: ESP_ERR_WIFI_SSID
+I (12568) rc_net: Scanning for RC_TANK_* APs...
+E (15070) rc_net: No RC_TANK_* AP found in scan results
+E (15070) rc_tank: Network init failed: ESP_FAIL
+E (15071) rc_tank: Role init failed (ESP_FAIL), restarting in 5s...
+I (20076) wifi:flush txq
+I (20077) wifi:stop sw txq
+I (20077) wifi:lmac stop hw txq
+ €ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40382ed1
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+I (29) boot: ESP-IDF v5.5.4 2nd stage bootloader
+I (29) boot: compile time Aug 17 2026 19:30:58
+I (29) boot: Multicore bootloader
+I (29) boot: chip revision: v0.2
+I (32) boot: efuse block revision: v1.3
+I (36) boot.esp32s3: Boot SPI Speed : 80MHz
+I (40) boot.esp32s3: SPI Mode       : DIO
+I (43) boot.esp32s3: SPI Flash Size : 8MB
+I (47) boot: Enabling RNG early entropy source...
+I (52) boot: Partition Table:
+I (54) boot: ## Label            Usage          Type ST Offset   Length
+I (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (73) boot:  2 factory          factory app      00 00 00010000 00300000
+I (80) boot:  3 storage          Unknown data     01 82 00310000 00100000
+I (87) boot: End of partition table
+I (90) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=2a368h (172904) map
+I (128) esp_image: segment 1: paddr=0003a390 vaddr=3fca2800 size=053e8h ( 21480) load
+I (132) esp_image: segment 2: paddr=0003f780 vaddr=40374000 size=00898h (  2200) load
+I (133) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c3200h (799232) map
+I (280) esp_image: segment 4: paddr=00103228 vaddr=40374898 size=1df20h (122656) load
+I (307) esp_image: segment 5: paddr=00121150 vaddr=50000000 size=00020h (    32) load
+I (319) boot: Loaded app from partition at offset 0x10000
+I (319) boot: Disabling RNG early entropy source...
+I (329) esp_psram: Found 8MB PSRAM device
+I (329) esp_psram: Speed: 80MHz
+I (329) cpu_start: Multicore app
+I (1247) esp_psram: SPI SRAM memory test OK
+I (1256) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (1256) cpu_start: Pro cpu start user code
+I (1256) cpu_start: cpu freq: 160000000 Hz
+I (1258) app_init: Application information:
+I (1262) app_init: Project name:     rc_tank_demo
+I (1266) app_init: App version:      1
+I (1270) app_init: Compile time:     Aug 17 2026 19:30:16
+I (1275) app_init: ELF file SHA256:  13ded24ac...
+I (1279) app_init: ESP-IDF:          v5.5.4
+I (1283) efuse_init: Min chip rev:     v0.0
+I (1287) efuse_init: Max chip rev:     v0.99 
+I (1291) efuse_init: Chip rev:         v0.2
+I (1295) heap_init: Initializing. RAM available for dynamic allocation:
+I (1302) heap_init: At 3FCABB30 len 0003DBE0 (246 KiB): RAM
+I (1307) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (1312) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (1317) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (1323) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (1330) spi_flash: detected chip: generic
+I (1333) spi_flash: flash io: dio
+I (1337) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (1343) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (1350) main_task: Started on CPU0
+I (1374) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations
+I (1375) main_task: Calling app_main()
+I (1385) rc_tank: === RC Tank Demo (EX-033) Role: REMOTE ===
+I (1386) rc_tank: Startup delay 10 s (open serial monitor now)...
+I (1386) rc_tank:   starting in 10 s
+I (2389) rc_tank:   starting in 9 s
+I (3389) rc_tank:   starting in 8 s
+I (4389) rc_tank:   starting in 7 s
+I (5389) rc_tank:   starting in 6 s
+I (6389) rc_tank:   starting in 5 s
+I (7389) rc_tank:   starting in 4 s
+I (8389) rc_tank:   starting in 3 s
+I (9389) rc_tank:   starting in 2 s
+I (10389) rc_tank:   starting in 1 s
+I (11389) rc_tank: Starting Remote role (P1: network, P2: control stub, P3: video)
+I (11389) board_laiwfs300: init board support package
+I (11390) board_laiwfs300: init capability registry
+I (11394) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (11400) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (11406) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (11414) board_laiwfs300:   I2C device ACK at 0x15
+I (11417) board_laiwfs300:   I2C device ACK at 0x18
+I (11422) board_laiwfs300:   I2C device ACK at 0x22
+I (11430) board_laiwfs300:   I2C device ACK at 0x40
+I (11433) board_laiwfs300:   I2C device ACK at 0x51
+I (11438) board_laiwfs300:   I2C device ACK at 0x68
+I (11441) board_laiwfs300: --- I2C scan done: 6 device(s) found ---
+W (11445) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (11451) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (11456) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (11461) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (11466) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (11471) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+W (11477) board_laiwfs300: SP0A39 (Camera) NOT found at 0x21 (NACK)
+I (11484) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (11488) board_laiwfs300: ES7210 chip ID: 0x72
+I (11494) board_laiwfs300: AIP8563 RTC time: 04:16:43 (BCD raw)
+I (11498) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (11503) board_laiwfs300: init SPI bus manager
+I (11508) board_laiwfs300: init ADC service
+I (11512) board_adc: ADC1 oneshot initialized
+I (11516) board_laiwfs300: init board power service
+I (11521) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=4095 (~3100 mV)
+I (11526) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=1575 (~1192 mV)
+I (11532) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (11538) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (11546) io_expander: TPT29555A initialized at 0x22
+I (11549) board_laiwfs300: IO expander initialized OK
+I (11553) board_laiwfs300: init module detect
+I (11557) board_laiwfs300: register detection rules
+I (11562) board_laiwfs300: register default capabilities
+I (11567) board_laiwfs300: board init complete (ioex=OK)
+I (11793) touch_hal: CST836U initialized at 0x15
+I (11795) touch_hal: CST836U info: module_id=0x01 fw_ver=0x19 chip_type=0x1300
+I (11795) board_touch: CST836U verify OK: module_id=0x01 fw=0x19 chip_type=0x1300
+I (11800) rc_control: Joystick init (landscape 320x240, center=72,168, forward=screen-up, 50Hz touch poll)
+I (11809) rc_video: Initializing video display
+I (11814) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+E (11960) spi: spi_bus_initialize(816): SPI bus already initialized.
+I (12081) display_hal: ST7789V3 LCD initialized
+I (12081) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=20000000
+I (12149) rc_video: Display initialized (landscape 320Ã—240) and backlight ON
+I (12149) rc_video: Display theory: RGB565=153600 B/frame, SPI payload=61440 us/frame, max=16.28 fps, chunk=40 lines (10240 us)
+I (12156) rc_audio: Initializing audio recording (ES7210 + SW3)
+I (12164) board_audio: I2S0 duplex: TX=STD RX=TDM MCLK=42 BCLK=41 WS=39 DOUT=38 DIN=40 rate=16000
+I (12177) ES8311: Work in Slave mode
+I (12184) ES7210: Work in Slave mode
+I (12191) ES7210: Enable ES7210_INPUT_MIC1
+I (12194) ES7210: Enable ES7210_INPUT_MIC2
+I (12197) ES7210: Enable ES7210_INPUT_MIC3
+I (12200) ES7210: Enable ES7210_INPUT_MIC4
+I (12203) ES7210: Enable TDM mode
+I (12207) board_audio: codec devices created (ES8311 out, ES7210 in)
+I (12208) I2S_IF: Paired data: 0x3fceeb24, current mode: playback, paired in_enable: 0, paired out_enable: 0
+I (12214) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+I (12222) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (12247) Adev_Codec: Open codec device OK
+I (12248) I2S_IF: Peer mode playback need extend bits 32 to 64
+I (12248) I2S_IF: TDM: RX, data_bit: 16, slot_bit: 16, ws_width: 32, total_slot: 4, slot_mask: 0xf
+I (12254) I2S_IF: TDM: RX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (12261) I2S_IF: STD: TX, data_bit: 16, slot_bit: 32, ws_width: 32, slot_mode: MONO, slot_mask: 0x1
+I (12270) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (12278) ES7210: Bits 16
+I (12287) ES7210: Enable ES7210_INPUT_MIC1
+I (12290) ES7210: Enable ES7210_INPUT_MIC2
+I (12293) ES7210: Enable ES7210_INPUT_MIC3
+I (12296) ES7210: Enable ES7210_INPUT_MIC4
+I (12299) ES7210: Enable TDM mode
+I (12306) ES7210: Unmuted
+I (12306) Adev_Codec: Open codec device OK
+I (12308) board_audio: audio initialized (esp_codec_dev)
+I (12309) board_audio: RX TDM reconfigured: 4 slots, raw I2S read mode
+I (12316) opus_codec: Opus encoder: rate=16000 ch=1 frame=960 samples outbuf=220 bytes
+I (12323) rc_audio: Audio recording initialized
+I (12328) rc_net: Initializing as STA (Remote)
+I (12332) pp: pp rom version: e7ae62f
+I (12335) net80211: net80211 rom version: e7ae62f
+I (12340) wifi:wifi driver task: 3fcc5428, prio:23, stack:6656, core=0
+I (12348) wifi:wifi firmware version: 0947e8b
+I (12349) wifi:wifi certification version: v7.0
+I (12353) wifi:config NVS flash: enabled
+I (12357) wifi:config nano formatting: disabled
+I (12361) wifi:Init data frame dynamic rx buffer num: 32
+I (12367) wifi:Init static rx mgmt buffer num: 5
+I (12371) wifi:Init management short buffer num: 32
+I (12375) wifi:Init dynamic tx buffer num: 32
+I (12379) wifi:Init static tx FG buffer num: 2
+I (12384) wifi:Init static rx buffer size: 1600
+I (12388) wifi:Init static rx buffer num: 10
+I (12392) wifi:Init dynamic rx buffer num: 32
+I (12397) wifi_init: rx ba win: 6
+I (12399) wifi_init: accept mbox: 6
+I (12402) wifi_init: tcpip mbox: 16
+I (12405) wifi_init: udp mbox: 6
+I (12408) wifi_init: tcp mbox: 6
+I (12411) wifi_init: tcp tx win: 5760
+I (12415) wifi_init: tcp rx win: 5760
+I (12418) wifi_init: tcp mss: 1440
+I (12421) wifi_init: WiFi IRAM OP enabled
+I (12425) wifi_init: WiFi RX IRAM OP enabled
+I (12430) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (12471) wifi:mode : sta (44:1b:f6:f3:ae:70)
+I (12471) wifi:enable tsf
+E (12474) rc_net: esp_wifi_connect failed: ESP_ERR_WIFI_SSID
+I (12573) rc_net: Scanning for RC_TANK_* APs...
+E (15075) rc_net: No RC_TANK_* AP found in scan results
+E (15076) rc_tank: Network init failed: ESP_FAIL
+E (15076) rc_tank: Role init failed (ESP_FAIL), restarting in 5s...
+I (20081) wifi:flush txq
+I (20082) wifi:stop sw txq
+I (20082) wifi:lmac stop hw txq
+ €ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40382ed1
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+I (29) boot: ESP-IDF v5.5.4 2nd stage bootloader
+I (29) boot: compile time Aug 17 2026 19:30:58
+I (29) boot: Multicore bootloader
+I (29) boot: chip revision: v0.2
+I (32) boot: efuse block revision: v1.3
+I (36) boot.esp32s3: Boot SPI Speed : 80MHz
+I (40) boot.esp32s3: SPI Mode       : DIO
+I (43) boot.esp32s3: SPI Flash Size : 8MB
+I (47) boot: Enabling RNG early entropy source...
+I (52) boot: Partition Table:
+I (54) boot: ## Label            Usage          Type ST Offset   Length
+I (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (73) boot:  2 factory          factory app      00 00 00010000 00300000
+I (80) boot:  3 storage          Unknown data     01 82 00310000 00100000
+I (87) boot: End of partition table
+I (90) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=2a368h (172904) map
+I (128) esp_image: segment 1: paddr=0003a390 vaddr=3fca2800 size=053e8h ( 21480) load
+I (132) esp_image: segment 2: paddr=0003f780 vaddr=40374000 size=00898h (  2200) load
+I (133) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=c3200h (799232) map
+I (280) esp_image: segment 4: paddr=00103228 vaddr=40374898 size=1df20h (122656) load
+I (307) esp_image: segment 5: paddr=00121150 vaddr=50000000 size=00020h (    32) load
+I (319) boot: Loaded app from partition at offset 0x10000
+I (319) boot: Disabling RNG early entropy source...
+I (329) esp_psram: Found 8MB PSRAM device
+I (329) esp_psram: Speed: 80MHz
+I (329) cpu_start: Multicore app
+I (1247) esp_psram: SPI SRAM memory test OK
+I (1256) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (1256) cpu_start: Pro cpu start user code
+I (1256) cpu_start: cpu freq: 160000000 Hz
+I (1258) app_init: Application information:
+I (1262) app_init: Project name:     rc_tank_demo
+I (1266) app_init: App version:      1
+I (1270) app_init: Compile time:     Aug 17 2026 19:30:16
+I (1275) app_init: ELF file SHA256:  13ded24ac...
+I (1279) app_init: ESP-IDF:          v5.5.4
+I (1283) efuse_init: Min chip rev:     v0.0
+I (1287) efuse_init: Max chip rev:     v0.99 
+I (1291) efuse_init: Chip rev:         v0.2
+I (1295) heap_init: Initializing. RAM available for dynamic allocation:
+I (1302) heap_init: At 3FCABB30 len 0003DBE0 (246 KiB): RAM
+I (1307) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (1312) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (1317) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (1323) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (1330) spi_flash: detected chip: generic
+I (1333) spi_flash: flash io: dio
+I (1337) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (1343) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (1350) main_task: Started on CPU0
+I (1374) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations
+I (1375) main_task: Calling app_main()
+I (1385) rc_tank: === RC Tank Demo (EX-033) Role: REMOTE ===
+I (1386) rc_tank: Startup delay 10 s (open serial monitor now)...
+I (1386) rc_tank:   starting in 10 s
+I (2389) rc_tank:   starting in 9 s
+I (3389) rc_tank:   starting in 8 s
+I (4389) rc_tank:   starting in 7 s
+I (5389) rc_tank:   starting in 6 s
+I (6389) rc_tank:   starting in 5 s
+I (7389) rc_tank:   starting in 4 s
+I (8389) rc_tank:   starting in 3 s
+I (9389) rc_tank:   starting in 2 s
+I (10389) rc_tank:   starting in 1 s
+I (11389) rc_tank: Starting Remote role (P1: network, P2: control stub, P3: video)
+I (11389) board_laiwfs300: init board support package
+I (11390) board_laiwfs300: init capability registry
+I (11394) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (11400) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (11406) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (11414) board_laiwfs300:   I2C device ACK at 0x15
+I (11417) board_laiwfs300:   I2C device ACK at 0x18
+I (11422) board_laiwfs300:   I2C device ACK at 0x22
+I (11430) board_laiwfs300:   I2C device ACK at 0x40
+I (11433) board_laiwfs300:   I2C device ACK at 0x51
+I (11438) board_laiwfs300:   I2C device ACK at 0x68
+I (11441) board_laiwfs300: --- I2C scan done: 6 device(s) found ---
+W (11445) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (11451) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (11456) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (11461) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (11466) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (11471) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+W (11477) board_laiwfs300: SP0A39 (Camera) NOT found at 0x21 (NACK)
+I (11484) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (11488) board_laiwfs300: ES7210 chip ID: 0x72
+I (11494) board_laiwfs300: AIP8563 RTC time: 04:17:03 (BCD raw)
+I (11498) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (11503) board_laiwfs300: init SPI bus manager
+I (11508) board_laiwfs300: init ADC service
+I (11512) board_adc: ADC1 oneshot initialized
+I (11516) board_laiwfs300: init board power service
+I (11521) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=4095 (~3100 mV)
+I (11526) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=0 (~0 mV)
+I (11532) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (11538) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (11546) io_expander: TPT29555A initialized at 0x22
+I (11548) board_laiwfs300: IO expander initialized OK
+I (11553) board_laiwfs300: init module detect
+I (11557) board_laiwfs300: register detection rules
+I (11562) board_laiwfs300: register default capabilities
+I (11567) board_laiwfs300: board init complete (ioex=OK)
+I (11793) touch_hal: CST836U initialized at 0x15
+I (11795) touch_hal: CST836U info: module_id=0x01 fw_ver=0x19 chip_type=0x1300
+I (11795) board_touch: CST836U verify OK: module_id=0x01 fw=0x19 chip_type=0x1300
+I (11800) rc_control: Joystick init (landscape 320x240, center=72,168, forward=screen-up, 50Hz touch poll)
+I (11809) rc_video: Initializing video display
+I (11814) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+E (11960) spi: spi_bus_initialize(816): SPI bus already initialized.
+I (12081) display_hal: ST7789V3 LCD initialized
+I (12081) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=20000000
+I (12149) rc_video: Display initialized (landscape 320Ã—240) and backlight ON
+I (12149) rc_video: Display theory: RGB565=153600 B/frame, SPI payload=61440 us/frame, max=16.28 fps, chunk=40 lines (10240 us)
+I (12156) rc_audio: Initializing audio recording (ES7210 + SW3)
+I (12164) board_audio: I2S0 duplex: TX=STD RX=TDM MCLK=42 BCLK=41 WS=39 DOUT=38 DIN=40 rate=16000
+I (12177) ES8311: Work in Slave mode
+I (12184) ES7210: Work in Slave mode
+I (12191) ES7210: Enable ES7210_INPUT_MIC1
+I (12194) ES7210: Enable ES7210_INPUT_MIC2
+I (12197) ES7210: Enable ES7210_INPUT_MIC3
+I (12200) ES7210: Enable ES7210_INPUT_MIC4
+I (12203) ES7210: Enable TDM mode
+I (12207) board_audio: codec devices created (ES8311 out, ES7210 in)
+I (12208) I2S_IF: Paired data: 0x3fceeb24, current mode: playback, paired in_enable: 0, paired out_enable: 0
+I (12214) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+I (12222) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (12247) Adev_Codec: Open codec device OK
+I (12248) I2S_IF: Peer mode playback need extend bits 32 to 64
+I (12248) I2S_IF: TDM: RX, data_bit: 16, slot_bit: 16, ws_width: 32, total_slot: 4, slot_mask: 0xf
+I (12254) I2S_IF: TDM: RX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (12261) I2S_IF: STD: TX, data_bit: 16, slot_bit: 32, ws_width: 32, slot_mode: MONO, slot_mask: 0x1
+I (12270) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+I (12278) ES7210: Bits 16
+I (12287) ES7210: Enable ES7210_INPUT_MIC1
+I (12290) ES7210: Enable ES7210_INPUT_MIC2
+I (12293) ES7210: Enable ES7210_INPUT_MIC3
+I (12296) ES7210: Enable ES7210_INPUT_MIC4
+I (12299) ES7210: Enable TDM mode
+I (12306) ES7210: Unmuted
+I (12306) Adev_Codec: Open codec device OK
+I (12308) board_audio: audio initialized (esp_codec_dev)
+I (12309) board_audio: RX TDM reconfigured: 4 slots, raw I2S read mode
+I (12316) opus_codec: Opus encoder: rate=16000 ch=1 frame=960 samples outbuf=220 bytes
+I (12323) rc_audio: Audio recording initialized
+I (12328) rc_net: Initializing as STA (Remote)
+I (12332) pp: pp rom version: e7ae62f
+I (12335) net80211: net80211 rom version: e7ae62f
+I (12340) wifi:wifi driver task: 3fcc5428, prio:23, stack:6656, core=0
+I (12348) wifi:wifi firmware version: 0947e8b
+I (12349) wifi:wifi certification version: v7.0
+I (12353) wifi:config NVS flash: enabled
+I (12357) wifi:config nano formatting: disabled
+I (12361) wifi:Init data frame dynamic rx buffer num: 32
+I (12367) wifi:Init static rx mgmt buffer num: 5
+I (12371) wifi:Init management short buffer num: 32
+I (12375) wifi:Init dynamic tx buffer num: 32
+I (12379) wifi:Init static tx FG buffer num: 2
+I (12384) wifi:Init static rx buffer size: 1600
+I (12388) wifi:Init static rx buffer num: 10
+I (12392) wifi:Init dynamic rx buffer num: 32
+I (12397) wifi_init: rx ba win: 6
+I (12399) wifi_init: accept mbox: 6
+I (12402) wifi_init: tcpip mbox: 16
+I (12405) wifi_init: udp mbox: 6
+I (12408) wifi_init: tcp mbox: 6
+I (12411) wifi_init: tcp tx win: 5760
+I (12415) wifi_init: tcp rx win: 5760
+I (12418) wifi_init: tcp mss: 1440
+I (12421) wifi_init: WiFi IRAM OP enabled
+I (12425) wifi_init: WiFi RX IRAM OP enabled
+I (12430) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (12470) wifi:mode : sta (44:1b:f6:f3:ae:70)
+I (12471) wifi:enable tsf
+E (12474) rc_net: esp_wifi_connect failed: ESP_ERR_WIFI_SSID
+I (12573) rc_net: Scanning for RC_TANK_* APs...
+E (15075) rc_net: No RC_TANK_* AP found in scan results
+E (15076) rc_tank: Network init failed: ESP_FAIL
+E (15076) rc_tank: Role init failed (ESP_FAIL), restarting in 5s...

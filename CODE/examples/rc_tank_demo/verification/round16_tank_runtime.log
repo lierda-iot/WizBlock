@@ -1,0 +1,88 @@
+I (38121) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (38122) wifi:station: 44:1b:f6:f3:ae:28 join, AID=1, bgn, 40U
+I (38148) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:28
+I (38191) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (38192) rc_net: STA assigned IP: 192.168.4.2
+I (38192) rc_tank: Network connected, peer: 192.168.4.2
+I (38199) rc_net: Ctrl UDP socket bound to port 8001
+I (38202) rc_net: Video UDP socket bound to port 8002
+I (38207) rc_net: Audio TCP listening on port 8003
+I (38211) rc_tank: Socket channels started
+I (38220) rc_video: Video TX task started (240x180, sensor-driven, Q=60)
+I (38221) rc_video: TX theory: raw=614400 B/frame, encoded YUV=86400 B/frame, target10fps raw=0.86 MB/s
+I (38260) rc_video: Tank video started (synthetic source)
+I (38261) rc_audio: Audio RX task started
+I (38263) opus_codec: Opus decoder: rate=16000 ch=1 frame=960 samples
+I (38264) rc_audio: Audio playback tasks started
+I (38265) rc_audio: Audio play task started
+W (38270) rc_net: Video UDP send failed: seq=0 chunk=4/4 bytes=1093 sent=-1 errno=12 attempts=4
+W (38281) rc_video: Video send failed: ESP_FAIL
+W (38321) rc_video: Video send failed: ESP_FAIL
+W (38354) rc_video: Video send failed: ESP_FAIL
+W (38387) rc_video: Video send failed: ESP_FAIL
+W (38419) rc_video: Video send failed: ESP_FAIL
+W (38451) rc_video: Video send failed: ESP_FAIL
+W (38484) rc_video: Video send failed: ESP_FAIL
+W (38518) rc_video: Video send failed: ESP_FAIL
+W (38551) rc_video: Video send failed: ESP_FAIL
+W (38584) rc_video: Video send failed: ESP_FAIL
+W (38616) rc_video: Video send failed: ESP_FAIL
+W (38648) rc_video: Video send failed: ESP_FAIL
+W (38681) rc_video: Video send failed: ESP_FAIL
+W (38715) rc_video: Video send failed: ESP_FAIL
+W (38747) rc_video: Video send failed: ESP_FAIL
+W (38781) rc_video: Video send failed: ESP_FAIL
+W (38813) rc_video: Video send failed: ESP_FAIL
+W (38845) rc_video: Video send failed: ESP_FAIL
+W (38878) rc_video: Video send failed: ESP_FAIL
+W (38910) rc_video: Video send failed: ESP_FAIL
+W (38942) rc_video: Video send failed: ESP_FAIL
+W (38975) rc_video: Video send failed: ESP_FAIL
+W (39007) rc_video: Video send failed: ESP_FAIL
+W (39039) rc_video: Video send failed: ESP_FAIL
+W (39072) rc_video: Video send failed: ESP_FAIL
+W (39106) rc_video: Video send failed: ESP_FAIL
+W (39140) rc_video: Video send failed: ESP_FAIL
+W (39173) rc_video: Video send failed: ESP_FAIL
+W (39206) rc_video: Video send failed: ESP_FAIL
+I (39221) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:28), tid:0, ssn:0, winSize:64
+I (39229) rc_net: Audio client connected
+I (40180) rc_video: Sent 30 | cap_fps=30.3 send_fps=15.4 capture_identity_errors=0 | Avg(ms): wait=9.6 cache=0.0 subsample=0.0 encode=19.0 send=3.4 total=32.0 | JPEG=4697B
+I (41149) rc_video: Sent 60 | cap_fps=31.0 send_fps=31.0 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.8 send=3.3 total=31.6 | JPEG=4685B
+I (42116) rc_video: Sent 90 | cap_fps=31.0 send_fps=31.0 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.7 send=3.4 total=31.5 | JPEG=4682B
+I (43086) rc_video: Sent 120 | cap_fps=30.9 send_fps=30.9 capture_identity_errors=0 | Avg(ms): wait=9.6 cache=0.0 subsample=0.0 encode=18.8 send=3.3 total=31.6 | JPEG=4691B
+I (44060) rc_video: Sent 150 | cap_fps=30.8 send_fps=30.8 capture_identity_errors=0 | Avg(ms): wait=9.6 cache=0.0 subsample=0.0 encode=19.0 send=3.2 total=31.8 | JPEG=4687B
+I (45027) rc_video: Sent 180 | cap_fps=31.0 send_fps=31.0 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.8 send=3.2 total=31.4 | JPEG=4690B
+I (46000) rc_video: Sent 210 | cap_fps=30.8 send_fps=30.8 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.7 send=3.5 total=31.6 | JPEG=4687B
+I (46962) rc_video: Sent 240 | cap_fps=31.2 send_fps=31.2 capture_identity_errors=0 | Avg(ms): wait=9.3 cache=0.0 subsample=0.0 encode=19.0 send=3.1 total=31.4 | JPEG=4682B
+I (47933) rc_video: Sent 270 | cap_fps=30.9 send_fps=30.9 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=18.7 send=3.4 total=31.6 | JPEG=4695B
+I (48908) rc_video: Sent 300 | cap_fps=30.8 send_fps=30.8 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=19.4 send=2.9 total=31.8 | JPEG=4686B
+I (49875) rc_video: Sent 330 | cap_fps=31.0 send_fps=31.0 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=18.8 send=3.2 total=31.5 | JPEG=4684B
+I (50841) rc_video: Sent 360 | cap_fps=31.1 send_fps=31.1 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=18.8 send=3.1 total=31.5 | JPEG=4700B
+I (51804) rc_video: Sent 390 | cap_fps=31.2 send_fps=31.2 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.8 send=3.3 total=31.5 | JPEG=4686B
+I (52771) rc_video: Sent 420 | cap_fps=31.0 send_fps=31.0 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=19.0 send=3.1 total=31.5 | JPEG=4686B
+I (53747) rc_video: Sent 450 | cap_fps=30.7 send_fps=30.7 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=18.8 send=3.5 total=31.8 | JPEG=4695B
+I (54713) rc_video: Sent 480 | cap_fps=31.1 send_fps=31.1 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.9 send=3.3 total=31.5 | JPEG=4687B
+I (55677) rc_video: Sent 510 | cap_fps=31.1 send_fps=31.1 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.8 send=3.3 total=31.5 | JPEG=4686B
+I (56652) rc_video: Sent 540 | cap_fps=30.8 send_fps=30.8 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.8 send=3.6 total=31.8 | JPEG=4685B
+I (57620) rc_video: Sent 570 | cap_fps=31.0 send_fps=31.0 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.8 send=3.4 total=31.6 | JPEG=4690B
+I (58589) rc_video: Sent 600 | cap_fps=31.0 send_fps=31.0 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=18.8 send=3.4 total=31.6 | JPEG=4686B
+I (59565) rc_video: Sent 630 | cap_fps=30.7 send_fps=30.7 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=19.0 send=3.4 total=31.7 | JPEG=4690B
+I (60537) rc_video: Sent 660 | cap_fps=30.9 send_fps=30.9 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=18.7 send=3.4 total=31.6 | JPEG=4688B
+I (61512) rc_video: Sent 690 | cap_fps=30.7 send_fps=30.7 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=18.8 send=3.5 total=31.8 | JPEG=4687B
+I (62476) rc_video: Sent 720 | cap_fps=31.1 send_fps=31.1 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=18.9 send=3.0 total=31.4 | JPEG=4689B
+I (63442) rc_video: Sent 750 | cap_fps=31.1 send_fps=31.1 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.7 send=3.3 total=31.4 | JPEG=4697B
+I (64421) rc_video: Sent 780 | cap_fps=30.6 send_fps=30.6 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.9 send=3.6 total=31.9 | JPEG=4685B
+I (65388) rc_video: Sent 810 | cap_fps=31.0 send_fps=31.0 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=18.8 send=3.1 total=31.4 | JPEG=4682B
+I (66360) rc_video: Sent 840 | cap_fps=30.8 send_fps=30.8 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.8 send=3.5 total=31.7 | JPEG=4691B
+I (67324) rc_video: Sent 870 | cap_fps=31.1 send_fps=31.1 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=18.8 send=3.2 total=31.5 | JPEG=4687B
+I (68302) rc_video: Sent 900 | cap_fps=30.7 send_fps=30.7 capture_identity_errors=0 | Avg(ms): wait=9.6 cache=0.0 subsample=0.0 encode=19.0 send=3.2 total=31.8 | JPEG=4690B
+I (69282) rc_video: Sent 930 | cap_fps=30.6 send_fps=30.6 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=18.9 send=3.4 total=31.9 | JPEG=4687B
+I (70250) rc_video: Sent 960 | cap_fps=31.0 send_fps=31.0 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.8 send=3.4 total=31.6 | JPEG=4682B
+I (71225) rc_video: Sent 990 | cap_fps=30.8 send_fps=30.8 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=19.0 send=3.4 total=31.8 | JPEG=4695B
+I (72193) rc_video: Sent 1020 | cap_fps=31.0 send_fps=31.0 capture_identity_errors=0 | Avg(ms): wait=9.6 cache=0.0 subsample=0.0 encode=18.9 send=3.1 total=31.6 | JPEG=4686B
+I (73156) rc_video: Sent 1050 | cap_fps=31.1 send_fps=31.1 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=18.9 send=3.0 total=31.4 | JPEG=4684B
+I (74124) rc_video: Sent 1080 | cap_fps=31.0 send_fps=31.0 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=18.8 send=3.3 total=31.5 | JPEG=4700B
+I (75097) rc_video: Sent 1110 | cap_fps=30.8 send_fps=30.8 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=18.8 send=3.5 total=31.8 | JPEG=4686B
+I (76066) rc_video: Sent 1140 | cap_fps=31.0 send_fps=31.0 capture_identity_errors=0 | Avg(ms): wait=9.5 cache=0.0 subsample=0.0 encode=18.9 send=3.1 total=31.5 | JPEG=4686B
+I (77041) rc_video: Sent 1170 | cap_fps=30.8 send_fps=30.8 capture_identity_errors=0 | Avg(ms): wait=9.4 cache=0.0 subsample=0.0 encode=19.0 send=3.3 total=31.7 | JPEG=4695B

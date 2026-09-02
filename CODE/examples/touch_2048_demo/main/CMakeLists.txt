@@ -1,0 +1,19 @@
+idf_component_register(
+    SRCS
+        "game_2048_core.c"
+        "game_2048_gesture.c"
+        "game_2048_storage.c"
+        "game_2048_ui.c"
+        "touch_2048_demo_main.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        display_hal
+        launcher_return
+        laiwfs300
+        nvs_flash
+        touch_hal
+    PRIV_REQUIRES
+        esp_timer
+        lvgl
+)

@@ -1,0 +1,37 @@
+I (22522) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (22523) wifi:station: 44:1b:f6:f3:ae:40 join, AID=1, bgn, 40U
+I (22546) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:40
+I (22577) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (22578) rc_net: STA assigned IP: 192.168.4.2
+I (22578) rc_control: Network connected
+I (22582) rc_tank: Network connected, peer: 192.168.4.2
+I (22588) rc_net: Ctrl UDP socket bound to port 8001
+I (22592) rc_net: Video UDP socket bound to port 8002
+I (22597) rc_net: Audio TCP listening on port 8003
+I (22606) rc_video: Video TX task started (240x180 Q=60)
+I (22607) rc_video: Tank video started (camera source)
+W (22763) rc_net: Video UDP send failed: seq=0 chunk=4/7 bytes=1208 sent=-1 errno=12 attempts=4
+W (22763) rc_video: Video send failed count=1 err=ESP_FAIL
+I (23695) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:40), tid:0, ssn:0, winSize:64
+W (24007) rc_control: Control timeout: motor stop enforced
+I (30610) rc_tank: [DVP-HEALTH] retry=0 complete=73 incomplete=30 total=103 verdict=reject
+I (30611) rc_tank: [DEBUG-DVP-LIMIT] ctrl_rx=1 recv=1094 recovered10=0 eof_match=849 eof_mismatch=245 eof_invalid=0 near_control=0_2:0,2_10:0,gt10:30
+I (30620) rc_tank: [DEBUG-DVP-LIMIT] sync_blocks 0=1 9=0 10=29 11=73 12plus=0
+I (30627) rc_tank: [DEBUG-DVP-LIMIT] eof_mismatch_block 7=34 8=25 9=21 10=46 11plus=0
+W (30680) rc_tank: [DVP-HEALTH] retry=1/5; restarting in 1s
+I (31682) wifi:station: 44:1b:f6:f3:ae:40 leave, AID = 1, reason = 2, bss_flags is 756851, bss:0x3fcf14cc
+I (31683) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (31690) wifi:<ba-del>idx:2, tid:0
+I (31692) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (31701) rc_net: STA disconnected, MAC: 44:1b:f6:f3:ae:40
+I (31705) rc_control: Network disconnected: motor stopped
+W (31709) rc_tank: Network disconnected
+W (33404) rc_video: Video send failed count=30 err=ESP_ERR_INVALID_STATE
+I (34980) wifi:flush txq
+I (34981) wifi:stop sw txq
+I (34981) wifi:lmac stop hw txq
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x1 (DOWNLOAD(USB/UART0))
+Saved PC:0x40380f65
+waiting for download

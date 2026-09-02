@@ -1,0 +1,302 @@
+I (10563) rc_tank:   starting in 4 s
+I (11563) rc_tank:   starting in 3 s
+I (12563) rc_tank:   starting in 2 s
+I (13563) rc_tank:   starting in 1 s
+W (14563) rc_tank: [CAM-DIAG-C15] SP0A39 200x200 Gray8 sensor-pattern/raw-fingerprint isolation build=Aug 24 2026_10:44:24; frame=40000B burst=64; audio/control/transport=off; DVP remains running; each window=30s; screen marker=1..7
+I (14572) board_laiwfs300: init board support package
+I (14577) board_laiwfs300: init capability registry
+I (14581) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (14588) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (14593) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (14601) board_laiwfs300:   I2C device ACK at 0x15
+I (14604) board_laiwfs300:   I2C device ACK at 0x18
+I (14609) board_laiwfs300:   I2C device ACK at 0x21
+I (14612) board_laiwfs300:   I2C device ACK at 0x22
+I (14621) board_laiwfs300:   I2C device ACK at 0x40
+I (14624) board_laiwfs300:   I2C device ACK at 0x51
+I (14629) board_laiwfs300:   I2C device ACK at 0x68
+I (14633) board_laiwfs300: --- I2C scan done: 7 device(s) found ---
+W (14637) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (14643) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (14648) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (14653) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (14658) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (14663) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+I (14669) board_laiwfs300: SP0A39 (Camera) found at 0x21
+I (14675) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (14679) board_laiwfs300: ES7210 chip ID: 0x72
+I (14684) board_laiwfs300: AIP8563 RTC time: 22:24:54 (BCD raw)
+I (14689) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (14694) board_laiwfs300: init SPI bus manager
+I (14699) board_laiwfs300: init ADC service
+I (14702) board_adc: ADC1 oneshot initialized
+I (14706) board_laiwfs300: init board power service
+I (14712) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=4095 (~3100 mV)
+I (14717) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=1643 (~1243 mV)
+I (14723) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (14729) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (14737) io_expander: TPT29555A initialized at 0x22
+I (14739) board_laiwfs300: IO expander initialized OK
+I (14744) board_laiwfs300: init module detect
+I (14748) board_laiwfs300: register detection rules
+I (14753) board_laiwfs300: register default capabilities
+I (14758) board_laiwfs300: board init complete (ioex=OK)
+I (14763) rc_tank: [STEP] Display init starting...
+W (14767) rc_video: [CAM-DIAG-C15.2] initializing common landscape 240x180 presenter
+I (14776) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+E (14921) spi: spi_bus_initialize(816): SPI bus already initialized.
+I (15042) display_hal: ST7789V3 LCD initialized
+I (15042) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=20000000
+W (15112) rc_video: [CAM-DIAG-C15.2] landscape 240x180 presenter initialized; diagnostic task owns LCD
+I (15112) rc_tank: [STEP] Display init OK
+W (15112) rc_video: [CAM-DIAG-C15.2] display task uses real camera/sensor-pattern conversion + common landscape submit, 240x180 at 80,0, 20MHz, 60-line chunks, raw_fingerprint=on
+W (15114) rc_tank: [CAM-DIAG-C15] proven-safe motor init before raw-source isolation windows
+W (15129) rc_video: [CAM-DIAG-C15.2] ownership=rc_capture_pool + backup
+I (15138) board_motor: motor input 1 -> GPIO5 / LEDC channel 0
+I (15149) board_motor: motor input 2 -> GPIO4 / LEDC channel 1
+I (15155) board_motor: motor input 3 -> GPIO37 / LEDC channel 2
+I (15160) board_motor: motor input 4 -> GPIO45 / LEDC channel 3
+I (15166) rc_control: Motor initialized
+I (15170) rc_tank: [CAM-DIAG-C15] Motor init OK
+W (15174) rc_tank: [CAM-DIAG-C15] WINDOW_1 start: wifi=off camera=off display=black
+W (15181) rc_video: [CAM-DIAG-C15.2] display source=real-camera capture=0; DVP unchanged
+W (15189) rc_video: [CAM-DIAG-C15.2] screen window marker=1 capture=0
+W (45195) rc_tank: [CAM-DIAG-C15] WINDOW_2 start: wifi=off camera=on sensor=real gray8=200x200
+W (45195) rc_video: [CAM-DIAG-C15.2] display source=real-camera capture=0; DVP unchanged
+W (45200) rc_video: [CAM-DIAG-C15.2] screen window marker=2 capture=0
+I (45206) rc_tank: [STEP] Camera init starting...
+I (45210) rc_video: Initializing camera (SP0A39 640x480 GRAY8)
+W (45216) rc_video: [CAM-DIAG-C15.2] direct DVP init core=0; Wi-Fi task core=0; free_internal=231111 largest_internal_dma=110592
+I (45227) board_camera: initializing SP0A39 camera mode=2 640x480
+I (45233) camera_hal: init SP0A39 DVP 640x480 (SCCB manual mode)
+I (45239) camera_hal: configuring IOEX pins for camera RESET/PWDN
+I (45246) camera_hal: PWDN=HIGH (power down)
+I (45259) camera_hal: PWDN=LOW (release sensor)
+I (45459) camera_hal: RESET=LOW (assert reset)
+I (45479) camera_hal: RESET=HIGH (release reset)
+I (46479) camera_hal: full I2C scan after camera power-up (diagnostic only)...
+I (46481) camera_hal:   post-powerup ACK at 0x15
+I (46481) camera_hal:   post-powerup ACK at 0x18
+I (46484) camera_hal:   post-powerup ACK at 0x21
+I (46488) camera_hal:   post-powerup ACK at 0x22
+I (46496) camera_hal:   post-powerup ACK at 0x40
+I (46498) camera_hal:   post-powerup ACK at 0x51
+I (46504) camera_hal:   post-powerup ACK at 0x68
+I (46507) camera_hal: DVP GPIO diagnostics (checking PCLK/VSYNC/HSYNC activity)...
+I (46573) camera_hal: DVP diagnostics: PCLK_changes=0 VSYNC_changes=0 HSYNC_changes=0
+W (46573) camera_hal: PCLK has no transitions - MCLK likely not reaching sensor or sensor not active
+I (46578) camera_hal: using sensor address 0x21
+I (46583) camera_hal: SP0A39 I2C device added at 0x21
+I (46589) camera_hal: SP0A39 chip ID: 0x0A39
+I (46712) camera_hal: SP0A39 register init done: Gray8 640x480 (361 regs)
+I (46713) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_table value=0x05 expected=0x01
+E (46715) camera_hal: camera_hal_verify_expected_output_p0_31(92): unexpected p0_31=0x05 at post_table
+W (46724) camera_hal: [CAM-PROBE] output state differs after table; continuing: ESP_ERR_INVALID_RESPONSE
+I (46753) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=post_delay value=0x01 expected=0x01
+I (46754) camera_hal: camera HAL initialized (sensor ready, DVP capture not yet implemented)
+I (46758) board_camera: camera ready
+I (46766) camera_hal: SP0A39 output regs: P0:1c=0x00 P0:30=0x11 P0:31=0x01 P1:32=0x05 P1:34=0xe3 P1:35=0x04 P1:36=0x10
+I (46835) rc_video:   3 DMA-capable PSRAM framebuffers allocated (600 KB each)
+W (46856) rc_video: [CAM-DIAG-C15.2] capture handoff uses rc_capture_pool + backup
+W (46857) rc_video: [DEBUG-C151] buffers fb0=0x3c0e0ec0 fb1=0x3c177000 fb2=0x3c20d140 backup=0x3c2a3280 payload=307200 storage=614400 alloc=614656 terminal_guard=256
+W (46868) rc_video: [DEBUG-C151] heap stage=framebuffers_allocated intact=1
+W (46876) rc_video: [DEBUG-C151] heap stage=dvp_controller_created_before_start intact=1
+W (46882) rc_video: [CAM-DIAG-C15.2] direct DVP controller created; free_internal=229859 largest_internal_dma=110592
+I (46892) rc_video: Camera initialized
+I (46895) rc_tank: [STEP] Camera init OK
+I (46901) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=dvp_started value=0x01 expected=0x01
+W (46907) rc_video: [CAM-DIAG-C15.2] scaled camera preview enabled (240x180 at 80,0; DVP started)
+W (46916) rc_tank: [CAM-DIAG-C15] burst-64 Gray8 camera preview started while Wi-Fi is off
+W (47358) rc_video: [DEBUG-C151] display frame=1 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=2->11 became_active=0 overlap=0 overlap_count=0 finish=10 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (47369) rc_video: [CAM-DIAG-C15.2] frame=1 window=2 sensor=real slot=0 addr=0x3c0e0ec0 gen=1->1 crc_first=25b81a31/25b81a31 crc_mid=56e9c874/56e9c874 crc_tail=c5613474/c5613474 stable=1 raw_full=7a8e12ec raw_q=94e1ee46/5162e51e/fd1faa49/444b9f12 raw_edge=67ba37db raw_probe=312.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=54d4f713/f8a8ec93/79176c49 submit=3 complete=3 seq=3/3 stale=0 prepare=10.5ms draw=36.0ms
+W (47805) rc_video: [DEBUG-C151] display frame=2 consumer=2 active=0/0x3c0e0ec0->0/0x3c0e0ec0 select=12->22 became_active=0 overlap=0 overlap_count=0 finish=21 last_finished=1/0x3c177000 finish_active=0 finish_collision=0 guard=1 guard_errors=0
+I (47816) rc_video: [CAM-DIAG-C15.2] frame=2 window=2 sensor=real slot=2 addr=0x3c20d140 gen=5->5 crc_first=5fc05192/5fc05192 crc_mid=05a1dccc/05a1dccc crc_tail=ff3e729e/ff3e729e stable=1 raw_full=e4078500 raw_q=f4ed4ea0/55f38cc2/76c1bfae/e91b762f raw_edge=a759e207 raw_probe=312.8ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=51aa9645/d06e6c39/fab21d14 submit=3 complete=3 seq=6/6 stale=0 prepare=10.4ms draw=36.0ms
+W (48252) rc_video: [DEBUG-C151] display frame=3 consumer=0 active=2/0x3c20d140->2/0x3c20d140 select=23->33 became_active=0 overlap=0 overlap_count=0 finish=32 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (48263) rc_video: [CAM-DIAG-C15.2] frame=3 window=2 sensor=real slot=0 addr=0x3c0e0ec0 gen=7->7 crc_first=11ac8bd4/11ac8bd4 crc_mid=75901da1/75901da1 crc_tail=1f698aee/1f698aee stable=1 raw_full=0c30ffce raw_q=b8a837df/8b527fc9/698cac40/247be3fa raw_edge=02c80189 raw_probe=312.9ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=5823e06b/64483890/0b3831d8 submit=3 complete=3 seq=9/9 stale=0 prepare=10.4ms draw=35.9ms
+W (48699) rc_video: [DEBUG-C151] display frame=4 consumer=2 active=0/0x3c0e0ec0->1/0x3c177000 select=34->43 became_active=0 overlap=0 overlap_count=0 finish=42 last_finished=0/0x3c0e0ec0 finish_active=1 finish_collision=0 guard=1 guard_errors=0
+I (48710) rc_video: [CAM-DIAG-C15.2] frame=4 window=2 sensor=real slot=2 addr=0x3c20d140 gen=11->11 crc_first=6db3789d/6db3789d crc_mid=b50477d2/b50477d2 crc_tail=9ac2aece/9ac2aece stable=1 raw_full=b031ba29 raw_q=549d179c/5b92faef/1ebff770/34353ae0 raw_edge=5cd29b77 raw_probe=312.9ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=bce0a995/21eccec3/3638efb2 submit=3 complete=3 seq=12/12 stale=0 prepare=10.3ms draw=36.1ms
+W (49146) rc_video: [DEBUG-C151] display frame=5 consumer=1 active=2/0x3c20d140->2/0x3c20d140 select=44->54 became_active=0 overlap=0 overlap_count=0 finish=53 last_finished=0/0x3c0e0ec0 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (49157) rc_video: [CAM-DIAG-C15.2] frame=5 window=2 sensor=real slot=1 addr=0x3c177000 gen=20->20 crc_first=a0a696b1/a0a696b1 crc_mid=bdc52e4e/bdc52e4e crc_tail=d4193a89/d4193a89 stable=1 raw_full=9887d006 raw_q=c9bb4808/761c8319/ef14c06d/d297f45f raw_edge=5df544f9 raw_probe=312.9ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=f8b60df2/54278c95/768b8617 submit=3 complete=3 seq=15/15 stale=0 prepare=10.4ms draw=36.0ms
+W (50706) rc_video: [DEBUG-C151] display frame=30 consumer=2 active=0/0x3c0e0ec0->1/0x3c177000 select=82->91 became_active=0 overlap=0 overlap_count=0 finish=90 last_finished=0/0x3c0e0ec0 finish_active=1 finish_collision=0 guard=1 guard_errors=0
+I (50717) rc_video: [CAM-DIAG-C15.2] frame=30 window=2 sensor=real slot=2 addr=0x3c20d140 gen=25->25 crc_first=4bdb8cb8/4bdb8cb8 crc_mid=b0345525/b0345525 crc_tail=e7c1694c/e7c1694c stable=1 raw_full=ea941e49 raw_q=db12b622/f1bc5987/8063c410/90bfe24a raw_edge=99efdc45 raw_probe=312.3ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=4a0d9cf8/cc6802d8/d6017a25 submit=3 complete=3 seq=90/90 stale=0 prepare=10.4ms draw=35.4ms
+W (52499) rc_video: [DEBUG-C151] display frame=60 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=125->134 became_active=0 overlap=0 overlap_count=0 finish=133 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (52510) rc_video: [CAM-DIAG-C15.2] frame=60 window=2 sensor=real slot=0 addr=0x3c0e0ec0 gen=43->43 crc_first=b48dc7aa/b48dc7aa crc_mid=19c57bb1/19c57bb1 crc_tail=1db830da/1db830da stable=1 raw_full=2655268d raw_q=3f11bf19/96c7f4f4/5da2768c/0d3dd2f5 raw_edge=f00d6cc8 raw_probe=312.8ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=776dbc8f/718115bf/575c04da submit=3 complete=3 seq=180/180 stale=0 prepare=10.4ms draw=35.8ms
+W (54292) rc_video: [DEBUG-C151] display frame=90 consumer=1 active=2/0x3c20d140->0/0x3c0e0ec0 select=168->177 became_active=0 overlap=0 overlap_count=0 finish=176 last_finished=2/0x3c20d140 finish_active=0 finish_collision=0 guard=1 guard_errors=0
+I (54303) rc_video: [CAM-DIAG-C15.2] frame=90 window=2 sensor=real slot=1 addr=0x3c177000 gen=61->61 crc_first=1640a042/1640a042 crc_mid=c8fe58a0/c8fe58a0 crc_tail=48e94a48/48e94a48 stable=1 raw_full=f13f525c raw_q=2ff83da7/a66abac1/25a2bd0d/7c7e42c6 raw_edge=d7472ed0 raw_probe=312.4ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=dc54bc5c/08bb1aed/f42c9975 submit=3 complete=3 seq=270/270 stale=0 prepare=10.4ms draw=35.9ms
+W (56084) rc_video: [DEBUG-C151] display frame=120 consumer=2 active=0/0x3c0e0ec0->1/0x3c177000 select=211->220 became_active=0 overlap=0 overlap_count=0 finish=219 last_finished=0/0x3c0e0ec0 finish_active=1 finish_collision=0 guard=1 guard_errors=0
+I (56096) rc_video: [CAM-DIAG-C15.2] frame=120 window=2 sensor=real slot=2 addr=0x3c20d140 gen=68->68 crc_first=7c4915bf/7c4915bf crc_mid=b9904ee2/b9904ee2 crc_tail=a0e8c89c/a0e8c89c stable=1 raw_full=f928f893 raw_q=d127efa3/8c9738eb/108d1801/c0a42d66 raw_edge=64ed6e82 raw_probe=312.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=81d4168c/ab585c04/22e6fbbb submit=3 complete=3 seq=360/360 stale=0 prepare=10.1ms draw=35.7ms
+W (57877) rc_video: [DEBUG-C151] display frame=150 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=254->263 became_active=0 overlap=0 overlap_count=0 finish=262 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (57888) rc_video: [CAM-DIAG-C15.2] frame=150 window=2 sensor=real slot=0 addr=0x3c0e0ec0 gen=86->86 crc_first=0b2c2a54/0b2c2a54 crc_mid=4c3257ee/4c3257ee crc_tail=d4469dd7/d4469dd7 stable=1 raw_full=5bb63a9f raw_q=e5308caf/5914a069/041c7735/b35d7beb raw_edge=7df54ffd raw_probe=312.4ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=f4585ee5/c098a40e/56ff9cab submit=3 complete=3 seq=450/450 stale=0 prepare=10.3ms draw=35.9ms
+W (59670) rc_video: [DEBUG-C151] display frame=180 consumer=1 active=2/0x3c20d140->0/0x3c0e0ec0 select=297->306 became_active=0 overlap=0 overlap_count=0 finish=305 last_finished=2/0x3c20d140 finish_active=0 finish_collision=0 guard=1 guard_errors=0
+I (59682) rc_video: [CAM-DIAG-C15.2] frame=180 window=2 sensor=real slot=1 addr=0x3c177000 gen=106->106 crc_first=56ac3ebd/56ac3ebd crc_mid=5e7d46d2/5e7d46d2 crc_tail=9345e090/9345e090 stable=1 raw_full=f0af3ef7 raw_q=373759bc/909ebba3/c457ad1d/0c964c2b raw_edge=0b56a39c raw_probe=312.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=e8e70f71/e42b84db/2c904756 submit=3 complete=3 seq=540/540 stale=0 prepare=10.4ms draw=35.4ms
+W (61464) rc_video: [DEBUG-C151] display frame=210 consumer=2 active=0/0x3c0e0ec0->1/0x3c177000 select=340->349 became_active=0 overlap=0 overlap_count=0 finish=348 last_finished=0/0x3c0e0ec0 finish_active=1 finish_collision=0 guard=1 guard_errors=0
+I (61475) rc_video: [CAM-DIAG-C15.2] frame=210 window=2 sensor=real slot=2 addr=0x3c20d140 gen=111->111 crc_first=f14bae41/f14bae41 crc_mid=61d3704f/61d3704f crc_tail=76618dce/76618dce stable=1 raw_full=e436a346 raw_q=8225857a/155404ca/58a570e2/dc21565a raw_edge=9b504f3f raw_probe=312.3ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=f600a12b/f27ca055/fd68e9ac submit=3 complete=3 seq=630/630 stale=0 prepare=10.4ms draw=35.9ms
+W (63258) rc_video: [DEBUG-C151] display frame=240 consumer=2 active=0/0x3c0e0ec0->1/0x3c177000 select=383->392 became_active=0 overlap=0 overlap_count=0 finish=391 last_finished=0/0x3c0e0ec0 finish_active=1 finish_collision=0 guard=1 guard_errors=0
+I (63269) rc_video: [CAM-DIAG-C15.2] frame=240 window=2 sensor=real slot=2 addr=0x3c20d140 gen=123->123 crc_first=87ec8e22/87ec8e22 crc_mid=7eb0129e/7eb0129e crc_tail=13ca14a7/13ca14a7 stable=1 raw_full=112f4002 raw_q=3db8e19e/0778c0dd/fc944471/1c6efac6 raw_edge=dbece584 raw_probe=312.4ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=9edb13f8/be16497e/4a6b253b submit=3 complete=3 seq=720/720 stale=0 prepare=10.4ms draw=35.8ms
+W (65051) rc_video: [DEBUG-C151] display frame=270 consumer=0 active=2/0x3c20d140->2/0x3c20d140 select=425->435 became_active=0 overlap=0 overlap_count=0 finish=434 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (65063) rc_video: [CAM-DIAG-C15.2] frame=270 window=2 sensor=real slot=0 addr=0x3c0e0ec0 gen=143->143 crc_first=b27cd74c/b27cd74c crc_mid=fb201349/fb201349 crc_tail=7b4d2f9d/7b4d2f9d stable=1 raw_full=22967afe raw_q=9af6b7b8/bc7266ec/42498d04/4d968255 raw_edge=cdad1870 raw_probe=312.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=620c2ee7/4dddd646/c1dec7f1 submit=3 complete=3 seq=810/810 stale=0 prepare=10.4ms draw=35.4ms
+W (66846) rc_video: [DEBUG-C151] display frame=300 consumer=1 active=0/0x3c0e0ec0->0/0x3c0e0ec0 select=468->478 became_active=0 overlap=0 overlap_count=0 finish=477 last_finished=2/0x3c20d140 finish_active=0 finish_collision=0 guard=1 guard_errors=0
+I (66857) rc_video: [CAM-DIAG-C15.2] frame=300 window=2 sensor=real slot=1 addr=0x3c177000 gen=162->162 crc_first=078026ee/078026ee crc_mid=4f420b69/4f420b69 crc_tail=7f400416/7f400416 stable=1 raw_full=e2465bcb raw_q=ec29de98/ef0a8e77/f00b2c48/186f459e raw_edge=3692faed raw_probe=312.9ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=17efd3b5/8f45d175/a9e4723b submit=3 complete=3 seq=900/900 stale=0 prepare=10.4ms draw=35.8ms
+W (68639) rc_video: [DEBUG-C151] display frame=330 consumer=2 active=1/0x3c177000->1/0x3c177000 select=511->521 became_active=0 overlap=0 overlap_count=0 finish=520 last_finished=0/0x3c0e0ec0 finish_active=1 finish_collision=0 guard=1 guard_errors=0
+I (68651) rc_video: [CAM-DIAG-C15.2] frame=330 window=2 sensor=real slot=2 addr=0x3c20d140 gen=166->166 crc_first=8d6c8aa2/8d6c8aa2 crc_mid=e6770920/e6770920 crc_tail=2d5f2e84/2d5f2e84 stable=1 raw_full=b0716485 raw_q=8020b8ea/a5e2a175/5fd8daf6/38deee47 raw_edge=4ed3ade2 raw_probe=312.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=6807273d/49eaa004/650f9b82 submit=3 complete=3 seq=990/990 stale=0 prepare=10.4ms draw=35.4ms
+W (70433) rc_video: [DEBUG-C151] display frame=360 consumer=0 active=2/0x3c20d140->2/0x3c20d140 select=554->564 became_active=0 overlap=0 overlap_count=0 finish=563 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (70444) rc_video: [CAM-DIAG-C15.2] frame=360 window=2 sensor=real slot=0 addr=0x3c0e0ec0 gen=186->186 crc_first=4b32ad2f/4b32ad2f crc_mid=5dd5b460/5dd5b460 crc_tail=a6178e5b/a6178e5b stable=1 raw_full=105db857 raw_q=49ee07ec/338594ea/8ee774ab/be2a2b4b raw_edge=4fd36941 raw_probe=312.3ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=9cedd6f2/784b879a/30fbc99f submit=3 complete=3 seq=1080/1080 stale=0 prepare=10.4ms draw=35.9ms
+W (72802) rc_video: [DEBUG-C151] display frame=390 consumer=1 active=0/0x3c0e0ec0->0/0x3c0e0ec0 select=594->600 became_active=0 overlap=0 overlap_count=0 finish=599 last_finished=2/0x3c20d140 finish_active=0 finish_collision=0 guard=1 guard_errors=0
+I (72814) rc_video: [CAM-DIAG-C15.2] frame=390 window=2 sensor=real slot=1 addr=0x3c177000 gen=209->209 crc_first=947c9115/947c9115 crc_mid=4732aaea/4732aaea crc_tail=f38f4301/f38f4301 stable=1 raw_full=313935b4 raw_q=5f81094c/550b2b27/f1ec2102/e55b3c13 raw_edge=bb0d0148 raw_probe=309.8ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=8d9e9b11/0f789d64/85cef43f submit=3 complete=3 seq=1170/1170 stale=0 prepare=10.4ms draw=35.4ms
+W (75069) rc_video: [DEBUG-C151] display frame=420 consumer=1 active=0/0x3c0e0ec0->0/0x3c0e0ec0 select=630->636 became_active=0 overlap=0 overlap_count=0 finish=635 last_finished=2/0x3c20d140 finish_active=0 finish_collision=0 guard=1 guard_errors=0
+I (75080) rc_video: [CAM-DIAG-C15.2] frame=420 window=2 sensor=real slot=1 addr=0x3c177000 gen=224->224 crc_first=099c566c/099c566c crc_mid=83175e5e/83175e5e crc_tail=25f6d1ef/25f6d1ef stable=1 raw_full=cb6486de raw_q=5f4d9da5/b51022eb/b99fbe2d/924ad2f8 raw_edge=9455b93a raw_probe=309.8ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=ee51bb91/c12d060a/edc2f464 submit=3 complete=3 seq=1260/1260 stale=0 prepare=9.9ms draw=35.5ms
+W (76924) rc_tank: [DEBUG-C151] heap stage=window_2_end intact=1
+W (76927) camera_hal: [CAM-DIAG-C15] SP0A39 test_pattern=on P1:32 before=0x05 write=0x85 read=0x80 expected_bit=0x80
+W (77030) rc_video: [CAM-DIAG-C15.2] screen window marker=3 capture=656
+W (77030) rc_tank: [CAM-DIAG-C15] WINDOW_3 start: wifi=off camera=on sensor=pattern gray8=200x200
+W (78151) rc_video: [DEBUG-C151] display frame=450 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=665->668 became_active=0 overlap=0 overlap_count=0 finish=667 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (78162) rc_video: [CAM-DIAG-C15.2] frame=450 window=3 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=236->236 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=307.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=1350/1350 stale=0 prepare=9.3ms draw=35.5ms
+W (81474) rc_video: [DEBUG-C151] display frame=480 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=698->701 became_active=0 overlap=0 overlap_count=0 finish=700 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (81486) rc_video: [CAM-DIAG-C15.2] frame=480 window=3 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=251->251 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=307.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=1440/1440 stale=0 prepare=9.3ms draw=35.6ms
+W (84798) rc_video: [DEBUG-C151] display frame=510 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=731->734 became_active=0 overlap=0 overlap_count=0 finish=733 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (84809) rc_video: [CAM-DIAG-C15.2] frame=510 window=3 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=266->266 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=307.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=1530/1530 stale=0 prepare=9.3ms draw=35.7ms
+W (88121) rc_video: [DEBUG-C151] display frame=540 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=764->767 became_active=0 overlap=0 overlap_count=0 finish=766 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (88133) rc_video: [CAM-DIAG-C15.2] frame=540 window=3 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=281->281 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=307.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=1620/1620 stale=0 prepare=9.3ms draw=35.7ms
+W (91445) rc_video: [DEBUG-C151] display frame=570 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=797->800 became_active=0 overlap=0 overlap_count=0 finish=799 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (91456) rc_video: [CAM-DIAG-C15.2] frame=570 window=3 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=296->296 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=307.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=1710/1710 stale=0 prepare=9.3ms draw=35.8ms
+W (94768) rc_video: [DEBUG-C151] display frame=600 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=830->833 became_active=0 overlap=0 overlap_count=0 finish=832 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (94780) rc_video: [CAM-DIAG-C15.2] frame=600 window=3 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=311->311 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=307.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=1800/1800 stale=0 prepare=9.3ms draw=35.7ms
+W (98092) rc_video: [DEBUG-C151] display frame=630 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=863->866 became_active=0 overlap=0 overlap_count=0 finish=865 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (98103) rc_video: [CAM-DIAG-C15.2] frame=630 window=3 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=326->326 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=307.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=1890/1890 stale=0 prepare=9.3ms draw=35.9ms
+W (101415) rc_video: [DEBUG-C151] display frame=660 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=896->899 became_active=0 overlap=0 overlap_count=0 finish=898 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (101427) rc_video: [CAM-DIAG-C15.2] frame=660 window=3 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=341->341 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=307.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=1980/1980 stale=0 prepare=9.3ms draw=35.8ms
+W (104738) rc_video: [DEBUG-C151] display frame=690 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=929->932 became_active=0 overlap=0 overlap_count=0 finish=931 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (104750) rc_video: [CAM-DIAG-C15.2] frame=690 window=3 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=356->356 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=307.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=2070/2070 stale=0 prepare=9.3ms draw=35.4ms
+W (107034) rc_tank: [DEBUG-C151] heap stage=window_3_end_before_network intact=1
+I (107035) rc_tank: [STEP] Network init starting...
+I (107037) rc_net: Initializing as SoftAP (Tank)
+I (107041) pp: pp rom version: e7ae62f
+I (107044) net80211: net80211 rom version: e7ae62f
+I (107050) wifi:wifi driver task: 3fcd0264, prio:23, stack:6656, core=0
+I (107061) wifi:wifi firmware version: 0947e8b
+I (107062) wifi:wifi certification version: v7.0
+I (107062) wifi:config NVS flash: enabled
+I (107066) wifi:config nano formatting: disabled
+I (107071) wifi:Init data frame dynamic rx buffer num: 32
+I (107076) wifi:Init static rx mgmt buffer num: 5
+I (107080) wifi:Init management short buffer num: 32
+I (107085) wifi:Init dynamic tx buffer num: 64
+I (107089) wifi:Init static tx FG buffer num: 2
+I (107093) wifi:Init static rx buffer size: 1600
+I (107098) wifi:Init static rx buffer num: 10
+I (107102) wifi:Init dynamic rx buffer num: 32
+I (107107) wifi_init: rx ba win: 6
+I (107109) wifi_init: accept mbox: 6
+I (107112) wifi_init: tcpip mbox: 16
+I (107115) wifi_init: udp mbox: 6
+I (107118) wifi_init: tcp mbox: 6
+I (107122) wifi_init: tcp tx win: 5760
+I (107125) wifi_init: tcp rx win: 5760
+I (107128) wifi_init: tcp mss: 1440
+I (107132) wifi_init: WiFi IRAM OP enabled
+I (107136) wifi_init: WiFi RX IRAM OP enabled
+I (107140) rc_net: AP set_mode/config, SSID=RC_TANK_F3AE79 ch=1
+I (107151) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (107192) wifi:mode : softAP (44:1b:f6:f3:ae:79)
+I (107197) wifi:Total power save buffer number: 32
+I (107198) wifi:Init max length of beacon: 752/752
+I (107198) wifi:Init max length of beacon: 752/752
+I (107201) rc_net: SoftAP started, SSID: RC_TANK_F3AE79, Password: 12345678
+I (107203) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1
+I (107215) rc_tank: [STEP] Network init OK
+I (107219) rc_tank: Tank SoftAP ready, waiting for remote...
+W (107224) rc_video: [CAM-DIAG-C15.2] screen window marker=4 capture=956
+W (107230) rc_tank: [CAM-DIAG-C15] WINDOW_4 start: wifi=on camera=on sensor=pattern gray8=200x200
+W (108063) rc_video: [DEBUG-C151] display frame=720 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=962->965 became_active=0 overlap=0 overlap_count=0 finish=964 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (108075) rc_video: [CAM-DIAG-C15.2] frame=720 window=4 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=371->371 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=307.4ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=2160/2160 stale=0 prepare=10.3ms draw=35.7ms
+W (111387) rc_video: [DEBUG-C151] display frame=750 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=995->998 became_active=0 overlap=0 overlap_count=0 finish=997 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (111399) rc_video: [CAM-DIAG-C15.2] frame=750 window=4 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=386->386 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=308.5ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=2250/2250 stale=0 prepare=9.4ms draw=35.9ms
+W (114710) rc_video: [DEBUG-C151] display frame=780 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1028->1031 became_active=0 overlap=0 overlap_count=0 finish=1030 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (114722) rc_video: [CAM-DIAG-C15.2] frame=780 window=4 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=401->401 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=308.5ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=2340/2340 stale=0 prepare=9.4ms draw=36.0ms
+W (118033) rc_video: [DEBUG-C151] display frame=810 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1061->1064 became_active=0 overlap=0 overlap_count=0 finish=1063 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (118045) rc_video: [CAM-DIAG-C15.2] frame=810 window=4 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=416->416 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=308.2ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=2430/2430 stale=0 prepare=9.3ms draw=35.7ms
+W (121358) rc_video: [DEBUG-C151] display frame=840 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1094->1097 became_active=0 overlap=0 overlap_count=0 finish=1096 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (121370) rc_video: [CAM-DIAG-C15.2] frame=840 window=4 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=431->431 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=309.0ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=2520/2520 stale=0 prepare=9.5ms draw=36.4ms
+W (124680) rc_video: [DEBUG-C151] display frame=870 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1127->1130 became_active=0 overlap=0 overlap_count=0 finish=1129 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (124692) rc_video: [CAM-DIAG-C15.2] frame=870 window=4 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=446->446 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=307.8ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=2610/2610 stale=0 prepare=9.3ms draw=36.0ms
+W (128005) rc_video: [DEBUG-C151] display frame=900 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1160->1163 became_active=0 overlap=0 overlap_count=0 finish=1162 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (128017) rc_video: [CAM-DIAG-C15.2] frame=900 window=4 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=461->461 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=308.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=2700/2700 stale=0 prepare=9.4ms draw=35.9ms
+W (131330) rc_video: [DEBUG-C151] display frame=930 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1193->1196 became_active=0 overlap=0 overlap_count=0 finish=1195 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (131342) rc_video: [CAM-DIAG-C15.2] frame=930 window=4 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=476->476 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=309.9ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=2790/2790 stale=0 prepare=10.1ms draw=36.0ms
+W (134650) rc_video: [DEBUG-C151] display frame=960 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1226->1229 became_active=0 overlap=0 overlap_count=0 finish=1228 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (134662) rc_video: [CAM-DIAG-C15.2] frame=960 window=4 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=491->491 crc_first=f54e29f7/f54e29f7 crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=c18ef2fb raw_q=4402152c/5fcb5479/5e5ab5c3/35b9ef0c raw_edge=d2e51e6e raw_probe=307.5ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=73ea7c08/4692904e/2db56761 submit=3 complete=3 seq=2880/2880 stale=0 prepare=9.4ms draw=35.8ms
+W (137241) camera_hal: [CAM-DIAG-C15] SP0A39 test_pattern=off P1:32 before=0x80 write=0x00 read=0x05 expected_bit=0x00
+W (137342) rc_video: [CAM-DIAG-C15.2] screen window marker=5 capture=1255
+W (137342) rc_tank: [CAM-DIAG-C15] WINDOW_5 start: wifi=on camera=on sensor=real gray8=200x200; DVP unchanged
+W (137974) rc_video: [DEBUG-C151] display frame=990 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1259->1262 became_active=0 overlap=0 overlap_count=0 finish=1261 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (137986) rc_video: [CAM-DIAG-C15.2] frame=990 window=5 sensor=real slot=0 addr=0x3c0e0ec0 gen=506->506 crc_first=0521d8ab/0521d8ab crc_mid=617194ea/617194ea crc_tail=7c9a0eee/7c9a0eee stable=1 raw_full=b280bcbe raw_q=2bf1df4d/cd6a8b7a/664ed190/66a28023 raw_edge=1af74998 raw_probe=308.2ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=8021c9c3/b800e133/b409288e submit=3 complete=3 seq=2970/2970 stale=0 prepare=9.3ms draw=35.6ms
+W (141298) rc_video: [DEBUG-C151] display frame=1020 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1292->1295 became_active=0 overlap=0 overlap_count=0 finish=1294 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (141310) rc_video: [CAM-DIAG-C15.2] frame=1020 window=5 sensor=real slot=0 addr=0x3c0e0ec0 gen=521->521 crc_first=15e17304/15e17304 crc_mid=c09354d5/c09354d5 crc_tail=ac4c8ec1/ac4c8ec1 stable=1 raw_full=4d1abead raw_q=fc8b25d7/69474234/c88603f7/1d9c2c06 raw_edge=81da93fc raw_probe=308.5ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=6b58c475/049fd17c/d79381cf submit=3 complete=3 seq=3060/3060 stale=0 prepare=9.4ms draw=36.0ms
+W (144622) rc_video: [DEBUG-C151] display frame=1050 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1325->1328 became_active=0 overlap=0 overlap_count=0 finish=1327 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (144634) rc_video: [CAM-DIAG-C15.2] frame=1050 window=5 sensor=real slot=0 addr=0x3c0e0ec0 gen=536->536 crc_first=cb735bc3/cb735bc3 crc_mid=f9eff016/f9eff016 crc_tail=7f57efeb/7f57efeb stable=1 raw_full=9d87e10a raw_q=100a6fd6/2620adb4/8b2e6444/6e35841a raw_edge=0a3b9bee raw_probe=308.4ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=6614ad3d/3c6eb53b/999d76d4 submit=3 complete=3 seq=3150/3150 stale=0 prepare=9.4ms draw=36.1ms
+W (147944) rc_video: [DEBUG-C151] display frame=1080 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1358->1361 became_active=0 overlap=0 overlap_count=0 finish=1360 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (147956) rc_video: [CAM-DIAG-C15.2] frame=1080 window=5 sensor=real slot=0 addr=0x3c0e0ec0 gen=551->551 crc_first=8657ca43/8657ca43 crc_mid=6f830ecf/6f830ecf crc_tail=524ec349/524ec349 stable=1 raw_full=f5575ad3 raw_q=59675f71/ac7838b9/29afbbb3/c39f455b raw_edge=5d22516e raw_probe=307.9ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=f22056f6/b24cbca1/3cdc0df0 submit=3 complete=3 seq=3240/3240 stale=0 prepare=9.3ms draw=35.7ms
+W (151270) rc_video: [DEBUG-C151] display frame=1110 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1391->1394 became_active=0 overlap=0 overlap_count=0 finish=1393 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (151282) rc_video: [CAM-DIAG-C15.2] frame=1110 window=5 sensor=real slot=0 addr=0x3c0e0ec0 gen=566->566 crc_first=36b9cbfb/36b9cbfb crc_mid=1dec625a/1dec625a crc_tail=d4b39f7e/d4b39f7e stable=1 raw_full=08ecea2b raw_q=6dbb6ca0/8da62f86/cbc9aa13/5375f4ae raw_edge=46b8493d raw_probe=309.4ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=c0fa6c5b/7a12a77a/000f3d03 submit=3 complete=3 seq=3330/3330 stale=0 prepare=9.4ms draw=36.1ms
+W (154592) rc_video: [DEBUG-C151] display frame=1140 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1424->1427 became_active=0 overlap=0 overlap_count=0 finish=1426 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (154604) rc_video: [CAM-DIAG-C15.2] frame=1140 window=5 sensor=real slot=0 addr=0x3c0e0ec0 gen=581->581 crc_first=ff4f80ac/ff4f80ac crc_mid=8ec2e6fb/8ec2e6fb crc_tail=21cee365/21cee365 stable=1 raw_full=e4d32c9a raw_q=986c73ec/761db87a/c8dad9c3/211afa7f raw_edge=2927431b raw_probe=308.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=361da331/c52a1a17/91df0d2b submit=3 complete=3 seq=3420/3420 stale=0 prepare=9.5ms draw=36.2ms
+W (157915) rc_video: [DEBUG-C151] display frame=1170 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1457->1460 became_active=0 overlap=0 overlap_count=0 finish=1459 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (157927) rc_video: [CAM-DIAG-C15.2] frame=1170 window=5 sensor=real slot=0 addr=0x3c0e0ec0 gen=596->596 crc_first=fe838edd/fe838edd crc_mid=2c8a81f7/2c8a81f7 crc_tail=503d4154/503d4154 stable=1 raw_full=7787132c raw_q=e937658f/36885c32/cc5f67a6/1553e1cc raw_edge=2065230e raw_probe=308.1ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=7681d3dc/0209ba85/bfec8bb7 submit=3 complete=3 seq=3510/3510 stale=0 prepare=9.5ms draw=35.9ms
+W (161238) rc_video: [DEBUG-C151] display frame=1200 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1490->1493 became_active=0 overlap=0 overlap_count=0 finish=1492 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (161250) rc_video: [CAM-DIAG-C15.2] frame=1200 window=5 sensor=real slot=0 addr=0x3c0e0ec0 gen=611->611 crc_first=81622139/81622139 crc_mid=a4220edc/a4220edc crc_tail=b329d9e5/b329d9e5 stable=1 raw_full=e74817b0 raw_q=a3f503ca/0b583eea/aea54b1c/365a7d5b raw_edge=e89e3f24 raw_probe=307.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=34abf260/b158fcf6/fabc09a9 submit=3 complete=3 seq=3600/3600 stale=0 prepare=9.4ms draw=35.8ms
+W (164562) rc_video: [DEBUG-C151] display frame=1230 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1523->1526 became_active=0 overlap=0 overlap_count=0 finish=1525 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (164574) rc_video: [CAM-DIAG-C15.2] frame=1230 window=5 sensor=real slot=0 addr=0x3c0e0ec0 gen=626->626 crc_first=2a43734c/2a43734c crc_mid=04f34b9c/04f34b9c crc_tail=90100804/90100804 stable=1 raw_full=7df34124 raw_q=de714cb8/dac77180/eeff4701/95c9053b raw_edge=3ddeb22e raw_probe=308.2ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=2165730a/24226097/f8e5f026 submit=3 complete=3 seq=3690/3690 stale=0 prepare=9.4ms draw=36.5ms
+I (167348) wifi:flush txq
+I (167349) wifi:stop sw txq
+I (167349) wifi:lmac stop hw txq
+W (167353) camera_hal: [CAM-DIAG-C15] SP0A39 test_pattern=on P1:32 before=0x00 write=0x80 read=0x80 expected_bit=0x80
+W (167456) rc_video: [CAM-DIAG-C15.2] screen window marker=6 capture=1554
+W (167456) rc_tank: [CAM-DIAG-C15] WINDOW_6 start: wifi=off camera=on sensor=pattern gray8=200x200; DVP unchanged
+W (167884) rc_video: [DEBUG-C151] display frame=1260 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1556->1559 became_active=0 overlap=0 overlap_count=0 finish=1558 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (167896) rc_video: [CAM-DIAG-C15.2] frame=1260 window=5 sensor=real slot=0 addr=0x3c0e0ec0 gen=641->641 crc_first=7e73e31a/7e73e31a crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=b3098562 raw_q=730975fa/aa2ace9a/6fc089d8/35b9ef0c raw_edge=45a59c7f raw_probe=307.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=cf0b76f9/35d4891a/2db56761 submit=3 complete=3 seq=3780/3780 stale=0 prepare=9.3ms draw=35.7ms
+W (171208) rc_video: [DEBUG-C151] display frame=1290 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1589->1592 became_active=0 overlap=0 overlap_count=0 finish=1591 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (171220) rc_video: [CAM-DIAG-C15.2] frame=1290 window=6 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=656->656 crc_first=7e73e31a/7e73e31a crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=b3098562 raw_q=730975fa/aa2ace9a/6fc089d8/35b9ef0c raw_edge=45a59c7f raw_probe=307.8ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=cf0b76f9/35d4891a/2db56761 submit=3 complete=3 seq=3870/3870 stale=0 prepare=9.3ms draw=35.7ms
+W (174531) rc_video: [DEBUG-C151] display frame=1320 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1622->1625 became_active=0 overlap=0 overlap_count=0 finish=1624 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (174543) rc_video: [CAM-DIAG-C15.2] frame=1320 window=6 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=671->671 crc_first=7e73e31a/7e73e31a crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=b3098562 raw_q=730975fa/aa2ace9a/6fc089d8/35b9ef0c raw_edge=45a59c7f raw_probe=307.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=cf0b76f9/35d4891a/2db56761 submit=3 complete=3 seq=3960/3960 stale=0 prepare=9.3ms draw=35.9ms
+W (177855) rc_video: [DEBUG-C151] display frame=1350 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1655->1658 became_active=0 overlap=0 overlap_count=0 finish=1657 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (177867) rc_video: [CAM-DIAG-C15.2] frame=1350 window=6 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=686->686 crc_first=7e73e31a/7e73e31a crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=b3098562 raw_q=730975fa/aa2ace9a/6fc089d8/35b9ef0c raw_edge=45a59c7f raw_probe=307.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=cf0b76f9/35d4891a/2db56761 submit=3 complete=3 seq=4050/4050 stale=0 prepare=9.3ms draw=35.9ms
+W (181178) rc_video: [DEBUG-C151] display frame=1380 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1688->1691 became_active=0 overlap=0 overlap_count=0 finish=1690 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (181190) rc_video: [CAM-DIAG-C15.2] frame=1380 window=6 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=701->701 crc_first=7e73e31a/7e73e31a crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=b3098562 raw_q=730975fa/aa2ace9a/6fc089d8/35b9ef0c raw_edge=45a59c7f raw_probe=307.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=cf0b76f9/35d4891a/2db56761 submit=3 complete=3 seq=4140/4140 stale=0 prepare=9.3ms draw=35.5ms
+W (184501) rc_video: [DEBUG-C151] display frame=1410 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1721->1724 became_active=0 overlap=0 overlap_count=0 finish=1723 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (184513) rc_video: [CAM-DIAG-C15.2] frame=1410 window=6 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=716->716 crc_first=7e73e31a/7e73e31a crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=b3098562 raw_q=730975fa/aa2ace9a/6fc089d8/35b9ef0c raw_edge=45a59c7f raw_probe=307.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=cf0b76f9/35d4891a/2db56761 submit=3 complete=3 seq=4230/4230 stale=0 prepare=9.3ms draw=35.6ms
+W (187825) rc_video: [DEBUG-C151] display frame=1440 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1754->1757 became_active=0 overlap=0 overlap_count=0 finish=1756 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (187837) rc_video: [CAM-DIAG-C15.2] frame=1440 window=6 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=731->731 crc_first=7e73e31a/7e73e31a crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=b3098562 raw_q=730975fa/aa2ace9a/6fc089d8/35b9ef0c raw_edge=45a59c7f raw_probe=307.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=cf0b76f9/35d4891a/2db56761 submit=3 complete=3 seq=4320/4320 stale=0 prepare=9.3ms draw=35.6ms
+W (191148) rc_video: [DEBUG-C151] display frame=1470 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1787->1790 became_active=0 overlap=0 overlap_count=0 finish=1789 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (191160) rc_video: [CAM-DIAG-C15.2] frame=1470 window=6 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=746->746 crc_first=7e73e31a/7e73e31a crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=b3098562 raw_q=730975fa/aa2ace9a/6fc089d8/35b9ef0c raw_edge=45a59c7f raw_probe=307.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=cf0b76f9/35d4891a/2db56761 submit=3 complete=3 seq=4410/4410 stale=0 prepare=9.3ms draw=35.6ms
+W (194472) rc_video: [DEBUG-C151] display frame=1500 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1820->1823 became_active=0 overlap=0 overlap_count=0 finish=1822 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (194484) rc_video: [CAM-DIAG-C15.2] frame=1500 window=6 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=761->761 crc_first=7e73e31a/7e73e31a crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=b3098562 raw_q=730975fa/aa2ace9a/6fc089d8/35b9ef0c raw_edge=45a59c7f raw_probe=307.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=cf0b76f9/35d4891a/2db56761 submit=3 complete=3 seq=4500/4500 stale=0 prepare=9.3ms draw=35.6ms
+W (197463) camera_hal: [CAM-DIAG-C15] SP0A39 test_pattern=off P1:32 before=0x80 write=0x00 read=0x00 expected_bit=0x00
+W (197564) rc_video: [CAM-DIAG-C15.2] screen window marker=7 capture=1853
+W (197564) rc_tank: [CAM-DIAG-C15] WINDOW_7 start: wifi=off camera=on sensor=real gray8=200x200 hold; DVP unchanged
+W (197569) rc_tank: [CAM-DIAG-C15] low-bandwidth raw-source isolation sequence complete; hold WINDOW_7
+I (197578) rc_tank: Tank running (video + control; audio disabled)
+I (197584) rc_tank: app_main done, idle loop
+W (197803) rc_video: [DEBUG-C151] display frame=1530 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1853->1856 became_active=0 overlap=0 overlap_count=0 finish=1855 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (197814) rc_video: [CAM-DIAG-C15.2] frame=1530 window=6 sensor=pattern slot=0 addr=0x3c0e0ec0 gen=776->776 crc_first=7e73e31a/7e73e31a crc_mid=eef99c1a/eef99c1a crc_tail=0d968558/0d968558 stable=1 raw_full=b3098562 raw_q=730975fa/aa2ace9a/6fc089d8/35b9ef0c raw_edge=45a59c7f raw_probe=314.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=cf0b76f9/35d4891a/2db56761 submit=3 complete=3 seq=4590/4590 stale=0 prepare=9.4ms draw=36.3ms
+W (201119) rc_video: [DEBUG-C151] display frame=1560 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1886->1889 became_active=0 overlap=0 overlap_count=0 finish=1888 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (201131) rc_video: [CAM-DIAG-C15.2] frame=1560 window=7 sensor=real slot=0 addr=0x3c0e0ec0 gen=791->791 crc_first=96a908ad/96a908ad crc_mid=a207f40c/a207f40c crc_tail=a195ae39/a195ae39 stable=1 raw_full=0020813e raw_q=afaf9cad/a34573d2/47b7fa39/5af2ddf9 raw_edge=079a430f raw_probe=307.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=a8e36ad0/3cc62246/e0229f5d submit=3 complete=3 seq=4680/4680 stale=0 prepare=9.4ms draw=35.7ms
+W (204442) rc_video: [DEBUG-C151] display frame=1590 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1919->1922 became_active=0 overlap=0 overlap_count=0 finish=1921 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (204454) rc_video: [CAM-DIAG-C15.2] frame=1590 window=7 sensor=real slot=0 addr=0x3c0e0ec0 gen=806->806 crc_first=1594d15a/1594d15a crc_mid=a5df4f33/a5df4f33 crc_tail=e19ad2ab/e19ad2ab stable=1 raw_full=6b1f25c3 raw_q=4bf7bee8/bec201b6/b04f93e1/5f3acb74 raw_edge=d8ce2abd raw_probe=307.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=26b1e14b/710983c3/5fe7069b submit=3 complete=3 seq=4770/4770 stale=0 prepare=9.3ms draw=35.9ms
+W (207766) rc_video: [DEBUG-C151] display frame=1620 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1952->1955 became_active=0 overlap=0 overlap_count=0 finish=1954 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (207778) rc_video: [CAM-DIAG-C15.2] frame=1620 window=7 sensor=real slot=0 addr=0x3c0e0ec0 gen=821->821 crc_first=f67a0eb1/f67a0eb1 crc_mid=bc5ddc5b/bc5ddc5b crc_tail=ff08cfb7/ff08cfb7 stable=1 raw_full=3a28cbbf raw_q=61582104/dfdf5bdf/e90d3c22/acc8a649 raw_edge=04b7df66 raw_probe=307.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=034cc89c/87a27f8a/9130a376 submit=3 complete=3 seq=4860/4860 stale=0 prepare=9.3ms draw=35.9ms
+W (211089) rc_video: [DEBUG-C151] display frame=1650 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=1985->1988 became_active=0 overlap=0 overlap_count=0 finish=1987 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (211101) rc_video: [CAM-DIAG-C15.2] frame=1650 window=7 sensor=real slot=0 addr=0x3c0e0ec0 gen=836->836 crc_first=e63824c7/e63824c7 crc_mid=043eaf98/043eaf98 crc_tail=0b5f3e97/0b5f3e97 stable=1 raw_full=a215ea66 raw_q=21654697/ad3c93e0/ebd65af3/9a3bc859 raw_edge=a117dc7d raw_probe=307.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=64580d14/4bcd50f5/7434d733 submit=3 complete=3 seq=4950/4950 stale=0 prepare=9.3ms draw=35.5ms
+W (214413) rc_video: [DEBUG-C151] display frame=1680 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=2018->2021 became_active=0 overlap=0 overlap_count=0 finish=2020 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (214425) rc_video: [CAM-DIAG-C15.2] frame=1680 window=7 sensor=real slot=0 addr=0x3c0e0ec0 gen=851->851 crc_first=c4a212a7/c4a212a7 crc_mid=f92a3d74/f92a3d74 crc_tail=7be20b17/7be20b17 stable=1 raw_full=a1e056b0 raw_q=84f114ce/0e3cd34e/bd305db3/5dee0d22 raw_edge=737a049c raw_probe=307.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=f6011992/b1220a49/0b030697 submit=3 complete=3 seq=5040/5040 stale=0 prepare=9.3ms draw=35.9ms
+W (217736) rc_video: [DEBUG-C151] display frame=1710 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=2051->2054 became_active=0 overlap=0 overlap_count=0 finish=2053 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (217748) rc_video: [CAM-DIAG-C15.2] frame=1710 window=7 sensor=real slot=0 addr=0x3c0e0ec0 gen=866->866 crc_first=89bb6b45/89bb6b45 crc_mid=1e039789/1e039789 crc_tail=42fe2a47/42fe2a47 stable=1 raw_full=c6c23f05 raw_q=b5487129/d344a350/b5b0501a/d2d7e260 raw_edge=68c7907f raw_probe=307.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=5452cf47/0453df0f/14a29b84 submit=3 complete=3 seq=5130/5130 stale=0 prepare=9.3ms draw=35.5ms
+W (221059) rc_video: [DEBUG-C151] display frame=1740 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=2084->2087 became_active=0 overlap=0 overlap_count=0 finish=2086 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (221071) rc_video: [CAM-DIAG-C15.2] frame=1740 window=7 sensor=real slot=0 addr=0x3c0e0ec0 gen=881->881 crc_first=2b0590aa/2b0590aa crc_mid=c4c72d36/c4c72d36 crc_tail=5fa8f121/5fa8f121 stable=1 raw_full=0cbfb89a raw_q=63393e67/18597a56/a08b30ca/5e583517 raw_edge=450a0173 raw_probe=307.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=dd858d43/18553642/808b0621 submit=3 complete=3 seq=5220/5220 stale=0 prepare=9.3ms draw=35.5ms
+W (224383) rc_video: [DEBUG-C151] display frame=1770 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=2117->2120 became_active=0 overlap=0 overlap_count=0 finish=2119 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (224395) rc_video: [CAM-DIAG-C15.2] frame=1770 window=7 sensor=real slot=0 addr=0x3c0e0ec0 gen=896->896 crc_first=12c223d6/12c223d6 crc_mid=f296dd71/f296dd71 crc_tail=e59d9881/e59d9881 stable=1 raw_full=6087f858 raw_q=97c7a308/9d591590/364e3c6c/7d5134d0 raw_edge=d67b8296 raw_probe=307.8ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=9d506023/5bbf111b/50d4c1a3 submit=3 complete=3 seq=5310/5310 stale=0 prepare=9.3ms draw=35.5ms
+W (227706) rc_video: [DEBUG-C151] display frame=1800 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=2150->2153 became_active=0 overlap=0 overlap_count=0 finish=2152 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (227718) rc_video: [CAM-DIAG-C15.2] frame=1800 window=7 sensor=real slot=0 addr=0x3c0e0ec0 gen=911->911 crc_first=fe756653/fe756653 crc_mid=e49f9280/e49f9280 crc_tail=8e329978/8e329978 stable=1 raw_full=576f3baa raw_q=02eb02e5/dfde1fa0/c1a3783b/bf93c35f raw_edge=85903400 raw_probe=307.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=3743a7c3/5a5e83df/1776e12a submit=3 complete=3 seq=5400/5400 stale=0 prepare=9.3ms draw=35.7ms
+W (231030) rc_video: [DEBUG-C151] display frame=1830 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=2183->2186 became_active=0 overlap=0 overlap_count=0 finish=2185 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (231042) rc_video: [CAM-DIAG-C15.2] frame=1830 window=7 sensor=real slot=0 addr=0x3c0e0ec0 gen=926->926 crc_first=8c6d90c3/8c6d90c3 crc_mid=335527c6/335527c6 crc_tail=0f257072/0f257072 stable=1 raw_full=051b3ece raw_q=b434fe94/55bf68ac/5963a3cb/478de575 raw_edge=10e84398 raw_probe=307.6ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=8071144b/a241bc7e/3089bb30 submit=3 complete=3 seq=5490/5490 stale=0 prepare=9.3ms draw=35.8ms
+W (234353) rc_video: [DEBUG-C151] display frame=1860 consumer=0 active=1/0x3c177000->2/0x3c20d140 select=2216->2219 became_active=0 overlap=0 overlap_count=0 finish=2218 last_finished=1/0x3c177000 finish_active=2 finish_collision=0 guard=1 guard_errors=0
+I (234365) rc_video: [CAM-DIAG-C15.2] frame=1860 window=7 sensor=real slot=0 addr=0x3c0e0ec0 gen=941->941 crc_first=05567865/05567865 crc_mid=40eb88c7/40eb88c7 crc_tail=197b074b/197b074b stable=1 raw_full=950af7c8 raw_q=b82db70d/1c1d86a7/fa6e9bc6/2b284876 raw_edge=92b72903 raw_probe=307.7ms cache_sync=ESP_OK cache_sync_err=0 chunk_crc=93ddd6e0/58a7e021/6195b038 submit=3 complete=3 seq=5580/5580 stale=0 prepare=9.3ms draw=35.7ms

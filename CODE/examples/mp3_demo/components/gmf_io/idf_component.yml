@@ -1,0 +1,7 @@
+version: "1.0.0"
+description: Espressif GMF file IO with mp3_demo SPI lock callback
+url: https://github.com/espressif/esp-gmf/tree/3ae5408f2c900270c3c0dc6e4e84dc8760306ad3/elements/gmf_io
+dependencies:
+  espressif/gmf_core:
+    require: public
+    version: "^1.0"

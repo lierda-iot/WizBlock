@@ -1,0 +1,15 @@
+I (16282) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1
+I (16282) rc_net: Got IP: 192.168.4.2
+I (16282) rc_tank: Network connected, peer: 192.168.4.1
+I (16288) rc_net: Ctrl UDP socket ready
+I (16291) rc_net: Video UDP socket bound to port 8002
+I (16304) wifi:<ba-add>idx:0 (ifx:0, 44:1b:f6:f3:ae:25), tid:0, ssn:0, winSize:64
+I (16312) rc_net: Audio TCP connected to tank port 8003
+I (16313) rc_tank: Socket channels started
+I (16313) rc_video: Remote video started
+I (16315) rc_net: Connected to tank AP
+I (16319) rc_tank: Remote connected to tank
+I (16323) rc_control: Touch poll task started
+I (16327) rc_control: Ctrl TX task started (sending STOP heartbeat)
+I (16333) rc_control: Remote control started (touch poll + ctrl tx)
+I (16339) rc_tank: Remote running (control + PTT audio via SW3)

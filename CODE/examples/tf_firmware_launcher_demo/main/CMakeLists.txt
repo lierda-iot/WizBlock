@@ -1,0 +1,23 @@
+idf_component_register(
+    SRCS
+        "firmware_package.c"
+        "launcher_boot.c"
+        "tf_firmware_launcher_demo_main.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        launcher_return
+        laiwfs300
+        display_hal
+        io_expander
+        touch_hal
+        storage_hal
+    PRIV_REQUIRES
+        app_update
+        esp_codec_dev
+        esp_partition
+        esp_rom
+        esp_timer
+        json
+        lvgl
+        mbedtls
+)

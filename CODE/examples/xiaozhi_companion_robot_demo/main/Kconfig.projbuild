@@ -1,0 +1,28 @@
+menu "XiaoZhi Companion Robot Demo Configuration"
+
+    config XIAOZHI_COMPANION_SELF_TEST
+        bool "Run companion core self-test at startup"
+        default n
+        help
+            Runs the DEV-0 public contract tests before the normal heartbeat.
+            Keep disabled in the default product configuration.
+
+    config XIAOZHI_DEVICE_MAC
+        string "Device MAC address"
+        default "2e:ee:8c:6b:58:28"
+        help
+            MAC address reserved for the later XiaoZhi platform adapter.
+
+    config XIAOZHI_OTA_URL
+        string "OTA/Version check URL"
+        default "https://api.tenclass.net/xiaozhi/ota/"
+
+    config XIAOZHI_ACTIVATION_URL
+        string "Activation check URL"
+        default "https://api.tenclass.net/xiaozhi/ota/activate"
+
+    config XIAOZHI_LANG
+        string "Language setting"
+        default "zh-CN"
+
+endmenu

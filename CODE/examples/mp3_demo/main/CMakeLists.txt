@@ -1,0 +1,38 @@
+idf_component_register(
+    SRCS
+        "mp3_audio_output.c"
+        "mp3_catalog.c"
+        "mp3_catalog_scan.c"
+        "mp3_cover.c"
+        "mp3_demo_main.c"
+        "mp3_file_io.c"
+        "mp3_font.c"
+        "mp3_lrc.c"
+        "mp3_player.c"
+        "mp3_progress.c"
+        "mp3_spi_lock.c"
+        "mp3_ui.c"
+    INCLUDE_DIRS "."
+    EMBED_FILES
+        "mp3_noto_sans_sc_16.bin"
+    REQUIRES
+        bus_i2c
+        display_hal
+        esp_codec_dev
+        io_expander
+        laiwfs300
+        storage_hal
+        touch_hal
+    PRIV_REQUIRES
+        esp_audio_render
+        esp_driver_i2s
+        esp_new_jpeg
+        esp_player
+        esp_timer
+        gmf_audio
+        gmf_core
+        gmf_io
+        media_lib_sal
+        nvs_flash
+        lvgl
+)

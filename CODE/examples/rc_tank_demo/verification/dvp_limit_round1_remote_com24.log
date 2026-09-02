@@ -1,0 +1,203 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+I (24) boot: ESP-IDF v5.5.4 2nd stage bootloader
+I (25) boot: compile time Aug 27 2026 10:38:42
+I (25) boot: Multicore bootloader
+I (25) boot: chip revision: v0.2
+I (28) boot: efuse block revision: v1.3
+I (31) boot.esp32s3: Boot SPI Speed : 80MHz
+I (35) boot.esp32s3: SPI Mode       : DIO
+I (39) boot.esp32s3: SPI Flash Size : 8MB
+I (43) boot: Enabling RNG early entropy source...
+I (47) boot: Partition Table:
+I (50) boot: ## Label            Usage          Type ST Offset   Length
+I (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (69) boot:  2 factory          factory app      00 00 00010000 00300000
+I (76) boot:  3 storage          Unknown data     01 82 00310000 00100000
+I (82) boot: End of partition table
+I (85) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=211d4h (135636) map
+I (117) esp_image: segment 1: paddr=000311fc vaddr=3fca2500 size=053d8h ( 21464) load
+I (121) esp_image: segment 2: paddr=000365dc vaddr=40374000 size=09a3ch ( 39484) load
+I (130) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9c68ch (640652) map
+I (244) esp_image: segment 4: paddr=000dc6b4 vaddr=4037da3c size=14a00h ( 84480) load
+I (262) esp_image: segment 5: paddr=000f10bc vaddr=50000000 size=00020h (    32) load
+I (274) boot: Loaded app from partition at offset 0x10000
+I (274) boot: Disabling RNG early entropy source...
+I (284) esp_psram: Found 8MB PSRAM device
+I (284) esp_psram: Speed: 80MHz
+I (285) cpu_start: Multicore app
+I (1203) esp_psram: SPI SRAM memory test OK
+I (1211) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (1212) cpu_start: Pro cpu start user code
+I (1212) cpu_start: cpu freq: 240000000 Hz
+I (1214) app_init: Application information:
+I (1218) app_init: Project name:     rc_tank_demo
+I (1222) app_init: App version:      1
+I (1226) app_init: Compile time:     Aug 27 2026 10:37:45
+I (1231) app_init: ELF file SHA256:  cb7dc19db...
+I (1235) app_init: ESP-IDF:          GIT-NOTFOUND
+I (1240) efuse_init: Min chip rev:     v0.0
+I (1244) efuse_init: Max chip rev:     v0.99 
+I (1248) efuse_init: Chip rev:         v0.2
+I (1252) heap_init: Initializing. RAM available for dynamic allocation:
+I (1258) heap_init: At 3FCAB848 len 0003DEC8 (247 KiB): RAM
+I (1263) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (1268) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (1274) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (1279) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (1287) spi_flash: detected chip: generic
+I (1290) spi_flash: flash io: dio
+I (1293) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (1299) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (1306) main_task: Started on CPU0
+I (1330) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations
+I (1331) main_task: Calling app_main()
+I (1339) rc_tank: === RC Tank Demo (EX-035) Role: REMOTE ===
+I (1339) rc_tank: Starting in 10 s
+I (11339) rc_tank: Starting Remote role
+I (11339) board_laiwfs300: init board support package
+I (11339) board_laiwfs300: init capability registry
+I (11340) board_laiwfs300: init I2C bus: SDA=GPIO48 SCL=GPIO47
+I (11347) bus_i2c: I2C0 initialized: SDA=GPIO48 SCL=GPIO47 speed=100000Hz
+I (11352) board_laiwfs300: --- I2C bus scan (0x08-0x77) ---
+I (11360) board_laiwfs300:   I2C device ACK at 0x15
+I (11363) board_laiwfs300:   I2C device ACK at 0x18
+I (11368) board_laiwfs300:   I2C device ACK at 0x22
+I (11376) board_laiwfs300:   I2C device ACK at 0x40
+I (11378) board_laiwfs300:   I2C device ACK at 0x51
+I (11384) board_laiwfs300:   I2C device ACK at 0x68
+I (11387) board_laiwfs300: --- I2C scan done: 6 device(s) found ---
+W (11391) board_laiwfs300: TPT29555A (IOEX) NOT found at 0x20 (NACK)
+I (11398) board_laiwfs300: ES8311 (Codec) found at 0x18
+I (11402) board_laiwfs300: ES7210 (ADC) found at 0x40
+I (11407) board_laiwfs300: AIP8563 (RTC) found at 0x51
+I (11412) board_laiwfs300: BMI260 (IMU @0x68) found at 0x68
+W (11417) board_laiwfs300: BMI260 (IMU @0x69) NOT found at 0x69 (NACK)
+W (11424) board_laiwfs300: SP0A39 (Camera) NOT found at 0x21 (NACK)
+I (11431) board_laiwfs300: ES8311 chip ID: 0x83 0x11
+I (11435) board_laiwfs300: ES7210 chip ID: 0x72
+I (11440) board_laiwfs300: AIP8563 RTC time: 15:56:58 (BCD raw)
+I (11445) board_laiwfs300: BMI260 chip ID: 0x27 (expect 0x27)
+I (11450) board_laiwfs300: init SPI bus manager
+I (11454) board_laiwfs300: init ADC service
+I (11458) board_adc: ADC1 oneshot initialized
+I (11462) board_laiwfs300: init board power service
+I (11467) board_laiwfs300: ADC D0_DETECT (GPIO1): raw=1093 (~827 mV)
+I (11472) board_laiwfs300: ADC BAT_ADC (GPIO7): raw=1641 (~1242 mV)
+I (11478) board_laiwfs300: ADC SW_ADC (GPIO8): raw=4095 (~3100 mV)
+I (11484) board_laiwfs300: init IO expander: TPT29555A addr=0x22
+I (11492) io_expander: TPT29555A initialized at 0x22
+I (11495) board_laiwfs300: IO expander initialized OK
+I (11500) board_laiwfs300: init module detect
+I (11504) board_laiwfs300: register detection rules
+I (11508) board_laiwfs300: register default capabilities
+I (11513) board_laiwfs300: board init complete (ioex=OK)
+I (11739) touch_hal: CST836U initialized at 0x15
+I (11741) touch_hal: CST836U info: module_id=0x01 fw_ver=0x19 chip_type=0x1300
+I (11741) board_touch: CST836U verify OK: module_id=0x01 fw=0x19 chip_type=0x1300
+I (11746) rc_control: Joystick init (center=108,136, continuous angle/magnitude, 50Hz)
+I (11754) rc_video: Initializing video display
+I (11759) display_hal: init ST7789V3 LCD 240x320 SPI host=1
+E (11904) spi: spi_bus_initialize(816): SPI bus already initialized.
+I (12025) display_hal: ST7789V3 LCD initialized
+I (12025) board_display: display mapped: MOSI=GPIO13 SCK=GPIO12 CS=GPIO10 DC=GPIO16 BL=GPIO17 LCD_RST=IOEX P1_5 pclk=40000000
+I (12063) rc_video: Display initialized (landscape 320×240) and backlight ON
+I (12098) rc_video: Video RX/display task started (240x180 at x=80 y=0)
+I (12099) rc_net: Initializing as STA (Remote)
+I (12100) pp: pp rom version: e7ae62f
+I (12101) net80211: net80211 rom version: e7ae62f
+I (12107) wifi:wifi driver task: 3fcccbe8, prio:23, stack:6656, core=0
+I (12114) wifi:wifi firmware version: 0947e8b
+I (12116) wifi:wifi certification version: v7.0
+I (12118) rc_video: Remote WiFi icon: connected=0 epoch=0
+I (12120) wifi:config NVS flash: enabled
+I (12129) wifi:config nano formatting: disabled
+I (12133) wifi:Init data frame dynamic rx buffer num: 32
+I (12138) wifi:Init static rx mgmt buffer num: 5
+I (12142) wifi:Init management short buffer num: 32
+I (12147) wifi:Init dynamic tx buffer num: 64
+I (12151) wifi:Init static tx FG buffer num: 2
+I (12155) wifi:Init static rx buffer size: 1600
+I (12160) wifi:Init static rx buffer num: 10
+I (12163) wifi:Init dynamic rx buffer num: 32
+I (12168) wifi_init: rx ba win: 6
+I (12171) wifi_init: accept mbox: 6
+I (12174) wifi_init: tcpip mbox: 16
+I (12177) wifi_init: udp mbox: 16
+I (12180) wifi_init: tcp mbox: 6
+I (12183) wifi_init: tcp tx win: 5760
+I (12186) wifi_init: tcp rx win: 5760
+I (12190) wifi_init: tcp mss: 1440
+I (12193) wifi_init: WiFi IRAM OP enabled
+I (12197) wifi_init: WiFi RX IRAM OP enabled
+I (12201) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10
+I (12244) wifi:mode : sta (44:1b:f6:f3:ae:40)
+I (12244) wifi:enable tsf
+W (12246) rc_control: Network disconnected: control TX paused
+I (12246) rc_net: STA started; recovery task owns scan/connect
+W (12250) rc_tank: Network disconnected
+I (12254) rc_net: Remote network recovery active; init does not wait for AP
+I (12261) rc_control: Touch poll task started
+I (12265) rc_control: Ctrl TX task started (V1 idle STOP-once)
+I (12270) rc_control: Remote control started (touch poll + V1 ctrl tx)
+I (12277) rc_tank: Remote ready; network recovery active
+I (12354) rc_net: Remote recovery task started (scan loop, 3 direct attempts, 5000 ms interval)
+I (12454) rc_net: Scanning for RC_TANK_* APs...
+I (14956) rc_net: Found tank AP: RC_TANK_F3AE79, RSSI: -48
+I (14957) rc_net: Connecting to tank AP, attempt 1/3
+I (15030) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (15031) wifi:state: init -> auth (0xb0)
+I (15034) wifi:state: auth -> assoc (0x0)
+I (15044) wifi:state: assoc -> run (0x10)
+I (15064) wifi:connected with RC_TANK_F3AE79, aid = 1, channel 1, 40U, bssid = 44:1b:f6:f3:ae:79
+I (15065) wifi:security: WPA2-PSK, phy: bgn, rssi: -48, cipher(pairwise:0x3, group:0x3), pmf:1
+I (15071) wifi:pm start, type: 1
+
+I (15074) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (15082) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (15152) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (16110) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1
+I (16110) rc_net: Got IP: 192.168.4.2
+I (16110) rc_net: Connected to tank AP; waiting for disconnect
+I (16111) rc_control: Network connected: waiting for joystick release
+I (16117) rc_video: Remote WiFi icon: connected=1 epoch=1
+I (16122) rc_tank: Network connected, peer: 192.168.4.1
+I (16130) rc_control: Joystick released: motion control re-armed
+I (16133) rc_net: Ctrl UDP socket ready
+I (16142) rc_control: [DEBUG-DVP-LIMIT] ctrl_tx ok=1 stop=1 drive=0 fail=0 current=STOP
+I (16145) rc_net: Video UDP socket bound to port 8002
+I (16149) wifi:<ba-add>idx:0 (ifx:0, 44:1b:f6:f3:ae:79), tid:0, ssn:0, winSize:64
+I (16183) rc_net: Audio TCP connected to tank port 8003
+I (16184) rc_video: Remote video started
+I (24149) rc_control: [DEBUG-DVP-LIMIT] ctrl_tx ok=1 stop=1 drive=0 fail=0 current=STOP
+I (30162) wifi:bcn_timeout,ap_probe_send_start
+I (32149) rc_control: [DEBUG-DVP-LIMIT] ctrl_tx ok=1 stop=1 drive=0 fail=0 current=STOP
+I (32665) wifi:ap_probe_send over, reset wifi status to disassoc
+I (32665) wifi:state: run -> init (0xc800)
+I (32666) wifi:pm stop, total sleep time: 3997152 us / 17592095 us
+
+I (32670) wifi:<ba-del>idx:0, tid:0
+I (32673) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+W (32683) rc_net: Tank AP disconnected; retry saved AP first
+W (32683) rc_control: Network disconnected: control TX paused
+I (32686) rc_net: Connecting to tank AP, attempt 1/3
+W (32691) rc_tank: Network disconnected
+I (32701) rc_video: Remote WiFi icon: connected=0 epoch=2
+I (40108) rc_net: Connecting to tank AP, attempt 2/3
+I (47520) rc_net: Connecting to tank AP, attempt 3/3
+W (49932) rc_net: Direct reconnect attempts exhausted; return to AP scan
+I (55033) rc_net: Scanning for RC_TANK_* APs...
+W (57535) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (62635) rc_net: Scanning for RC_TANK_* APs...
+W (65137) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (70237) rc_net: Scanning for RC_TANK_* APs...
+W (72738) rc_net: No RC_TANK_* AP found; retry scan in 5000 ms
+I (77839) rc_net: Scanning for RC_TANK_* APs...

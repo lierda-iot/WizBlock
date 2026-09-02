@@ -1,0 +1,49 @@
+menu "RC Tank Demo Configuration"
+
+    choice RC_TANK_ROLE
+        prompt "Device Role"
+        default RC_TANK_ROLE_TANK
+        help
+            Select the role for this device: Tank or Remote Controller.
+            Tank: Runs motors, camera capture, video transmission, audio playback.
+            Remote: Displays video, sends joystick commands, records audio.
+
+        config RC_TANK_ROLE_TANK
+            bool "Tank"
+            help
+                Tank role: Receives control commands, drives motors, captures and
+                sends video stream, receives and plays audio.
+
+        config RC_TANK_ROLE_REMOTE
+            bool "Remote Controller"
+            help
+                Remote controller role: Displays video stream, sends control commands
+                via touchscreen joystick, records and sends audio via SW3.
+    endchoice
+
+    config RC_TANK_STABLE_CAPTURE
+        bool "Use verified staged-DVP capture in formal Tank firmware"
+        depends on RC_TANK_ROLE_TANK
+        default y
+        help
+            Uses the C16-verified 102400-byte staged DVP controller, direct
+            GDMA-EOF block copy, per-frame capture pause, and fixed output-row
+            repair in the formal Tank JPEG pipeline. The Tank LCD remains a
+            status screen; camera pixels are sent only to the Remote.
+
+    config RC_TANK_AUDIO_ENABLED
+        bool "Enable RC Tank audio features"
+        default n
+        help
+            Enables Tank audio playback and Remote recording/PTT.  Keep this
+            disabled while image transport, display, and control are stabilized.
+
+    config RC_TANK_STARTUP_DELAY_SEC
+        int "Startup delay (seconds)"
+        default 10
+        range 0 60
+        help
+            Delay in seconds before main logic starts. Used to capture full boot logs.
+            XCR-028 convention: 10 seconds.
+
+endmenu

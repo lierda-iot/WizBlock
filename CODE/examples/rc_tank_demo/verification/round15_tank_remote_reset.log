@@ -1,0 +1,24 @@
+I (242030) rc_net: STA disconnected, MAC: 44:1b:f6:f3:ae:28
+W (242030) rc_tank: Network disconnected
+I (242120) wifi:starting SA query procedure with STA(44:1b:f6:f3:ae:28)
+I (242121) wifi:Send SA Query req with transaction id 9522
+I (242321) wifi:Send SA Query req with transaction id 9523
+I (242521) wifi:Send SA Query req with transaction id 9524
+I (242721) wifi:Send SA Query req with transaction id 9525
+I (242921) wifi:Send SA Query req with transaction id 9526
+I (243121) wifi:Send SA Query req with transaction id 9527
+I (243145) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc
+I (243146) wifi:station: 44:1b:f6:f3:ae:28 leave, AID = 1, reason = 209, bss_flags is 756835, bss:0x3fcd6164
+I (243152) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (243160) wifi:<ba-del>idx:2, tid:0
+I (243163) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (243172) rc_net: STA disconnected, MAC: 44:1b:f6:f3:ae:28
+W (243175) rc_tank: Network disconnected
+I (243763) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (243764) wifi:station: 44:1b:f6:f3:ae:28 join, AID=1, bgn, 40U
+I (243788) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:28
+I (243827) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (243828) rc_net: STA assigned IP: 192.168.4.2
+I (243829) rc_tank: Network connected, peer: 192.168.4.2
+W (243835) rc_tank: Channels already started, skip re-init
+I (244861) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:28), tid:0, ssn:0, winSize:64

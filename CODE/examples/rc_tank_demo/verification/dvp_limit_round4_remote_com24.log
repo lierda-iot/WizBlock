@@ -1,0 +1,41 @@
+I (2017779) rc_net: Scanning for RC_TANK_* APs...
+I (2020281) rc_net: Found tank AP: RC_TANK_F3AE79, RSSI: -44
+I (2020282) rc_net: Connecting to tank AP, attempt 1/3
+I (2020288) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+I (2020290) wifi:state: init -> auth (0xb0)
+I (2020294) wifi:state: auth -> assoc (0x0)
+I (2020306) wifi:state: assoc -> run (0x10)
+I (2020321) wifi:connected with RC_TANK_F3AE79, aid = 1, channel 1, 40U, bssid = 44:1b:f6:f3:ae:79
+I (2020322) wifi:security: WPA2-PSK, phy: bgn, rssi: -45, cipher(pairwise:0x3, group:0x3), pmf:1
+I (2020328) wifi:pm start, type: 1
+
+I (2020331) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (2020368) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (2021360) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1
+I (2021360) rc_net: Got IP: 192.168.4.2
+I (2021361) rc_net: Connected to tank AP; waiting for disconnect
+I (2021361) rc_control: Network connected: waiting for joystick release
+I (2021373) rc_tank: Network connected, peer: 192.168.4.1
+I (2021374) rc_control: Joystick released: motion control re-armed
+I (2021380) rc_video: Remote WiFi icon: connected=1 epoch=7
+I (2021385) rc_control: [DEBUG-DVP-LIMIT] ctrl_tx ok=39 stop=8 drive=31 fail=0 current=STOP
+I (2021416) wifi:<ba-add>idx:0 (ifx:0, 44:1b:f6:f3:ae:79), tid:0, ssn:0, winSize:64
+I (2027130) rc_net: Video RX complete=11700 missing=5 last_seq=60
+I (2029377) rc_control: [DEBUG-DVP-LIMIT] ctrl_tx ok=39 stop=8 drive=31 fail=0 current=STOP
+I (2035402) wifi:bcn_timeout,ap_probe_send_start
+I (2037377) rc_control: [DEBUG-DVP-LIMIT] ctrl_tx ok=39 stop=8 drive=31 fail=0 current=STOP
+I (2037905) wifi:ap_probe_send over, reset wifi status to disassoc
+I (2037905) wifi:state: run -> init (0xc800)
+I (2037906) wifi:pm stop, total sleep time: 4275992 us / 17575033 us
+
+I (2037910) wifi:<ba-del>idx:0, tid:0
+I (2037914) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0
+W (2037923) rc_net: Tank AP disconnected; retry saved AP first
+W (2037923) rc_control: Network disconnected: control TX paused
+I (2037927) rc_net: Connecting to tank AP, attempt 1/3
+W (2037933) rc_tank: Network disconnected
+I (2037942) rc_video: Remote WiFi icon: connected=0 epoch=8
+I (2045350) rc_net: Connecting to tank AP, attempt 2/3
+I (2052762) rc_net: Connecting to tank AP, attempt 3/3
+W (2055174) rc_net: Direct reconnect attempts exhausted; return to AP scan
+I (2060275) rc_net: Scanning for RC_TANK_* APs...

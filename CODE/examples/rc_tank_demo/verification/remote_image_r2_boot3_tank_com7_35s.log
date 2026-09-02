@@ -1,0 +1,58 @@
+I (23239) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (23241) wifi:station: 44:1b:f6:f3:ae:40 join, AID=1, bgn, 40U
+I (23264) rc_net: STA connected, MAC: 44:1b:f6:f3:ae:40
+I (23294) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2
+I (23295) rc_net: STA assigned IP: 192.168.4.2
+I (23295) rc_tank: Network connected, peer: 192.168.4.2
+I (23302) rc_net: Ctrl UDP socket bound to port 8001
+I (23305) rc_net: Video UDP socket bound to port 8002
+I (23311) rc_net: Audio TCP listening on port 8003
+I (23314) rc_tank: Socket channels started
+I (23318) rc_video: No local preview active; formal video handoff skipped
+I (23326) camera_hal: [CAM-PROBE] SP0A39 p0_31 stage=dvp_started value=0x01 expected=0x01
+I (23338) rc_video: Video TX task started (240x180, sensor-driven, Q=60)
+I (23339) rc_video: TX theory: raw=614400 B/frame, encoded YUV=86400 B/frame, target10fps raw=0.86 MB/s
+I (23383) rc_video: PSRAM TX buffers: subsample=86400B jpeg=43200B send=43208B free_psram=5592524 free_internal=59911
+I (23387) rc_video: TX buffer caps: subsample=0x3c350120(psram=1) jpeg=0x3c3652a4(psram=1) send=0x3c36fea8(psram=1)
+I (23388) rc_video: Tank video started (camera source)
+I (23444) rc_net: [CAM-PROBE] Video TX seq=0 jpeg_len=7657 crc32=0xe10d45b9 chunks=7
+W (23453) rc_net: Video UDP send failed: seq=0 chunk=4/7 bytes=1208 sent=-1 errno=12 attempts=4
+W (23454) rc_video: Video send failed: ESP_FAIL
+W (23591) rc_video: Video send failed: ESP_FAIL
+W (23643) rc_video: Video send failed: ESP_FAIL
+W (23784) rc_video: Video send failed: ESP_FAIL
+W (23864) rc_video: Video send failed: ESP_FAIL
+W (23959) rc_video: Video send failed: ESP_FAIL
+W (24104) rc_video: Video send failed: ESP_FAIL
+W (24181) rc_video: Video send failed: ESP_FAIL
+W (24275) rc_video: Video send failed: ESP_FAIL
+I (24345) wifi:<ba-add>idx:2 (ifx:1, 44:1b:f6:f3:ae:40), tid:0, ssn:0, winSize:64
+I (26628) rc_net: [CAM-PROBE] Video TX seq=30 jpeg_len=7128 crc32=0xf50ca54b chunks=6
+I (27566) rc_video: Sent 30 | cap_fps=9.3 send_fps=7.2 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=40.1 cache=1.4 subsample=23.2 encode=24.5 send=5.0 total=94.3 | JPEG=8070B
+I (27573) rc_video: [VIDEO-TX] handoff cap=39 get=78 select_fail=0 finished=39 signal=39 acquire=39 acquire_fail=0 release_fail=0 backup=0/0
+I (27581) rc_video: [STABLE-CAPTURE] pause=39/39 timeout=0 quiesce=39 resume=39 lifecycle_errors=0 repairs=39 staged_events=599 copies=572 fallback=0 errors=0 prepare=40 stale_queue=0 pending_vsync=14 sync=55 complete=37 incomplete=18 incomplete_blocks=160 hold=0/0 hold_timeout=0
+I (30312) rc_net: [CAM-PROBE] Video TX seq=60 jpeg_len=7670 crc32=0xfd0e92e9 chunks=7
+I (31101) rc_video: Sent 60 | cap_fps=8.4 send_fps=8.4 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=49.3 cache=1.5 subsample=23.3 encode=23.7 send=6.4 total=104.1 | JPEG=7442B
+I (31101) rc_video: [VIDEO-TX] handoff cap=69 get=139 select_fail=0 finished=69 signal=69 acquire=69 acquire_fail=0 release_fail=0 backup=0/0
+I (31145) rc_video: [STABLE-CAPTURE] pause=69/69 timeout=0 quiesce=69 resume=69 lifecycle_errors=0 repairs=69 staged_events=1076 copies=1032 fallback=0 errors=0 prepare=70 stale_queue=0 pending_vsync=25 sync=103 complete=68 incomplete=35 incomplete_blocks=280 hold=0/0 hold_timeout=0
+I (33792) rc_net: [CAM-PROBE] Video TX seq=90 jpeg_len=7600 crc32=0x261fb476 chunks=7
+I (34805) rc_video: Sent 90 | cap_fps=8.2 send_fps=8.2 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=52.5 cache=1.4 subsample=23.0 encode=24.2 send=4.9 total=106.0 | JPEG=8391B
+I (34813) rc_video: [VIDEO-TX] handoff cap=99 get=198 select_fail=0 finished=99 signal=99 acquire=99 acquire_fail=0 release_fail=0 backup=0/0
+I (34824) rc_video: [STABLE-CAPTURE] pause=99/99 timeout=0 quiesce=99 resume=99 lifecycle_errors=0 repairs=99 staged_events=1603 copies=1538 fallback=0 errors=0 prepare=100 stale_queue=0 pending_vsync=35 sync=156 complete=97 incomplete=59 incomplete_blocks=465 hold=0/0 hold_timeout=0
+I (37714) rc_net: [CAM-PROBE] Video TX seq=120 jpeg_len=7915 crc32=0x84ce4542 chunks=7
+I (38502) rc_video: Sent 120 | cap_fps=8.1 send_fps=8.1 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=51.6 cache=1.4 subsample=23.2 encode=24.7 send=4.9 total=105.8 | JPEG=7584B
+I (38502) rc_video: [VIDEO-TX] handoff cap=129 get=259 select_fail=0 finished=129 signal=129 acquire=129 acquire_fail=0 release_fail=0 backup=0/0
+I (38502) rc_video: [STABLE-CAPTURE] pause=129/129 timeout=0 quiesce=129 resume=129 lifecycle_errors=0 repairs=129 staged_events=2114 copies=2027 fallback=0 errors=0 prepare=130 stale_queue=0 pending_vsync=42 sync=212 complete=126 incomplete=86 incomplete_blocks=625 hold=0/0 hold_timeout=0
+I (41075) rc_net: [CAM-PROBE] Video TX seq=150 jpeg_len=7670 crc32=0x45985ed9 chunks=7
+I (42128) rc_video: Sent 150 | cap_fps=8.3 send_fps=8.3 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=52.2 cache=1.4 subsample=23.3 encode=23.6 send=6.1 total=106.6 | JPEG=8474B
+I (42136) rc_video: [VIDEO-TX] handoff cap=159 get=318 select_fail=0 finished=159 signal=159 acquire=159 acquire_fail=0 release_fail=0 backup=0/0
+I (42147) rc_video: [STABLE-CAPTURE] pause=159/159 timeout=0 quiesce=159 resume=159 lifecycle_errors=0 repairs=159 staged_events=2618 copies=2512 fallback=0 errors=0 prepare=160 stale_queue=0 pending_vsync=55 sync=261 complete=156 incomplete=105 incomplete_blocks=785 hold=0/0 hold_timeout=0
+I (44597) rc_net: [CAM-PROBE] Video TX seq=180 jpeg_len=7431 crc32=0xad38c6d6 chunks=7
+I (45454) rc_video: Sent 180 | cap_fps=9.0 send_fps=9.0 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=38.4 cache=1.5 subsample=23.2 encode=24.6 send=5.0 total=92.6 | JPEG=8191B
+I (45461) rc_video: [VIDEO-TX] handoff cap=189 get=378 select_fail=0 finished=189 signal=189 acquire=189 acquire_fail=0 release_fail=0 backup=0/0
+I (45471) rc_video: [STABLE-CAPTURE] pause=189/189 timeout=0 quiesce=189 resume=189 lifecycle_errors=0 repairs=189 staged_events=3103 copies=2975 fallback=0 errors=0 prepare=190 stale_queue=0 pending_vsync=63 sync=307 complete=186 incomplete=121 incomplete_blocks=915 hold=0/0 hold_timeout=0
+I (48202) rc_net: [CAM-PROBE] Video TX seq=210 jpeg_len=7608 crc32=0x91d53518 chunks=7
+I (49449) rc_video: Sent 210 | cap_fps=7.5 send_fps=7.5 capture_size_errors=0 capture_identity_errors=0 | Avg(ms): wait=62.2 cache=1.6 subsample=23.1 encode=24.1 send=5.2 total=116.1 | JPEG=7944B
+I (49457) rc_video: [VIDEO-TX] handoff cap=219 get=438 select_fail=0 finished=219 signal=219 acquire=219 acquire_fail=0 release_fail=0 backup=0/0
+I (49469) rc_video: [STABLE-CAPTURE] pause=219/219 timeout=0 quiesce=219 resume=219 lifecycle_errors=0 repairs=219 staged_events=3653 copies=3506 fallback=0 errors=0 prepare=220 stale_queue=0 pending_vsync=74 sync=367 complete=216 incomplete=151 incomplete_blocks=1115 hold=0/0 hold_timeout=0
+I (52117) rc_net: [CAM-PROBE] Video TX seq=240 jpeg_len=7438 crc32=0xb278f588 chunks=7

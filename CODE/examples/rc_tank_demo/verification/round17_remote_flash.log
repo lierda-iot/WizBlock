@@ -1,0 +1,101 @@
+=========================================
+Flashing RC Tank Demo - REMOTE Role to COM24
+=========================================
+Bootloader:      E:\10__AIProject\7_AI陪伴机器人\CODE\examples\rc_tank_demo\firmware_backup\bootloader_REMOTE.bin
+Partition Table: E:\10__AIProject\7_AI陪伴机器人\CODE\examples\rc_tank_demo\firmware_backup\partition-table_REMOTE.bin
+Application:     E:\10__AIProject\7_AI陪伴机器人\CODE\examples\rc_tank_demo\firmware_backup\rc_tank_demo_REMOTE.bin
+
+Erasing flash...
+esptool.py v4.12.dev2
+Serial port COM24
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 44:1b:f6:f3:ae:28
+Uploading stub...
+Running stub...
+Stub running...
+Erasing flash (this may take a while)...
+Chip erase completed successfully in 1.2 seconds.
+Hard resetting via RTS pin...
+
+Programming flash...
+esptool.py v4.12.dev2
+Serial port COM24
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 44:1b:f6:f3:ae:28
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x00121fff...
+SHA digest in image updated
+Compressed 20832 bytes to 13361...
+Writing at 0x00000000... (100 %)
+Wrote 20832 bytes (13361 compressed) at 0x00000000 in 0.4 seconds (effective 440.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 119...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (119 compressed) at 0x00008000 in 0.0 seconds (effective 1499.0 kbit/s)...
+Hash of data verified.
+Compressed 1122272 bytes to 694337...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d02f... (4 %)
+Writing at 0x00029479... (6 %)
+Writing at 0x0002e7ee... (9 %)
+Writing at 0x00036e72... (11 %)
+Writing at 0x00041c72... (13 %)
+Writing at 0x00047e89... (16 %)
+Writing at 0x0004e19c... (18 %)
+Writing at 0x00058078... (20 %)
+Writing at 0x0005de81... (23 %)
+Writing at 0x00062ebb... (25 %)
+Writing at 0x00067d69... (27 %)
+Writing at 0x0006d222... (30 %)
+Writing at 0x000722ce... (32 %)
+Writing at 0x000771bb... (34 %)
+Writing at 0x0007d9f3... (37 %)
+Writing at 0x00083c38... (39 %)
+Writing at 0x0008958f... (41 %)
+Writing at 0x0008f28e... (44 %)
+Writing at 0x00094ff2... (46 %)
+Writing at 0x0009abed... (48 %)
+Writing at 0x000a169d... (51 %)
+Writing at 0x000a7587... (53 %)
+Writing at 0x000ad3a7... (55 %)
+Writing at 0x000b2488... (58 %)
+Writing at 0x000b767a... (60 %)
+Writing at 0x000bd03d... (62 %)
+Writing at 0x000c2565... (65 %)
+Writing at 0x000c79f3... (67 %)
+Writing at 0x000ccf83... (69 %)
+Writing at 0x000d2bef... (72 %)
+Writing at 0x000d8fc5... (74 %)
+Writing at 0x000dea1b... (76 %)
+Writing at 0x000e478d... (79 %)
+Writing at 0x000ea078... (81 %)
+Writing at 0x000ef858... (83 %)
+Writing at 0x000f8094... (86 %)
+Writing at 0x000fe1aa... (88 %)
+Writing at 0x00104671... (90 %)
+Writing at 0x0010c082... (93 %)
+Writing at 0x00113a39... (95 %)
+Writing at 0x0011a511... (97 %)
+Writing at 0x0011f52b... (100 %)
+Wrote 1122272 bytes (694337 compressed) at 0x00010000 in 15.6 seconds (effective 576.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+
+=========================================
+Flash completed successfully!
+=========================================

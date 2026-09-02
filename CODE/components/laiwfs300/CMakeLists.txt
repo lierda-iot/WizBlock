@@ -1,0 +1,31 @@
+idf_component_register(
+    SRCS
+        "board_laiwfs300.c"
+        "board_audio.c"
+        "board_camera.c"
+        "board_display.c"
+        "board_motor.c"
+        "board_touch.c"
+    INCLUDE_DIRS "include"
+    REQUIRES
+        aip8563_rtc
+        bmi260_imu
+        board_adc
+        board_power
+        bus_i2c
+        bus_spi
+        camera_hal
+        capability_registry
+        display_hal
+        esp_codec_dev
+        io_expander
+        module_detect
+        pt2466_motor
+        robot_motion
+        touch_hal
+    PRIV_REQUIRES
+        esp_adc
+        esp_driver_gpio
+        esp_driver_i2s
+        esp_driver_ledc
+)

@@ -1,0 +1,36 @@
+I (1247) esp_psram: SPI SRAM memory test OK
+I (1256) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (1256) cpu_start: Pro cpu start user code
+I (1257) cpu_start: cpu freq: 240000000 Hz
+I (1258) app_init: Application information:
+I (1262) app_init: Project name:     rc_tank_demo
+I (1267) app_init: App version:      1
+I (1270) app_init: Compile time:     Aug 17 2026 22:07:37
+I (1275) app_init: ELF file SHA256:  c0a5ebdd7...
+I (1280) app_init: ESP-IDF:          v5.5.4
+I (1284) efuse_init: Min chip rev:     v0.0
+I (1287) efuse_init: Max chip rev:     v0.99 
+I (1292) efuse_init: Chip rev:         v0.2
+I (1296) heap_init: Initializing. RAM available for dynamic allocation:
+I (1302) heap_init: At 3FCABB50 len 0003DBC0 (246 KiB): RAM
+I (1307) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (1312) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (1318) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (1323) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (1331) spi_flash: detected chip: generic
+I (1333) spi_flash: flash io: dio
+I (1337) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (1343) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (1350) main_task: Started on CPU0
+I (1374) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations
+I (1375) main_task: Calling app_main()
+I (1383) rc_tank: === RC Tank Demo (EX-035) Role: REMOTE ===
+I (1383) rc_tank: Startup delay 10 s (open serial monitor now)...
+I (1386) rc_tank:   starting in 10 s
+I (2389) rc_tank:   starting in 9 s
+I (3389) rc_tank:   starting in 8 s
+I (4389) rc_tank:   starting in 7 s
+I (5389) rc_tank:   starting in 6 s
+I (6389) rc_tank:   starting in 5 s
+I (7389) rc_tank:   starting in 4 s
+I (8389) rc_tank:   starting in 3 s

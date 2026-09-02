@@ -1,0 +1,4 @@
+LIBRARY ucrtbase.dll
+EXPORTS
+    log10f
+    sqrtf
